@@ -1,4 +1,4 @@
-# NextJS Typescript Boilerplate
+# NextJS Boilerplate For Production
 
 Bootstrap a developer-friendly NextJS app configured with:
 
@@ -6,22 +6,14 @@ Bootstrap a developer-friendly NextJS app configured with:
 - Linting with [ESLint](https://eslint.org/)
 - Formatting with [Prettier](https://prettier.io/)
 - Linting, typechecking and formatting on by default using [`husky`](https://github.com/typicode/husky) for commit hooks
-- Testing with [Jest](https://jestjs.io/) and [`react-testing-library`](https://testing-library.com/docs/react-testing-library/intro)
-
-## Deploy your own
-
-Deploy the example using [Vercel](https://vercel.com):
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/vercel/next.js/tree/canary/examples/with-typescript-eslint-jest)
+- Testing with [Jest](https://jestjs.io/), [react-testing-library](https://testing-library.com/docs/react-testing-library/intro) and [MSW](https://https://mswjs.io/)
 
 ## How to use
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+Execute `npm install` with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/):
 
 ```bash
-npx create-next-app --example with-typescript-eslint-jest with-typescript-eslint-jest-app
+npm i
 # or
-yarn create next-app --example with-typescript-eslint-jest with-typescript-eslint-jest-app
+yarn install
 ```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/import?filter=next.js&utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
