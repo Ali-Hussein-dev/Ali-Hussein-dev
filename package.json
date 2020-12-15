@@ -29,7 +29,8 @@
   "dependencies": {
     "next": "latest",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "react-icons": "^4.1.0"
   },
   "devDependencies": {
     "@testing-library/react": "^11.2.2",
