@@ -1,11 +1,9 @@
-import App from 'next/app'
 import '../css/global.css'
-
-class MyApp extends App {
-  render() {
-    const { Component, pageProps } = this.props
-    return <Component {...pageProps} />
-  }
+const MyApp: React.FC<{ Component: React.FC; pageProps: any }> = ({
+  Component,
+  pageProps,
+}): JSX.Element => {
+  return <Component {...pageProps} />
 }
 
 export default MyApp
