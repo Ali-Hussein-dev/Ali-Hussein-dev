@@ -40,7 +40,7 @@ const Blog: React.FC = () => {
       <div className="py-4 text-xl md:w-9/12 lg:w-7/12">
         <h1 className="mb-3 text-xl font-bold text-teal-500">Blog</h1>
         {blogs.map((o, i) => (
-          <div key={i} className="mb-3 ">
+          <div key={i} className="mb-3">
             {/* <div className="mb-3">
             <Image
               src={o.imgSrc}
@@ -53,12 +53,18 @@ const Blog: React.FC = () => {
               href={o.url}
               target="_blank"
               rel="noreferrer"
-              className="flex items-center gap-x-2"
+              className="flex items-center gap-x-2 hover:bg-blueGray-50"
             >
-              <h2 className="text-lg text-blue-400">{o.title}</h2>
-              <FiExternalLink className="text-blueGray-500" />
+              <div className="flex justify-between w-full gap-x-1">
+                <div>
+                  <h2 className="text-lg text-blue-400">{o.title}</h2>
+                  <span className="text-blueGray-400">{o.pub} </span>
+                </div>
+                <span className="pt-1">
+                  <FiExternalLink className=" text-blueGray-500" />
+                </span>
+              </div>
             </a>
-            <span className="text-blueGray-400">{o.pub} </span>
             <Divider />
           </div>
         ))}

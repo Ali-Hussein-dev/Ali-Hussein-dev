@@ -60,7 +60,7 @@ const About: React.FC = () => {
           TypeScript, Javascript, React, Next.js, CSS, Html, Jest, Tailwindcss,
           Git, xState <br /> Familiar with <br /> Nodejs and MongoDB
         </p>
-        <div className="flex py-3 gap-3 border-b border-gray-300">
+        <div className="flex py-3 border-b border-gray-300 gap-x-4">
           {links.map((o, i) => (
             <span key={i}>
               <Link href={o.href} cn={o.cn} IconName={o.IconName} />
