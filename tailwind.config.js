@@ -69,7 +69,8 @@ module.exports = {
   },
   variants: {
     extend: {
-      scale: ['active'],
+      scale: ['responsive', 'hover', 'focus', 'active'],
+      cursor: ['responsive', 'hover', 'disabled'],
     },
   },
   plugins: [],
