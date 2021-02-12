@@ -3,9 +3,14 @@ import { FaBars, FaTimes } from 'react-icons/fa'
 import Link from 'next/link'
 
 const linksList = ['Home', 'About', 'Projects', 'Blog']
-
-const StyledLink: React.FC<{ label: string }> = ({ label }) => (
-  <button className="px-3 mb-6 font-semibold hover:text-blue-500 hover:cursor-pointer active:text-blue-500 sm:mb-0">
+interface StyledLinkProps extends React.ComponentPropsWithoutRef<'button'> {
+  label: string
+}
+const StyledLink: React.FC<StyledLinkProps> = ({ label, ...rest }) => (
+  <button
+    className="px-3 mb-6 font-semibold hover:text-blue-500 hover:cursor-pointer active:text-blue-500 sm:mb-0"
+    {...rest}
+  >
     <Link href={`/${label === 'Home' ? '' : label}`}>
       <a>{label}</a>
     </Link>
@@ -32,7 +37,11 @@ export const Header: React.FC = () => {
         } sm:hidden flex flex-col mx-auto my-auto items-center text-blueGray-700 text-3xl font-semibold leading-relaxed`}
       >
         {linksList.map((link) => (
-          <StyledLink key={link} label={link} />
+          <StyledLink
+            key={link}
+            label={link}
+            onClick={() => setIsOpen(false)}
+          />
         ))}
       </div>
       {/* -------------------------------------------------------------toggle button */}
