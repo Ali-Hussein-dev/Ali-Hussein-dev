@@ -19,13 +19,13 @@ const projects = [
   {
     href: 'https://gastroabrechnung.firebaseapp.com/',
     name: 'Gastroabrechnung',
-    description: 'A alternative calculator exclusively for waiters tasks',
+    description: 'An alternative to calculator exclusively for waiter tasks',
     tech: 'Html, Bootstrap',
   },
   {
     href: 'https://spreskill-app.web.app/',
     name: 'Spreskill',
-    description: 'A landing page with bootstrap',
+    description: 'A landing page with Bootstrap',
     tech: 'Html, Bootsrap',
   },
 ]
