@@ -19,6 +19,14 @@
     "terminal.brightCyan": "#5e6071",
     "terminal.brightWhite": "#0a6c7e",
     "terminal.background": "#1c0c28",
-    "terminal.foreground": "#babab9"
-  }
+    "terminal.foreground": "#babab9",
+    "statusBar.background": "#6c41a9",
+    "statusBar.foreground": "#e7e7e7",
+    "statusBarItem.hoverBackground": "#865cc0",
+    "titleBar.activeBackground": "#6c41a9",
+    "titleBar.activeForeground": "#e7e7e7",
+    "titleBar.inactiveBackground": "#6c41a999",
+    "titleBar.inactiveForeground": "#e7e7e799"
+  },
+  "peacock.color": "#6c41a9"
 }

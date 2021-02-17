@@ -7,35 +7,36 @@ const projects = [
     href: 'https://smart-menu-demo.vercel.app/',
     name: 'Interactive-menu',
     description:
-      'A food/drinks menu with sub-menus and prices that shows up and hides programmatically',
-    tech: 'TS, Next.js, React, Jest, Testing-Library, Tailwind, Chakra-UI',
+      'Dishes/drinks menu: digital menu for restaurants \nFeatures: cost-effective, user-friendly, dynamic items, paperless.',
+    stack: 'TS, Next.js, React, Jest, Testing-Library, Tailwind, Chakra-UI',
   },
   {
     href: 'https://find-meaning.web.app/',
     name: 'Find-meaning',
-    description: 'fetchs data from APIs',
-    tech: 'JS, React',
+    description:
+      'special calculator \nFeatures: reduced work time by 40% and removed repetitive calculations for waiter’s daily tasks with Javascript.',
+    stack: 'JS, React',
   },
   {
     href: 'https://gastroabrechnung.firebaseapp.com/',
     name: 'Gastroabrechnung',
     description: 'An alternative to calculator exclusively for waiter tasks',
-    tech: 'Html, Bootstrap',
+    stack: 'Html, Bootstrap',
   },
   {
     href: 'https://spreskill-app.web.app/',
     name: 'Spreskill',
     description: 'A landing page with Bootstrap',
-    tech: 'Html, Bootsrap',
+    stack: 'Html, Bootsrap',
   },
 ]
 //=======================
 const ProjectCard: React.FC<{
   name: string
   href: string
-  tech: string
+  stack: string
   description: string
-}> = ({ name, href, description, tech }) => {
+}> = ({ name, href, description, stack }) => {
   // hooks
   //--------------------------------------
   // functions
@@ -45,7 +46,7 @@ const ProjectCard: React.FC<{
       <h2 className="mb-1 font-semibold uppercase">{name}</h2>
       <p className="">{description}</p>
       <p className="text-blueGray-500">
-        <span className="font-semibold">Techs used</span>: {tech}
+        <span className="font-semibold">Stack</span>: {stack}
       </p>
       <Link href={href}>demo</Link>
     </div>
@@ -60,9 +61,9 @@ const Link: React.FC<{ href: string; children: string }> = ({
       href={href}
       target="_blank"
       rel="noreferrer"
-      className="flex items-center gap-1 hover:text-blue-400"
+      className="flex items-center mt-2 gap-1 hover:text-blue-400"
     >
-      {children} <FiExternalLink size="25" className="text-blueGray-400" />
+      {children} <FiExternalLink size="15" className="text-blueGray-400" />
     </a>
   )
 }
@@ -85,7 +86,7 @@ const Projects: React.FC = () => {
             name={o.name}
             href={o.href}
             description={o.description}
-            tech={o.tech}
+            stack={o.stack}
           />
         ))}
       </div>
