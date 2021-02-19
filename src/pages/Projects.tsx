@@ -79,7 +79,7 @@ const Projects: React.FC = () => {
         <title>Projects</title>
       </Head>
       <div className="py-4 text-xl md:w-9/12 lg:w-7/12">
-        <h1 className="mb-3 text-lg font-bold text-teal-500">Projects</h1>
+        <h1 className="mb-3 text-lg font-bold text-teal-500">PROJECTS</h1>
         {projects.map((o, i) => (
           <ProjectCard
             key={i}

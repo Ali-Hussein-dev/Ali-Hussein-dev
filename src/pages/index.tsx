@@ -1,5 +1,5 @@
 export const Home = (): JSX.Element => (
-  <section className="flex flex-col items-center justify-center px-2 pt-44">
+  <section className="flex flex-col items-center justify-center min-h-screen px-2">
     <div>
       <h1 className="mb-2 text-5xl font-black text-teal-400">
         Welcome to my Portfolio

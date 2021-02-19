@@ -33,12 +33,12 @@ const Blog: React.FC = () => {
   // functions
   //--------------------------------------
   return (
-    <div className="grid w-full px-3 pt-6 place-items-center" id="Blog">
+    <div className="grid w-full min-h-screen px-2 place-items-center" id="Blog">
       <Head>
         <title>Projects</title>
       </Head>
       <div className="py-4 text-xl md:w-9/12 lg:w-7/12">
-        <h1 className="mb-3 text-xl font-bold text-teal-500">Blog</h1>
+        <h1 className="mb-3 text-lg font-bold text-teal-500">BLOG</h1>
         {blogs.map((o, i) => (
           <div key={i} className="mb-3">
             {/* <div className="mb-3">

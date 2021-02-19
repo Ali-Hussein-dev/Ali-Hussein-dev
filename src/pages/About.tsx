@@ -39,28 +39,29 @@ const About: React.FC = () => {
   // functions
   //--------------------------------------
   return (
-    <section id="About" className="grid px-3 pt-6 place-items-center ">
+    <section id="About" className="grid min-h-screen px-2 place-items-center">
       <Head>
         <title>About</title>
       </Head>
       <div className="py-4 text-xl md:w-9/12 lg:w-7/12">
-        <h1 className="mb-3 text-lg font-bold text-teal-500">About</h1>
+        <h1 className="mb-3 text-lg font-bold text-teal-500">ABOUT</h1>
         <h2 className="font-semibold ">A UX-driven frontend developer</h2>
-        <p className="pb-2 mb-4 leading-8 border-b border-gray-200 text-blueGray-500">
+        <p className="pb-2 mb-4 leading-8 border-b border-gray-200">
           I build web applications with a lot of passion for clean UI, clean
-          code, intuitive UX and great performance. They are high standards, to
-          stay aligned with them I follow best practices and try out new things.
-          I came from a business background and live in Germany since 2015.
-          <Link href={links[2].href} cn={links[2].cn}>
-            Feel free to reach out
-          </Link>
+          code, intuitive UX and great performance. I came from a business
+          background and live in Germany since 2015. Feel free to reach out, I
+          am looking currently for new challenges.
         </p>
         <h2 className="font-semibold ">My Stack</h2>
-        <p className="pb-2 mb-4 leading-8 border-b border-gray-200">
-          TypeScript, Javascript, React, Next.js, CSS, Html, Jest, Tailwindcss,
-          Git, xState <br /> Familiar with <br />
-          Nodejs and MongoDB
-        </p>
+        <div className="pb-2 mb-4 leading-8 border-b border-gray-200">
+          <h3 className="text-blueGray-400">Proficient with</h3>
+          <p>
+            TypeScript, JavaScript(ES6), React, Next.js, CSS3, Html5, Jest,
+            Tailwindcss, Git, xState, Adobe XD
+          </p>
+          <h3 className="text-blueGray-400">Familiar with</h3>
+          <p>Nodejs and MongoDB</p>
+        </div>
         <div className="flex py-3 border-b border-gray-300">
           {links.map((o, i) => (
             <span key={i} className="p-1 ml-3 rounded-xl hover:bg-blueGray-100">
