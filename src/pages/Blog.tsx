@@ -38,17 +38,19 @@ const Blog: React.FC = () => {
         <title>Projects</title>
       </Head>
       <div className="py-4 text-xl md:w-9/12 lg:w-7/12">
-        <h1 className="mb-3 text-lg font-bold text-teal-500">BLOG</h1>
+        <h1 className="mb-3 pb-1 text-lg font-bold text-teal-500 border-b-4 border-teal-300 mb-4">
+          BLOG
+        </h1>
         {blogs.map((o, i) => (
           <div key={i} className="mb-3">
-            {/* <div className="mb-3">
-            <Image
+            <div className="mb-3">
+              {/* <Image
               src={o.imgSrc}
               borderRadius="lg"
               alt={o.title}
-              fallback={<Skeleton height="330px" />}
-              />
-            </div> */}
+              // fallback={<Skeleton height="330px" />}
+              /> */}
+            </div>
             <a
               href={o.url}
               target="_blank"

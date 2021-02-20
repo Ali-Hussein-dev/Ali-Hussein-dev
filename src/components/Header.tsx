@@ -8,7 +8,7 @@ interface StyledLinkProps extends React.ComponentPropsWithoutRef<'button'> {
 }
 const StyledLink: React.FC<StyledLinkProps> = ({ label, ...rest }) => (
   <button
-    className="px-3 mb-6 font-semibold hover:text-blue-500 hover:cursor-pointer active:text-blue-500 sm:mb-0"
+    className="px-3 mb-6 font-semibold hover:text-teal-400 hover:cursor-pointer active:text-blue-500 sm:mb-0"
     {...rest}
   >
     <Link href={`/${label === 'Home' ? '' : label}`}>

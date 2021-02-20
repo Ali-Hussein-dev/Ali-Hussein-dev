@@ -44,7 +44,9 @@ const About: React.FC = () => {
         <title>About</title>
       </Head>
       <div className="py-4 text-xl md:w-9/12 lg:w-7/12">
-        <h1 className="mb-3 text-lg font-bold text-teal-500">ABOUT</h1>
+        <h1 className="mb-3 text-lg font-bold text-teal-500 pb-1 border-b-4 border-teal-300 mb-4">
+          ABOUT
+        </h1>
         <h2 className="font-semibold ">A UX-driven frontend developer</h2>
         <p className="pb-2 mb-4 leading-8 border-b border-gray-200">
           I build web applications with a lot of passion for clean UI, clean

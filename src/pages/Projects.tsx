@@ -45,8 +45,8 @@ const ProjectCard: React.FC<{
     <div className="pb-1 mb-4 border-b border-blueGray-200">
       <h2 className="mb-1 font-semibold uppercase">{name}</h2>
       <p className="">{description}</p>
-      <p className="text-blueGray-500">
-        <span className="font-semibold">Stack</span>: {stack}
+      <p className="">
+        <span className=" font-semibold">Stack</span>: {stack}
       </p>
       <Link href={href}>demo</Link>
     </div>
@@ -79,7 +79,9 @@ const Projects: React.FC = () => {
         <title>Projects</title>
       </Head>
       <div className="py-4 text-xl md:w-9/12 lg:w-7/12">
-        <h1 className="mb-3 text-lg font-bold text-teal-500">PROJECTS</h1>
+        <h1 className="mb-3 text-lg font-bold text-teal-500 border-b-4 border-teal-300 mb-4 pb-1">
+          PROJECTS
+        </h1>
         {projects.map((o, i) => (
           <ProjectCard
             key={i}
