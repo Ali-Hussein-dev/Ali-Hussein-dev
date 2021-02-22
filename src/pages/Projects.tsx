@@ -78,7 +78,7 @@ const Projects: React.FC = () => {
       <Head>
         <title>Projects</title>
       </Head>
-      <div className="py-4 text-xl md:w-9/12 lg:w-7/12">
+      <div className="py-4 md:w-9/12 lg:w-7/12">
         <h1 className="pb-1 mb-4 text-lg font-bold text-teal-500 border-b-4 border-teal-400">
           PROJECTS
         </h1>

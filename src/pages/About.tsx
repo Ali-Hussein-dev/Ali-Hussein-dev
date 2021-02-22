@@ -43,11 +43,11 @@ const About: React.FC = () => {
       <Head>
         <title>About</title>
       </Head>
-      <div className="py-4 text-xl md:w-9/12 lg:w-7/12">
-        <h1 className="pb-1 mb-4 text-lg font-bold text-teal-500 border-b-4 border-teal-400">
+      <div className="py-4 md:w-9/12 lg:w-7/12">
+        <h1 className="pb-1 mb-4 text-xl font-bold text-teal-500 border-b-4 border-teal-400">
           ABOUT
         </h1>
-        <h2 className="font-semibold ">A UX-driven frontend developer</h2>
+        <h2 className="font-semibold">A UX-driven frontend developer</h2>
         <p className="pb-2 mb-4 leading-8 border-b border-gray-200">
           I build web applications with a lot of passion for clean UI, clean
           code, intuitive UX and great performance. I came from a business
@@ -64,7 +64,7 @@ const About: React.FC = () => {
           <h3 className="text-blueGray-400">Familiar with</h3>
           <p>Nodejs and MongoDB</p>
         </div>
-        <div className="flex py-3 border-b border-gray-300">
+        <div className="flex ">
           {links.map((o, i) => (
             <span key={i} className="p-1 ml-3 rounded-xl hover:bg-blueGray-100">
               <Link href={o.href} cn={o.cn} IconName={o.IconName} />
