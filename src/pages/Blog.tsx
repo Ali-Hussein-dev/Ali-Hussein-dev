@@ -33,7 +33,7 @@ const Blog: React.FC = () => {
   // functions
   //--------------------------------------
   return (
-    <div className="grid w-full min-h-screen px-2 place-items-center" id="Blog">
+    <div className="grid w-full px-2 h-vh87 place-items-center" id="Blog">
       <Head>
         <title>Projects</title>
       </Head>

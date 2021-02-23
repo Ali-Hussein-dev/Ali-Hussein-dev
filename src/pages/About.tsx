@@ -39,12 +39,12 @@ const About: React.FC = () => {
   // functions
   //--------------------------------------
   return (
-    <section id="About" className="grid min-h-screen px-2 place-items-center">
+    <section id="About" className="grid px-2 h-vh87 place-items-center">
       <Head>
         <title>About</title>
       </Head>
-      <div className="py-4 md:w-9/12 lg:w-7/12">
-        <h1 className="pb-1 mb-4 text-xl font-bold text-teal-500 border-b-4 border-teal-400">
+      <div className="py-4 md:w-9/12 lg:w-7/12 ">
+        <h1 className="pb-1 mb-4 text-xl font-bold text-teal-500 border-b-4 border-teal-400 ">
           ABOUT
         </h1>
         <h2 className="font-semibold">A UX-driven frontend developer</h2>

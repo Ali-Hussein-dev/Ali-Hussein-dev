@@ -2,7 +2,17 @@ module.exports = {
   purge: ['./src/pages/**/*.{ts,tsx}', './src/components/**/*.{ts,tsx}'],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    fontFamilty: {
+      body: 'oxanium cursive',
+    },
     extend: {
+      height: {
+        'vh95': '95vh',
+        'vh90': '90vh',
+        'vh87': '87vh',
+        'vh85': '85vh',
+        'vh80': '80vh',
+      },
       colors: {
         blueGray: {
           50: '#F8FAFC',
@@ -65,6 +75,7 @@ module.exports = {
           900: '#78350F',
         },
       },
+      
     },
   },
   variants: {
