@@ -39,7 +39,7 @@ const About: React.FC = () => {
   // functions
   //--------------------------------------
   return (
-    <section id="About" className="grid px-2 h-vh87 place-items-center">
+    <section id="About" className="grid min-h-screen px-2 place-items-center">
       <Head>
         <title>About</title>
       </Head>
