@@ -22,7 +22,7 @@ export const Header: React.FC = () => {
     <header
       className={`${
         isOpen ? 'absolute h-screen bg-white z-20' : ''
-      } sm:relative bg-white w-full flex justify-end sm:justify-center items-start sm:items-center border-solid border-b border-blueGray-300 brand py-3`}
+      } sm:relative bg-white w-full flex justify-end sm:justify-center items-start sm:items-center border-solid border-b border-trueGray-300 brand py-3`}
     >
       {/* -------------------------------------------------------------menu row for desktop */}
       <div className="items-center hidden text-xl font-semibold divide-x divide-gray-300 sm:flex sm:flex-row md:text-2xl divide-solid">
@@ -34,7 +34,7 @@ export const Header: React.FC = () => {
       <div
         className={`${
           isOpen ? 'relative' : 'hidden'
-        } sm:hidden flex flex-col mx-auto my-auto items-center text-blueGray-700 text-3xl font-semibold leading-relaxed`}
+        } sm:hidden flex flex-col mx-auto my-auto items-center text-trueGray-700 text-3xl font-semibold leading-relaxed`}
       >
         {linksList.map((link) => (
           <StyledLink
@@ -47,7 +47,7 @@ export const Header: React.FC = () => {
       {/* -------------------------------------------------------------toggle button */}
       <button
         aria-label="toggle"
-        className="px-2 py-2 mr-3 rounded-sm text-blueGray-600 sm:hidden active:scale-75 focus:bg-blueGray-200 hover:bg-blueGray-200 focus:outline-none"
+        className="px-2 py-2 mr-3 rounded-sm text-trueGray-600 sm:hidden active:scale-75 focus:bg-trueGray-200 hover:bg-trueGray-200 focus:outline-none"
         onClick={() => setIsOpen(!isOpen)}
       >
         {isOpen ? <FaTimes size="30" /> : <FaBars size="30" />}

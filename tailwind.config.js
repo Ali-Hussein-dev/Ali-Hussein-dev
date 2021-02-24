@@ -7,12 +7,13 @@ module.exports = {
     },
     extend: {
       height: {
-        'vh95': '95vh',
-        'vh90': '90vh',
-        'vh87': '87vh',
-        'vh85': '85vh',
-        'vh80': '80vh',
+        vh95: '95vh',
+        vh90: '90vh',
+        vh87: '87vh',
+        vh85: '85vh',
+        vh80: '80vh',
       },
+      screens: { xs: { max: '639px' } },
       colors: {
         blueGray: {
           50: '#F8FAFC',
@@ -25,6 +26,18 @@ module.exports = {
           700: '#334155',
           800: '#1E293B',
           900: '#0F172A',
+        },
+        trueGray: {
+          50: '#fafafa',
+          100: '#f5f5f5',
+          200: '#e5e5e5',
+          300: '#d4d4d4',
+          400: '#a3a3a3',
+          500: '#737373',
+          600: '#525252',
+          700: '#404040',
+          800: '#262626',
+          900: '#171717',
         },
         emerald: {
           50: '#ECFDF5',
@@ -75,7 +88,6 @@ module.exports = {
           900: '#78350F',
         },
       },
-      
     },
   },
   variants: {

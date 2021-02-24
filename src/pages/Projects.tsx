@@ -42,7 +42,7 @@ const ProjectCard: React.FC<{
   // functions
   //--------------------------------------
   return (
-    <div className="pb-1 mb-4 border-b border-blueGray-200">
+    <div className="pb-1 mb-4 border-b border-trueGray-200">
       <h2 className="mb-1 font-semibold uppercase">{name}</h2>
       <p className="">{description}</p>
       <p className="">
@@ -63,7 +63,7 @@ const Link: React.FC<{ href: string; children: string }> = ({
       rel="noreferrer"
       className="flex items-center mt-2 gap-1 hover:text-blue-400"
     >
-      {children} <FiExternalLink size="15" className="text-blueGray-400" />
+      {children} <FiExternalLink size="15" className="text-trueGray-400" />
     </a>
   )
 }

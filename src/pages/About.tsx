@@ -15,7 +15,7 @@ const links = [
   {
     href: 'mailto:ali.hussein.pre@gmail.com',
     IconName: FaRegEnvelope,
-    cn: 'text-blueGray-500',
+    cn: 'text-trueGray-500',
   },
 ]
 interface LinkProp {
@@ -56,21 +56,21 @@ const About: React.FC = () => {
         </p>
         <h2 className="font-semibold ">My Stack</h2>
         <div className="pb-2 mb-4 leading-8 border-b border-gray-200">
-          <h3 className="text-blueGray-400">Proficient with</h3>
+          <h3 className="text-trueGray-400">Proficient with</h3>
           <p>
             TypeScript, JavaScript(ES6), React, Next.js, CSS3, Html5, Jest,
             Tailwindcss, Git, xState, Adobe XD
           </p>
-          <h3 className="text-blueGray-400">Familiar with</h3>
+          <h3 className="text-trueGray-400">Familiar with</h3>
           <p>Nodejs and MongoDB</p>
         </div>
         <div className="flex ">
           {links.map((o, i) => (
-            <span key={i} className="p-1 ml-3 rounded-xl hover:bg-blueGray-100">
+            <span key={i} className="p-1 ml-3 rounded-xl hover:bg-trueGray-100">
               <Link href={o.href} cn={o.cn} IconName={o.IconName} />
             </span>
           ))}
-          <span className="p-1 ml-3 rounded-xl hover:bg-blueGray-50">
+          <span className="p-1 ml-3 rounded-xl hover:bg-trueGray-50">
             <Link href={'https://hashnode.com/@Ali-2021'} cn="">
               <svg
                 className="w-8 fill-current"

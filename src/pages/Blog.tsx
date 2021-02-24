@@ -55,15 +55,15 @@ const Blog: React.FC = () => {
               href={o.url}
               target="_blank"
               rel="noreferrer"
-              className="flex items-center gap-x-2 hover:bg-blueGray-50"
+              className="flex items-center gap-x-2 hover:bg-trueGray-50"
             >
               <div className="flex justify-between w-full gap-x-1">
                 <div>
                   <h2 className="text-lg text-blue-400">{o.title}</h2>
-                  <span className="text-blueGray-400">{o.pub} </span>
+                  <span className="text-trueGray-400">{o.pub} </span>
                 </div>
                 <span className="pt-1">
-                  <FiExternalLink className=" text-blueGray-500" />
+                  <FiExternalLink className=" text-trueGray-500" />
                 </span>
               </div>
             </a>
