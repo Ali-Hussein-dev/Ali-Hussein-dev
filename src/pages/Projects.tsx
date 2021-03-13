@@ -11,16 +11,16 @@ const projects = [
     stack: 'TS, Next.js, React, Jest, Testing-Library, Tailwind, Chakra-UI',
   },
   {
-    href: 'https://find-meaning.web.app/',
-    name: 'Find-meaning',
-    description:
-      'special calculator \nFeatures: reduced work time by 40% and removed repetitive calculations for waiter’s daily tasks with Javascript.',
-    stack: 'JS, React',
+    href: 'https://find-meaning.vercel.app/',
+    name: 'Find-Meaning',
+    description: 'English dictionary with gifs',
+    stack: 'TS,Nextjs, React, Jest, Tailwind, Chakra-UI',
   },
   {
     href: 'https://gastroabrechnung.firebaseapp.com/',
     name: 'Gastroabrechnung',
-    description: 'An alternative to calculator exclusively for waiter tasks',
+    description:
+      'An special calculator \nFeatures: reduced work time by 40% and removed repetitive calculations for waiter’s daily tasks with Javascript.',
     stack: 'Html, Bootstrap',
   },
   {
