@@ -17,6 +17,7 @@ module.exports = {
       screens: { xs: { max: '639px' } },
       colors: {
         blueGray: colors.blueGray,
+        teal: colors.teal,
       },
     },
   },
