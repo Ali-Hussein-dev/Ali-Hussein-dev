@@ -13,15 +13,16 @@ const projects = [
   {
     href: 'https://find-meaning.vercel.app/',
     name: 'Find-Meaning',
-    description: 'English dictionary with gifs',
+    description:
+      'English dictionary with basic defintions section, community usage and related gifs to the search keyword',
     stack: 'TS,Nextjs, React, Jest, Tailwind, Chakra-UI',
   },
   {
-    href: 'https://gastroabrechnung.firebaseapp.com/',
-    name: 'Gastroabrechnung',
+    href: 'https://gastro-abr.vercel.app/',
+    name: 'Gastro-abr',
     description:
-      'An special calculator \nFeatures: reduced work time by 40% and removed repetitive calculations for waiter’s daily tasks with Javascript.',
-    stack: 'Html, Bootstrap',
+      'calculator \nFeatures: reduced work time by 40% and removed repetitive calculations for waiter’s daily tasks.',
+    stack: 'TS, Next.js, React, Tailwind',
   },
   {
     href: 'https://spreskill-app.web.app/',
@@ -37,16 +38,12 @@ const ProjectCard: React.FC<{
   stack: string
   description: string
 }> = ({ name, href, description, stack }) => {
-  // hooks
-  //--------------------------------------
-  // functions
-  //--------------------------------------
   return (
     <div className="pb-1 mb-4 border-b border-trueGray-200">
       <h2 className="mb-1 font-semibold uppercase">{name}</h2>
       <p className="">{description}</p>
-      <p className="">
-        <span className="font-semibold ">Stack</span>: {stack}
+      <p className="text-blueGray-400">
+        <span className="font-semibold text-blueGray-700">Stack</span>: {stack}
       </p>
       <Link href={href}>demo</Link>
     </div>
@@ -61,7 +58,7 @@ const Link: React.FC<{ href: string; children: string }> = ({
       href={href}
       target="_blank"
       rel="noreferrer"
-      className="flex items-center mt-2 gap-1 hover:text-blue-400"
+      className="flex items-center mt-2 gap-1 text-blue-500 hover:text-blue-400"
     >
       {children} <FiExternalLink size="15" className="text-trueGray-400" />
     </a>
@@ -69,10 +66,6 @@ const Link: React.FC<{ href: string; children: string }> = ({
 }
 //=======================
 const Projects: React.FC = () => {
-  // hooks
-  //--------------------------------------
-  // functions
-  //--------------------------------------
   return (
     <section id="Projects" className="grid px-3 pt-6 place-items-center ">
       <Head>
