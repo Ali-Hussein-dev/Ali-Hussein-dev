@@ -7,27 +7,33 @@ const projects = [
     href: 'https://smart-menu-demo.vercel.app/',
     name: 'Interactive-menu',
     description:
-      'Dishes/drinks menu: digital menu for restaurants \nFeatures: cost-effective, user-friendly, dynamic items, paperless.',
+      'Dishes/drinks menu: digital menu for restaurants \nFeatures: dynamically-visible items, easy to navigate through items',
     stack: 'TS, Next.js, React, Jest, Testing-Library, Tailwind, Chakra-UI',
+    src: '/projects-videos/smart-menu.webm',
+    vidType: 'video/webm',
   },
   {
     href: 'https://find-meaning.vercel.app/',
     name: 'Find-Meaning',
     description:
       'English dictionary with basic defintions section, community usage and related gifs to the search keyword',
-    stack: 'TS,Nextjs, React, Jest, Tailwind, Chakra-UI',
+    stack: 'TS, Nextjs, React, Jest, Tailwind, Chakra-UI, MongoDB, PWA',
+    src: '/projects-videos/find-meaning.mp4',
+    vidType: 'video/mp4',
   },
   {
     href: 'https://gastro-abr.vercel.app/',
-    name: 'Gastro-abr',
+    name: 'Kellner-Abrechnung',
     description:
-      'calculator \nFeatures: reduced work time by 40% and removed repetitive calculations for waiter’s daily tasks.',
-    stack: 'TS, Next.js, React, Tailwind',
+      'calculator \nFeatures: reduced settlement time by 40% and take over repetitive calculations for daily waiter’s tasks.',
+    stack: 'TS, Next.js, React, Tailwind, PWA',
+    src: '/projects-videos/kellner-abr.webm',
+    vidType: 'video/webm',
   },
   {
     href: 'https://spreskill-app.web.app/',
     name: 'Spreskill',
-    description: 'A landing page with Bootstrap',
+    description: 'A landing page for a mobile app with Bootstrap',
     stack: 'Html, Bootsrap',
   },
 ]
@@ -37,15 +43,25 @@ const ProjectCard: React.FC<{
   href: string
   stack: string
   description: string
-}> = ({ name, href, description, stack }) => {
+  src: string
+  vidType: string
+}> = ({ name, href, description, stack, src, vidType }) => {
   return (
-    <div className="pb-1 mb-4 border-b border-trueGray-200">
-      <h2 className="mb-1 font-semibold uppercase">{name}</h2>
-      <p className="">{description}</p>
-      <p className="text-blueGray-400">
-        <span className="font-semibold text-blueGray-700">Stack</span>: {stack}
-      </p>
-      <Link href={href}>demo</Link>
+    <div className="flex flex-col">
+      {src && (
+        <video className="mb-3 rounded-lg max-h-80" controls>
+          <source src={src} type={vidType} />
+        </video>
+      )}
+      <div className="pb-1 mb-4 border-b border-trueGray-200">
+        <h2 className="mb-1 font-semibold uppercase">{name}</h2>
+        <p className="">{description}</p>
+        <p className="text-blueGray-400">
+          <span className="font-semibold text-blueGray-700">Stack</span>:{' '}
+          {stack}
+        </p>
+        <Link href={href}>demo</Link>
+      </div>
     </div>
   )
 }
@@ -58,7 +74,7 @@ const Link: React.FC<{ href: string; children: string }> = ({
       href={href}
       target="_blank"
       rel="noreferrer"
-      className="flex items-center mt-2 gap-1 text-blue-500 hover:text-blue-400"
+      className="flex items-center w-24 mt-2 gap-1 text-blue-500 hover:text-blue-400"
     >
       {children} <FiExternalLink size="15" className="text-trueGray-400" />
     </a>
@@ -71,7 +87,7 @@ const Projects: React.FC = () => {
       <Head>
         <title>Projects</title>
       </Head>
-      <div className="py-4 md:w-9/12 lg:w-7/12">
+      <div className="py-4 md:w-8/12 lg:w-6/12">
         <h1 className="pb-1 mb-4 text-lg font-bold text-teal-500 border-b-4 border-teal-400">
           PROJECTS
         </h1>
@@ -82,6 +98,8 @@ const Projects: React.FC = () => {
             href={o.href}
             description={o.description}
             stack={o.stack}
+            src={o.src}
+            vidType={o.vidType}
           />
         ))}
       </div>
