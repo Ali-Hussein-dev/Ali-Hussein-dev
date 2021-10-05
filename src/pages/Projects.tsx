@@ -4,13 +4,12 @@ import { FiExternalLink } from 'react-icons/fi'
 
 const projects = [
   {
-    href: 'https://smart-menu-demo.vercel.app/',
+    href: 'https://kartebuch.vercel.app/clients/muster/tabs',
     name: 'Interactive-menu',
     description:
       'Dishes/drinks menu: digital menu for restaurants \nFeatures: dynamically-visible items, easy to navigate through items',
-    stack: 'TS, Next.js, React, Jest, Testing-Library, Tailwind, Chakra-UI',
-    src: '/projects-videos/smart-menu.webm',
-    vidType: 'video/webm',
+    stack:
+      'TS, Next.js, React, MongoDB, Jest, Testing-Library, Tailwind, Chakra-UI',
   },
   {
     href: 'https://find-meaning.vercel.app/',
