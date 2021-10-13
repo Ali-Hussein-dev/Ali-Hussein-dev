@@ -4,7 +4,7 @@ import { FiExternalLink } from 'react-icons/fi'
 
 const projects = [
   {
-    href: 'https://kartebuch.vercel.app/clients/muster/tabs',
+    href: 'https://kartebuch.vercel.app/clients/muster/normal',
     name: 'Interactive-menu',
     description:
       'Dishes/drinks menu: digital menu for restaurants \nFeatures: dynamically-visible items, easy to navigate through items',
