@@ -21,8 +21,8 @@ export const Header: React.FC = () => {
   return (
     <header
       className={`${
-        isOpen ? 'absolute h-screen bg-white z-20' : ''
-      } sm:relative bg-white w-full flex justify-end sm:justify-center items-start sm:items-center border-solid border-b border-trueGray-300 brand py-3`}
+        isOpen ? 'absolute h-screen bg-trueGray-50 z-20' : ''
+      } sm:relative bg-trueGray-50 w-full flex justify-end sm:justify-center items-start sm:items-center border-solid border-b border-trueGray-300 py-3`}
     >
       {/* -------------------------------------------------------------menu row for desktop */}
       <div className="items-center hidden text-xl font-semibold divide-x divide-gray-300 sm:flex sm:flex-row md:text-2xl divide-solid">
