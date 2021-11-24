@@ -4,19 +4,19 @@ import { FiExternalLink } from 'react-icons/fi'
 
 const projects = [
   {
-    href: 'https://kartebuch.vercel.app/clients/101/normal',
-    name: 'Interactive-menu',
+    href: 'https://kartebuch.vercel.app/',
+    name: 'Interactive-menuü',
     description:
-      'Dishes/drinks menu: digital menu for restaurants \nFeatures: dynamically-visible items, easy to navigate through items',
+      'Dishes/drinks menü: digital menu for restaurants \nFeatures: dynamically-visible items, easy to navigate through items',
     stack:
-      'TS, Next.js, React, MongoDB, Jest, Testing-Library, Tailwind, Chakra-UI',
+      'TS, Nextjs, React, FaunaDB, Jest, Testing-Library, Tailwindcss, Chakra-UI, Nx-Workspace',
   },
   {
     href: 'https://find-meaning.vercel.app/',
-    name: 'Find-Meaning',
+    name: 'Find-Meaning dictionary',
     description:
       'English dictionary with basic defintions section, community usage and related gifs to the search keyword',
-    stack: 'TS, Nextjs, React, Jest, Tailwind, Chakra-UI, MongoDB, PWA',
+    stack: 'TS, Nextjs, React, Jest, Tailwindcss, Chakra-UI, MongoDB, PWA',
     src: '/projects-videos/find-meaning.mp4',
     vidType: 'video/mp4',
   },
@@ -25,7 +25,7 @@ const projects = [
     name: 'Kellner-Abrechnung',
     description:
       'calculator \nFeatures: reduced settlement time by 40% and take over repetitive calculations for daily waiter’s tasks.',
-    stack: 'TS, Next.js, React, Tailwind, PWA',
+    stack: 'TS, Next.js, React, Tailwindcss, PWA',
     src: '/projects-videos/kellner-abr.webm',
     vidType: 'video/webm',
   },
