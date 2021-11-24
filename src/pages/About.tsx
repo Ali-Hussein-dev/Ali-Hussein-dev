@@ -58,11 +58,11 @@ const About: React.FC = () => {
         <div className="pb-2 mb-4 leading-8 border-b border-gray-200">
           <h3 className="text-trueGray-400">Proficient with</h3>
           <p>
-            TypeScript, JavaScript(ES6), React, Next.js, CSS3, Html5, Jest,
-            Tailwindcss, Git, xState, Adobe XD
+            Typescript, Javascript(ES6), React, Nextjs, CSS3, Html5, Jest,
+            Tailwindcss, Git, Chakra-UI, Figma
           </p>
           <h3 className="text-trueGray-400">Familiar with</h3>
-          <p>Nodejs and MongoDB</p>
+          <p>Nodejs and FaunaDB</p>
         </div>
         <div className="flex ">
           {links.map((o, i) => (
