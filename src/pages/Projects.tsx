@@ -5,11 +5,11 @@ import { FiExternalLink } from 'react-icons/fi'
 const projects = [
   {
     href: 'https://kartebuch.vercel.app/',
-    name: 'Interactive-menuü',
+    name: 'Interactive-menü',
     description:
-      'Dishes/drinks menü: digital menu for restaurants \nFeatures: dynamically-visible items, easy to navigate through items',
+      'Dishes/drinks menü: digital menü for restaurants \nFeatures: dynamically-visible items, easy to navigate through items',
     stack:
-      'TS, Nextjs, React, FaunaDB, Jest, Testing-Library, Tailwindcss, Chakra-UI, Nx-Workspace',
+      'TS, Nextjs, React, FaunaDB, Jest, Testing-Library, Tailwindcss, Chakra-UI, Imgix, Nx-Workspaces',
   },
   {
     href: 'https://find-meaning.vercel.app/',
