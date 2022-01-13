@@ -2,13 +2,14 @@ import * as React from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
 import Link from 'next/link'
 
-const linksList = ['Home', 'About', 'Projects', 'Blog']
+const linksList = ['Home', 'Projects', 'Blog']
 interface StyledLinkProps extends React.ComponentPropsWithoutRef<'button'> {
   label: string
 }
 const StyledLink: React.FC<StyledLinkProps> = ({ label, ...rest }) => (
   <button
-    className="px-3 mb-6 font-semibold hover:text-teal-400 hover:cursor-pointer active:text-blue-500 sm:mb-0"
+    type="button"
+    className="px-3 mb-6 font-semibold rounded hover:bg-zinc-900 hover:cursor-pointer sm:mb-0 active:translate-y-1"
     {...rest}
   >
     <Link href={`/${label === 'Home' ? '' : label}`}>
@@ -21,20 +22,22 @@ export const Header: React.FC = () => {
   return (
     <header
       className={`${
-        isOpen ? 'absolute h-screen bg-trueGray-50 z-20' : ''
-      } sm:relative bg-trueGray-50 w-full flex justify-end sm:justify-center items-start sm:items-center border-solid border-b border-trueGray-300 py-3`}
+        isOpen ? 'absolute h-screen bg-bg-zinc-700 z-20' : ''
+      } sm:relative bg-zinc-700 w-full flex justify-end sm:justify-center items-start sm:items-center border-solid border-b border-cyan-400 py-3`}
     >
       {/* -------------------------------------------------------------menu row for desktop */}
-      <div className="items-center hidden text-xl font-semibold divide-x divide-gray-300 sm:flex sm:flex-row md:text-2xl divide-solid">
+      <div className="justify-center gap-x-10 hidden w-full text-xl font-semibold sm:flex sm:flex-row md:text-2xl max-w-[880px]">
         {linksList.map((link) => (
-          <StyledLink key={link} label={link} />
+          <span key={link} className="border-l border-cyan-400">
+            <StyledLink label={link} />
+          </span>
         ))}
       </div>
       {/* -------------------------------------------------------------menu column for mobile devices */}
       <div
         className={`${
           isOpen ? 'relative' : 'hidden'
-        } sm:hidden flex flex-col mx-auto my-auto items-center text-trueGray-700 text-3xl font-semibold leading-relaxed`}
+        } sm:hidden flex flex-col gap-y-4 mx-auto my-auto items-center text-zinc-200 text-3xl font-semibold leading-relaxed`}
       >
         {linksList.map((link) => (
           <StyledLink
@@ -45,13 +48,13 @@ export const Header: React.FC = () => {
         ))}
       </div>
       {/* -------------------------------------------------------------toggle button */}
-      <button
+      <a
         aria-label="toggle"
-        className="px-2 py-2 mr-3 rounded-sm text-trueGray-600 sm:hidden active:scale-75 focus:bg-trueGray-200 hover:bg-trueGray-200 focus:outline-none"
+        className="px-2 py-2 mr-3 rounded-sm text-zinc-100 sm:hidden active:scale-75 focus:bg-trueGray-200 hover:bg-trueGray-200 focus:outline-none"
         onClick={() => setIsOpen(!isOpen)}
       >
         {isOpen ? <FaTimes size="30" /> : <FaBars size="30" />}
-      </button>
+      </a>
     </header>
   )
 }

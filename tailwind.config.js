@@ -1,11 +1,6 @@
-const colors = require('tailwindcss/colors')
 module.exports = {
-  purge: ['./src/pages/**/*.{ts,tsx}', './src/components/**/*.{ts,tsx}'],
-  darkMode: false, // or 'media' or 'class'
+  content: ['./src/pages/**/*.{ts,tsx}', './src/components/**/*.{ts,tsx}'],
   theme: {
-    fontFamilty: {
-      body: 'oxanium cursive',
-    },
     extend: {
       height: {
         vh95: '95vh',
@@ -15,11 +10,6 @@ module.exports = {
         vh80: '80vh',
       },
       screens: { xs: { max: '639px' } },
-      colors: {
-        blueGray: colors.blueGray,
-        trueGray: colors.trueGray,
-        teal: colors.teal,
-      },
     },
   },
   variants: {
