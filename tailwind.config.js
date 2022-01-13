@@ -1,9 +1,6 @@
 module.exports = {
   content: ['./src/pages/**/*.{ts,tsx}', './src/components/**/*.{ts,tsx}'],
   theme: {
-    fontFamilty: {
-      body: 'oxanium cursive',
-    },
     extend: {
       height: {
         vh95: '95vh',
