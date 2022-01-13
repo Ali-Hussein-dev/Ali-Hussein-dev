@@ -37,7 +37,7 @@ export const Header: React.FC = () => {
       <div
         className={`${
           isOpen ? 'relative' : 'hidden'
-        } sm:hidden flex flex-col mx-auto my-auto items-center text-zinc-700 text-3xl font-semibold leading-relaxed`}
+        } sm:hidden flex flex-col gap-y-4 mx-auto my-auto items-center text-zinc-200 text-3xl font-semibold leading-relaxed`}
       >
         {linksList.map((link) => (
           <StyledLink
@@ -50,7 +50,7 @@ export const Header: React.FC = () => {
       {/* -------------------------------------------------------------toggle button */}
       <a
         aria-label="toggle"
-        className="px-2 py-2 mr-3 rounded-sm text-zinc-600 sm:hidden active:scale-75 focus:bg-trueGray-200 hover:bg-trueGray-200 focus:outline-none"
+        className="px-2 py-2 mr-3 rounded-sm text-zinc-100 sm:hidden active:scale-75 focus:bg-trueGray-200 hover:bg-trueGray-200 focus:outline-none"
         onClick={() => setIsOpen(!isOpen)}
       >
         {isOpen ? <FaTimes size="30" /> : <FaBars size="30" />}
