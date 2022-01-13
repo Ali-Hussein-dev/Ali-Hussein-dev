@@ -9,7 +9,7 @@ const projects = [
     description:
       'Dishes/drinks menü: digital menü for restaurants \nFeatures: dynamically-visible items, easy to navigate through items',
     stack:
-      'TS, Nextjs, React, FaunaDB, Jest, Testing-Library, Tailwindcss, Chakra-UI, Imgix, Nx-Workspaces',
+      'TS, Nextjs, React, FaunaDB, Redis, Jest, Testing-Library, Tailwindcss, Chakra-UI, Imgix, Nx-Workspaces',
   },
   {
     href: 'https://find-meaning.vercel.app/',
@@ -51,11 +51,11 @@ const ProjectCard: React.FC<{
         <source src={src} type={vidType} />
       </video>
     )}
-    <div className="pb-1 mb-4 border-b border-trueGray-200">
+    <div className="pb-1 mb-12 border-b border-zinc-600">
       <h2 className="mb-1 font-semibold uppercase">{name}</h2>
       <p className="">{description}</p>
-      <p className="text-blueGray-400">
-        <span className="font-semibold text-blueGray-700">Stack</span>: {stack}
+      <p className="text-zinc-400">
+        <span className="font-semibold text-zinc-100">Stack</span>: {stack}
       </p>
       <Link href={href}>demo</Link>
     </div>
@@ -69,9 +69,9 @@ const Link: React.FC<{ href: string; children: string }> = ({
     href={href}
     target="_blank"
     rel="noreferrer"
-    className="flex items-center w-24 mt-2 gap-1 text-blue-500 hover:text-blue-400"
+    className="flex items-center w-20 px-1 mt-2 gap-1 rounded text-cyan-500 hover:bg-black "
   >
-    {children} <FiExternalLink size="15" className="text-trueGray-400" />
+    {children} <FiExternalLink size="15" />
   </a>
 )
 //=======================
@@ -81,8 +81,8 @@ const Projects: React.FC = () => (
       <title>Projects</title>
     </Head>
     <div className="py-4 md:w-8/12 lg:w-6/12">
-      <h1 className="pb-1 mb-4 text-lg font-bold text-teal-500 border-b-4 border-teal-400">
-        PROJECTS
+      <h1 className="pb-1 mb-4 text-lg font-bold border-b-4 text-cyan-400 border-cyan-400">
+        Last PROJECTS
       </h1>
       {projects.map((o, i) => (
         <ProjectCard

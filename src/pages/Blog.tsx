@@ -1,5 +1,4 @@
 import { FiExternalLink } from 'react-icons/fi'
-import { Divider } from '@chakra-ui/react'
 import Head from 'next/head'
 //=======================
 const blogs = [
@@ -27,51 +26,44 @@ const blogs = [
       'https://cdn.hashnode.com/res/hashnode/image/upload/v1607477311816/bGSOK0mWB.jpeg',
   },
 ]
-const Blog: React.FC = () => {
-  // hooks
-  //--------------------------------------
-  // functions
-  //--------------------------------------
-  return (
-    <div className="grid w-full px-2 h-vh87 place-items-center" id="Blog">
-      <Head>
-        <title>Projects</title>
-      </Head>
-      <div className="py-4 md:w-9/12 lg:w-7/12">
-        <h1 className="pb-1 mb-4 text-lg font-bold text-teal-500 border-b-4 border-teal-400 ">
-          BLOG
-        </h1>
-        {blogs.map((o, i) => (
-          <div key={i} className="mb-3">
-            <div className="mb-3">
-              {/* <Image
-              src={o.imgSrc}
-              borderRadius="lg"
-              alt={o.title}
-              // fallback={<Skeleton height="330px" />}
-              /> */}
-            </div>
-            <a
-              href={o.url}
-              target="_blank"
-              rel="noreferrer"
-              className="flex items-center gap-x-2 hover:bg-trueGray-50"
-            >
-              <div className="flex justify-between w-full gap-x-1">
-                <div>
-                  <h2 className="text-lg text-blue-400">{o.title}</h2>
-                  <span className="text-trueGray-400">{o.pub} </span>
-                </div>
-                <span className="pt-1">
-                  <FiExternalLink className=" text-trueGray-500" />
-                </span>
-              </div>
-            </a>
-            <Divider />
+const Blog: React.FC = () => (
+  <div className="grid w-full h-screen px-2 place-items-center" id="Blog">
+    <Head>
+      <title>Projects</title>
+    </Head>
+    <div className="py-4 md:w-9/12 lg:w-7/12">
+      <h1 className="pb-1 mb-4 text-2xl font-bold border-b-4 text-cyan-500 border-cyan-400">
+        Last Articles
+      </h1>
+      {blogs.map((o, i) => (
+        <div key={i} className="mb-10 ">
+          <div className="mb-3">
+            {/* <Image
+            src={o.imgSrc}
+            borderRadius="lg"
+            alt={o.title}
+            // fallback={<Skeleton height="330px" />}
+            /> */}
           </div>
-        ))}
-      </div>
+          <a
+            href={o.url}
+            target="_blank"
+            rel="noreferrer"
+            className="flex items-center gap-x-2 hover:bg-trueGray-50"
+          >
+            <div className="flex justify-between w-full gap-x-1">
+              <div>
+                <h2 className="text-lg text-zinc-100">{o.title}</h2>
+                <span className="text-base text-zinc-500">{o.pub} </span>
+              </div>
+              <span className="pt-1">
+                <FiExternalLink className=" text-zinc-400" />
+              </span>
+            </div>
+          </a>
+        </div>
+      ))}
     </div>
-  )
-}
+  </div>
+)
 export default Blog
