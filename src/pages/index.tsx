@@ -1,3 +1,4 @@
+import { Heading, Text } from '@chakra-ui/react'
 import Head from 'next/head'
 import { FaTwitter, FaGithub, FaRegEnvelope } from 'react-icons/fa'
 import { IconType } from 'react-icons/lib'
@@ -39,23 +40,29 @@ const Index: React.FC = () => (
       <title>About</title>
     </Head>
     <div className="py-4 md:w-9/12 lg:w-7/12 ">
-      <h2 className="mb-2 text-3xl font-semibold">
+      <Heading as="h2" size="lg" className="mb-2 text-3xl font-semibold">
         A UX-driven frontend developer
-      </h2>
-      <p className="pb-2 mb-8 leading-8 border-b border-zinc-500">
+      </Heading>
+      <Text className="pb-2 mb-6 border-b border-zinc-500">
         I build web applications with a lot of passion for clean UI, clean code,
         intuitive UX and great performance. I came from a business background
-        and live in Germany since 2015. Feel free to reach out, I am looking
-        currently for new challenges.
-      </p>
-      <h2 className="mb-2 text-3xl font-semibold">Stack & Technologies</h2>
+        and live in Germany since 2015. Feel free to reach out, if you think I
+        could fit in your team.
+      </Text>
+      <Heading as="h2" size="lg" className="mb-2 text-3xl font-semibold">
+        Stack & Technologies
+      </Heading>
       <div className="pb-2 mb-2 leading-8 border-b border-zinc-500">
-        <h3 className="text-zinc-400">Proficient with</h3>
+        <Heading as="h3" size="md" className="underline text-zinc-300">
+          Proficient with
+        </Heading>
         <p>
-          Typescript, Javascript(ES6), React, Nextjs, RESTful API, CSS3, Html5,
-          Jest, Tailwindcss, Git, Chakra-UI, Figma
+          Typescript, Javascript(ES6), React, Nextjs, RESTful API, Tailwindcss,
+          Html5, CSS3, Jest, Git, Chakra-UI, Nx workspaces, Figma
         </p>
-        <h3 className="text-zinc-400">Familiar with</h3>
+        <Heading as="h3" size="md" className="underline text-zinc-300">
+          Familiar with
+        </Heading>
         <p>Nodejs and FaunaDB</p>
       </div>
       <div className="flex py-1">

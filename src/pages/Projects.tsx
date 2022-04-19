@@ -1,15 +1,17 @@
 import Head from 'next/head'
 import React from 'react'
 import { FiExternalLink } from 'react-icons/fi'
-
+import { Player } from 'video-react'
 const projects = [
   {
     href: 'https://kartebuch.vercel.app/',
     name: 'Interactive-menü',
     description:
-      'Dishes/drinks menü: digital menü for restaurants \nFeatures: dynamically-visible items, easy to navigate through items',
+      'Saas App: digital menü for restaurants with features like editing , uploading images and multiple languages',
     stack:
       'TS, Nextjs, React, FaunaDB, Redis, Jest, Testing-Library, Tailwindcss, Chakra-UI, Imgix, Nx-Workspaces',
+    src: '/projects-videos/kb-full.mp4',
+    vidType: 'video/mp4',
   },
   {
     href: 'https://find-meaning.vercel.app/',
@@ -17,8 +19,8 @@ const projects = [
     description:
       'English dictionary with basic defintions section, community usage and related gifs to the search keyword',
     stack: 'TS, Nextjs, React, Jest, Tailwindcss, Chakra-UI, MongoDB, PWA',
-    src: '/projects-videos/find-meaning.mp4',
-    vidType: 'video/mp4',
+    // src: '/projects-videos/find-meaning.mp4',
+    // vidType: 'video/mp4',
   },
   {
     href: 'https://gastro-abr.vercel.app/',
@@ -36,6 +38,7 @@ const projects = [
     stack: 'Html, Bootsrap',
   },
 ]
+
 //=======================
 const ProjectCard: React.FC<{
   name: string
@@ -43,14 +46,20 @@ const ProjectCard: React.FC<{
   stack: string
   description: string
   src: string
-  vidType: string
-}> = ({ name, href, description, stack, src, vidType }) => (
+}> = ({ name, href, description, stack, src }) => (
   <div className="flex flex-col">
     {src && (
+      <div className="mb-3 overflow-hidden rounded-xl aspect-video">
+        <Player>
+          <source src={src} />
+        </Player>
+      </div>
+    )}
+    {/* {src && (
       <video className="mb-3 rounded-lg max-h-80" controls>
         <source src={src} type={vidType} />
       </video>
-    )}
+    )} */}
     <div className="pb-1 mb-12 border-b border-zinc-600">
       <h2 className="mb-1 font-semibold uppercase">{name}</h2>
       <p className="">{description}</p>
@@ -92,7 +101,6 @@ const Projects: React.FC = () => (
           description={o.description}
           stack={o.stack}
           src={o.src}
-          vidType={o.vidType}
         />
       ))}
     </div>

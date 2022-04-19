@@ -9,7 +9,7 @@ interface StyledLinkProps extends React.ComponentPropsWithoutRef<'button'> {
 const StyledLink: React.FC<StyledLinkProps> = ({ label, ...rest }) => (
   <button
     type="button"
-    className="px-3 mb-6 font-semibold rounded hover:bg-zinc-900 hover:cursor-pointer sm:mb-0 active:translate-y-1"
+    className="px-3 py-1 mb-6 font-semibold rounded hover:bg-zinc-900 hover:cursor-pointer sm:mb-0 active:translate-y-1"
     {...rest}
   >
     <Link href={`/${label === 'Home' ? '' : label}`}>
@@ -28,7 +28,7 @@ export const Header: React.FC = () => {
       {/* -------------------------------------------------------------menu row for desktop */}
       <div className="justify-center gap-x-10 hidden w-full text-xl font-semibold sm:flex sm:flex-row md:text-2xl max-w-[880px]">
         {linksList.map((link) => (
-          <span key={link} className="border-l border-cyan-400">
+          <span key={link}>
             <StyledLink label={link} />
           </span>
         ))}
