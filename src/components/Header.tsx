@@ -26,7 +26,7 @@ export const Header: React.FC = () => {
       } sm:relative bg-zinc-700 w-full flex justify-end sm:justify-center items-start sm:items-center border-solid border-b border-cyan-400 py-3`}
     >
       {/* -------------------------------------------------------------menu row for desktop */}
-      <div className="justify-center gap-x-10 hidden w-full text-xl font-semibold sm:flex sm:flex-row md:text-2xl max-w-[880px]">
+      <div className="justify-center gap-x-10 hidden w-full text-xl font-semibold sm:flex sm:flex-row md:text-2xl max-w-[880px] z-20">
         {linksList.map((link) => (
           <span key={link}>
             <StyledLink label={link} />

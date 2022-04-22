@@ -17,7 +17,7 @@ const MyApp: React.FC<{ Component: React.FC; pageProps: any }> = ({
         <title>Ali Hussein</title>
       </Head>
       <Header />
-      <div className="z-10 bg-zinc-800">
+      <div className="">
         <Component {...pageProps} />
       </div>
       <Footer />
