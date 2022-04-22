@@ -38,17 +38,18 @@ const Link: React.FC<LinkProp> = ({ href, IconName, cn, children }) => (
 const Index: React.FC = () => (
   <section
     id="Home"
-    className="flex flex-col items-center justify-center min-h-screen px-2 bg-zinc-800 lg:bg-inherit"
+    className="flex flex-col items-center justify-center min-h-screen px-2 py-10 bg-zinc-800 lg:bg-inherit"
   >
     <Head>
       <title>About</title>
     </Head>
     <div className="hidden w-full h-full -z-10 lg:block">
       <Image
-        src="/home-bg.jpg"
+        src="/bg-1.jpg"
         alt="background"
         className="hidden opacity-90 object-container lg:block"
         layout="fill"
+        loading="eager"
       />
     </div>
     <div className="px-3 py-6 mx-auto md:w-9/12 lg:w-7/12 bg-white/20 rounded-2xl backdrop-blur">
