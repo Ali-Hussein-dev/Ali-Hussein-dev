@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 const linksList = ['Home', 'Projects', 'Blog']
 interface StyledLinkProps extends React.ComponentPropsWithoutRef<'button'> {
@@ -19,14 +20,15 @@ const StyledLink: React.FC<StyledLinkProps> = ({ label, ...rest }) => (
 )
 export const Header: React.FC = () => {
   const [isOpen, setIsOpen] = React.useState(false)
+  const router = useRouter()
   return (
     <header
-      className={`${
-        isOpen ? 'absolute h-screen bg-bg-zinc-700 z-20' : ''
-      } sm:relative bg-zinc-700 w-full flex justify-end sm:justify-center items-start sm:items-center border-solid border-b border-cyan-400 py-3`}
+      className={`${isOpen ? 'absolute h-screen z-10' : ''} ${
+        router.asPath === '/' ? 'lg:bg-zinc-800/10 backdrop-blur-sm' : ''
+      } sm:relative w-full bg-zinc-700 flex justify-end sm:justify-center items-start sm:items-center py-3`}
     >
       {/* -------------------------------------------------------------menu row for desktop */}
-      <div className="justify-center gap-x-10 hidden w-full text-xl font-semibold sm:flex sm:flex-row md:text-2xl max-w-[880px]">
+      <div className="justify-center gap-x-10 hidden w-full text-xl font-semibold sm:flex md:text-2xl max-w-[880px] ">
         {linksList.map((link) => (
           <span key={link}>
             <StyledLink label={link} />
@@ -37,7 +39,7 @@ export const Header: React.FC = () => {
       <div
         className={`${
           isOpen ? 'relative' : 'hidden'
-        } sm:hidden flex flex-col gap-y-4 mx-auto my-auto items-center text-zinc-200 text-3xl font-semibold leading-relaxed`}
+        } sm:hidden flex flex-col gap-y-4 mx-auto my-auto items-center text-zinc-200 text-3xl font-semibold leading-relaxed `}
       >
         {linksList.map((link) => (
           <StyledLink

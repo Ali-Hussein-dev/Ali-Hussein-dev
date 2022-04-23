@@ -27,11 +27,14 @@ const blogs = [
   },
 ]
 const Blog: React.FC = () => (
-  <div className="grid w-full h-screen px-2 place-items-center" id="Blog">
+  <div
+    className="grid w-full h-screen px-2 place-items-center bg-zinc-800"
+    id="Blog"
+  >
     <Head>
       <title>Projects</title>
     </Head>
-    <div className="py-4 md:w-9/12 lg:w-7/12">
+    <div className="py-4 md:w-9/12 lg:w-7/12 ">
       <h1 className="pb-1 mb-4 text-2xl font-bold border-b-4 text-cyan-500 border-cyan-400">
         Last Articles
       </h1>

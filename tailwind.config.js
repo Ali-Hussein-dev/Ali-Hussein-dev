@@ -12,11 +12,6 @@ module.exports = {
       screens: { xs: { max: '639px' } },
     },
   },
-  variants: {
-    extend: {
-      scale: ['responsive', 'hover', 'focus', 'active'],
-      cursor: ['responsive', 'hover', 'disabled'],
-    },
-  },
+  variants: {},
   plugins: [],
 }

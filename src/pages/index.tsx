@@ -1,5 +1,6 @@
 import { Heading, Text } from '@chakra-ui/react'
 import Head from 'next/head'
+import Image from 'next/image'
 import { FaTwitter, FaGithub, FaRegEnvelope } from 'react-icons/fa'
 import { IconType } from 'react-icons/lib'
 const links = [
@@ -11,7 +12,7 @@ const links = [
   {
     href: 'https://github.com/Ali-Hussein-dev',
     IconName: FaGithub,
-    cn: 'text-gray-600 ',
+    cn: 'text-gray-400 ',
   },
   {
     href: 'mailto:ali.hussein.pre@gmail.com',
@@ -35,11 +36,23 @@ const Link: React.FC<LinkProp> = ({ href, IconName, cn, children }) => (
 )
 //=======================
 const Index: React.FC = () => (
-  <section id="Home" className="grid min-h-screen px-2 place-items-center">
+  <section
+    id="Home"
+    className="flex flex-col items-center justify-center min-h-screen px-2 py-10 bg-zinc-800 lg:bg-inherit"
+  >
     <Head>
       <title>About</title>
     </Head>
-    <div className="py-4 md:w-9/12 lg:w-7/12 ">
+    <div className="hidden w-full h-full -z-10 lg:block">
+      <Image
+        src="/bg-1.jpg"
+        alt="background"
+        className="hidden opacity-90 object-container lg:block"
+        layout="fill"
+        loading="eager"
+      />
+    </div>
+    <div className="px-3 py-6 mx-auto md:w-9/12 lg:w-7/12 bg-white/20 rounded-2xl backdrop-blur">
       <Heading as="h2" size="lg" className="mb-2 text-3xl font-semibold">
         A UX-driven frontend developer
       </Heading>

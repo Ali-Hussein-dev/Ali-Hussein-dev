@@ -9,7 +9,7 @@ const projects = [
     description:
       'Saas App: digital menü for restaurants with features like editing , uploading images and multiple languages',
     stack:
-      'TS, Nextjs, React, FaunaDB, Redis, Jest, Testing-Library, Tailwindcss, Chakra-UI, Imgix, Nx-Workspaces',
+      'TS, Nextjs, React, FaunaDB, Redis, Jest, Testing-Library, Tailwindcss, Chakra-UI, Uploadcare, Nx-Workspaces',
     src: '/projects-videos/kb-full.mp4',
     vidType: 'video/mp4',
   },
@@ -55,11 +55,6 @@ const ProjectCard: React.FC<{
         </Player>
       </div>
     )}
-    {/* {src && (
-      <video className="mb-3 rounded-lg max-h-80" controls>
-        <source src={src} type={vidType} />
-      </video>
-    )} */}
     <div className="pb-1 mb-12 border-b border-zinc-600">
       <h2 className="mb-1 font-semibold uppercase">{name}</h2>
       <p className="">{description}</p>
@@ -85,11 +80,14 @@ const Link: React.FC<{ href: string; children: string }> = ({
 )
 //=======================
 const Projects: React.FC = () => (
-  <section id="Projects" className="grid px-3 pt-6 place-items-center ">
+  <section
+    id="Projects"
+    className="grid px-3 pt-6 place-items-center bg-zinc-800"
+  >
     <Head>
       <title>Projects</title>
     </Head>
-    <div className="py-4 md:w-8/12 lg:w-6/12">
+    <div className="py-4 md:w-8/12 lg:w-6/12 ">
       <h1 className="pb-1 mb-4 text-lg font-bold border-b-4 text-cyan-400 border-cyan-400">
         Last PROJECTS
       </h1>
