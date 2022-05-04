@@ -10,7 +10,7 @@ const MyApp: React.FC<{ Component: React.FC; pageProps: any }> = ({
   pageProps,
 }): JSX.Element => (
   <ChakraProvider>
-    <main className="font-mono text-zinc-100 lg:text-xl">
+    <main className="font-mono text-gray-100 lg:text-xl">
       <Head>
         <link rel="icon" href="/favicon-32x32.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />

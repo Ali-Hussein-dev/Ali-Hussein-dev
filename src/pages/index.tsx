@@ -38,7 +38,7 @@ const Link: React.FC<LinkProp> = ({ href, IconName, cn, children }) => (
 const Index: React.FC = () => (
   <section
     id="Home"
-    className="flex flex-col items-center justify-center min-h-screen px-2 py-10 bg-zinc-800 lg:bg-inherit"
+    className="flex flex-col items-center justify-center min-h-screen px-2 py-10 bg-gray-800 lg:bg-inherit"
   >
     <Head>
       <title>About</title>
@@ -56,7 +56,7 @@ const Index: React.FC = () => (
       <Heading as="h2" size="lg" className="mb-2 text-3xl font-semibold">
         A UX-driven frontend developer
       </Heading>
-      <Text className="pb-2 mb-6 border-b border-zinc-500">
+      <Text className="pb-2 mb-6 border-b border-gray-500">
         I build web applications with a lot of passion for clean UI, clean code,
         intuitive UX and great performance. I came from a business background
         and live in Germany since 2015. Feel free to reach out, if you think I
@@ -65,15 +65,15 @@ const Index: React.FC = () => (
       <Heading as="h2" size="lg" className="mb-2 text-3xl font-semibold">
         Stack & Technologies
       </Heading>
-      <div className="pb-2 mb-2 leading-8 border-b border-zinc-500">
-        <Heading as="h3" size="md" className="underline text-zinc-300">
+      <div className="pb-2 mb-2 leading-8 border-b border-gray-500">
+        <Heading as="h3" size="md" className="underline text-gray-300">
           Proficient with
         </Heading>
         <p>
           Typescript, Javascript(ES6), React, Nextjs, RESTful API, Tailwindcss,
           Html5, CSS3, Jest, Git, Chakra-UI, Nx workspaces, Figma
         </p>
-        <Heading as="h3" size="md" className="underline text-zinc-300">
+        <Heading as="h3" size="md" className="underline text-gray-300">
           Familiar with
         </Heading>
         <p>Nodejs and FaunaDB</p>

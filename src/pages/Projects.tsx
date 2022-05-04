@@ -55,11 +55,11 @@ const ProjectCard: React.FC<{
         </Player>
       </div>
     )}
-    <div className="pb-1 mb-12 border-b border-zinc-600">
+    <div className="pb-1 mb-12 border-b border-gray-600">
       <h2 className="mb-1 font-semibold uppercase">{name}</h2>
       <p className="">{description}</p>
-      <p className="text-zinc-400">
-        <span className="font-semibold text-zinc-100">Stack</span>: {stack}
+      <p className="text-gray-400">
+        <span className="font-semibold text-gray-100">Stack</span>: {stack}
       </p>
       <Link href={href}>demo</Link>
     </div>
@@ -82,7 +82,7 @@ const Link: React.FC<{ href: string; children: string }> = ({
 const Projects: React.FC = () => (
   <section
     id="Projects"
-    className="grid px-3 pt-6 place-items-center bg-zinc-800"
+    className="grid px-3 pt-6 bg-gray-800 place-items-center"
   >
     <Head>
       <title>Projects</title>

@@ -28,7 +28,7 @@ const blogs = [
 ]
 const Blog: React.FC = () => (
   <div
-    className="grid w-full h-screen px-2 place-items-center bg-zinc-800"
+    className="grid w-full h-screen px-2 bg-gray-800 place-items-center"
     id="Blog"
   >
     <Head>
@@ -56,11 +56,11 @@ const Blog: React.FC = () => (
           >
             <div className="flex justify-between w-full gap-x-1">
               <div>
-                <h2 className="text-lg text-zinc-100">{o.title}</h2>
-                <span className="text-base text-zinc-500">{o.pub} </span>
+                <h2 className="text-lg text-gray-100">{o.title}</h2>
+                <span className="text-base text-gray-500">{o.pub} </span>
               </div>
               <span className="pt-1">
-                <FiExternalLink className=" text-zinc-400" />
+                <FiExternalLink className="text-gray-400 " />
               </span>
             </div>
           </a>
