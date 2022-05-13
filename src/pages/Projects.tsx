@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import React from 'react'
 import { FiExternalLink } from 'react-icons/fi'
-import { Player } from 'video-react'
+import { Player, BigPlayButton } from 'video-react'
 const projects = [
   {
     href: 'https://kartebuch.vercel.app/',
@@ -51,6 +51,7 @@ const ProjectCard: React.FC<{
     {src && (
       <div className="mb-3 overflow-hidden rounded-xl aspect-video">
         <Player>
+          <BigPlayButton position="center" />
           <source src={src} />
         </Player>
       </div>
