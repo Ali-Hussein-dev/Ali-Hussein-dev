@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import React from 'react'
 import { FiExternalLink } from 'react-icons/fi'
-import { Player } from 'video-react'
+import { Player, BigPlayButton } from 'video-react'
 const projects = [
   {
     href: 'https://kartebuch.vercel.app/',
@@ -10,7 +10,7 @@ const projects = [
       'Saas App: digital menü for restaurants with features like editing , uploading images and multiple languages',
     stack:
       'TS, Nextjs, React, FaunaDB, Redis, Jest, Testing-Library, Tailwindcss, Chakra-UI, Uploadcare, Nx-Workspaces',
-    src: '/projects-videos/kb-full.mp4',
+    src: '/projects-videos/dashboard-menu.mp4',
     vidType: 'video/mp4',
   },
   {
@@ -51,6 +51,7 @@ const ProjectCard: React.FC<{
     {src && (
       <div className="mb-3 overflow-hidden rounded-xl aspect-video">
         <Player>
+          <BigPlayButton position="center" />
           <source src={src} />
         </Player>
       </div>
