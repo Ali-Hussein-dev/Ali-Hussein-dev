@@ -10,7 +10,7 @@ const projects = [
       'Saas App: digital menü for restaurants with features like editing , uploading images and multiple languages',
     stack:
       'TS, Nextjs, React, FaunaDB, Redis, Jest, Testing-Library, Tailwindcss, Chakra-UI, Uploadcare, Nx-Workspaces',
-    src: '/projects-videos/kb-full.mp4',
+    src: '/projects-videos/dashboard-menu.mp4',
     vidType: 'video/mp4',
   },
   {
