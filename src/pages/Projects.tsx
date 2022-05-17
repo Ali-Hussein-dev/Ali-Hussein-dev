@@ -19,14 +19,14 @@ const projects = [
     description:
       'English dictionary with basic defintions section, community usage and related gifs to the search keyword',
     stack: 'TS, Nextjs, React, Jest, Tailwindcss, Chakra-UI, MongoDB, PWA',
-    // src: '/projects-videos/find-meaning.mp4',
-    // vidType: 'video/mp4',
+    src: '/projects-videos/find-meaning.webm',
+    vidType: 'video/webm',
   },
   {
     href: 'https://gastro-abr.vercel.app/',
     name: 'Kellner-Abrechnung',
     description:
-      'calculator \nFeatures: reduced settlement time by 40% and take over repetitive calculations for daily waiter’s tasks.',
+      'special calculator made for waiters. It reduces calculation time by 40% approximately.',
     stack: 'TS, Next.js, React, Tailwindcss, PWA',
     src: '/projects-videos/kellner-abr.webm',
     vidType: 'video/webm',
@@ -35,7 +35,7 @@ const projects = [
     href: 'https://spreskill-app.web.app/',
     name: 'Spreskill',
     description: 'A landing page for a mobile app with Bootstrap',
-    stack: 'Html, Bootsrap',
+    stack: 'Html, Bootstrap',
   },
 ]
 
