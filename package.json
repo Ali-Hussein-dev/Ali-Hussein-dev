@@ -38,7 +38,7 @@
     "next-connect": "^0.12.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-icons": "^4.2.0",
+    "react-icons": "^4.3.1",
     "video-react": "^0.15.0"
   },
   "devDependencies": {

@@ -19,8 +19,8 @@ const projects = [
     description:
       'English dictionary with basic defintions section, community usage and related gifs to the search keyword',
     stack: 'TS, Nextjs, React, Jest, Tailwindcss, Chakra-UI, MongoDB, PWA',
-    src: '/projects-videos/find-meaning.webm',
-    vidType: 'video/webm',
+    src: '/projects-videos/find-meaning.mp4',
+    vidType: 'video/mp4',
   },
   {
     href: 'https://gastro-abr.vercel.app/',
