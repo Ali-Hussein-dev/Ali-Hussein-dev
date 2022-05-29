@@ -3,6 +3,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { FaTwitter, FaGithub, FaRegEnvelope } from 'react-icons/fa'
 import { IconType } from 'react-icons/lib'
+import { IoDocumentText } from 'react-icons/io5'
+
 const links = [
   {
     href: 'https://twitter.com/AliHussein_20',
@@ -60,9 +62,10 @@ const DownloadCV = () => {
     <button
       onClick={onClick}
       type="submit"
-      className="px-4 py-1 rounded-lg hover:bg-slate-800/30 bg-slate-800/10 active:translate-y-1"
+      className="flex items-center px-4 py-1 rounded-lg select-none gap-x-3 hover:bg-slate-800/40 bg-slate-800/20 active:translate-y-1"
     >
-      Download CV
+      <IoDocumentText className="text-slate-300" />
+      <span>Download CV</span>
     </button>
   )
 }
