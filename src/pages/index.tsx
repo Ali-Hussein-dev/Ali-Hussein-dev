@@ -34,6 +34,38 @@ const Link: React.FC<LinkProp> = ({ href, IconName, cn, children }) => (
     </a>
   </div>
 )
+const DownloadCV = () => {
+  const onClick = async () => {
+    await fetch('/api/cv', {
+      method: 'GET',
+    })
+      .then((res) => {
+        if (res.status !== 200) {
+          throw new Error('Sorry, I could not find that file.')
+        }
+        return res.blob()
+      })
+      .then((blob) => {
+        const url = window.URL.createObjectURL(blob)
+        const a = document.createElement('a')
+        a.style.display = 'none'
+        a.href = url
+        a.setAttribute('download', 'Ali_Hussein_cv.pdf')
+        document.body.appendChild(a)
+        a.click()
+        window.URL.revokeObjectURL(url)
+      })
+  }
+  return (
+    <button
+      onClick={onClick}
+      type="submit"
+      className="px-4 py-1 rounded-lg hover:bg-slate-800/30 bg-slate-800/10 active:translate-y-1"
+    >
+      Download CV
+    </button>
+  )
+}
 //=======================
 const Index: React.FC = () => (
   <section
@@ -66,36 +98,43 @@ const Index: React.FC = () => (
         Stack & Technologies
       </Heading>
       <div className="pb-2 mb-2 leading-8 border-b border-gray-500">
-        <Heading as="h3" size="md" className="underline text-gray-300">
+        <Heading as="h3" size="md" className="text-gray-300 underline">
           Proficient with
         </Heading>
         <p>
           Typescript, Javascript(ES6), React, Nextjs, RESTful API, Tailwindcss,
           Html5, CSS3, Jest, Git, Chakra-UI, Nx workspaces, Figma
         </p>
-        <Heading as="h3" size="md" className="underline text-gray-300">
+        <Heading as="h3" size="md" className="text-gray-300 underline">
           Familiar with
         </Heading>
         <p>Nodejs and FaunaDB</p>
       </div>
-      <div className="flex py-1">
-        {links.map((o, i) => (
-          <span key={i} className="p-1 ml-3 rounded-xl">
-            <Link href={o.href} cn={o.cn} IconName={o.IconName} />
+      <div className="flex justify-between py-1">
+        <div className="flex">
+          {links.map((o, i) => (
+            <span key={i} className="p-1 ml-3 rounded-xl">
+              <Link href={o.href} cn={o.cn} IconName={o.IconName} />
+            </span>
+          ))}
+          <span className="p-1 ml-3 rounded-xl hover:bg-trueGray-50">
+            <Link href={'https://hashnode.com/@Ali-2021'} cn="">
+              <svg
+                className="w-8 fill-current"
+                viewBox="0 0 118 118"
+                fill="none"
+              >
+                <path
+                  fillRule="evenodd"
+                  clipRule="evenodd"
+                  d="M7.95 38.655c-10.6 10.6-10.6 27.784 0 38.383l30.705 30.706c10.6 10.599 27.784 10.599 38.383 0l30.706-30.706c10.599-10.6 10.599-27.784 0-38.383L77.038 7.95c-10.6-10.599-27.784-10.599-38.383 0L7.95 38.655zm63.33 32.626c7.42-7.42 7.42-19.449 0-26.868-7.419-7.42-19.448-7.42-26.867 0-7.42 7.42-7.42 19.448 0 26.868 7.42 7.419 19.448 7.419 26.868 0z"
+                  fill="#2962FF"
+                />
+              </svg>
+            </Link>
           </span>
-        ))}
-        <span className="p-1 ml-3 rounded-xl hover:bg-trueGray-50">
-          <Link href={'https://hashnode.com/@Ali-2021'} cn="">
-            <svg className="w-8 fill-current" viewBox="0 0 118 118" fill="none">
-              <path
-                fillRule="evenodd"
-                clipRule="evenodd"
-                d="M7.95 38.655c-10.6 10.6-10.6 27.784 0 38.383l30.705 30.706c10.6 10.599 27.784 10.599 38.383 0l30.706-30.706c10.599-10.6 10.599-27.784 0-38.383L77.038 7.95c-10.6-10.599-27.784-10.599-38.383 0L7.95 38.655zm63.33 32.626c7.42-7.42 7.42-19.449 0-26.868-7.419-7.42-19.448-7.42-26.867 0-7.42 7.42-7.42 19.448 0 26.868 7.42 7.419 19.448 7.419 26.868 0z"
-                fill="#2962FF"
-              />
-            </svg>
-          </Link>
-        </span>
+        </div>
+        <DownloadCV />
       </div>
     </div>
   </section>
