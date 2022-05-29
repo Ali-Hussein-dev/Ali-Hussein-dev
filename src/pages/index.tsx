@@ -62,7 +62,7 @@ const DownloadCV = () => {
     <button
       onClick={onClick}
       type="submit"
-      className="flex items-center px-4 py-1 rounded-lg select-none gap-x-3 hover:bg-slate-800/40 bg-slate-800/20 active:translate-y-1"
+      className="flex items-center justify-center w-full h-10 px-4 py-1 rounded-lg select-none gap-x-3 hover:bg-slate-800/40 bg-slate-800/20 active:translate-y-1 sm:max-w-[190px] sm:justify-start"
     >
       <IoDocumentText className="text-slate-300" />
       <span>Download CV</span>
@@ -73,7 +73,7 @@ const DownloadCV = () => {
 const Index: React.FC = () => (
   <section
     id="Home"
-    className="flex flex-col items-center justify-center min-h-screen px-2 py-10 bg-gray-800 lg:bg-inherit"
+    className="flex flex-col items-center justify-center min-h-screen px-2 py-8 bg-gray-800 lg:bg-inherit"
   >
     <Head>
       <title>About</title>
@@ -87,7 +87,7 @@ const Index: React.FC = () => (
         loading="eager"
       />
     </div>
-    <div className="px-3 py-6 mx-auto md:w-9/12 lg:w-7/12 bg-white/20 rounded-2xl backdrop-blur">
+    <div className="px-3 py-8 mx-auto sm:px-6 md:w-9/12 lg:w-7/12 bg-white/20 rounded-2xl backdrop-blur">
       <Heading as="h2" size="lg" className="mb-2 text-3xl font-semibold">
         A UX-driven frontend developer
       </Heading>
@@ -100,21 +100,36 @@ const Index: React.FC = () => (
       <Heading as="h2" size="lg" className="mb-2 text-3xl font-semibold">
         Stack & Technologies
       </Heading>
-      <div className="pb-2 mb-2 leading-8 border-b border-gray-500">
-        <Heading as="h3" size="md" className="text-gray-300 underline">
-          Proficient with
-        </Heading>
-        <p>
-          Typescript, Javascript(ES6), React, Nextjs, RESTful API, Tailwindcss,
-          Html5, CSS3, Jest, Git, Chakra-UI, Nx workspaces, Figma
-        </p>
-        <Heading as="h3" size="md" className="text-gray-300 underline">
-          Familiar with
-        </Heading>
-        <p>Nodejs and FaunaDB</p>
+      <div className="pb-2 mb-2 space-y-2 leading-8 border-b border-gray-500">
+        <div>
+          <Heading as="h3" size="md" className="text-gray-300">
+            <span className="underline">Frontend Techs:</span>
+            <span className="ml-1 italic text-gray-400">(Proficient)</span>
+          </Heading>
+          <p>
+            Typescript, Javascript(ES6), React, Nextjs, RESTful API,
+            Tailwindcss, Html5, CSS3, Jest, Chakra-UI, Uploadcare
+          </p>
+        </div>
+        <div>
+          <Heading as="h3" size="md" className="text-gray-300">
+            <span className="underline">Backend Techs:</span>
+            <span className="ml-1 italic text-gray-400">(Familiar)</span>
+          </Heading>
+          <p>Nodejs, Redis, FaunaDB</p>
+        </div>
+        <div>
+          <Heading as="h3" size="md" className="text-gray-300 underline">
+            Workflow Tools
+          </Heading>
+          <p>
+            VScode, Git, GitHub, Eslint, Prettier, Nx workspaces, Figma, Notion,
+            Lucidchart
+          </p>
+        </div>
       </div>
-      <div className="flex justify-between py-1">
-        <div className="flex">
+      <div className="flex flex-col items-center py-1 sm:justify-between sm:flex-row gap-y-3">
+        <div className="flex justify-center w-full gap-x-2 sm:justify-start">
           {links.map((o, i) => (
             <span key={i} className="p-1 ml-3 rounded-xl">
               <Link href={o.href} cn={o.cn} IconName={o.IconName} />
