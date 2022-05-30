@@ -28,8 +28,8 @@ const projects = [
     description:
       'special calculator made for waiters. It reduces calculation time by 40% approximately.',
     stack: 'TS, Next.js, React, Tailwindcss, PWA',
-    src: '/projects-videos/kellner-abr.webm',
-    vidType: 'video/webm',
+    src: '/projects-videos/kellner-abr.mp4',
+    vidType: 'video/mp4',
   },
   {
     href: 'https://spreskill-app.web.app/',
