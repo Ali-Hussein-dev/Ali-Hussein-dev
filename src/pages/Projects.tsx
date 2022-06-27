@@ -4,10 +4,10 @@ import { FiExternalLink } from 'react-icons/fi'
 import { Player, BigPlayButton } from 'video-react'
 const projects = [
   {
-    href: 'https://kartebuch.vercel.app/',
+    href: 'https://green-menus.vercel.app/',
     name: 'Interactive-menü',
     description:
-      'Saas App: digital menü for restaurants with features like editing , uploading images and multiple languages',
+      'Saas App: digital menus platform that enables restaurants owners to host and update their menus',
     stack:
       'TS, Nextjs, React, FaunaDB, Redis, Jest, Testing-Library, Tailwindcss, Chakra-UI, Uploadcare, Nx-Workspaces',
     src: '/projects-videos/dashboard-menu.mp4',
