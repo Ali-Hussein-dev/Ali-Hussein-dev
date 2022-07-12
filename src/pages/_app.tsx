@@ -30,7 +30,7 @@ const MyApp: React.FC<{ Component: React.FC; pageProps: any }> = ({
         /> */}
         <img
           // src="/body-bg.jpg"
-          src="/bg-1.jpg"
+          src="/bg-3.jpg"
           className="w-full h-screen object-cover fixed top-0 left-0 z-[-1]"
           alt="background"
         />
