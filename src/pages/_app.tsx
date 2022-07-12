@@ -11,15 +11,15 @@ const MyApp: React.FC<{ Component: React.FC; pageProps: any }> = ({
   pageProps,
 }): JSX.Element => (
   <ChakraProvider>
-    <main className="font-mono text-gray-100 lg:text-xl">
+    <main className="relative font-mono text-gray-100 lg:text-xl">
       <Head>
         <link rel="icon" href="/favicon-32x32.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Ali Hussein</title>
       </Head>
       <Header />
-      <div className="relative">
-        {/* <Image
+
+      {/* <Image
           // src="/body-bg.jpg"
           src="/bg-3.jpg"
           // layout="fixed"
@@ -28,15 +28,14 @@ const MyApp: React.FC<{ Component: React.FC; pageProps: any }> = ({
           className="w-full h-screen object-cover fixed top-0 left-0 z-[-1]"
           alt="background"
         /> */}
-        <img
-          // src="/body-bg.jpg"
-          src="/bg-3.jpg"
-          className="w-full h-screen object-cover fixed top-0 left-0 z-[-1]"
-          alt="background"
-        />
+      <img
+        // src="/body-bg.jpg"
+        src="/bg-3.jpg"
+        className="w-full h-screen object-cover fixed top-0 left-0 z-[-1]"
+        alt="background"
+      />
+      <Component {...pageProps} />
 
-        <Component {...pageProps} />
-      </div>
       <Footer />
     </main>
   </ChakraProvider>
