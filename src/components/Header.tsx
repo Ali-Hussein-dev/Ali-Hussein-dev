@@ -1,7 +1,6 @@
 import * as React from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
 import Link from 'next/link'
-import { useRouter } from 'next/router'
 
 const linksList = ['Home', 'Projects', 'Blog']
 interface StyledLinkProps extends React.ComponentPropsWithoutRef<'button'> {
@@ -20,12 +19,11 @@ const StyledLink: React.FC<StyledLinkProps> = ({ label, ...rest }) => (
 )
 export const Header: React.FC = () => {
   const [isOpen, setIsOpen] = React.useState(false)
-  const router = useRouter()
   return (
     <header
-      className={`${isOpen ? 'absolute h-screen z-10' : ''} ${
-        router.asPath === '/' ? 'lg:bg-gray-800/10 backdrop-blur-sm' : ''
-      } sm:relative w-full bg-gray-700 flex justify-end sm:justify-center items-start sm:items-center py-3`}
+      className={`${
+        isOpen ? 'absolute h-screen z-10' : ''
+      } bg-gray-800/40  backdrop-blur-lg sm:relative w-full flex justify-end sm:justify-center items-start sm:items-center py-3`}
     >
       {/* -------------------------------------------------------------menu row for desktop */}
       <div className="justify-center gap-x-10 hidden w-full text-xl font-semibold sm:flex md:text-2xl max-w-[880px] ">

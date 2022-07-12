@@ -1,3 +1,4 @@
+import { Heading } from '@chakra-ui/react'
 import Head from 'next/head'
 import React from 'react'
 import { FiExternalLink } from 'react-icons/fi'
@@ -47,7 +48,7 @@ const ProjectCard: React.FC<{
   description: string
   src: string
 }> = ({ name, href, description, stack, src }) => (
-  <div className="flex flex-col">
+  <div className="flex flex-col mb-10 border-b border-gray-400">
     {src && (
       <div className="mb-3 overflow-hidden rounded-xl aspect-video">
         <Player>
@@ -56,13 +57,13 @@ const ProjectCard: React.FC<{
         </Player>
       </div>
     )}
-    <div className="pb-1 mb-12 border-b border-gray-600">
+    <div className="pb-1 ">
       <h2 className="mb-1 font-semibold uppercase">{name}</h2>
       <p className="">{description}</p>
       <p className="text-gray-400">
         <span className="font-semibold text-gray-100">Stack</span>: {stack}
       </p>
-      <Link href={href}>demo</Link>
+      <Link href={href}>Demo</Link>
     </div>
   </div>
 )
@@ -74,7 +75,7 @@ const Link: React.FC<{ href: string; children: string }> = ({
     href={href}
     target="_blank"
     rel="noreferrer"
-    className="flex items-center w-20 px-1 mt-2 gap-1 rounded text-cyan-500 hover:bg-black "
+    className="flex items-center w-20 px-2 mt-2 gap-1 text-blue-500 rounded hover:bg-black bg-black/30"
   >
     {children} <FiExternalLink size="15" />
   </a>
@@ -83,15 +84,18 @@ const Link: React.FC<{ href: string; children: string }> = ({
 const Projects: React.FC = () => (
   <section
     id="Projects"
-    className="grid px-3 pt-6 bg-gray-800 place-items-center"
+    className="grid items-start justify-center px-1 py-6 md:px-2 "
   >
     <Head>
       <title>Projects</title>
     </Head>
-    <div className="py-4 md:w-8/12 lg:w-6/12 ">
-      <h1 className="pb-1 mb-4 text-lg font-bold border-b-4 text-cyan-400 border-cyan-400">
+    <div className="w-full px-4 py-6 mx-auto lg:w-10/12 bg-white/20 rounded-2xl backdrop-blur-2xl">
+      <Heading
+        as="h1"
+        className="pb-1 mb-4 font-bold border-b text-cyan-400 border-cyan-300"
+      >
         Last PROJECTS
-      </h1>
+      </Heading>
       {projects.map((o, i) => (
         <ProjectCard
           key={i}

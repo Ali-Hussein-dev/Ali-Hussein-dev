@@ -1,6 +1,5 @@
 import { Heading, Text } from '@chakra-ui/react'
 import Head from 'next/head'
-import Image from 'next/image'
 import { FaTwitter, FaGithub, FaRegEnvelope } from 'react-icons/fa'
 import { IconType } from 'react-icons/lib'
 import { IoDocumentText } from 'react-icons/io5'
@@ -64,7 +63,7 @@ const DownloadCV = () => {
       type="submit"
       className="flex items-center justify-center w-full h-10 px-4 py-1 rounded-lg select-none gap-x-3 hover:bg-slate-800/40 bg-slate-800/20 active:translate-y-1 sm:max-w-[190px] sm:justify-start"
     >
-      <IoDocumentText className="text-slate-300" />
+      <IoDocumentText />
       <span>Download CV</span>
     </button>
   )
@@ -73,21 +72,12 @@ const DownloadCV = () => {
 const Index: React.FC = () => (
   <section
     id="Home"
-    className="flex flex-col items-center justify-center min-h-screen px-2 py-8 bg-gray-800 lg:bg-inherit"
+    className="flex flex-col items-center justify-center min-h-screen px-1 py-8 md:px-3"
   >
     <Head>
       <title>About</title>
     </Head>
-    <div className="hidden w-full h-full -z-10 lg:block">
-      <Image
-        src="/bg-1.jpg"
-        alt="background"
-        className="hidden opacity-90 object-container lg:block"
-        layout="fill"
-        loading="eager"
-      />
-    </div>
-    <div className="px-3 py-8 mx-auto sm:px-6 md:w-9/12 lg:w-7/12 bg-white/20 rounded-2xl backdrop-blur">
+    <div className="px-3 py-8 mx-auto sm:px-6 md:w-full lg:w-7/12 bg-white/20 rounded-2xl backdrop-blur-lg">
       <Heading as="h2" size="lg" className="mb-2 text-3xl font-semibold">
         A UX-driven frontend developer
       </Heading>
