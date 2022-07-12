@@ -46,11 +46,12 @@ const ProjectCard: React.FC<{
   href: string
   stack: string
   description: string
-  src: string
+  src?: string
 }> = ({ name, href, description, stack, src }) => (
   <div className="flex flex-col mb-10 border-b border-gray-400">
     {src && (
       <div className="mb-3 overflow-hidden rounded-xl aspect-video">
+        {/* @ts-expect-error debug later */}
         <Player>
           <BigPlayButton position="center" />
           <source src={src} />
