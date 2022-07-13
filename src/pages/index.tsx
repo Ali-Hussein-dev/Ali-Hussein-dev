@@ -1,6 +1,6 @@
 import { Heading, Text } from '@chakra-ui/react'
 import Head from 'next/head'
-import { IoDocumentText } from 'react-icons/io5'
+import { FiDownloadCloud } from 'react-icons/fi'
 
 const DownloadCV = () => {
   const onClick = async () => {
@@ -28,9 +28,9 @@ const DownloadCV = () => {
     <button
       onClick={onClick}
       type="submit"
-      className="flex items-center justify-center w-full h-10 px-4 py-1 rounded-lg select-none gap-x-3 hover:bg-slate-800/40 bg-slate-800/20 active:translate-y-1 sm:max-w-[190px] sm:justify-start"
+      className="flex items-center justify-center w-full h-10 px-4 py-1 rounded-lg select-none gap-x-3 hover:bg-slate-800/70 bg-slate-800/50 active:translate-y-1 sm:max-w-[190px] sm:justify-start"
     >
-      <IoDocumentText />
+      <FiDownloadCloud />
       <span>Download CV</span>
     </button>
   )
@@ -45,7 +45,7 @@ const Index: React.FC = () => (
       <Heading as="h2" size="lg" className="mb-2 text-3xl text-primary-500">
         A UX-driven Frontend Developer
       </Heading>
-      <Text className="pb-2 mb-6 border-b border-gray-500">
+      <Text className="pb-2 mb-6 border-b border-gray-500 text-slate-800">
         I build web applications with a lot of passion for clean UI, clean code,
         intuitive UX and great performance. I came from a business background
         and live in Germany since 2015. Feel free to reach out, if you think I
@@ -54,11 +54,13 @@ const Index: React.FC = () => (
       <Heading as="h2" size="lg" className="mb-2 text-primary-500">
         Stack & Technologies
       </Heading>
-      <div className="pb-2 mb-2 space-y-2 leading-8 border-b border-gray-500">
+      <div className="pb-2 mb-2 space-y-2 leading-8 border-b border-gray-500 text-slate-800">
         <div>
-          <Heading as="h3" size="md" className="text-gray-300 ">
+          <Heading as="h3" size="md" className="text-slate-800">
             <span className="underline">Frontend Techs:</span>
-            <span className="ml-1 italic text-slate-800">(Proficient)</span>
+            <span className="ml-1 italic font-normal text-slate-800">
+              (Proficient)
+            </span>
           </Heading>
           <p>
             Typescript, Javascript(ES6), React, Nextjs, RESTful API,
@@ -66,14 +68,16 @@ const Index: React.FC = () => (
           </p>
         </div>
         <div>
-          <Heading as="h3" size="md" className="text-gray-300">
+          <Heading as="h3" size="md" className="text-slate-800">
             <span className="underline">Backend Techs:</span>
-            <span className="ml-1 italic text-slate-800">(Familiar)</span>
+            <span className="ml-1 italic font-normal text-slate-800">
+              (Familiar)
+            </span>
           </Heading>
           <p>Nodejs, Redis, FaunaDB</p>
         </div>
         <div>
-          <Heading as="h3" size="md" className="text-gray-300 underline">
+          <Heading as="h3" size="md" className="underline text-slate-800">
             Workflow Tools
           </Heading>
           <p>
