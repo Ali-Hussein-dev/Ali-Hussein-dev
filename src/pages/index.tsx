@@ -82,7 +82,7 @@ const Index: React.FC = () => (
           </Heading>
           <p>
             VScode, Git, GitHub, Eslint, Prettier, Nx workspaces, Figma, Notion,
-            Lucidchart
+            Lucidchart, Sizzy browser
           </p>
         </div>
       </div>
