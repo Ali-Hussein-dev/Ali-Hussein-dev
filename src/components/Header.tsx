@@ -24,7 +24,7 @@ export const Header: React.FC = () => {
       <header
         className={`${
           isOpen ? 'fixed h-screen z-10 backdrop-blur-xl' : 'h-14'
-        } bg-gray-800/70  backdrop-blur w-full flex justify-end  sm:justify-center items-center sm:items-center fixed top-0 shadow z-10`}
+        } bg-gray-800/20  backdrop-blur w-full flex justify-end  sm:justify-center items-center sm:items-center fixed top-0 shadow z-10`}
       >
         {/* -------------------------------------------------------------menu row for desktop */}
         <div className="justify-center gap-x-10 hidden w-full text-xl font-semibold sm:flex md:text-2xl max-w-[880px] ">
