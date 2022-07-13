@@ -95,7 +95,7 @@ const Projects: React.FC = () => (
         as="h1"
         className="pb-1 mb-4 font-bold border-b text-primary-400 border-primary-300"
       >
-        Last PROJECTS
+        Last Projects
       </Heading>
       {projects.map((o, i) => (
         <ProjectCard
