@@ -37,16 +37,13 @@ const DownloadCV = () => {
 }
 //=======================
 const Index: React.FC = () => (
-  <section
-    id="Home"
-    className="flex flex-col items-center justify-center min-h-screen px-1 py-8 md:px-3"
-  >
+  <section id="Home" className="min-h-screen px-1 py-8 col-center md:px-3">
     <Head>
       <title>About</title>
     </Head>
     <div className="px-3 py-8 mx-auto sm:px-6 md:w-full lg:w-7/12 bg-white/20 rounded-2xl backdrop-blur-lg">
-      <Heading as="h2" size="lg" className="mb-2 text-3xl font-semibold">
-        A UX-driven frontend developer
+      <Heading as="h2" size="lg" className="mb-2 text-3xl text-primary-500">
+        A UX-driven Frontend Developer
       </Heading>
       <Text className="pb-2 mb-6 border-b border-gray-500">
         I build web applications with a lot of passion for clean UI, clean code,
@@ -54,24 +51,24 @@ const Index: React.FC = () => (
         and live in Germany since 2015. Feel free to reach out, if you think I
         could fit in your team.
       </Text>
-      <Heading as="h2" size="lg" className="mb-2 text-3xl font-semibold">
+      <Heading as="h2" size="lg" className="mb-2 text-primary-500">
         Stack & Technologies
       </Heading>
       <div className="pb-2 mb-2 space-y-2 leading-8 border-b border-gray-500">
         <div>
-          <Heading as="h3" size="md" className="text-gray-300">
+          <Heading as="h3" size="md" className="text-gray-300 ">
             <span className="underline">Frontend Techs:</span>
-            <span className="ml-1 italic text-gray-400">(Proficient)</span>
+            <span className="ml-1 italic text-slate-800">(Proficient)</span>
           </Heading>
           <p>
             Typescript, Javascript(ES6), React, Nextjs, RESTful API,
-            Tailwindcss, Html5, CSS3, Jest, Chakra-UI, Uploadcare
+            Tailwindcss, Html5, CSS3, Jest, Chakra-UI, ReactQuery, Uploadcare
           </p>
         </div>
         <div>
           <Heading as="h3" size="md" className="text-gray-300">
             <span className="underline">Backend Techs:</span>
-            <span className="ml-1 italic text-gray-400">(Familiar)</span>
+            <span className="ml-1 italic text-slate-800">(Familiar)</span>
           </Heading>
           <p>Nodejs, Redis, FaunaDB</p>
         </div>
@@ -85,9 +82,7 @@ const Index: React.FC = () => (
           </p>
         </div>
       </div>
-      <div className="flex flex-col items-center py-1 sm:justify-between sm:flex-row gap-y-3">
-        <DownloadCV />
-      </div>
+      <DownloadCV />
     </div>
   </section>
 )
