@@ -93,7 +93,7 @@ const Projects: React.FC = () => (
     <div className="w-full px-4 py-6 mx-auto lg:w-10/12 bg-white/20 rounded-2xl backdrop-blur-2xl">
       <Heading
         as="h1"
-        className="pb-1 mb-4 font-bold border-b text-cyan-400 border-cyan-300"
+        className="pb-1 mb-4 font-bold border-b text-primary-400 border-primary-300"
       >
         Last PROJECTS
       </Heading>

@@ -37,7 +37,7 @@ const Blog: React.FC = () => (
       <div className="w-full px-3 py-6 mx-auto sm:px-6 bg-white/20 rounded-2xl backdrop-blur-lg">
         <Heading
           as="h1"
-          className="pb-1 mb-3 font-bold border-b text-cyan-500 border-cyan-400"
+          className="pb-1 mb-3 font-bold border-b text-primary-500 border-primary-400"
         >
           Last Articles
         </Heading>
@@ -54,7 +54,7 @@ const Blog: React.FC = () => (
                   <div>
                     <h2 className="text-lg text-gray-100">{o.title}</h2>
                     <span className="text-base italic text-gray-400">
-                      {o.pub}{' '}
+                      {o.pub}
                     </span>
                   </div>
                   <span className="pt-1">
