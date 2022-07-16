@@ -34,7 +34,7 @@ const Blog: React.FC = () => (
       <title>Blog</title>
     </Head>
     <div className="w-full mx-auto bg-white/20 rounded-2xl backdrop-blur-lg">
-      <div className="w-full py-6 sm:px-4 ">
+      <div className="w-full px-2 py-6 sm:px-4 ">
         <Heading
           as="h1"
           className="pb-1 mb-3 font-bold border-b text-primary-500 border-primary-400"
