@@ -1,40 +1,8 @@
 import { Heading, Text } from '@chakra-ui/react'
 import Head from 'next/head'
+import Link from 'next/link'
 import { FiDownloadCloud } from 'react-icons/fi'
 
-const DownloadCV = () => {
-  const onClick = async () => {
-    await fetch('/api/cv', {
-      method: 'GET',
-    })
-      .then((res) => {
-        if (res.status !== 200) {
-          throw new Error('Sorry, I could not find that file.')
-        }
-        return res.blob()
-      })
-      .then((blob) => {
-        const url = window.URL.createObjectURL(blob)
-        const a = document.createElement('a')
-        a.style.display = 'none'
-        a.href = url
-        a.setAttribute('download', 'Ali_Hussein_cv.pdf')
-        document.body.appendChild(a)
-        a.click()
-        window.URL.revokeObjectURL(url)
-      })
-  }
-  return (
-    <button
-      onClick={onClick}
-      type="submit"
-      className="flex items-center justify-center w-full h-10 px-4 py-1 rounded-lg select-none gap-x-3 hover:bg-slate-800/70 bg-slate-800/50 active:translate-y-1 sm:max-w-[190px] sm:justify-start"
-    >
-      <FiDownloadCloud />
-      <span>Download CV</span>
-    </button>
-  )
-}
 //=======================
 const Index: React.FC = () => (
   <section id="Home" className="min-h-screen px-1 py-8 col-center md:px-3">
@@ -45,7 +13,7 @@ const Index: React.FC = () => (
       <Heading as="h2" size="lg" className="mb-2 text-3xl text-primary-500">
         A UX-driven Frontend Developer
       </Heading>
-      <Text className="pb-2 mb-6 border-b border-gray-500 text-slate-800">
+      <Text className="pb-2 mb-6 border-b border-gray-500 text-slate-900">
         I build web applications with a lot of passion for clean UI, clean code,
         intuitive UX and great performance. I came from a business background
         and live in Germany since 2015. Feel free to reach out, if you think I
@@ -54,11 +22,11 @@ const Index: React.FC = () => (
       <Heading as="h2" size="lg" className="mb-2 text-primary-500">
         Stack & Technologies
       </Heading>
-      <div className="pb-2 mb-2 space-y-2 leading-8 border-b border-gray-500 text-slate-800">
+      <div className="pb-2 mb-2 space-y-2 leading-8 border-b border-gray-500 text-slate-900">
         <div>
-          <Heading as="h3" size="md" className="text-slate-800">
-            <span className="underline">Frontend Techs:</span>
-            <span className="ml-1 italic font-normal text-slate-800">
+          <Heading as="h3" size="md">
+            <span className="uppercase ">Frontend</span>
+            <span className="ml-1 italic font-normal text-slate-8400">
               (Proficient)
             </span>
           </Heading>
@@ -68,16 +36,16 @@ const Index: React.FC = () => (
           </p>
         </div>
         <div>
-          <Heading as="h3" size="md" className="text-slate-800">
-            <span className="underline">Backend Techs:</span>
-            <span className="ml-1 italic font-normal text-slate-800">
+          <Heading as="h3" size="md">
+            <span className="uppercase">Backend</span>
+            <span className="ml-1 italic font-normal text-slate-8400">
               (Familiar)
             </span>
           </Heading>
           <p>Nodejs, Redis, FaunaDB</p>
         </div>
         <div>
-          <Heading as="h3" size="md" className="underline text-slate-800">
+          <Heading as="h3" size="md" className="uppercase ">
             Workflow Tools
           </Heading>
           <p>
@@ -86,7 +54,17 @@ const Index: React.FC = () => (
           </p>
         </div>
       </div>
-      <DownloadCV />
+      <button
+        type="button"
+        className="w-full h-10 px-4 py-1 rounded-lg select-none  hover:bg-slate-800/70 bg-slate-800/50 active:translate-y-1 sm:max-w-[190px] sm:justify-start"
+      >
+        <Link href="/cv.pdf" passHref>
+          <a className="flex items-center justify-center gap-x-3">
+            <FiDownloadCloud />
+            <span>Download CV</span>
+          </a>
+        </Link>
+      </button>
     </div>
   </section>
 )
