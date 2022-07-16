@@ -85,12 +85,12 @@ const Link: React.FC<{ href: string; children: string }> = ({
 const Projects: React.FC = () => (
   <section
     id="Projects"
-    className="grid items-start justify-center px-1 py-6 md:px-2 "
+    className="grid items-start justify-center px-1 py-6 mx-auto md:px-2 lg:w-9/12"
   >
     <Head>
       <title>Projects</title>
     </Head>
-    <div className="w-full px-4 py-6 mx-auto lg:w-10/12 bg-white/20 rounded-2xl backdrop-blur-2xl">
+    <div className="w-full px-4 py-6 mx-auto bg-white/20 rounded-2xl backdrop-blur-2xl">
       <Heading
         as="h1"
         className="pb-1 mb-4 font-bold border-b text-primary-400 border-primary-300"
