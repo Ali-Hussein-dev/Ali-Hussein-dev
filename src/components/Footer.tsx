@@ -32,15 +32,15 @@ interface LinkProp {
 const Link: React.FC<LinkProp> = ({ href, IconName, cn, children }) => (
   <div>
     <a className={cn} href={href} target="_blank" rel="noreferrer">
-      {IconName && <IconName size="30" />}
+      {IconName && <IconName size="25" />}
       {children && <span>{children}</span>}
     </a>
   </div>
 )
 //=======================
 const Footer: React.FC = () => (
-  <footer className="bottom-0 w-full h-14 bg-slate-800/60">
-    <div className="flex items-center justify-between w-full px-2 mx-auto lg:w-9/12 ">
+  <footer className="bottom-0 w-full py-1 bg-slate-800/60">
+    <div className="flex flex-col items-center w-full px-2 mx-auto lg:flex-row lg:justify-between lg:w-9/12 ">
       <span className="font-light text-gray-100">
         @{new Date().getFullYear()} Ali Hussein
       </span>
@@ -54,7 +54,7 @@ const Footer: React.FC = () => (
           <span className="p-1 ml-2 rounded-xl hover:bg-trueGray-50">
             <Link href={'https://hashnode.com/@Ali-2021'} cn="">
               <svg
-                className="w-8 text-gray-400 fill-current "
+                className="w-6 text-gray-400 fill-current "
                 viewBox="0 0 118 118"
                 fill="none"
               >
@@ -62,7 +62,6 @@ const Footer: React.FC = () => (
                   fillRule="evenodd"
                   clipRule="evenodd"
                   d="M7.95 38.655c-10.6 10.6-10.6 27.784 0 38.383l30.705 30.706c10.6 10.599 27.784 10.599 38.383 0l30.706-30.706c10.599-10.6 10.599-27.784 0-38.383L77.038 7.95c-10.6-10.599-27.784-10.599-38.383 0L7.95 38.655zm63.33 32.626c7.42-7.42 7.42-19.449 0-26.868-7.419-7.42-19.448-7.42-26.867 0-7.42 7.42-7.42 19.448 0 26.868 7.42 7.419 19.448 7.419 26.868 0z"
-                  // fill="#2962FF"
                 />
               </svg>
             </Link>
