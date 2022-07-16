@@ -28,13 +28,13 @@ const blogs = [
 const Blog: React.FC = () => (
   <div
     id="Blog"
-    className="grid items-start justify-center min-h-screen px-1 py-6 md:px-2"
+    className="grid items-start justify-center min-h-screen px-1 py-6 mx-auto"
   >
     <Head>
       <title>Blog</title>
     </Head>
-    <div className="w-full py-4 mx-auto lg:w-10/12">
-      <div className="w-full px-3 py-6 mx-auto sm:px-6 bg-white/20 rounded-2xl backdrop-blur-lg">
+    <div className="w-full mx-auto bg-white/20 rounded-2xl backdrop-blur-lg">
+      <div className="w-full py-6 sm:px-4 ">
         <Heading
           as="h1"
           className="pb-1 mb-3 font-bold border-b text-primary-500 border-primary-400"
@@ -50,15 +50,17 @@ const Blog: React.FC = () => (
                 rel="noreferrer"
                 className="flex items-center gap-x-2 hover:bg-trueGray-50"
               >
-                <div className="flex justify-between w-full gap-x-1">
+                <div className="flex justify-between w-full gap-x-2">
                   <div>
-                    <h2 className="text-lg text-gray-100">{o.title}</h2>
-                    <span className="text-base italic text-gray-400">
+                    <h2 className="text-lg font-semibold text-gray-100 md:text-xl">
+                      {o.title}
+                    </h2>
+                    <span className="text-base italic tracking-tight text-gray-300">
                       {o.pub}
                     </span>
                   </div>
                   <span className="pt-1">
-                    <FiExternalLink className="text-gray-400 " />
+                    <FiExternalLink className="text-gray-300 " />
                   </span>
                 </div>
               </a>
