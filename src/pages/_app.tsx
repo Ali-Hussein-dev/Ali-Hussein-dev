@@ -5,12 +5,20 @@ import { ChakraProvider } from '@chakra-ui/react'
 import Footer from '@/components/Footer'
 import '../css/global.css'
 import 'video-react/dist/video-react.css'
+import NextNProgress from 'nextjs-progressbar'
 
 const MyApp: React.FC<{ Component: React.FC; pageProps: any }> = ({
   Component,
   pageProps,
 }): JSX.Element => (
   <ChakraProvider>
+    <NextNProgress
+      color="#29D"
+      startPosition={0.3}
+      stopDelayMs={200}
+      height={3}
+      showOnShallow={true}
+    />
     <main className="relative font-mono text-gray-100 lg:text-xl">
       <Head>
         <link rel="icon" href="/favicon-32x32.png" />

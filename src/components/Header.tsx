@@ -7,15 +7,17 @@ interface StyledLinkProps extends React.ComponentPropsWithoutRef<'button'> {
   label: string
 }
 const StyledLink: React.FC<StyledLinkProps> = ({ label, ...rest }) => (
-  <button
-    type="button"
-    className="px-3 py-1 mb-6 font-semibold rounded hover:bg-gray-900 hover:cursor-pointer sm:mb-0 active:translate-y-1"
-    {...rest}
-  >
-    <Link href={`/${label === 'Home' ? '' : label}`}>
-      <a>{label}</a>
-    </Link>
-  </button>
+  <Link href={`/${label === 'Home' ? '' : label}`}>
+    <a>
+      <button
+        type="button"
+        className="px-3 py-1 mb-6 font-semibold rounded hover:bg-gray-900 hover:cursor-pointer sm:mb-0 active:translate-y-1"
+        {...rest}
+      >
+        {label}
+      </button>
+    </a>
+  </Link>
 )
 export const Header: React.FC = () => {
   const [isOpen, setIsOpen] = React.useState(false)

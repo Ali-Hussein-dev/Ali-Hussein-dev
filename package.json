@@ -35,6 +35,7 @@
     "framer-motion": "^3.3.0",
     "next": "^12.2.2",
     "next-connect": "^0.12.2",
+    "nextjs-progressbar": "^0.0.14",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-icons": "^4.4.0",
