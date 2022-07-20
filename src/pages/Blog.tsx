@@ -52,7 +52,7 @@ const blogs = [
 const Blog: React.FC = () => (
   <div
     id="Blog"
-    className="grid items-start justify-center min-h-screen px-1 py-6 mx-auto lg:w-7/12"
+    className="grid items-start justify-center min-h-screen px-1 py-6 mx-auto lg:max-w-[850px]"
   >
     <Head>
       <title>Blog</title>

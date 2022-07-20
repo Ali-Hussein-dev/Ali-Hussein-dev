@@ -85,7 +85,7 @@ const Link: React.FC<{ href: string; children: string }> = ({
 const Projects: React.FC = () => (
   <section
     id="Projects"
-    className="grid items-start justify-center px-1 py-6 mx-auto md:px-2 lg:w-9/12"
+    className="grid items-start justify-center px-1 py-6 mx-auto md:px-2 lg:max-w-[850px]"
   >
     <Head>
       <title>Projects</title>

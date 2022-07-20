@@ -9,7 +9,7 @@ const Index: React.FC = () => (
     <Head>
       <title>About</title>
     </Head>
-    <div className="px-3 py-8 mx-auto sm:px-6 md:w-full lg:w-7/12 bg-white/20 rounded-2xl backdrop-blur-lg">
+    <div className="px-3 py-8 mx-auto sm:px-6 md:w-full lg:max-w-[750px] bg-white/20 rounded-2xl backdrop-blur-lg">
       <Heading as="h2" size="lg" className="mb-2 text-3xl text-primary-500">
         A UX-driven Frontend Developer
       </Heading>
