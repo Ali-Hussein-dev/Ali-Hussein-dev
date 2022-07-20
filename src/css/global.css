@@ -44,5 +44,5 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply rounded-lg shadow-inner bg-slate-100/20 hover:bg-slate-800/50;
+  @apply rounded-lg shadow-inner bg-slate-100/20 hover:bg-slate-100/40;
 }
