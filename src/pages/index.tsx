@@ -6,7 +6,59 @@ import { SiSpeedtest } from 'react-icons/si'
 import { AiFillDatabase } from 'react-icons/ai'
 import { GoBrowser } from 'react-icons/go'
 import { FaTools } from 'react-icons/fa'
+import { IconType } from 'react-icons'
 
+const techSkills = [
+  {
+    title: 'Frontend',
+    parag:
+      'Typescript, Javascript(ES6), React, Nextjs, RESTful API, Tailwindcss, Chakra-UI, ReactQuery, Uploadcare, Html5, CSS3',
+    Icon: GoBrowser,
+  },
+  {
+    title: 'Quality Assurance',
+    parag: 'Jest, ReactTesting',
+    Icon: SiSpeedtest,
+  },
+  {
+    title: 'Backend',
+    parag: 'Nodejs, Redis, FaunaDB',
+    Icon: AiFillDatabase,
+    subtitle: ' (familiar)',
+  },
+  {
+    title: 'Workflow Tools',
+    parag:
+      'VScode, Git, GitHub, Eslint, Prettier, Nx workspaces, Figma, Notion, Lucidchart, Sizzy browser',
+    Icon: FaTools,
+  },
+]
+const Tech = ({
+  title,
+  parag,
+  Icon,
+  subtitle,
+}: {
+  title: string
+  parag: string
+  Icon: IconType
+  subtitle?: string
+}) => {
+  return (
+    <div>
+      <div className="row-start gap-x-2">
+        <Icon />
+        <Heading as="h3" size="md" className="uppercase">
+          {title}
+          <span className="ml-1 italic font-normal normal-case">
+            {subtitle}
+          </span>
+        </Heading>
+      </div>
+      <p className="pl-7">{parag}</p>
+    </div>
+  )
+}
 //=======================
 const Index: React.FC = () => (
   <section id="Home" className="min-h-screen px-1 py-8 col-center md:px-3">
@@ -27,51 +79,15 @@ const Index: React.FC = () => (
         Stack & Technologies
       </Heading>
       <div className="pb-2 mb-2 space-y-2 leading-8 border-b border-gray-500 text-slate-900">
-        <div>
-          <span className="uppercase row-start gap-x-2">
-            <GoBrowser />
-            <Heading as="h3" size="md">
-              Frontend
-            </Heading>
-          </span>
-          <p>
-            Typescript, Javascript(ES6), React, Nextjs, RESTful API,
-            Tailwindcss, Chakra-UI, ReactQuery, Uploadcare, Html5, CSS3
-          </p>
-        </div>
-        <div>
-          <span className="uppercase row-start gap-x-2">
-            <SiSpeedtest />
-            <Heading as="h3" size="md">
-              Quality Assurance
-            </Heading>
-          </span>
-          <p>Jest, ReactTesting</p>
-        </div>
-        <div>
-          <span className="uppercase row-start gap-x-2">
-            <AiFillDatabase />
-            <Heading as="h3" size="md">
-              Backend
-              <span className="ml-1 italic font-normal text-slate-8400">
-                (Familiar)
-              </span>
-            </Heading>
-          </span>
-          <p>Nodejs, Redis, FaunaDB</p>
-        </div>
-        <div>
-          <div className="row-start gap-x-2">
-            <FaTools />
-            <Heading as="h3" size="md" className="uppercase ">
-              Workflow Tools
-            </Heading>
-          </div>
-          <p>
-            VScode, Git, GitHub, Eslint, Prettier, Nx workspaces, Figma, Notion,
-            Lucidchart, Sizzy browser
-          </p>
-        </div>
+        {techSkills.map((o) => (
+          <Tech
+            key={o.title}
+            title={o.title}
+            Icon={o.Icon}
+            parag={o.parag}
+            subtitle={o?.subtitle}
+          />
+        ))}
       </div>
       <button
         type="button"
