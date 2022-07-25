@@ -50,15 +50,12 @@ const blogs = [
   },
 ]
 const Blog: React.FC = () => (
-  <div
-    id="Blog"
-    className="grid items-start justify-center min-h-screen px-1 py-6 mx-auto lg:max-w-[850px]"
-  >
+  <div id="Blog" className="layout">
     <Head>
       <title>Blog</title>
     </Head>
-    <div className="w-full mx-auto bg-white/20 rounded-2xl backdrop-blur-lg">
-      <div className="w-full px-2 py-6 sm:px-4 ">
+    <div className="container-white">
+      <div className="w-full">
         <Heading
           as="h1"
           className="pb-1 mb-3 font-bold border-b text-primary-500 border-primary-400"
@@ -79,11 +76,11 @@ const Blog: React.FC = () => (
                   <Heading
                     as="h2"
                     size="md"
-                    className="text-lg font-semibold text-gray-100 md:text-xl"
+                    className="text-lg font-semibold text-gray-50 md:text-xl"
                   >
                     {o.title}
                   </Heading>
-                  <Text noOfLines={2} className="italic text-slate-400">
+                  <Text noOfLines={2} className="italic text-slate-300">
                     {o.description}
                   </Text>
                   <span className="text-base italic tracking-tight text-primary-100">
