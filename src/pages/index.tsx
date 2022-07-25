@@ -2,6 +2,10 @@ import { Heading, Text } from '@chakra-ui/react'
 import Head from 'next/head'
 import Link from 'next/link'
 import { FiDownloadCloud } from 'react-icons/fi'
+import { SiTestinglibrary } from 'react-icons/si'
+import { AiFillDatabase } from 'react-icons/ai'
+import { GoBrowser } from 'react-icons/go'
+import { FaTools } from 'react-icons/fa'
 
 //=======================
 const Index: React.FC = () => (
@@ -24,30 +28,45 @@ const Index: React.FC = () => (
       </Heading>
       <div className="pb-2 mb-2 space-y-2 leading-8 border-b border-gray-500 text-slate-900">
         <div>
-          <Heading as="h3" size="md">
-            <span className="uppercase ">Frontend</span>
-            <span className="ml-1 italic font-normal text-slate-8400">
-              (Proficient)
-            </span>
-          </Heading>
+          <span className="uppercase row-start gap-x-2">
+            <GoBrowser className="text-slate-800" />
+            <Heading as="h3" size="md">
+              Frontend
+            </Heading>
+          </span>
           <p>
             Typescript, Javascript(ES6), React, Nextjs, RESTful API,
-            Tailwindcss, Html5, CSS3, Jest, Chakra-UI, ReactQuery, Uploadcare
+            Tailwindcss, Chakra-UI, ReactQuery, Uploadcare, Html5, CSS3
           </p>
         </div>
         <div>
-          <Heading as="h3" size="md">
-            <span className="uppercase">Backend</span>
-            <span className="ml-1 italic font-normal text-slate-8400">
-              (Familiar)
-            </span>
-          </Heading>
+          <span className="uppercase row-start gap-x-2">
+            <SiTestinglibrary className="text-slate-800" />
+            <Heading as="h3" size="md">
+              Quality Assurance
+            </Heading>
+          </span>
+          <p>Jest, ReactTesting</p>
+        </div>
+        <div>
+          <span className="uppercase row-start gap-x-2">
+            <AiFillDatabase className="text-slate-800" />
+            <Heading as="h3" size="md">
+              Backend
+              <span className="ml-1 italic font-normal text-slate-8400">
+                (Familiar)
+              </span>
+            </Heading>
+          </span>
           <p>Nodejs, Redis, FaunaDB</p>
         </div>
         <div>
-          <Heading as="h3" size="md" className="uppercase ">
-            Workflow Tools
-          </Heading>
+          <div className="row-start gap-x-2">
+            <FaTools className="text-slate-800" />
+            <Heading as="h3" size="md" className="uppercase ">
+              Workflow Tools
+            </Heading>
+          </div>
           <p>
             VScode, Git, GitHub, Eslint, Prettier, Nx workspaces, Figma, Notion,
             Lucidchart, Sizzy browser

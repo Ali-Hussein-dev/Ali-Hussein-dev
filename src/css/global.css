@@ -36,7 +36,7 @@
 }
 
 ::-webkit-scrollbar {
-  width: 14px;
+  width: 10px;
 }
 
 ::-webkit-scrollbar-track {
@@ -44,5 +44,5 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply rounded-lg shadow-inner bg-slate-100/20 hover:bg-slate-100/40;
+  @apply rounded-lg shadow-inner bg-slate-50/10 hover:bg-slate-100/20;
 }
