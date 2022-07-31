@@ -13,6 +13,9 @@ const projects = [
       'TS, Nextjs, React, FaunaDB, Redis, Jest, Testing-Library, Tailwindcss, Chakra-UI, Uploadcare, Nx-Workspaces, Ajv',
     src: '/projects-videos/dashboard-menu.mp4',
     vidType: 'video/mp4',
+    href2: 'https://smart-menu-demo.vercel.app/en-us',
+    href3:
+      'https://menu-1-git-theme-ali-hussein.vercel.app/restaurants/123/menu',
   },
   {
     href: 'https://find-meaning.vercel.app/',
@@ -22,6 +25,7 @@ const projects = [
     stack: 'TS, Nextjs, React, Jest, Tailwindcss, Chakra-UI, MongoDB, PWA',
     src: '/projects-videos/find-meaning.mp4',
     vidType: 'video/mp4',
+    href2: 'https://find-meaning.web.app/',
   },
   {
     href: 'https://gastro-abr.vercel.app/',
@@ -44,10 +48,12 @@ const projects = [
 const ProjectCard: React.FC<{
   name: string
   href: string
+  href2?: string | null
+  href3?: string | null
   stack: string
   description: string
   src?: string
-}> = ({ name, href, description, stack, src }) => (
+}> = ({ name, href, description, stack, src, href2 = null, href3 = null }) => (
   <div className="flex flex-col mb-10 border-b border-gray-400">
     {src && (
       <div className="mb-3 overflow-hidden rounded-sm aspect-video">
@@ -65,7 +71,11 @@ const ProjectCard: React.FC<{
         <span className="block font-bold">STACK</span>
         {stack}
       </p>
-      <Link href={href}>Demo</Link>
+      <div className="flex flex-col justify-center md:justify-start md:gap-x-2 md:flex-row">
+        <Link href={href}>Demo</Link>
+        {href2 !== null && <Link href={href2}>Old Version 1</Link>}
+        {href3 !== null && <Link href={href3}>Old Version 2</Link>}
+      </div>
     </div>
   </div>
 )
@@ -77,9 +87,10 @@ const Link: React.FC<{ href: string; children: string }> = ({
     href={href}
     target="_blank"
     rel="noreferrer"
-    className="flex items-center w-20 px-2 mt-2 gap-1 text-blue-500 rounded hover:bg-black bg-black/30"
+    className="flex items-center h-10 px-2 mt-2 gap-2 text-xl underline rounded md:text-2xl text-slate-900 underline-offset-1 hover:bg-slate-900 hover:text-slate-300 group"
   >
-    {children} <FiExternalLink size="15" />
+    <span className="">{children}</span>
+    <FiExternalLink size="17" className="opacity-0 group-hover:opacity-100" />
   </a>
 )
 //=======================
@@ -100,6 +111,8 @@ const Projects: React.FC = () => (
           key={i}
           name={o.name}
           href={o.href}
+          href2={o?.href2}
+          href3={o?.href3}
           description={o.description}
           stack={o.stack}
           src={o.src}
