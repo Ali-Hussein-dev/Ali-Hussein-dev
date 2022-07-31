@@ -13,13 +13,13 @@ const MyApp: React.FC<{ Component: React.FC; pageProps: any }> = ({
 }): JSX.Element => (
   <ChakraProvider>
     <NextNProgress
-      color="#29D"
+      color="#fde68a"
       startPosition={0.3}
       stopDelayMs={200}
       height={3}
       showOnShallow={true}
     />
-    <main className="relative font-mono text-gray-100 lg:text-xl">
+    <main className="relative font-mono text-gray-100 lg:text-xl selection:bg-orange-900/90 selection:text-slate-300">
       <Head>
         <link rel="icon" href="/favicon-32x32.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />

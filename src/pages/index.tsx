@@ -12,7 +12,7 @@ const techSkills = [
   {
     title: 'Frontend',
     parag:
-      'Typescript, Javascript(ES6), React, Nextjs, RESTful API, Tailwindcss, Chakra-UI, ReactQuery, Uploadcare, Html5, CSS3',
+      'Typescript, Javascript(ES6), React, Nextjs, RESTful API, Tailwindcss, Chakra-UI, Mantine, ReactQuery, Uploadcare, Html5, CSS3',
     Icon: GoBrowser,
   },
   {
@@ -69,7 +69,7 @@ const Index: React.FC = () => (
       <Heading as="h2" size="lg" className="mb-2 text-3xl text-primary-500">
         A UX-driven Frontend Developer
       </Heading>
-      <Text className="pb-2 mb-6 border-b border-gray-500 text-slate-900">
+      <Text className="pb-2 mb-6 border-b border-slate-400 text-slate-900">
         I build web applications with a lot of passion for clean UI, clean code,
         intuitive UX and great performance. I came from a business background
         and live in Germany since 2015. Feel free to reach out, if you think I
@@ -78,7 +78,7 @@ const Index: React.FC = () => (
       <Heading as="h2" size="lg" className="mb-2 text-primary-500">
         Stack & Technologies
       </Heading>
-      <div className="pb-2 mb-2 space-y-2 leading-8 border-b border-gray-500 text-slate-900">
+      <div className="pb-2 mb-2 space-y-2 leading-8 border-b border-slate-400 text-slate-900">
         {techSkills.map((o) => (
           <Tech
             key={o.title}

@@ -10,7 +10,7 @@ const projects = [
     description:
       'Saas App: digital menus platform that enables restaurants owners to host and update their menus',
     stack:
-      'TS, Nextjs, React, FaunaDB, Redis, Jest, Testing-Library, Tailwindcss, Chakra-UI, Uploadcare, Nx-Workspaces',
+      'TS, Nextjs, React, FaunaDB, Redis, Jest, Testing-Library, Tailwindcss, Chakra-UI, Uploadcare, Nx-Workspaces, Ajv',
     src: '/projects-videos/dashboard-menu.mp4',
     vidType: 'video/mp4',
   },
@@ -50,7 +50,7 @@ const ProjectCard: React.FC<{
 }> = ({ name, href, description, stack, src }) => (
   <div className="flex flex-col mb-10 border-b border-gray-400">
     {src && (
-      <div className="mb-3 overflow-hidden rounded-xl aspect-video">
+      <div className="mb-3 overflow-hidden rounded-sm aspect-video">
         {/* @ts-expect-error debug later */}
         <Player>
           <BigPlayButton position="center" />
@@ -61,8 +61,9 @@ const ProjectCard: React.FC<{
     <div className="pb-1 ">
       <h2 className="mb-1 font-semibold uppercase">{name}</h2>
       <p className="">{description}</p>
-      <p className="text-gray-400">
-        <span className="font-semibold text-gray-100">Stack</span>: {stack}
+      <p className="italic text-gray-300">
+        <span className="block font-bold">STACK</span>
+        {stack}
       </p>
       <Link href={href}>Demo</Link>
     </div>
