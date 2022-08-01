@@ -17,17 +17,17 @@ const Aboutme: React.FC = () => {
             Post Graduation
           </Title>
           <Text size="xl" className="mb-4">
-            I left Syria at the end of 2011, after I graduated from the
-            university of Damascus. I studied business adminstration and
+            I left Syria at the end of 2011 after I graduated from the
+            University of Damascus. I studied business administration and
             management. I moved to Lebanon to study master but the economical
-            situation was not good. So I had to work in different sector. I
-            worked in the gastronomy for about 4 years, till I left it at the
-            end of 2015. When I arrived at Germany seeking for secure and better
-            life, new challenges and opportunities popped up to me. The first
-            challenge I had overcome was to learn the language. So I started to
+            situation was not good. So I had to work in a different sector. I
+            worked in gastronomy for about 4 years, till I left it at the end of
+            2015. When I arrived in Germany seeking a secure and better life,
+            new challenges and opportunities popped up to me. The first
+            challenge I had overcome was learning the language. So I started to
             learn German from the first day I arrived in Hamburg without waiting
-            for participating at language courses. I am sure if was learning
-            fast or slow, but the langauge was a bit hard but interesting to
+            for participating in language courses. I am sure if was learning
+            fast or slow, but the language was a bit hard but interesting to
             dive deeper into it.
           </Text>
           <Title order={2} className="text-2xl uppercase text-primary-200">
@@ -35,6 +35,7 @@ const Aboutme: React.FC = () => {
           </Title>
           <div className="mb-4 space-y-2">
             <Text size="xl">
+              {' '}
               A typical problem that any language learner faces is the speaking
               skill, you learn and learn and when I have a conversation with a
               native speaker, you might wonder afterward where did what I
@@ -45,9 +46,9 @@ const Aboutme: React.FC = () => {
               structures. I spent some shaping the solution, refining it, and
               thinking of providing an accurate measurement of speaking skills.
               When I decided to bring it to life, I had no idea where to start
-              or to go, literally! Everything I knew about programing were two
+              or to go, literally! Everything I knew about programming was two
               things: the first one, HTML is used for web pages and Java does
-              not have to do Javascript. That was my whole background about
+              not have to do Javascript. That was my whole background in
               programming.
             </Text>
           </div>
@@ -56,19 +57,19 @@ const Aboutme: React.FC = () => {
           </Title>
           <div className="mb-4 space-y-2">
             <Text size="xl">
-              I started searching for an agency that could convert my idea to a
-              functional application, and it does not cost me too much. I found
-              one through the internet. I reached out to them and explained the
-              idea to them. I provided a wireframe of the core functionalities
-              as well to make as clear as possible. After we agreed, I had to
-              wait for about two months to receive the first shipment. I was so
-              excited to see it, but the output was horrible, the UI, colors and
-              belonging to the 1990s. However, I took it easy and I sent my
-              feedback to the team. A few months later I decided to stop sending
-              feedback because I finally found that the team is not competent! I
-              lost hope in that company. So I thought of asking for the codebase
-              and then seeking for freelancers. To send me the codebase I had to
-              pay extra money as stated in the contract.
+              I started searching for an agency that could convert my idea into
+              a functional application, and it does not cost me too much. I
+              found one through the internet. I reached out to them and
+              explained the idea to them. I provided a wireframe of the core
+              functionalities as well to make it as clear as possible. After we
+              agreed, I had to wait for about two months to receive the first
+              shipment. I was so excited to see it, but the output was horrible,
+              the UI, colors, and belonged to the 1990s. However, I took it easy
+              and I sent my feedback to the team. A few months later I decided
+              to stop sending feedback because I finally found that the team is
+              not competent! I lost hope in that company. So I thought of asking
+              for the codebase and then seeking freelancers. To send me the
+              codebase I had to pay extra money as stated in the contract.
             </Text>
             <Text size="xl">
               I was alone with a codebase that I did not understand at all. It
@@ -87,39 +88,39 @@ const Aboutme: React.FC = () => {
               to learn.
             </Text>
             <Text size="xl">
-              Having two teams working in different time zones were not a good
+              Having two teams working in different time zones was not a good
               idea. Additionally, the Indian team was behind the Egyptian team
               in implementation and skills. They were delivering the features
-              with a critical bugs. I wasted too much time on communication,
-              until I realized, I am stuck again and cannot make any progress
-              this way. So I discussed the issue with the agency in Egypt and
-              they recommanded to take care of the backend. but they have to
-              re-code the backend in different technology (Ruby on Rail),
-              because they do not deal with PHP. I did not have other options,
-              so I had to accept their offer.
+              with critical bugs. I wasted too much time on communication until
+              I realized, I am stuck again and cannot make any progress this
+              way. So I discussed the issue with the agency in Egypt and they
+              recommended taking care of the backend. but they have to re-code
+              the backend in different technology (Ruby on Rail) because they do
+              not deal with PHP. I did not have other options, so I had to
+              accept their offer.
             </Text>
             <Text size="xl">
               Afterward, things went well in terms of the implementation. I did
               not have to think about it again. Also, I still remember once I
               receive the first payment from users. It was one of the happiest
-              moments. During this time, I managed to learn CSS and Html because
-              we did not have a landing page for the app. But happy moments did
-              not last. Issues in marketing and finance popped up. After
-              reaching out to VCs and Angle inverstors. I came up with nothing.
-              Without finding financial support, I cannot continue.
+              moments. During this time, I learned CSS and Html because we did
+              not have a landing page for the app. But happy moments did not
+              last. Issues in marketing and finance popped up. After I reached
+              out to VCs and Angle investors, I came up with nothing. Without
+              finding financial support, I cannot continue.
             </Text>
             <Text size="xl">
-              I had only one option, Giving up the project and find something
-              else to do. I did that but also decided to stay in the tech
-              industry and the only way to stay is to learn programming.
-              Something I wanted not to learn at all. I did not feel I am
-              interested in details and low-level thinking or am smart enough to
-              be an engineer. Learning a lot of things by myself, gave enough
-              confidence to believe I can do it.
+              I had only one option, Give up the project and find something else
+              to do. I did that but also decided to stay in the tech industry,
+              and the only way to stay in is to learn to code. It is something I
+              wanted not to learn at all. I did not feel interested in details
+              and low-level thinking or am smart enough to be an engineer.
+              Learning many things gave me enough confidence to believe in
+              myself.
             </Text>
           </div>
           <Title order={2} className="text-2xl uppercase text-primary-200">
-            Thank you
+            Finally
           </Title>
           <Text size="xl">
             Being a solo founder with non-technical background for tech-based a
