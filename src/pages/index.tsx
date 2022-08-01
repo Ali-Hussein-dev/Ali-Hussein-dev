@@ -13,7 +13,7 @@ const techSkills = [
   {
     title: 'React Ecosystem',
     parag:
-      'Typescript, React, Nextjs, Tailwindcss, Chakra-UI, Mantine, ReactQuery, React-Form-Hooks, Swiper, Uploadcare',
+      'Typescript, React, Nextjs, Tailwindcss, Chakra-UI, Mantine, ReactQuery, React hook form, Swiper, Uploadcare',
     Icon: FaReact,
   },
   {
@@ -79,7 +79,7 @@ const Index: React.FC = () => (
     </Head>
     <section id="Home" className="layout lg:pt-12">
       <div className="lg:max-w-[850px] container-white ">
-        <Heading as="h2" size="lg" className="mb-2 text-3xl text-primary-500">
+        <Heading as="h1" size="lg" className="mb-2 text-3xl text-primary-500">
           UX-Driven Frontend Engineer
         </Heading>
         <Text className="pb-2 mb-6 border-b border-slate-400 text-slate-900">
@@ -89,7 +89,7 @@ const Index: React.FC = () => (
           you think I could fit in your team.
         </Text>
         <Heading as="h2" size="lg" className="mb-2 text-primary-500">
-          Stack & Technologies
+          My Stack
         </Heading>
         <div className="pb-2 mb-2 space-y-2 leading-8 border-b border-slate-400 text-slate-900">
           {techSkills.map((o) => (
