@@ -1,4 +1,5 @@
 import { Heading } from '@chakra-ui/react'
+import { Text } from '@mantine/core'
 import Head from 'next/head'
 import React from 'react'
 import { FiExternalLink } from 'react-icons/fi'
@@ -72,14 +73,24 @@ const ProjectCard: React.FC<{
         {stack}
       </p>
       <div className="flex flex-col justify-center md:justify-start md:gap-x-2 md:flex-row">
-        <Link href={href}>Demo</Link>
-        {href2 !== null && <Link href={href2}>Old Version 1</Link>}
-        {href3 !== null && <Link href={href3}>Old Version 2</Link>}
+        <Link href={href}>
+          <Text size="xl">Demo</Text>
+        </Link>
+        {href2 !== null && (
+          <Link href={href2}>
+            <Text size="xl">Old Version 1</Text>
+          </Link>
+        )}
+        {href3 !== null && (
+          <Link href={href3}>
+            <Text size="xl">Old Version 2</Text>
+          </Link>
+        )}
       </div>
     </div>
   </div>
 )
-const Link: React.FC<{ href: string; children: string }> = ({
+const Link: React.FC<{ href: string; children: string | React.ReactNode }> = ({
   href,
   children,
 }) => (

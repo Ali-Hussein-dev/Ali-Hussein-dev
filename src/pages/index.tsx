@@ -6,6 +6,7 @@ import { SiSpeedtest } from 'react-icons/si'
 import { AiFillDatabase } from 'react-icons/ai'
 import { GoBrowser } from 'react-icons/go'
 import { FaTools } from 'react-icons/fa'
+import { RiHeartsFill } from 'react-icons/ri'
 import { IconType } from 'react-icons'
 
 const techSkills = [
@@ -17,7 +18,7 @@ const techSkills = [
   },
   {
     title: 'Quality Assurance',
-    parag: 'Jest, ReactTesting',
+    parag: 'Jest, React Testing Library',
     Icon: SiSpeedtest,
   },
   {
@@ -31,6 +32,12 @@ const techSkills = [
     parag:
       'VScode, Git, GitHub, Eslint, Prettier, Nx workspaces, Figma, Notion, Lucidchart, Sizzy browser',
     Icon: FaTools,
+  },
+  {
+    title: 'Interested in',
+    parag:
+      'xState, Cypress, Storybook, GraphQL, AWS, GCP, GitHub Actions, Remix, SolidJS',
+    Icon: RiHeartsFill,
   },
 ]
 const Tech = ({
@@ -61,13 +68,13 @@ const Tech = ({
 }
 //=======================
 const Index: React.FC = () => (
-  <section id="Home" className="layout">
+  <section id="Home" className="layout lg:pt-12">
     <Head>
       <title>About</title>
     </Head>
-    <div className="lg:max-w-[750px] container-white">
+    <div className="lg:max-w-[850px] container-white ">
       <Heading as="h2" size="lg" className="mb-2 text-3xl text-primary-500">
-        A UX-driven Frontend Developer
+        UX-Driven Frontend Engineer
       </Heading>
       <Text className="pb-2 mb-6 border-b border-slate-400 text-slate-900">
         I build web applications with a lot of passion for clean UI, clean code,
