@@ -2,7 +2,7 @@ import * as React from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
 import Link from 'next/link'
 
-const linksList = ['Home', 'Projects', 'Blog']
+const linksList = ['Home', 'Projects', 'Blog', 'About']
 interface StyledLinkProps extends React.ComponentPropsWithoutRef<'button'> {
   label: string
 }
@@ -11,7 +11,7 @@ const StyledLink: React.FC<StyledLinkProps> = ({ label, ...rest }) => (
     <a>
       <button
         type="button"
-        className="px-3 py-1 mb-6 font-semibold rounded hover:bg-gray-900 hover:cursor-pointer sm:mb-0 active:translate-y-1"
+        className="px-3 py-1 mb-6 font-semibold rounded hover:bg-gray-100 hover:text-slate-800 hover:cursor-pointer sm:mb-0 active:translate-y-1"
         {...rest}
       >
         {label}

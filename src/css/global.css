@@ -37,7 +37,7 @@
     @apply w-full px-4 py-8 mx-auto lg:px-5 bg-white/30 rounded-2xl backdrop-blur-lg;
   }
   .layout {
-    @apply min-h-screen px-1 py-8 md:px-3 lg:max-w-[850px] mx-auto;
+    @apply min-h-screen px-1 py-8 md:px-3 lg:max-w-[1100px] mx-auto;
   }
 }
 
