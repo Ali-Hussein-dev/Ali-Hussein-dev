@@ -34,12 +34,13 @@ const Link: React.FC<LinkProp> = ({ href, IconName, cn, children }) => (
     <a className={cn} href={href} target="_blank" rel="noreferrer">
       {IconName && <IconName size="25" />}
       {children && <span>{children}</span>}
+      <span className="sr-only">social network link</span>
     </a>
   </div>
 )
 //=======================
 const Footer: React.FC = () => (
-  <footer className="bottom-0 w-full py-1 bg-slate-800/60">
+  <footer className="bottom-0 w-full py-1 bg-slate-800/80">
     <div className="flex flex-col items-center w-full px-2 mx-auto lg:flex-row lg:justify-between lg:w-8/12 ">
       <span className="font-light text-gray-100">
         @{new Date().getFullYear()} Ali Hussein
