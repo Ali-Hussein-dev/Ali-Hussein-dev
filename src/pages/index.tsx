@@ -68,46 +68,48 @@ const Tech = ({
 }
 //=======================
 const Index: React.FC = () => (
-  <section id="Home" className="layout lg:pt-12">
+  <>
     <Head>
-      <title>About</title>
+      <title>Home</title>
     </Head>
-    <div className="lg:max-w-[850px] container-white ">
-      <Heading as="h2" size="lg" className="mb-2 text-3xl text-primary-500">
-        UX-Driven Frontend Engineer
-      </Heading>
-      <Text className="pb-2 mb-6 border-b border-slate-400 text-slate-900">
-        I build web applications with a lot of passion for clean UI, clean code,
-        intuitive UX and great performance. I came from a business background
-        and live in Germany since 2015. Feel free to reach out, if you think I
-        could fit in your team.
-      </Text>
-      <Heading as="h2" size="lg" className="mb-2 text-primary-500">
-        Stack & Technologies
-      </Heading>
-      <div className="pb-2 mb-2 space-y-2 leading-8 border-b border-slate-400 text-slate-900">
-        {techSkills.map((o) => (
-          <Tech
-            key={o.title}
-            title={o.title}
-            Icon={o.Icon}
-            parag={o.parag}
-            subtitle={o?.subtitle}
-          />
-        ))}
+    <section id="Home" className="layout lg:pt-12">
+      <div className="lg:max-w-[850px] container-white ">
+        <Heading as="h2" size="lg" className="mb-2 text-3xl text-primary-500">
+          UX-Driven Frontend Engineer
+        </Heading>
+        <Text className="pb-2 mb-6 border-b border-slate-400 text-slate-900">
+          I build web applications with a lot of passion for clean UI, clean
+          code, intuitive UX and great performance. I came from a business
+          background and live in Germany since 2015. Feel free to reach out, if
+          you think I could fit in your team.
+        </Text>
+        <Heading as="h2" size="lg" className="mb-2 text-primary-500">
+          Stack & Technologies
+        </Heading>
+        <div className="pb-2 mb-2 space-y-2 leading-8 border-b border-slate-400 text-slate-900">
+          {techSkills.map((o) => (
+            <Tech
+              key={o.title}
+              title={o.title}
+              Icon={o.Icon}
+              parag={o.parag}
+              subtitle={o?.subtitle}
+            />
+          ))}
+        </div>
+        <button
+          type="button"
+          className="w-full h-10 px-4 py-1 rounded-lg select-none  hover:bg-slate-800/70 bg-slate-800/50 active:translate-y-1 sm:max-w-[190px] sm:justify-start"
+        >
+          <Link href="/cv.pdf" passHref>
+            <a className="flex items-center justify-center gap-x-3">
+              <FiDownloadCloud />
+              <span>Download CV</span>
+            </a>
+          </Link>
+        </button>
       </div>
-      <button
-        type="button"
-        className="w-full h-10 px-4 py-1 rounded-lg select-none  hover:bg-slate-800/70 bg-slate-800/50 active:translate-y-1 sm:max-w-[190px] sm:justify-start"
-      >
-        <Link href="/cv.pdf" passHref>
-          <a className="flex items-center justify-center gap-x-3">
-            <FiDownloadCloud />
-            <span>Download CV</span>
-          </a>
-        </Link>
-      </button>
-    </div>
-  </section>
+    </section>
+  </>
 )
 export default Index
