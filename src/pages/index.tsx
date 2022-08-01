@@ -13,7 +13,7 @@ const techSkills = [
   {
     title: 'React Ecosystem',
     parag:
-      'Typescript, React, Nextjs, RESTful API, Tailwindcss, Chakra-UI, Mantine, ReactQuery, React-Form-Hooks, Swiper, Uploadcare',
+      'Typescript, React, Nextjs, Tailwindcss, Chakra-UI, Mantine, ReactQuery, React-Form-Hooks, Swiper, Uploadcare',
     Icon: FaReact,
   },
   {
@@ -23,7 +23,7 @@ const techSkills = [
   },
   {
     title: 'Backend',
-    parag: 'Nodejs, Redis, FaunaDB',
+    parag: 'Nodejs, Redis, FaunaDB, RESTful API',
     Icon: AiFillDatabase,
     subtitle: ' (familiar)',
   },
