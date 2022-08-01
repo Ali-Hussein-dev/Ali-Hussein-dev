@@ -5,27 +5,32 @@ import { FiDownloadCloud } from 'react-icons/fi'
 import { SiSpeedtest } from 'react-icons/si'
 import { AiFillDatabase } from 'react-icons/ai'
 import { GoBrowser } from 'react-icons/go'
-import { FaTools } from 'react-icons/fa'
+import { FaTools, FaReact } from 'react-icons/fa'
 import { RiHeartsFill } from 'react-icons/ri'
 import { IconType } from 'react-icons'
 
 const techSkills = [
   {
-    title: 'Frontend',
+    title: 'React Ecosystem',
     parag:
-      'Typescript, Javascript(ES6), React, Nextjs, RESTful API, Tailwindcss, Chakra-UI, Mantine, ReactQuery, Uploadcare, Html5, CSS3',
-    Icon: GoBrowser,
+      'Typescript, React, Nextjs, RESTful API, Tailwindcss, Chakra-UI, Mantine, ReactQuery, React-Form-Hooks, Swiper, Uploadcare',
+    Icon: FaReact,
   },
   {
-    title: 'Quality Assurance',
-    parag: 'Jest, React Testing Library',
-    Icon: SiSpeedtest,
+    title: 'Frontend',
+    parag: 'Javascript(ES6) Html5, CSS3',
+    Icon: GoBrowser,
   },
   {
     title: 'Backend',
     parag: 'Nodejs, Redis, FaunaDB',
     Icon: AiFillDatabase,
     subtitle: ' (familiar)',
+  },
+  {
+    title: 'Quality Assurance',
+    parag: 'Jest, React Testing Library',
+    Icon: SiSpeedtest,
   },
   {
     title: 'Workflow Tools',
