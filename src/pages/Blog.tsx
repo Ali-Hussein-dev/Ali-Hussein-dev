@@ -69,14 +69,14 @@ const Blog: React.FC = () => (
               target="_blank"
               rel="noreferrer"
               key={i}
-              className="flex flex-col pb-2 overflow-hidden lg:pb-0 rounded-2xl hover:bg-slate-400/20 lg:row-between lg:flex-row"
+              className="flex flex-col pb-2 overflow-hidden lg:pb-0 rounded-xl hover:bg-slate-800/50 lg:row-between lg:flex-row group"
             >
               <div className="order-2 w-full lg:self-start lg:pr-4 lg:w-8/12 lg:pt-4">
                 <div className="pl-2">
                   <Heading
                     as="h2"
                     size="md"
-                    className="text-lg font-semibold text-gray-50 md:text-xl"
+                    className="mb-2 text-lg font-semibold text-gray-50 md:text-xl"
                   >
                     {o.title}
                   </Heading>
@@ -91,7 +91,7 @@ const Blog: React.FC = () => (
               <div className="order-1 mb-2 lg:w-4/12 lg:order-2 lg:mb-0 ">
                 <img
                   src={o.imgSrc}
-                  className="lg:aspect-[4.4/3] lg:rounded-2xl object-cover"
+                  className="lg:aspect-[4.4/3] lg:rounded-xl lg:group-hover:rounded-l-none object-cover"
                   alt="blog image"
                 />
               </div>

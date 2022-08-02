@@ -41,7 +41,7 @@ const techSkills = [
   {
     title: 'Interested in',
     parag:
-      'xState, Cypress, Storybook, GraphQL, AWS, GCP, GitHub Actions, Remix, SolidJS',
+      'Headless CMS, Cypress, Storybook, xState, GraphQL, AWS, GitHub Actions, Remix, SolidJS',
     Icon: RiHeartsFill,
   },
 ]
