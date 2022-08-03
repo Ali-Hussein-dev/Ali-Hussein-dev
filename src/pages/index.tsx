@@ -82,11 +82,12 @@ const Index: React.FC = () => (
         <Heading as="h1" size="lg" className="mb-2 text-3xl text-primary-500">
           UX-Driven Frontend Engineer
         </Heading>
+
         <Text className="pb-2 mb-6 border-b border-slate-400 text-slate-900">
-          I build web applications with a lot of passion for clean UI, clean
-          code, intuitive UX and great performance. I came from a business
-          background and live in Germany since 2015. Feel free to reach out, if
-          you think I could fit in your team.
+          I help companies and individuals build web applications with clean UI,
+          intuitive UX, and high performance. I currently live in Hamburg but
+          can work remotely for you wherever you are. Feel free to reach out if
+          you think I could fit into your team.
         </Text>
         <Heading as="h2" size="lg" className="mb-2 text-primary-500">
           My Stack
