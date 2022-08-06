@@ -41,6 +41,7 @@ const projects = [
     href: 'https://spreskill-app.web.app/',
     name: 'Spreskill',
     description: 'A landing page for a mobile app with Bootstrap',
+    src: '/projects-videos/spreskill.mp4',
     stack: 'Html, Bootstrap',
   },
 ]
@@ -56,34 +57,35 @@ const ProjectCard: React.FC<{
   src?: string
 }> = ({ name, href, description, stack, src, href2 = null, href3 = null }) => (
   <div className="flex flex-col mb-10 border-b border-gray-400">
-    {src && (
-      <div className="mb-3 overflow-hidden rounded-sm aspect-video">
-        {/* @ts-expect-error debug later */}
-        <Player>
-          <BigPlayButton position="center" />
-          <source src={src} />
-        </Player>
+    <div className="mb-3 overflow-hidden rounded aspect-video">
+      {/* @ts-expect-error debug later */}
+      <Player>
+        <BigPlayButton position="center" />
+        <source src={src} />
+      </Player>
+    </div>
+
+    <div className="flex flex-col justify-between flex-grow pb-1">
+      <div>
+        <h2 className="mb-1 font-semibold uppercase">{name}</h2>
+        <p className="">{description}</p>
+        <p className="italic text-gray-300">
+          <span className="font-bold text-primary-200">STACK: </span>
+          {stack}
+        </p>
       </div>
-    )}
-    <div className="pb-1 ">
-      <h2 className="mb-1 font-semibold uppercase">{name}</h2>
-      <p className="">{description}</p>
-      <p className="italic text-gray-300">
-        <span className="block font-bold">STACK</span>
-        {stack}
-      </p>
-      <div className="flex flex-col justify-center md:justify-start md:gap-x-2 md:flex-row">
+      <div className="flex flex-wrap items-center gap-x-1">
         <Link href={href}>
-          <Text size="xl">Demo</Text>
+          <Text size="xl">Visit</Text>
         </Link>
         {href2 !== null && (
           <Link href={href2}>
-            <Text size="xl">Old Version 1</Text>
+            <Text size="xl">Old v1</Text>
           </Link>
         )}
         {href3 !== null && (
           <Link href={href3}>
-            <Text size="xl">Old Version 2</Text>
+            <Text size="xl">Old v2</Text>
           </Link>
         )}
       </div>
@@ -117,18 +119,20 @@ const Projects: React.FC = () => (
       >
         Last Projects
       </Heading>
-      {projects.map((o, i) => (
-        <ProjectCard
-          key={i}
-          name={o.name}
-          href={o.href}
-          href2={o?.href2}
-          href3={o?.href3}
-          description={o.description}
-          stack={o.stack}
-          src={o.src}
-        />
-      ))}
+      <div className="lg:grid lg:grid-cols-2 lg:gap-4">
+        {projects.map((o, i) => (
+          <ProjectCard
+            key={i}
+            name={o.name}
+            href={o.href}
+            href2={o?.href2}
+            href3={o?.href3}
+            description={o.description}
+            stack={o.stack}
+            src={o.src}
+          />
+        ))}
+      </div>
     </div>
   </section>
 )
