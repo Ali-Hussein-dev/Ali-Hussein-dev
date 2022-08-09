@@ -1,10 +1,19 @@
 import { Heading } from '@chakra-ui/react'
 import { Text } from '@mantine/core'
 import Head from 'next/head'
+import Image from 'next/image'
 import React from 'react'
 import { FiExternalLink } from 'react-icons/fi'
 import { Player, BigPlayButton } from 'video-react'
 const projects = [
+  {
+    href: 'https://website-starter-next.vercel.app',
+    name: 'Website Starter',
+    description:
+      'Website starter with a basic layout and functionality that every typical website need.',
+    stack: 'TS, Nextjs, React, Tailwindcss, DaisyUI',
+    imgSrc: '/projects-videos/website-starter.png',
+  },
   {
     href: 'https://green-menus.vercel.app/',
     name: 'Interactive-menü',
@@ -55,14 +64,30 @@ const ProjectCard: React.FC<{
   stack: string
   description: string
   src?: string
-}> = ({ name, href, description, stack, src, href2 = null, href3 = null }) => (
+  imgSrc?: string
+}> = ({
+  imgSrc = '',
+  name,
+  href,
+  description,
+  stack,
+  src,
+  href2 = null,
+  href3 = null,
+}) => (
   <div className="flex flex-col mb-10 border-b border-gray-400">
     <div className="mb-3 overflow-hidden rounded aspect-video">
-      {/* @ts-expect-error debug later */}
-      <Player>
-        <BigPlayButton position="center" />
-        <source src={src} />
-      </Player>
+      {src ? (
+        // @ts-expect-error debug later
+        <Player>
+          <BigPlayButton position="center" />
+          <source src={src} />
+        </Player>
+      ) : (
+        <div className="relative aspect-video">
+          <Image src={imgSrc as string} layout="fill" alt="project image" />
+        </div>
+      )}
     </div>
 
     <div className="flex flex-col justify-between flex-grow pb-1">
@@ -130,6 +155,7 @@ const Projects: React.FC = () => (
             description={o.description}
             stack={o.stack}
             src={o.src}
+            imgSrc={o.imgSrc}
           />
         ))}
       </div>
