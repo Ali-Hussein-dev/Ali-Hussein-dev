@@ -16,7 +16,7 @@ const projects = [
   },
   {
     href: 'https://green-menus.vercel.app/',
-    name: 'Interactive-menü',
+    name: 'Dishes/Drinks Menu',
     description:
       'Saas App: digital menus platform that enables restaurants owners to host and update their menus',
     stack:
@@ -50,7 +50,7 @@ const projects = [
     href: 'https://spreskill-app.web.app/',
     name: 'Spreskill',
     description: 'A landing page for a mobile app with Bootstrap',
-    src: '/projects-videos/spreskill.mp4',
+    src: '/projects-videos/spreskill2.mp4',
     stack: 'Html, Bootstrap',
   },
 ]
