@@ -1,7 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@layer utilities {
+  @variants responsive {
+    .masonry-cols-3 {
+      column-count: 3;
+      column-gap: 1em;
+    }
+    .masonry-cols-2 {
+      column-count: 2;
+      column-gap: 1em;
+    }
+    .break-inside {
+      break-inside: avoid;
+    }
+  }
+}
 @layer components {
   /* row */
   .row-start {

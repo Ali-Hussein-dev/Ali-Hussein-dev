@@ -3,7 +3,7 @@ import { Text } from '@mantine/core'
 import Head from 'next/head'
 import Image from 'next/image'
 import React from 'react'
-import { FiExternalLink } from 'react-icons/fi'
+import { BiLinkExternal } from 'react-icons/bi'
 import { Player, BigPlayButton } from 'video-react'
 const projects = [
   {
@@ -13,6 +13,15 @@ const projects = [
       'Website starter with a basic layout and functionality that every typical website need.',
     stack: 'TS, Nextjs, React, Tailwindcss, DaisyUI',
     imgSrc: '/projects-videos/website-starter.png',
+  },
+  {
+    href: 'https://gastro-abr.vercel.app/',
+    name: 'Kellner-Abrechnung',
+    description:
+      'special calculator made for waiters. It reduces calculation time by 40% approximately.',
+    stack: 'TS, Next.js, React, Tailwindcss, PWA',
+    src: '/projects-videos/kellner-abr.mp4',
+    vidType: 'video/mp4',
   },
   {
     href: 'https://green-menus.vercel.app/',
@@ -36,15 +45,6 @@ const projects = [
     src: '/projects-videos/find-meaning.mp4',
     vidType: 'video/mp4',
     href2: 'https://find-meaning.web.app/',
-  },
-  {
-    href: 'https://gastro-abr.vercel.app/',
-    name: 'Kellner-Abrechnung',
-    description:
-      'special calculator made for waiters. It reduces calculation time by 40% approximately.',
-    stack: 'TS, Next.js, React, Tailwindcss, PWA',
-    src: '/projects-videos/kellner-abr.mp4',
-    vidType: 'video/mp4',
   },
   {
     href: 'https://spreskill-app.web.app/',
@@ -75,7 +75,7 @@ const ProjectCard: React.FC<{
   href2 = null,
   href3 = null,
 }) => (
-  <div className="flex flex-col mb-10 border-b border-gray-400">
+  <div className="flex flex-col mb-4 border-b border-gray-400 break-inside ">
     <div className="mb-3 overflow-hidden rounded aspect-video">
       {src ? (
         // @ts-expect-error debug later
@@ -128,7 +128,7 @@ const Link: React.FC<{ href: string; children: string | React.ReactNode }> = ({
     className="flex items-center h-10 px-2 mt-2 gap-2 text-xl underline rounded md:text-2xl text-slate-900 underline-offset-1 hover:bg-slate-900 hover:text-slate-300 group"
   >
     <span className="">{children}</span>
-    <FiExternalLink size="17" className="opacity-0 group-hover:opacity-100" />
+    <BiLinkExternal size="17" className="opacity-0 group-hover:opacity-100" />
   </a>
 )
 //=======================
@@ -144,7 +144,8 @@ const Projects: React.FC = () => (
       >
         Last Projects
       </Heading>
-      <div className="lg:grid lg:grid-cols-2 lg:gap-4">
+      {/* <div className="lg:grid lg:grid-cols-2 lg:gap-4"> */}
+      <div className="lg:masonry-cols-3 md:masonry-cols-2">
         {projects.map((o, i) => (
           <ProjectCard
             key={i}
