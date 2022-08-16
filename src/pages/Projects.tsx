@@ -1,5 +1,4 @@
-import { Heading } from '@chakra-ui/react'
-import { Text } from '@mantine/core'
+import { Text, Title } from '@mantine/core'
 import Head from 'next/head'
 import Image from 'next/image'
 import React from 'react'
@@ -75,8 +74,8 @@ const ProjectCard: React.FC<{
   href2 = null,
   href3 = null,
 }) => (
-  <div className="flex flex-col mb-4 border-b border-gray-400 break-inside ">
-    <div className="mb-3 overflow-hidden rounded aspect-video">
+  <div className="flex flex-col mb-4 overflow-hidden rounded-xl break-inside bg-slate-900/60">
+    <div className="mb-3 aspect-video">
       {src ? (
         // @ts-expect-error debug later
         <Player>
@@ -90,27 +89,29 @@ const ProjectCard: React.FC<{
       )}
     </div>
 
-    <div className="flex flex-col justify-between flex-grow pb-1">
-      <div>
-        <h2 className="mb-1 font-semibold uppercase">{name}</h2>
-        <p className="">{description}</p>
-        <p className="italic text-gray-300">
-          <span className="font-bold text-primary-200">STACK: </span>
-          {stack}
-        </p>
+    <div className="flex flex-col justify-between flex-grow px-2 pb-2 tracking-tight text-slate-300 ">
+      <div className="pb-1 border-b border-slate-600">
+        <Title
+          order={2}
+          className="mb-1 text-base font-semibold uppercase text-primary-100"
+        >
+          {name}
+        </Title>
+        <Text size="xl">{description}</Text>
+        <Text size="xl">Stack: {stack}</Text>
       </div>
-      <div className="flex flex-wrap items-center gap-x-1">
+      <div className="flex flex-wrap items-center">
         <Link href={href}>
-          <Text size="xl">Visit</Text>
+          <Text>Visit</Text>
         </Link>
         {href2 !== null && (
           <Link href={href2}>
-            <Text size="xl">Old v1</Text>
+            <Text>Old v1</Text>
           </Link>
         )}
         {href3 !== null && (
           <Link href={href3}>
-            <Text size="xl">Old v2</Text>
+            <Text>Old v2</Text>
           </Link>
         )}
       </div>
@@ -125,7 +126,7 @@ const Link: React.FC<{ href: string; children: string | React.ReactNode }> = ({
     href={href}
     target="_blank"
     rel="noreferrer"
-    className="flex items-center h-10 px-2 mt-2 gap-2 text-xl underline rounded md:text-2xl text-slate-900 underline-offset-1 hover:bg-slate-900 hover:text-slate-300 group"
+    className="flex items-center h-8 px-3 mt-1 gap-2 text-lg underline rounded md:text-2xl text-slate-100 underline-offset-1 hover:bg-slate-900 group"
   >
     <span className="">{children}</span>
     <BiLinkExternal size="17" className="opacity-0 group-hover:opacity-100" />
@@ -138,13 +139,12 @@ const Projects: React.FC = () => (
       <title>Projects</title>
     </Head>
     <div className="container-white">
-      <Heading
-        as="h1"
+      <Title
+        order={1}
         className="pb-1 mb-4 font-bold border-b text-primary-400 border-primary-300"
       >
         Last Projects
-      </Heading>
-      {/* <div className="lg:grid lg:grid-cols-2 lg:gap-4"> */}
+      </Title>
       <div className="lg:masonry-cols-3 md:masonry-cols-2">
         {projects.map((o, i) => (
           <ProjectCard
