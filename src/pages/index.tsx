@@ -23,7 +23,7 @@ const techSkills = [
   },
   {
     title: 'Backend',
-    parag: 'Nodejs, Redis, FaunaDB, RESTful API',
+    parag: 'Nodejs, Redis, FaunaDB',
     Icon: AiFillDatabase,
     subtitle: ' (familiar)',
   },
@@ -41,7 +41,7 @@ const techSkills = [
   {
     title: 'Interested in',
     parag:
-      'Headless CMS, Cypress, Storybook, xState, GraphQL, AWS, GitHub Actions, Astro, Remix, SolidJS',
+      'Headless CMS, Cypress, Storybook, xState, AWS, GitHub Actions, Astro, SolidJS',
     Icon: RiHeartsFill,
   },
 ]
