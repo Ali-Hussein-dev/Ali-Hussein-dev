@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import React from 'react'
 import { BiLinkExternal } from 'react-icons/bi'
+import { FaGithub } from 'react-icons/fa'
 import { Player, BigPlayButton } from 'video-react'
 const projects = [
   {
@@ -12,6 +13,7 @@ const projects = [
       'Website starter with a basic layout and functionality that every typical website need.',
     stack: 'TS, Nextjs, React, Tailwindcss, DaisyUI',
     imgSrc: '/projects-videos/website-starter.png',
+    code: 'https://github.com/Ali-Hussein-dev/website-starter',
   },
   {
     href: 'https://gastro-abr.vercel.app/',
@@ -21,6 +23,7 @@ const projects = [
     stack: 'TS, Next.js, React, Tailwindcss, PWA',
     src: '/projects-videos/kellner-abr.mp4',
     vidType: 'video/mp4',
+    code: 'https://github.com/Ali-Hussein-dev/kellener-abr',
   },
   {
     href: 'https://green-menus.vercel.app/',
@@ -37,13 +40,22 @@ const projects = [
   },
   {
     href: 'https://find-meaning.vercel.app/',
-    name: 'Find-Meaning dictionary',
+    name: 'Dictionary',
     description:
       'English dictionary with basic defintions section, community usage and related gifs to the search keyword',
     stack: 'TS, Nextjs, React, Jest, Tailwindcss, Chakra-UI, MongoDB, PWA',
     src: '/projects-videos/find-meaning.mp4',
     vidType: 'video/mp4',
     href2: 'https://find-meaning.web.app/',
+    code: 'https://github.com/Ali-Hussein-dev/find-meaning',
+  },
+  {
+    href: 'https://table-example.vercel.app/',
+    name: 'Table Example',
+    description: 'Table Examaple with some typical functionalities',
+    stack: 'TanStack/React-Table-v8, TS, Nextjs, React, Tailwindcss, Mantine',
+    imgSrc: '/projects-videos/table-example.png',
+    code: 'https://github.com/Ali-Hussein-dev/table-example',
   },
   {
     href: 'https://spreskill-app.web.app/',
@@ -64,6 +76,7 @@ const ProjectCard: React.FC<{
   description: string
   src?: string
   imgSrc?: string
+  code?: string
 }> = ({
   imgSrc = '',
   name,
@@ -73,6 +86,7 @@ const ProjectCard: React.FC<{
   src,
   href2 = null,
   href3 = null,
+  code,
 }) => (
   <div className="flex flex-col mb-4 overflow-hidden rounded-xl break-inside bg-slate-900/60">
     <div className="mb-3 aspect-video">
@@ -100,7 +114,7 @@ const ProjectCard: React.FC<{
         <Text size="xl">{description}</Text>
         <Text size="xl">Stack: {stack}</Text>
       </div>
-      <div className="flex flex-wrap items-center">
+      <div className="flex flex-wrap items-center pt-1">
         <Link href={href}>
           <Text>Visit</Text>
         </Link>
@@ -114,6 +128,16 @@ const ProjectCard: React.FC<{
             <Text>Old v2</Text>
           </Link>
         )}
+        {code && (
+          <a
+            href={code}
+            className="grid w-10 h-8 ml-1 rounded hover:bg-slate-900 place-items-center"
+            target="black"
+          >
+            <FaGithub size="25" />
+            <span className="sr-only">link to repo</span>
+          </a>
+        )}
       </div>
     </div>
   </div>
@@ -126,7 +150,7 @@ const Link: React.FC<{ href: string; children: string | React.ReactNode }> = ({
     href={href}
     target="_blank"
     rel="noreferrer"
-    className="flex items-center h-8 px-3 mt-1 gap-2 text-lg underline rounded md:text-2xl text-slate-100 underline-offset-1 hover:bg-slate-900 group"
+    className="flex items-center h-8 px-3 gap-2 text-lg underline rounded md:text-2xl text-slate-100 underline-offset-1 hover:bg-slate-900 group"
   >
     <span className="">{children}</span>
     <BiLinkExternal size="17" className="opacity-0 group-hover:opacity-100" />
@@ -157,6 +181,7 @@ const Projects: React.FC = () => (
             stack={o.stack}
             src={o.src}
             imgSrc={o.imgSrc}
+            code={o.code}
           />
         ))}
       </div>
