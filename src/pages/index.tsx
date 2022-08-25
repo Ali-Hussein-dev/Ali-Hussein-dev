@@ -13,12 +13,12 @@ const techSkills = [
   {
     title: 'React Ecosystem',
     parag:
-      'Typescript, React, Nextjs, Tailwindcss, Chakra-UI, Mantine, ReactQuery, React hook form, Swiper, Uploadcare',
+      'Typescript, React, Nextjs, Tailwindcss, Chakra-UI, Mantine, ReactQuery, React-Table, React hook form, Swiper',
     Icon: FaReact,
   },
   {
     title: 'Frontend',
-    parag: 'Javascript(ES6) Html5, CSS3',
+    parag: 'Javascript(ES6) Html5, CSS3, Browser API',
     Icon: GoBrowser,
   },
   {
@@ -85,9 +85,9 @@ const Index: React.FC = () => (
 
         <Text className="pb-2 mb-6 border-b border-slate-400 text-slate-900">
           I help companies and individuals build web applications with clean UI,
-          intuitive UX, and high performance. I currently live in Hamburg but
-          can work remotely for you wherever you are. Feel free to reach out if
-          you think I could fit into your team.
+          intuitive UX, and high performance. I can work for you on-site if you
+          are in Hamburg or remotely if you are in EU time zones. Feel free to
+          reach out if you think I could fit into your team.
         </Text>
         <Heading as="h2" size="lg" className="mb-2 text-primary-500">
           My Stack
