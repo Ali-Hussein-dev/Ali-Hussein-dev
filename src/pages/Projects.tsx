@@ -17,9 +17,9 @@ const projects = [
   },
   {
     href: 'https://gastro-abr.vercel.app/',
-    name: 'Kellner-Abrechnung',
+    name: 'Calculator',
     description:
-      'special calculator made for waiters. It reduces calculation time by 40% approximately.',
+      'special calculator made for waiters. It reduces calculation time for finl statement by 60% approximately and it reduces miscalculations',
     stack: 'TS, Next.js, React, Tailwindcss, PWA',
     src: '/projects-videos/kellner-abr.mp4',
     vidType: 'video/mp4',
@@ -31,7 +31,7 @@ const projects = [
     description:
       'Saas App: digital menus platform that enables restaurants owners to host and update their menus',
     stack:
-      'TS, Nextjs, React, FaunaDB, Redis, Jest, Testing-Library, Tailwindcss, Chakra-UI, Uploadcare, Nx-Workspaces, Ajv',
+      'TS, Nextjs, React, FaunaDB, Redis, Jest, Testing-Library, Tailwindcss, Chakra-UI, Ajv',
     src: '/projects-videos/dashboard-menu.mp4',
     vidType: 'video/mp4',
     href2: 'https://smart-menu-demo.vercel.app/en-us',
@@ -88,7 +88,7 @@ const ProjectCard: React.FC<{
   href3 = null,
   code,
 }) => (
-  <div className="flex flex-col mb-4 overflow-hidden rounded-xl break-inside bg-slate-900/60">
+  <div className="flex flex-col mb-4 overflow-hidden rounded-xl break-inside bg-slate-900/80">
     <div className="mb-3 aspect-video">
       {src ? (
         // @ts-expect-error debug later
@@ -112,7 +112,9 @@ const ProjectCard: React.FC<{
           {name}
         </Title>
         <Text size="xl">{description}</Text>
-        <Text size="xl">Stack: {stack}</Text>
+        <Text size="xl" className="mt-2">
+          {stack}
+        </Text>
       </div>
       <div className="flex flex-wrap items-center pt-1">
         <Link href={href}>
