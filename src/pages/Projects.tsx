@@ -10,10 +10,17 @@ const projects = [
     href: 'https://website-starter-next.vercel.app',
     name: 'Website Starter',
     description:
-      'Website starter with a basic layout and functionality that every typical website need.',
+      'Website starter with a basic layout  and functionality that every typical website need.',
     stack: 'TS, Nextjs, React, Tailwindcss, DaisyUI',
     imgSrc: '/projects-videos/website-starter.png',
     code: 'https://github.com/Ali-Hussein-dev/website-starter',
+  },
+  {
+    href: 'https://restaurant-starter-de.vercel.app',
+    name: 'Restaurant Stater',
+    description: 'A landing page for a Restaurant',
+    imgSrc: '/projects-videos/restaurant-starter-de.png',
+    stack: 'Nextjs, React, Tailwindcss, DaisyUI',
   },
   {
     href: 'https://gastro-abr.vercel.app/',
@@ -88,22 +95,20 @@ const ProjectCard: React.FC<{
   href3 = null,
   code,
 }) => (
-  <div className="flex flex-col mb-4 overflow-hidden rounded-xl break-inside bg-slate-900/80">
-    <div className="mb-3 aspect-video">
-      {src ? (
-        // @ts-expect-error debug later
-        <Player>
-          <BigPlayButton position="center" />
-          <source src={src} />
-        </Player>
-      ) : (
-        <div className="relative aspect-video">
-          <Image src={imgSrc as string} layout="fill" alt="project image" />
-        </div>
-      )}
-    </div>
+  <div className="mb-4 space-y-2 overflow-hidden rounded-sm break-inside bg-slate-900/80">
+    {src ? (
+      // @ts-expect-error debug later
+      <Player>
+        <BigPlayButton position="center" />
+        <source src={src} />
+      </Player>
+    ) : (
+      <div className="relative aspect-video">
+        <Image src={imgSrc as string} layout="fill" alt="project image" />
+      </div>
+    )}
 
-    <div className="flex flex-col justify-between flex-grow px-2 pb-2 tracking-tight text-slate-300 ">
+    <div className="flex flex-col justify-between flex-grow px-2 pb-2 tracking-tight text-slate-300">
       <div className="pb-1 border-b border-slate-600">
         <Title
           order={2}
