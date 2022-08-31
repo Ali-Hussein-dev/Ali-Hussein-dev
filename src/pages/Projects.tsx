@@ -16,7 +16,7 @@ const projects = [
     code: 'https://github.com/Ali-Hussein-dev/website-starter',
   },
   {
-    href: 'https://restaurant-starter-de.vercel.app',
+    href: 'https://restaurant-starter-de.vercel.app/luxury',
     name: 'Restaurant Stater',
     description: 'A landing page for a Restaurant',
     imgSrc: '/projects-videos/restaurant-starter-de.png',
