@@ -1,4 +1,4 @@
-import { Text, Title } from '@mantine/core'
+import { Text } from '@mantine/core'
 import Head from 'next/head'
 import Image from 'next/image'
 import React from 'react'
@@ -77,24 +77,12 @@ const projects = [
 const ProjectCard: React.FC<{
   name: string
   href: string
-  href2?: string | null
-  href3?: string | null
   stack: string
   description: string
   src?: string
   imgSrc?: string
   code?: string
-}> = ({
-  imgSrc = '',
-  name,
-  href,
-  description,
-  stack,
-  src,
-  href2 = null,
-  href3 = null,
-  code,
-}) => (
+}> = ({ imgSrc = '', name, href, description, stack, src, code }) => (
   <div className="mb-4 space-y-2 overflow-hidden rounded-sm break-inside bg-slate-900/80">
     {src ? (
       // @ts-expect-error debug later
@@ -110,12 +98,9 @@ const ProjectCard: React.FC<{
 
     <div className="flex flex-col justify-between flex-grow px-2 pb-2 tracking-tight text-slate-300">
       <div className="pb-1 border-b border-slate-600">
-        <Title
-          order={2}
-          className="mb-1 text-base font-semibold uppercase text-primary-100"
-        >
+        <h3 className="mb-1 font-semibold uppercase text-primary-100">
           {name}
-        </Title>
+        </h3>
         <Text size="xl">{description}</Text>
         <Text size="xl" className="mt-2">
           {stack}
@@ -125,16 +110,6 @@ const ProjectCard: React.FC<{
         <Link href={href}>
           <Text>Visit</Text>
         </Link>
-        {href2 !== null && (
-          <Link href={href2}>
-            <Text>Old v1</Text>
-          </Link>
-        )}
-        {href3 !== null && (
-          <Link href={href3}>
-            <Text>Old v2</Text>
-          </Link>
-        )}
         {code && (
           <a
             href={code}
@@ -157,7 +132,7 @@ const Link: React.FC<{ href: string; children: string | React.ReactNode }> = ({
     href={href}
     target="_blank"
     rel="noreferrer"
-    className="flex items-center h-8 px-3 gap-2 text-lg underline rounded md:text-2xl text-slate-100 underline-offset-1 hover:bg-slate-900 group"
+    className="flex items-center h-8 px-3 gap-2 text-lg underline rounded text-slate-100 underline-offset-1 hover:bg-slate-900 group"
   >
     <span className="">{children}</span>
     <BiLinkExternal size="17" className="opacity-0 group-hover:opacity-100" />
@@ -170,20 +145,15 @@ const Projects: React.FC = () => (
       <title>Projects</title>
     </Head>
     <div className="container-white">
-      <Title
-        order={1}
-        className="pb-1 mb-4 font-bold border-b text-primary-400 border-primary-300"
-      >
+      <h1 className="pb-1 mb-4 text-2xl font-bold tracking-tight border-b text-primary-400 border-primary-300">
         Last Projects
-      </Title>
+      </h1>
       <div className="lg:masonry-cols-3 md:masonry-cols-2">
         {projects.map((o, i) => (
           <ProjectCard
             key={i}
             name={o.name}
             href={o.href}
-            href2={o?.href2}
-            href3={o?.href3}
             description={o.description}
             stack={o.stack}
             src={o.src}

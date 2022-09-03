@@ -1,4 +1,4 @@
-import { Text, Heading } from '@chakra-ui/react'
+import { Text } from '@mantine/core'
 import Head from 'next/head'
 import * as React from 'react'
 const myStory = [
@@ -41,23 +41,19 @@ const Aboutme: React.FC = () => {
       </Head>
       <div id="About" className="layout ">
         <section className="container-white text-slate-300 bg-slate-900/70 ">
-          <Heading
-            as="h1"
-            size="md"
-            className="pb-[0.15rem] text-lg border-b border-slate-700 mb-4  uppercase"
-          >
+          <h1 className="pb-[0.15rem] text-2xl border-b border-slate-700 mb-4  uppercase ">
             My Story
-          </Heading>
+          </h1>
           <article>
             {myStory.map((section) => (
               <div key={section.title}>
-                <Heading as="h2" className="uppercase text-primary-100">
+                <h2 className="text-3xl uppercase text-primary-100 ">
                   {section.title}
-                </Heading>
+                </h2>
                 <div className="mb-4 space-y-3">
                   {section.p.map((p, i) => (
-                    <Text key={i}>
-                      <p>{p}</p>
+                    <Text key={i} size="xl">
+                      {p}
                     </Text>
                   ))}
                 </div>
