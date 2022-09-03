@@ -13,7 +13,7 @@ const techSkills = [
   {
     title: 'React Ecosystem',
     parag:
-      'Typescript, React, Nextjs, Tailwindcss, Chakra-UI, Mantine, ReactQuery, React-Table, React hook form, Swiper',
+      'Typescript, React, Nextjs, Tailwindcss, Chakra-UI, Swiper, ReactQuery, React hook form, ...etc.',
     Icon: FaReact,
   },
   {
@@ -57,9 +57,9 @@ const Tech = ({
   subtitle?: string
 }) => {
   return (
-    <div>
+    <div className="break-inside pb-2">
       <div className="row-start gap-x-2">
-        <Icon />
+        <Icon className="text-slate-800" />
         <Heading as="h3" size="md" className="uppercase">
           {title}
           <span className="ml-1 italic font-normal normal-case">
@@ -67,7 +67,7 @@ const Tech = ({
           </span>
         </Heading>
       </div>
-      <p className="pl-7">{parag}</p>
+      <p className="pl-7 tracking-tight ">{parag}</p>
     </div>
   )
 }
@@ -92,7 +92,7 @@ const Index: React.FC = () => (
         <Heading as="h2" size="lg" className="mb-2 text-primary-500">
           My Stack
         </Heading>
-        <div className="pb-2 mb-2 space-y-2 leading-8 border-b border-slate-400 text-slate-900">
+        <div className="pb-2 mb-3 leading-8 border-b border-slate-400 text-slate-900">
           {techSkills.map((o) => (
             <Tech
               key={o.title}
