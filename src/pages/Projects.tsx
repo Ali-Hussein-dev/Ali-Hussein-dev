@@ -7,6 +7,13 @@ import { FaGithub } from 'react-icons/fa'
 import { Player, BigPlayButton } from 'video-react'
 const projects = [
   {
+    href: 'https://restaurant-starter-de.vercel.app/luxury',
+    name: 'Restaurant Stater',
+    description: 'Restaurant website',
+    imgSrc: '/projects-videos/restaurant-starter-de.png',
+    stack: 'Nextjs, React, Tailwindcss, DaisyUI',
+  },
+  {
     href: 'https://website-starter-next.vercel.app',
     name: 'Website Starter',
     description:
@@ -14,13 +21,6 @@ const projects = [
     stack: 'TS, Nextjs, React, Tailwindcss, DaisyUI',
     imgSrc: '/projects-videos/website-starter.png',
     code: 'https://github.com/Ali-Hussein-dev/website-starter',
-  },
-  {
-    href: 'https://restaurant-starter-de.vercel.app/luxury',
-    name: 'Restaurant Stater',
-    description: 'A landing page for a Restaurant',
-    imgSrc: '/projects-videos/restaurant-starter-de.png',
-    stack: 'Nextjs, React, Tailwindcss, DaisyUI',
   },
   {
     href: 'https://gastro-abr.vercel.app/',
