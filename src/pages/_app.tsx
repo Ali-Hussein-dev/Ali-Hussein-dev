@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { Header } from '@/components/Header'
 import Head from 'next/head'
-import { ChakraProvider } from '@chakra-ui/react'
 import Footer from '@/components/Footer'
 import '../css/global.css'
 import 'video-react/dist/video-react.css'
@@ -11,7 +10,7 @@ const MyApp: React.FC<{ Component: React.FC; pageProps: any }> = ({
   Component,
   pageProps,
 }): JSX.Element => (
-  <ChakraProvider>
+  <>
     <NextNProgress
       color="#fde68a"
       startPosition={0.3}
@@ -46,7 +45,7 @@ const MyApp: React.FC<{ Component: React.FC; pageProps: any }> = ({
 
       <Footer />
     </main>
-  </ChakraProvider>
+  </>
 )
 
 export default MyApp

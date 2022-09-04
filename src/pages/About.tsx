@@ -1,11 +1,11 @@
-import { Text, Heading } from '@chakra-ui/react'
+import { Text } from '@mantine/core'
 import Head from 'next/head'
 import * as React from 'react'
 const myStory = [
   {
     title: 'Post Graduation',
     p: [
-      'I left Syria at the end of 2011 after I graduated from the University of Damascus. I studied business administration and management. I moved to Lebanon to study master but the economical situation was not good. So I had to work in a different sector. Iworked in gastronomy for about 4 years, till I left it at the end of 2015. When I arrived in Germany seeking a stable life, new challenges and opportunities popped up to me. The first challenge I had overcome was learning the language. So I startedto learn German from the first day I arrived in Hamburg without waiting for participating in language courses. I am sure if was learning fast or slow, but the language was a bit hard but interesting to dive deeper into it.',
+      'I left Syria at the end of 2011 after I graduated from the University of Damascus. I studied business administration and management. I moved to Lebanon to study master but the economical situation was not good. So I had to work in a different sector. I worked in gastronomy for about 4 years, till I left it at the end of 2015. When I arrived in Germany seeking a stable life, new challenges and opportunities popped up to me. The first challenge I had overcome was learning the language. So I started to learn German from the first day I arrived in Hamburg without waiting for participating in language courses. I am sure if was learning fast or slow, but the language was a bit hard but interesting to dive deeper into it.',
     ],
   },
   {
@@ -41,24 +41,18 @@ const Aboutme: React.FC = () => {
       </Head>
       <div id="About" className="layout ">
         <section className="container-white text-slate-300 bg-slate-900/70 ">
-          <Heading
-            as="h1"
-            size="md"
-            className="pb-[0.15rem] text-lg border-b border-slate-700 mb-4  uppercase"
-          >
+          <h1 className="pb-[0.15rem] text-2xl border-b border-slate-700 mb-4  uppercase">
             My Story
-          </Heading>
+          </h1>
           <article>
             {myStory.map((section) => (
               <div key={section.title}>
-                <Heading as="h2" className="uppercase text-primary-100">
+                <h2 className="text-xl font-bold uppercase md:text-2xl text-primary-100 ">
                   {section.title}
-                </Heading>
+                </h2>
                 <div className="mb-4 space-y-3">
                   {section.p.map((p, i) => (
-                    <Text key={i}>
-                      <p>{p}</p>
-                    </Text>
+                    <Text key={i}>{p}</Text>
                   ))}
                 </div>
               </div>

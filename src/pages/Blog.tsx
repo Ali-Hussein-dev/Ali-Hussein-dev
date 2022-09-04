@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Head from 'next/head'
-import { Heading, Text } from '@chakra-ui/react'
+import { Text } from '@mantine/core'
 //=======================
 const blogs = [
   {
@@ -56,12 +56,9 @@ const Blog: React.FC = () => (
     </Head>
     <div className="container-white">
       <div className="w-full">
-        <Heading
-          as="h1"
-          className="pb-1 mb-3 font-bold border-b text-primary-500 border-primary-400"
-        >
+        <h1 className="pb-1 mb-3 text-4xl font-bold border-b text-primary-500 border-primary-400">
           Last Articles
-        </Heading>
+        </h1>
         <div className="space-y-4">
           {blogs.map((o, i) => (
             <a
@@ -69,21 +66,21 @@ const Blog: React.FC = () => (
               target="_blank"
               rel="noreferrer"
               key={i}
-              className="flex flex-col pb-2 overflow-hidden lg:pb-0 rounded-xl hover:bg-slate-800/50 lg:row-between lg:flex-row group"
+              className="flex flex-col pb-2 overflow-hidden lg:pb-0 rounded-xl hover:bg-slate-100/10 lg:row-between lg:flex-row group"
             >
               <div className="order-2 w-full lg:self-start lg:pr-4 lg:w-8/12 lg:pt-4">
                 <div className="pl-2">
-                  <Heading
-                    as="h2"
-                    size="md"
-                    className="mb-2 text-lg font-semibold text-gray-50 md:text-xl"
-                  >
+                  <h2 className="text-lg font-semibold text-gray-800 uppercase md:text-xl">
                     {o.title}
-                  </Heading>
-                  <Text noOfLines={2} className="italic text-slate-300">
+                  </h2>
+                  <Text
+                    lineClamp={3}
+                    className="italic text-slate-800"
+                    color="dark"
+                  >
                     {o.description}
                   </Text>
-                  <span className="text-base italic tracking-tight text-primary-100">
+                  <span className="text-base italic tracking-tight text-gray-800">
                     {o.pub}
                   </span>
                 </div>

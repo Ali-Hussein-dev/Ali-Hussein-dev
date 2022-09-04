@@ -1,4 +1,3 @@
-import { Heading, Text } from '@chakra-ui/react'
 import Head from 'next/head'
 import Link from 'next/link'
 import { FiDownloadCloud } from 'react-icons/fi'
@@ -57,17 +56,17 @@ const Tech = ({
   subtitle?: string
 }) => {
   return (
-    <div className="break-inside pb-2">
+    <div className="pb-2">
       <div className="row-start gap-x-2">
         <Icon className="text-slate-800" />
-        <Heading as="h3" size="md" className="uppercase">
+        <h3 className="text-lg font-extrabold tracking-tighter uppercase md:text-2xl">
           {title}
-          <span className="ml-1 italic font-normal normal-case">
+          <span className="ml-1 text-base italic font-normal normal-case">
             {subtitle}
           </span>
-        </Heading>
+        </h3>
       </div>
-      <p className="pl-7 tracking-tight ">{parag}</p>
+      <p className="leading-5 tracking-tighter md:text-xl pl-7">{parag}</p>
     </div>
   )
 }
@@ -79,19 +78,18 @@ const Index: React.FC = () => (
     </Head>
     <section id="Home" className="layout lg:pt-12">
       <div className="lg:max-w-[850px] container-white ">
-        <Heading as="h1" size="lg" className="mb-2 text-3xl text-primary-500">
+        <h1 className="mb-2 text-xl font-extrabold tracking-tighter md:text-2xl text-primary-400">
           UX-Driven Frontend Engineer
-        </Heading>
-
-        <Text className="pb-2 mb-6 border-b border-slate-400 text-slate-900">
+        </h1>
+        <p className="pb-2 mb-6 leading-6 tracking-tighter border-b border-slate-400 text-slate-900 ">
           I help companies and individuals build web applications with clean UI,
           intuitive UX, and high performance. I can work for you on-site if you
           are in Hamburg or remotely if you are in EU time zones. Feel free to
           reach out if you think I could fit into your team.
-        </Text>
-        <Heading as="h2" size="lg" className="mb-2 text-primary-500">
-          My Stack
-        </Heading>
+        </p>
+        <h2 className="pl-6 mb-2 text-xl font-extrabold md:text-2xl text-primary-400">
+          Toolbox
+        </h2>
         <div className="pb-2 mb-3 leading-8 border-b border-slate-400 text-slate-900">
           {techSkills.map((o) => (
             <Tech
