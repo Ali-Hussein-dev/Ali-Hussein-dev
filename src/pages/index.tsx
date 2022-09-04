@@ -56,17 +56,17 @@ const Tech = ({
   subtitle?: string
 }) => {
   return (
-    <div className="pb-2 break-inside">
+    <div className="pb-2">
       <div className="row-start gap-x-2">
         <Icon className="text-slate-800" />
-        <h3 className="text-2xl font-extrabold tracking-tight uppercase">
+        <h3 className="text-lg font-extrabold tracking-tighter uppercase md:text-2xl">
           {title}
-          <span className="ml-1 italic font-normal normal-case">
+          <span className="ml-1 text-base italic font-normal normal-case">
             {subtitle}
           </span>
         </h3>
       </div>
-      <p className="text-xl tracking-tighter pl-7">{parag}</p>
+      <p className="leading-5 tracking-tighter md:text-xl pl-7">{parag}</p>
     </div>
   )
 }
@@ -78,16 +78,16 @@ const Index: React.FC = () => (
     </Head>
     <section id="Home" className="layout lg:pt-12">
       <div className="lg:max-w-[850px] container-white ">
-        <h1 className="mb-2 text-2xl font-extrabold tracking-tighter md:text-3xl text-primary-400">
+        <h1 className="mb-2 text-xl font-extrabold tracking-tighter md:text-2xl text-primary-400">
           UX-Driven Frontend Engineer
         </h1>
-        <p className="pb-2 mb-6 text-xl tracking-tighter border-b border-slate-400 text-slate-900 ">
+        <p className="pb-2 mb-6 leading-6 tracking-tighter border-b border-slate-400 text-slate-900 ">
           I help companies and individuals build web applications with clean UI,
           intuitive UX, and high performance. I can work for you on-site if you
           are in Hamburg or remotely if you are in EU time zones. Feel free to
           reach out if you think I could fit into your team.
         </p>
-        <h2 className="mb-2 text-2xl font-extrabold md:text-3xl text-primary-400">
+        <h2 className="pl-6 mb-2 text-xl font-extrabold md:text-2xl text-primary-400">
           Toolbox
         </h2>
         <div className="pb-2 mb-3 leading-8 border-b border-slate-400 text-slate-900">
