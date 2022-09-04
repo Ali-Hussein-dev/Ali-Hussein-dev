@@ -101,10 +101,8 @@ const ProjectCard: React.FC<{
         <h3 className="mb-1 font-semibold uppercase text-primary-100">
           {name}
         </h3>
-        <Text size="xl">{description}</Text>
-        <Text size="xl" className="mt-2">
-          {stack}
-        </Text>
+        <Text>{description}</Text>
+        <Text className="mt-2">{stack}</Text>
       </div>
       <div className="flex flex-wrap items-center pt-1">
         <Link href={href}>

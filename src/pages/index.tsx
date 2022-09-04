@@ -78,7 +78,7 @@ const Index: React.FC = () => (
     </Head>
     <section id="Home" className="layout lg:pt-12">
       <div className="lg:max-w-[850px] container-white ">
-        <h1 className="mb-2 text-3xl font-extrabold tracking-tighter text-primary-400">
+        <h1 className="mb-2 text-2xl font-extrabold tracking-tighter md:text-3xl text-primary-400">
           UX-Driven Frontend Engineer
         </h1>
         <p className="pb-2 mb-6 text-xl tracking-tighter border-b border-slate-400 text-slate-900 ">
@@ -87,8 +87,8 @@ const Index: React.FC = () => (
           are in Hamburg or remotely if you are in EU time zones. Feel free to
           reach out if you think I could fit into your team.
         </p>
-        <h2 className="mb-2 text-3xl font-extrabold text-primary-400">
-          Tookbox
+        <h2 className="mb-2 text-2xl font-extrabold md:text-3xl text-primary-400">
+          Toolbox
         </h2>
         <div className="pb-2 mb-3 leading-8 border-b border-slate-400 text-slate-900">
           {techSkills.map((o) => (
