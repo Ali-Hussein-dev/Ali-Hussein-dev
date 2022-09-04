@@ -41,7 +41,7 @@ const Aboutme: React.FC = () => {
       </Head>
       <div id="About" className="layout ">
         <section className="container-white text-slate-300 bg-slate-900/70 ">
-          <h1 className="pb-[0.15rem] text-2xl border-b border-slate-700 mb-4  uppercase">
+          <h1 className="pb-[0.15rem] text-xl border-b border-slate-700 mb-4  uppercase">
             My Story
           </h1>
           <article>

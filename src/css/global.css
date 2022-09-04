@@ -55,6 +55,9 @@
   .layout {
     @apply min-h-screen px-1 py-8 md:px-3 lg:max-w-[1100px] mx-auto;
   }
+  .h1 {
+    @apply mb-1 text-lg font-bold tracking-tight md:text-2xl;
+  }
 }
 
 ::-webkit-scrollbar {

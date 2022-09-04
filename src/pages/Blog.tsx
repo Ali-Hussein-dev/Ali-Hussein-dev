@@ -56,7 +56,7 @@ const Blog: React.FC = () => (
     </Head>
     <div className="container-white">
       <div className="w-full">
-        <h1 className="pb-1 mb-3 text-4xl font-bold border-b text-primary-500 border-primary-400">
+        <h1 className="pb-1 mb-2 border-b h1 text-primary-500 border-primary-400">
           Last Articles
         </h1>
         <div className="space-y-4">

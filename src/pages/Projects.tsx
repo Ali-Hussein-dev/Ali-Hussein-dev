@@ -143,7 +143,7 @@ const Projects: React.FC = () => (
       <title>Projects</title>
     </Head>
     <div className="container-white">
-      <h1 className="pb-1 mb-4 text-2xl font-bold tracking-tight border-b text-primary-400 border-primary-300">
+      <h1 className="pb-1 mb-2 border-b h1 text-primary-400 border-primary-300">
         Last Projects
       </h1>
       <div className="lg:masonry-cols-3 md:masonry-cols-2">
