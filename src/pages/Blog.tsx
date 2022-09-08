@@ -54,7 +54,7 @@ const Blog: React.FC = () => (
     <Head>
       <title>Blog</title>
     </Head>
-    <div className="container-white">
+    <div className="container-white blur-light">
       <div className="w-full">
         <h1 className="pb-1 mb-2 border-b h1 text-primary-500 border-primary-400">
           Last Articles

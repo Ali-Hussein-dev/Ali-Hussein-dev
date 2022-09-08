@@ -40,7 +40,7 @@ const Aboutme: React.FC = () => {
         <title>About</title>
       </Head>
       <div id="About" className="layout ">
-        <section className="container-white text-slate-300 bg-slate-900/70 ">
+        <section className="container-white text-slate-300 blur-dark">
           <h1 className="pb-[0.15rem] text-xl border-b border-slate-700 mb-4  uppercase">
             My Story
           </h1>

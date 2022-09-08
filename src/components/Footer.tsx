@@ -40,7 +40,7 @@ const Link: React.FC<LinkProp> = ({ href, IconName, cn, children }) => (
 )
 //=======================
 const Footer: React.FC = () => (
-  <footer className="bottom-0 w-full py-1 bg-slate-800/80">
+  <footer className="bottom-0 w-full py-1 blur-dark">
     <div className="flex flex-col items-center w-full px-2 mx-auto lg:flex-row lg:justify-between lg:w-8/12 ">
       <span className="font-light text-gray-100">
         @{new Date().getFullYear()} Ali Hussein

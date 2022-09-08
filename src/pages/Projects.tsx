@@ -83,7 +83,7 @@ const ProjectCard: React.FC<{
   imgSrc?: string
   code?: string
 }> = ({ imgSrc = '', name, href, description, stack, src, code }) => (
-  <div className="mb-4 space-y-2 overflow-hidden rounded-sm break-inside bg-slate-900/80">
+  <div className="mb-4 space-y-2 overflow-hidden rounded-sm break-inside ">
     {src ? (
       // @ts-expect-error debug later
       <Player>
@@ -142,7 +142,7 @@ const Projects: React.FC = () => (
     <Head>
       <title>Projects</title>
     </Head>
-    <div className="container-white">
+    <div className="container-white blur-dark">
       <h1 className="pb-1 mb-2 border-b h1 text-primary-400 border-primary-300">
         Last Projects
       </h1>

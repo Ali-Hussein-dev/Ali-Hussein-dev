@@ -77,7 +77,7 @@ const Index: React.FC = () => (
       <title>Home</title>
     </Head>
     <section id="Home" className="layout lg:pt-12">
-      <div className="lg:max-w-[850px] container-white ">
+      <div className="lg:max-w-[850px] container-white blur-light">
         <h1 className="h1 text-primary-400">UX-Driven Frontend Engineer</h1>
         <p className="pb-2 mb-6 leading-6 tracking-tighter border-b border-slate-400 text-slate-900 ">
           I help companies and individuals build web applications with clean UI,
@@ -99,7 +99,7 @@ const Index: React.FC = () => (
         </div>
         <button
           type="button"
-          className="w-full h-10 px-4 py-1 rounded-lg select-none  hover:bg-slate-800/70 bg-slate-800/50 active:translate-y-1 sm:max-w-[190px] sm:justify-start"
+          className="w-full h-10 px-4 py-1 rounded-lg  select-none  hover:bg-slate-900/70 bg-slate-900/50 active:translate-y-1 sm:max-w-[190px] sm:justify-start"
         >
           <Link href="/cv.pdf" passHref>
             <a className="flex items-center justify-center gap-x-3">

@@ -5,7 +5,7 @@
   "license": "MIT",
   "version": "1.0.0",
   "scripts": {
-    "dev": "next dev -p 3001",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "type-check": "tsc --pretty --noEmit",
@@ -28,6 +28,7 @@
   "dependencies": {
     "@mantine/core": "^5.2.5",
     "@mantine/next": "^5.2.5",
+    "framer-motion": "6.5",
     "next": "^12.2.5",
     "next-connect": "^0.12.2",
     "nextjs-progressbar": "^0.0.14",
