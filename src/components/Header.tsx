@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
 import Link from 'next/link'
+import { useScroll } from 'framer-motion'
 
 const linksList = ['Home', 'Projects', 'Blog', 'About']
 interface StyledLinkProps extends React.ComponentPropsWithoutRef<'button'> {
@@ -21,12 +22,20 @@ const StyledLink: React.FC<StyledLinkProps> = ({ label, ...rest }) => (
 )
 export const Header: React.FC = () => {
   const [isOpen, setIsOpen] = React.useState(false)
+  const ref = React.useRef<HTMLHeadingElement>()
+  const [y, setY] = React.useState(0)
+  const { height = 0 } = ref.current?.getBoundingClientRect() ?? {}
+
+  const { scrollY } = useScroll()
+  React.useEffect(() => scrollY.onChange(() => setY(scrollY.get())), [scrollY])
+
   return (
     <div className="relative h-14">
       <header
-        className={`${
-          isOpen ? 'fixed h-screen z-10 backdrop-blur-xl' : 'h-14'
-        } bg-gray-800/50  backdrop-blur w-full flex justify-end  sm:justify-center items-center sm:items-center fixed top-0 shadow z-10`}
+        ref={() => ref}
+        className={`${isOpen ? 'fixed h-screen z-10 blur-dark' : 'h-14'} ${
+          y > height ? 'blur-dark shadow-lg' : 'bg-transparent'
+        } w-full flex justify-end  sm:justify-center items-center sm:items-center fixed top-0  z-10`}
       >
         {/* -------------------------------------------------------------menu row for desktop */}
         <div className="justify-center gap-x-10 hidden w-full text-xl font-semibold sm:flex md:text-2xl max-w-[880px] ">
