@@ -2,6 +2,7 @@ import * as React from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
 import Link from 'next/link'
 import { useScroll } from 'framer-motion'
+import clsx from 'clsx'
 
 const linksList = ['Home', 'Projects', 'Blog', 'About']
 interface StyledLinkProps extends React.ComponentPropsWithoutRef<'button'> {
@@ -33,9 +34,11 @@ export const Header: React.FC = () => {
     <div className="relative h-14">
       <header
         ref={() => ref}
-        className={`${isOpen ? 'fixed h-screen z-10 blur-dark' : 'h-14'} ${
-          y > height ? 'blur-dark shadow-lg' : 'bg-transparent'
-        } w-full flex justify-end  sm:justify-center items-center sm:items-center fixed top-0  z-10`}
+        className={clsx(
+          'w-full flex justify-end  sm:justify-center items-center sm:items-center fixed top-0  z-10',
+          y > height ? 'blur-dark shadow-lg' : 'bg-transparent',
+          isOpen ? 'fixed h-screen z-10 blur-dark' : 'h-14'
+        )}
       >
         {/* -------------------------------------------------------------menu row for desktop */}
         <div className="justify-center gap-x-10 hidden w-full text-xl font-semibold sm:flex md:text-2xl max-w-[880px] ">

@@ -28,7 +28,8 @@
   "dependencies": {
     "@mantine/core": "^5.2.5",
     "@mantine/next": "^5.2.5",
-    "framer-motion": "6.5",
+    "clsx": "^1.1.1",
+    "framer-motion": "^6.5.1",
     "next": "^12.2.5",
     "next-connect": "^0.12.2",
     "nextjs-progressbar": "^0.0.14",
