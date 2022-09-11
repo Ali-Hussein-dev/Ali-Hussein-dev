@@ -79,19 +79,17 @@ const Index: React.FC = () => (
     </Head>
     <section id="Home" className="layout lg:pt-12">
       <div className="lg:max-w-[850px] container-white blur-light">
-        <div className="pb-2 mb-6 border-b md:row-between border-slate-300">
-          <div className="md:w-11/12">
-            <h1 className="h1 text-primary-400">UX-Driven Frontend Engineer</h1>
-            <p className="pb-2 leading-6 tracking-tighter text-slate-900 ">
-              I help companies and individuals build web applications with clean
-              UI, intuitive UX, and high performance. I can work for you on-site
-              if you are in Hamburg or remotely if you are in EU time zones.
-              Feel free to reach out if you think I could fit into your team.
-            </p>
-          </div>
-          <div className="relative w-full aspect-video">
-            <Image src="/website-maintenance.svg" layout="fill" alt="image" />
-          </div>
+        <div className="relative w-full aspect-video">
+          <Image src="/website-maintenance.svg" layout="fill" alt="image" />
+        </div>
+        <div className="pb-2 mb-6 border-b border-slate-300">
+          <h1 className="h1 text-primary-400">UX-Driven Frontend Engineer</h1>
+          <p className="pb-2 leading-6 tracking-tighter text-slate-900 ">
+            I help companies and individuals build web applications with clean
+            UI, intuitive UX, and high performance. I can work for you on-site
+            if you are in Hamburg or remotely if you are in EU time zones. Feel
+            free to reach out if you think I could fit into your team.
+          </p>
         </div>
         <h2 className="pl-6 h1 text-primary-400">Toolbox</h2>
         <div className="pb-2 mb-3 leading-8 border-b border-slate-300 text-slate-900">
