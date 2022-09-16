@@ -5,74 +5,7 @@ import React from 'react'
 import { BiLinkExternal } from 'react-icons/bi'
 import { FaGithub } from 'react-icons/fa'
 import { Player, BigPlayButton } from 'video-react'
-const projects = [
-  {
-    href: 'https://restaurant-starter-de.vercel.app/luxury',
-    name: 'Restaurant Stater',
-    description: 'Restaurant website',
-    imgSrc: '/projects-videos/restaurant-starter-de.png',
-    stack: 'Nextjs, React, Tailwindcss, DaisyUI',
-  },
-  {
-    href: 'https://website-starter-next.vercel.app',
-    name: 'Website Starter',
-    description:
-      'Website starter with a basic layout  and functionality that every typical website need.',
-    stack: 'TS, Nextjs, React, Tailwindcss, DaisyUI',
-    imgSrc: '/projects-videos/website-starter.png',
-    code: 'https://github.com/Ali-Hussein-dev/website-starter',
-  },
-  {
-    href: 'https://gastro-abr.vercel.app/',
-    name: 'Calculator',
-    description:
-      'special calculator made for waiters. It reduces calculation time for finl statement by 60% approximately and it reduces miscalculations',
-    stack: 'TS, Next.js, React, Tailwindcss, PWA',
-    src: '/projects-videos/kellner-abr.mp4',
-    vidType: 'video/mp4',
-    code: 'https://github.com/Ali-Hussein-dev/kellener-abr',
-  },
-  {
-    href: 'https://green-menus.vercel.app/',
-    name: 'Dishes/Drinks Menu',
-    description:
-      'Saas App: digital menus platform that enables restaurants owners to host and update their menus',
-    stack:
-      'TS, Nextjs, React, FaunaDB, Redis, Jest, Testing-Library, Tailwindcss, Chakra-UI, Ajv',
-    src: '/projects-videos/dashboard-menu.mp4',
-    vidType: 'video/mp4',
-    href2: 'https://smart-menu-demo.vercel.app/en-us',
-    href3:
-      'https://menu-1-git-theme-ali-hussein.vercel.app/restaurants/123/menu',
-  },
-  {
-    href: 'https://find-meaning.vercel.app/',
-    name: 'Dictionary',
-    description:
-      'English dictionary with basic defintions section, community usage and related gifs to the search keyword',
-    stack: 'TS, Nextjs, React, Jest, Tailwindcss, Chakra-UI, MongoDB, PWA',
-    src: '/projects-videos/find-meaning.mp4',
-    vidType: 'video/mp4',
-    href2: 'https://find-meaning.web.app/',
-    code: 'https://github.com/Ali-Hussein-dev/find-meaning',
-  },
-  {
-    href: 'https://table-example.vercel.app/',
-    name: 'Table Example',
-    description: 'Table Examaple with some typical functionalities',
-    stack: 'TanStack/React-Table-v8, TS, Nextjs, React, Tailwindcss, Mantine',
-    imgSrc: '/projects-videos/table-example.png',
-    code: 'https://github.com/Ali-Hussein-dev/table-example',
-  },
-  {
-    href: 'https://spreskill-app.web.app/',
-    name: 'Spreskill',
-    description: 'A landing page for a mobile app with Bootstrap',
-    src: '/projects-videos/spreskill2.mp4',
-    stack: 'Html, Bootstrap',
-  },
-]
-
+import projects from '../../db/projects.json'
 //=======================
 const ProjectCard: React.FC<{
   name: string
