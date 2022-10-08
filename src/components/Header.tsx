@@ -31,7 +31,7 @@ export const Header: React.FC = () => {
   React.useEffect(() => scrollY.onChange(() => setY(scrollY.get())), [scrollY])
 
   return (
-    <div className="relative h-14">
+    <div className="relative w-full h-14">
       <header
         ref={() => ref}
         className={clsx(

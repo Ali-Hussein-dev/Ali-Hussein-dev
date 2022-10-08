@@ -13,8 +13,14 @@ const techSkills = [
   {
     title: 'React Ecosystem',
     parag:
-      'Typescript, React, Nextjs, Tailwindcss, Chakra-UI, Swiper, ReactQuery, React hook form, ...etc.',
+      'Typescript, React, Nextjs, Tailwindcss, Chakra-UI, Swiper, ReactQuery, Recharts, React hook form, ...etc.',
     Icon: FaReact,
+  },
+  {
+    title: 'Workflow Tools',
+    parag:
+      'Git, GitHub, Eslint, Prettier, Nx workspaces, Figma, Notion, Lucidchart, Sizzy browser',
+    Icon: FaTools,
   },
   {
     title: 'Frontend',
@@ -22,22 +28,17 @@ const techSkills = [
     Icon: GoBrowser,
   },
   {
-    title: 'Backend',
-    parag: 'Nodejs, Redis, FaunaDB',
-    Icon: AiFillDatabase,
-    subtitle: ' (familiar)',
-  },
-  {
     title: 'Quality Assurance',
     parag: 'Jest, React Testing Library',
     Icon: SiSpeedtest,
   },
   {
-    title: 'Workflow Tools',
-    parag:
-      'VScode, Git, GitHub, Eslint, Prettier, Nx workspaces, Figma, Notion, Lucidchart, Sizzy browser',
-    Icon: FaTools,
+    title: 'Backend',
+    parag: 'Nodejs, Redis, FaunaDB',
+    Icon: AiFillDatabase,
+    subtitle: ' (familiar)',
   },
+
   {
     title: 'Interested in',
     parag:
@@ -59,15 +60,17 @@ const Tech = ({
   return (
     <div className="pb-2">
       <div className="row-start gap-x-2">
-        <Icon className="text-slate-800" />
-        <h3 className="text-lg font-extrabold tracking-tighter uppercase md:text-2xl">
+        <Icon className="text-slate-700" />
+        <h3 className="font-semibold tracking-tighter uppercase md:text-2xl">
           {title}
           <span className="ml-1 text-base italic font-normal normal-case">
             {subtitle}
           </span>
         </h3>
       </div>
-      <p className="leading-5 tracking-tighter md:text-xl pl-7">{parag}</p>
+      <p className="leading-5 tracking-tighter md:text-xl pl-7 text-slate-700">
+        {parag}
+      </p>
     </div>
   )
 }
@@ -77,22 +80,28 @@ const Index: React.FC = () => (
     <Head>
       <title>Home</title>
     </Head>
-    <section id="Home" className="layout lg:pt-12">
-      <div className="lg:max-w-[850px] container-white blur-light">
-        <div className="relative w-full aspect-video">
-          <Image src="/website-maintenance.svg" layout="fill" alt="image" />
+    <section id="Home" className="max-w-[1200px] mx-auto px-2 py-8 lg:pt-12">
+      <div className="w-full container-white blur-light">
+        <div className="mb-6 lg:row-between">
+          <div className="relative w-full md:h-80 aspect-video lg:order-2">
+            <Image src="/website-maintenance.svg" layout="fill" alt="image" />
+          </div>
+          <div>
+            <h1 className="lg:mb-2 h1 text-primary-400 lg:text-5xl">
+              UX-Driven <br className="hidden lg:block" /> Frontend Engineer
+            </h1>
+            <p className="leading-6 text-slate-700 ">
+              I help companies and individuals build web applications with clean
+              UI, intuitive UX, and high performance. I can work for you on-site
+              if you are in Hamburg or remotely if you are in EU time zones.
+              Feel free to reach out if you think I could fit into your team.
+            </p>
+          </div>
         </div>
-        <div className="pb-2 mb-6 border-b border-slate-300">
-          <h1 className="h1 text-primary-400">UX-Driven Frontend Engineer</h1>
-          <p className="pb-2 leading-6 tracking-tighter text-slate-900 ">
-            I help companies and individuals build web applications with clean
-            UI, intuitive UX, and high performance. I can work for you on-site
-            if you are in Hamburg or remotely if you are in EU time zones. Feel
-            free to reach out if you think I could fit into your team.
-          </p>
-        </div>
-        <h2 className="pl-6 h1 text-primary-400">Toolbox</h2>
-        <div className="pb-2 mb-3 leading-8 border-b border-slate-300 text-slate-900">
+        <h2 className="mb-3 text-2xl text-center lg:text-3xl h1 text-primary-400">
+          Toolbox
+        </h2>
+        <div className="pb-2 mb-3 leading-8 border-b border-slate-300 text-slate-900 lg:grid lg:grid-cols-2 lg:gap-x-3">
           {techSkills.map((o) => (
             <Tech
               key={o.title}
