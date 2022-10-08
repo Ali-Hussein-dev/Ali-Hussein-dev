@@ -83,7 +83,7 @@ const Index: React.FC = () => (
     <section id="Home" className="max-w-[1200px] mx-auto px-2 py-8 lg:pt-12">
       <div className="w-full container-white blur-light">
         <div className="lg:row-between">
-          <div className="relative w-full h-80 aspect-video lg:order-2">
+          <div className="relative w-full md:h-80 aspect-video lg:order-2">
             <Image src="/website-maintenance.svg" layout="fill" alt="image" />
           </div>
           <div>
