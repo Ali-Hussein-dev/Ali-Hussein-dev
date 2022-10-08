@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Head from 'next/head'
 import { Text } from '@mantine/core'
-import * as blogs from '../../db/blogs.json'
+import blogs from '../../db/blogs.json'
 
 //=======================
 const Blog: React.FC = () => (
