@@ -60,15 +60,15 @@ const Tech = ({
   return (
     <div className="pb-2">
       <div className="row-start gap-x-2">
-        <Icon className="text-slate-800" />
-        <h3 className="text-lg font-semibold uppercase md:text-2xl">
+        <Icon className="text-slate-700" />
+        <h3 className="font-semibold tracking-tighter uppercase md:text-2xl">
           {title}
           <span className="ml-1 text-base italic font-normal normal-case">
             {subtitle}
           </span>
         </h3>
       </div>
-      <p className="leading-5 tracking-tighter md:text-xl pl-7 text-slate-800">
+      <p className="leading-5 tracking-tighter md:text-xl pl-7 text-slate-700">
         {parag}
       </p>
     </div>
@@ -82,12 +82,12 @@ const Index: React.FC = () => (
     </Head>
     <section id="Home" className="max-w-[1200px] mx-auto px-2 py-8 lg:pt-12">
       <div className="w-full container-white blur-light">
-        <div className="lg:row-between">
+        <div className="mb-6 lg:row-between">
           <div className="relative w-full md:h-80 aspect-video lg:order-2">
             <Image src="/website-maintenance.svg" layout="fill" alt="image" />
           </div>
           <div>
-            <h1 className="mb-2 h1 text-primary-400 lg:text-5xl">
+            <h1 className="lg:mb-2 h1 text-primary-400 lg:text-5xl">
               UX-Driven <br className="hidden lg:block" /> Frontend Engineer
             </h1>
             <p className="leading-6 text-slate-700 ">
@@ -98,7 +98,9 @@ const Index: React.FC = () => (
             </p>
           </div>
         </div>
-        <h2 className="pl-6 lg:text-3xl h1 text-primary-400">Toolbox</h2>
+        <h2 className="mb-3 text-2xl text-center lg:text-3xl h1 text-primary-400">
+          Toolbox
+        </h2>
         <div className="pb-2 mb-3 leading-8 border-b border-slate-300 text-slate-900 lg:grid lg:grid-cols-2 lg:gap-x-3">
           {techSkills.map((o) => (
             <Tech

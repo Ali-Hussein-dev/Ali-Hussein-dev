@@ -63,7 +63,7 @@
     @apply min-h-screen px-1 py-8 mx-auto md:px-3 lg:px-12 lg:max-w-screen-xl;
   }
   .h1 {
-    @apply mb-1 text-lg font-bold tracking-tight md:text-2xl;
+    @apply mb-1 text-xl font-bold tracking-tight md:text-2xl;
   }
 }
 
