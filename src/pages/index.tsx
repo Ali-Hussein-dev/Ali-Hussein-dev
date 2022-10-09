@@ -80,28 +80,37 @@ const Index: React.FC = () => (
     <Head>
       <title>Home</title>
     </Head>
-    <section id="Home" className="max-w-[1200px] mx-auto px-2 py-8 lg:pt-12">
+    <section
+      id="Home"
+      className="max-w-[1200px] mx-auto px-2 md:px-6 py-8 lg:pt-12"
+    >
       <div className="w-full container-white blur-light">
         <div className="mb-6 lg:row-between">
           <div className="relative w-full md:h-80 aspect-video lg:order-2">
             <Image src="/website-maintenance.svg" layout="fill" alt="image" />
           </div>
-          <div>
-            <h1 className="lg:mb-2 h1 text-primary-400 lg:text-5xl">
+          <div className="space-y-2">
+            <h1 className="lg:mb-2 h1 text-slate-800 lg:text-5xl">
               UX-Driven <br className="hidden lg:block" /> Frontend Engineer
             </h1>
-            <p className="leading-6 text-slate-700 ">
+            <p className="leading-6 text-slate-700">
               I help companies and individuals build web applications with clean
               UI, intuitive UX, and high performance. I can work for you on-site
               if you are in Hamburg or remotely if you are in EU time zones.
               Feel free to reach out if you think I could fit into your team.
             </p>
+            <a
+              href="mailto: ali.hussein.pre@gmail.com"
+              className="w-full h-10 font-semibold rounded-lg relative overflow-hidden select-none  border-sky-600 border-2 text-sky-600  active:translate-y-1 sm:max-w-[190px] col-center hover:text-slate-50 hover:bg-sky-600"
+            >
+              Get in touch &#128075;
+            </a>
           </div>
         </div>
-        <h2 className="mb-3 text-2xl text-center lg:text-3xl h1 text-primary-400">
+        <h2 className="mb-3 text-2xl text-center lg:text-3xl h1 text-slate-800">
           Toolbox
         </h2>
-        <div className="pb-2 mb-3 leading-8 border-b border-slate-300 text-slate-900 lg:grid lg:grid-cols-2 lg:gap-x-3">
+        <div className="pb-2 mb-3 leading-8 border-b border-slate-400 text-slate-900 lg:grid lg:grid-cols-2 lg:gap-x-3">
           {techSkills.map((o) => (
             <Tech
               key={o.title}
@@ -114,7 +123,7 @@ const Index: React.FC = () => (
         </div>
         <button
           type="button"
-          className="w-full h-10 px-4 py-1 rounded-lg  select-none  hover:bg-slate-900/70 bg-slate-900/50 active:translate-y-1 sm:max-w-[190px] sm:justify-start"
+          className="w-full h-10 px-4 rounded-lg  select-none  hover:bg-slate-900/90 bg-slate-900/70 active:translate-y-1 sm:max-w-[190px] sm:justify-start"
         >
           <Link href="/cv.pdf" passHref>
             <a className="flex items-center justify-center gap-x-3">

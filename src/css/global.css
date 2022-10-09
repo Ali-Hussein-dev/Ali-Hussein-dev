@@ -51,7 +51,7 @@
     @apply items-center justify-between f-col;
   }
   .blur-light {
-    @apply bg-white/50 backdrop-blur-2xl;
+    @apply bg-white/70 backdrop-blur-xl;
   }
   .blur-dark {
     @apply bg-black/60 backdrop-blur-2xl;
