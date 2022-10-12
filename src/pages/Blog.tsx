@@ -9,7 +9,7 @@ const Blog: React.FC = () => (
     <Head>
       <title>Blog</title>
     </Head>
-    <div className="container-white blur-light">
+    <div className="container-white bg-white">
       <div className="w-full">
         <h1 className="pb-1 mb-2 border-b h1 text-primary-500 border-primary-400">
           Last Articles
@@ -21,7 +21,7 @@ const Blog: React.FC = () => (
               target="_blank"
               rel="noreferrer"
               key={i}
-              className="flex flex-col pb-2 overflow-hidden lg:pb-0 rounded-xl hover:bg-slate-100/10 lg:row-between lg:flex-row group"
+              className="flex flex-col pb-2 overflow-hidden lg:pb-0 rounded-xl hover:bg-slate-50 lg:row-between lg:flex-row group"
             >
               <div className="order-2 w-full lg:self-start lg:pr-4 lg:w-8/12 lg:pt-4">
                 <div className="pl-2">

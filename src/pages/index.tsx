@@ -7,7 +7,6 @@ import { GoBrowser } from 'react-icons/go'
 import { FaTools, FaReact } from 'react-icons/fa'
 import { RiHeartsFill } from 'react-icons/ri'
 import { IconType } from 'react-icons'
-import Image from 'next/image'
 
 const techSkills = [
   {
@@ -82,16 +81,13 @@ const Index: React.FC = () => (
     </Head>
     <section
       id="Home"
-      className="max-w-[1200px] mx-auto px-2 md:px-6 py-8 lg:pt-12"
+      className="max-w-[1200px] mx-auto px-2 md:px-6 py-8 lg:pt-16"
     >
-      <div className="w-full container-white blur-light">
-        <div className="mb-6 lg:row-between">
-          <div className="relative w-full md:h-80 aspect-video lg:order-2">
-            <Image src="/website-maintenance.svg" layout="fill" alt="image" />
-          </div>
+      <div className="w-full bg-white container-white">
+        <div className="pt-10">
           <div className="space-y-2">
             <h1 className="lg:mb-2 h1 text-slate-800 lg:text-5xl">
-              UX-Driven <br className="hidden lg:block" /> Frontend Engineer
+              UX-Driven Frontend Engineer
             </h1>
             <p className="leading-6 text-slate-700">
               I help companies and individuals build web applications with clean
