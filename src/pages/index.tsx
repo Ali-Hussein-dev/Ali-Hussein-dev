@@ -84,7 +84,7 @@ const Index: React.FC = () => (
       className="max-w-[1200px] mx-auto px-2 md:px-6 py-8 lg:pt-16"
     >
       <div className="w-full bg-white container-white">
-        <div className="pt-10">
+        <div className="pt-10 xs:pb-6">
           <div className="space-y-2">
             <h1 className="lg:mb-2 h1 text-slate-800 lg:text-5xl">
               UX-Driven Frontend Engineer
