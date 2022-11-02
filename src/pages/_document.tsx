@@ -1,4 +1,5 @@
 import { Html, Head, Main, NextScript } from 'next/document'
+import Script from 'next/script'
 
 // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 export default function Document() {
@@ -14,6 +15,7 @@ export default function Document() {
           content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"
           name="robots"
         />
+        <Script src="/bee.js" data-api="/_hive" strategy="afterInteractive" />
       </Head>
       <body className="scroll-smooth">
         <Main />
