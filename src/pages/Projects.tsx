@@ -25,7 +25,13 @@ const ProjectCard: React.FC<{
       </Player>
     ) : (
       <div className="relative aspect-video">
-        <Image src={imgSrc as string} layout="fill" alt="project image" />
+        <Image
+          src={imgSrc as string}
+          layout="fill"
+          alt="project image"
+          placeholder="blur"
+          blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mM0dgytBwACwgFK5PrQiQAAAABJRU5ErkJggg=="
+        />
       </div>
     )}
 
