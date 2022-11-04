@@ -6,12 +6,14 @@ import '../css/global.css'
 import NextNProgress from 'nextjs-progressbar'
 import Image from 'next/image'
 import BGImage from '../../public/bg-3.jpg'
+import { Nunito } from '@next/font/google'
+const font = Nunito()
 
 const MyApp: React.FC<{ Component: React.FC; pageProps: any }> = ({
   Component,
   pageProps,
 }): JSX.Element => (
-  <>
+  <div className={font.className}>
     <NextNProgress
       color="#fde68a"
       startPosition={0.3}
@@ -37,7 +39,7 @@ const MyApp: React.FC<{ Component: React.FC; pageProps: any }> = ({
       </div>
       <Footer />
     </main>
-  </>
+  </div>
 )
 
 export default MyApp
