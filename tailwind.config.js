@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
   content: ['./src/pages/**/*.{ts,tsx}', './src/components/**/*.{ts,tsx}'],
@@ -19,7 +20,11 @@ module.exports = {
           900: '#78350f',
         },
       },
+      fontFamily: { sans: ['Nuntino', ...defaultTheme.fontFamily.sans] },
     },
+  },
+  daisyui: {
+    theme: false,
   },
   plugins: [],
 }

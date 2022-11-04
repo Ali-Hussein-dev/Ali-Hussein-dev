@@ -2,10 +2,11 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { FiDownloadCloud } from 'react-icons/fi'
 import { SiSpeedtest } from 'react-icons/si'
-import { AiFillDatabase } from 'react-icons/ai'
+import { CgDatabase } from 'react-icons/cg'
 import { GoBrowser } from 'react-icons/go'
-import { FaTools, FaReact } from 'react-icons/fa'
-import { RiHeartsFill } from 'react-icons/ri'
+import { FaReact } from 'react-icons/fa'
+import { VscTools } from 'react-icons/vsc'
+import { BiHappyHeartEyes } from 'react-icons/bi'
 import { IconType } from 'react-icons'
 
 const techSkills = [
@@ -19,7 +20,7 @@ const techSkills = [
     title: 'Workflow Tools',
     parag:
       'Git, GitHub, Eslint, Prettier, Nx workspaces, Figma, Notion, Lucidchart, Sizzy browser',
-    Icon: FaTools,
+    Icon: VscTools,
   },
   {
     title: 'Frontend',
@@ -34,7 +35,7 @@ const techSkills = [
   {
     title: 'Backend',
     parag: 'Nodejs, Redis, FaunaDB',
-    Icon: AiFillDatabase,
+    Icon: CgDatabase,
     subtitle: ' (familiar)',
   },
 
@@ -42,7 +43,7 @@ const techSkills = [
     title: 'Interested in',
     parag:
       'Headless CMS, Cypress, Storybook, xState, AWS, GitHub Actions, Astro, SolidJS',
-    Icon: RiHeartsFill,
+    Icon: BiHappyHeartEyes,
   },
 ]
 const Tech = ({
@@ -60,7 +61,7 @@ const Tech = ({
     <div className="pb-2">
       <div className="row-start gap-x-2">
         <Icon className="text-slate-700" />
-        <h3 className="font-semibold tracking-tighter uppercase md:text-2xl">
+        <h3 className="font-sans font-bold tracking-tighter uppercase text-slate-700 md:text-xl">
           {title}
           <span className="ml-1 text-base italic font-normal normal-case">
             {subtitle}
@@ -81,32 +82,35 @@ const Index: React.FC = () => (
     </Head>
     <section
       id="Home"
-      className="max-w-[1200px] mx-auto px-2 md:px-6 py-8 lg:pt-16"
+      className="max-w-[1024px] mx-auto px-2 md:px-6 py-8 lg:pt-16"
     >
       <div className="w-full bg-white container-white">
-        <div className="pt-10 xs:pb-6">
-          <div className="space-y-2">
-            <h1 className="lg:mb-2 h1 text-slate-800 lg:text-5xl">
+        <div className="xs:pb-4">
+          <div className="pb-4 border-b ">
+            <h1 className="font-sans font-extrabold h1 text-slate-700">
               UX-Driven Frontend Engineer
             </h1>
-            <p className="leading-6 text-slate-700">
-              I help companies and individuals build web applications with clean
-              UI, intuitive UX, and high performance. I can work for you on-site
-              if you are in Hamburg or remotely if you are in EU time zones.
-              Feel free to reach out if you think I could fit into your team.
-            </p>
-            <a
-              href="mailto: ali.hussein.pre@gmail.com"
-              className="w-full h-10 font-semibold rounded-lg relative overflow-hidden select-none  border-sky-600 border-2 text-sky-600  active:translate-y-1 sm:max-w-[190px] col-center hover:text-slate-50 hover:bg-sky-600"
-            >
-              Get in touch &#128075;
-            </a>
+            <div>
+              <p className="mb-6 leading-6 text-slate-700 ">
+                I help companies and individuals build web applications with
+                clean UI, intuitive UX, and high performance. I can work for you
+                on-site if you are in Hamburg or remotely if you are in EU time
+                zones. Feel free to reach out if you think I could fit into your
+                team.
+              </p>
+              <a
+                href="mailto: ali.hussein.pre@gmail.com"
+                className="w-full h-10 py-1 font-semibold rounded-lg relative overflow-hidden select-none  border-sky-600 border-2 text-sky-600  active:translate-y-1 sm:max-w-[190px] hover:text-slate-50 hover:bg-sky-600  px-2"
+              >
+                Get in touch &#128075;
+              </a>
+            </div>
           </div>
         </div>
-        <h2 className="mb-3 text-2xl text-center lg:text-3xl h1 text-slate-800">
+        <h2 className="mb-1 font-sans text-2xl font-extrabold text-left lg:text-2xl h1 text-slate-700">
           Toolbox
         </h2>
-        <div className="pb-2 mb-3 leading-8 border-b border-slate-400 text-slate-900 lg:grid lg:grid-cols-2 lg:gap-x-3">
+        <div className="mb-4 leading-8 border-b text-slate-900 lg:grid lg:grid-cols-2 lg:gap-x-3">
           {techSkills.map((o) => (
             <Tech
               key={o.title}
@@ -119,13 +123,13 @@ const Index: React.FC = () => (
         </div>
         <button
           type="button"
-          className="w-full h-10 px-4 rounded-lg  select-none  hover:bg-slate-900/90 bg-slate-900/70 active:translate-y-1 sm:max-w-[190px] sm:justify-start"
+          className="w-full h-10 rounded-lg select-none  hover:bg-slate-900 bg-slate-900/90 active:translate-y-1 sm:max-w-[230px] sm:justify-start"
         >
           <Link href="/cv.pdf" passHref>
-            <a className="flex items-center justify-center gap-x-3">
+            <span className="flex items-center justify-center gap-x-2">
               <FiDownloadCloud />
               <span>Download CV</span>
-            </a>
+            </span>
           </Link>
         </button>
       </div>
