@@ -20,10 +20,9 @@ const ProjectCard: React.FC<{
     {src ? (
       <ReactPlayer url={src} controls width="100%" height="100%" />
     ) : (
-      <div>
+      <div className="relative aspect-video">
         <Image
-          height={300}
-          width={400}
+          fill
           src={imgSrc as string}
           alt="project image"
           placeholder="blur"
