@@ -34,8 +34,10 @@ export const Header: React.FC = () => {
         ref={() => ref}
         className={clsx(
           'w-full flex justify-end  sm:justify-center items-center sm:items-center fixed top-0  z-10',
-          y > height ? 'blur-dark shadow-lg' : 'bg-transparent',
-          isOpen ? 'fixed h-screen z-10 blur-dark' : 'h-14'
+          y > height
+            ? 'bg-slate-900/60 shadow-lg backdrop-blur'
+            : 'bg-transparent',
+          isOpen ? 'fixed h-screen z-10 bg-slate-100/40 backdrop-blur' : 'h-14'
         )}
       >
         {/* -------------------------------------------------------------menu row for desktop */}
