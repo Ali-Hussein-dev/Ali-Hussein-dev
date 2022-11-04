@@ -36,12 +36,11 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-icons": "^4.4.0",
-    "video-react": "^0.15.0"
+    "react-player": "^2.11.0"
   },
   "devDependencies": {
     "@types/node": "^18.0.3",
     "@types/react": "^17.0.1",
-    "@types/video-react": "^0.15.0",
     "@typescript-eslint/eslint-plugin": "^4.15.0",
     "@typescript-eslint/parser": "^4.15.0",
     "autoprefixer": "^10.4.4",

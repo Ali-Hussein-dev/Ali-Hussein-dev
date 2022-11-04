@@ -3,7 +3,6 @@ import { Header } from '@/components/Header'
 import Head from 'next/head'
 import Footer from '@/components/Footer'
 import '../css/global.css'
-import 'video-react/dist/video-react.css'
 import NextNProgress from 'nextjs-progressbar'
 
 const MyApp: React.FC<{ Component: React.FC; pageProps: any }> = ({

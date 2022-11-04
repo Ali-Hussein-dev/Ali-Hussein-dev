@@ -4,7 +4,7 @@ import Image from 'next/image'
 import React from 'react'
 import { BiLinkExternal } from 'react-icons/bi'
 import { FaGithub } from 'react-icons/fa'
-import { Player, BigPlayButton } from 'video-react'
+import ReactPlayer from 'react-player'
 import projects from '../../db/projects.json'
 //=======================
 const ProjectCard: React.FC<{
@@ -18,12 +18,21 @@ const ProjectCard: React.FC<{
 }> = ({ imgSrc = '', name, href, description, stack, src, code }) => (
   <div className="mb-4 space-y-2 overflow-hidden rounded-sm break-inside ">
     {src ? (
-      // @ts-expect-error debug later
-      <Player>
-        <BigPlayButton position="center" />
-        <source src={src} />
-      </Player>
+      <div className="aspect-video">
+        <ReactPlayer
+          url={src}
+          controls
+          className="aspect-video"
+          width="100%"
+          height="100%"
+        />
+      </div>
     ) : (
+      // // @ts-expect-error debug later
+      // <Player>
+      //   <BigPlayButton position="center" />
+      //   <source src={src} />
+      // </Player>
       <div className="relative aspect-video">
         <Image
           src={imgSrc as string}
