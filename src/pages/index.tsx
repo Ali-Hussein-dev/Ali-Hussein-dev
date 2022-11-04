@@ -89,18 +89,21 @@ const Index: React.FC = () => (
             <h1 className="lg:mb-2 h1 text-slate-800 lg:text-5xl">
               UX-Driven Frontend Engineer
             </h1>
-            <p className="leading-6 text-slate-700">
-              I help companies and individuals build web applications with clean
-              UI, intuitive UX, and high performance. I can work for you on-site
-              if you are in Hamburg or remotely if you are in EU time zones.
-              Feel free to reach out if you think I could fit into your team.
-            </p>
-            <a
-              href="mailto: ali.hussein.pre@gmail.com"
-              className="w-full h-10 font-semibold rounded-lg relative overflow-hidden select-none  border-sky-600 border-2 text-sky-600  active:translate-y-1 sm:max-w-[190px] col-center hover:text-slate-50 hover:bg-sky-600"
-            >
-              Get in touch &#128075;
-            </a>
+            <div>
+              <p className="mb-4 leading-6 text-slate-700">
+                I help companies and individuals build web applications with
+                clean UI, intuitive UX, and high performance. I can work for you
+                on-site if you are in Hamburg or remotely if you are in EU time
+                zones. Feel free to reach out if you think I could fit into your
+                team.
+              </p>
+              <a
+                href="mailto: ali.hussein.pre@gmail.com"
+                className="w-full h-10 py-1 font-semibold rounded-lg relative overflow-hidden select-none  border-sky-600 border-2 text-sky-600  active:translate-y-1 sm:max-w-[190px] hover:text-slate-50 hover:bg-sky-600  px-2"
+              >
+                Get in touch &#128075;
+              </a>
+            </div>
           </div>
         </div>
         <h2 className="mb-3 text-2xl text-center lg:text-3xl h1 text-slate-800">
@@ -119,13 +122,13 @@ const Index: React.FC = () => (
         </div>
         <button
           type="button"
-          className="w-full h-10 px-4 rounded-lg  select-none  hover:bg-slate-900/90 bg-slate-900/70 active:translate-y-1 sm:max-w-[190px] sm:justify-start"
+          className="w-full h-10 rounded-lg select-none  hover:bg-slate-900 bg-slate-900/90 active:translate-y-1 sm:max-w-[230px] sm:justify-start"
         >
           <Link href="/cv.pdf" passHref>
-            <a className="flex items-center justify-center gap-x-3">
+            <span className="flex items-center justify-center gap-x-2">
               <FiDownloadCloud />
               <span>Download CV</span>
-            </a>
+            </span>
           </Link>
         </button>
       </div>

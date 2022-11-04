@@ -28,15 +28,11 @@ const ProjectCard: React.FC<{
         />
       </div>
     ) : (
-      // // @ts-expect-error debug later
-      // <Player>
-      //   <BigPlayButton position="center" />
-      //   <source src={src} />
-      // </Player>
-      <div className="relative aspect-video">
+      <div className="">
         <Image
+          height={300}
+          width={400}
           src={imgSrc as string}
-          layout="fill"
           alt="project image"
           placeholder="blur"
           blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mM0dgytBwACwgFK5PrQiQAAAABJRU5ErkJggg=="
