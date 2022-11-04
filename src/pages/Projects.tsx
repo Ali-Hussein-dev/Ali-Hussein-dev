@@ -18,17 +18,9 @@ const ProjectCard: React.FC<{
 }> = ({ imgSrc = '', name, href, description, stack, src, code }) => (
   <div className="mb-4 space-y-2 overflow-hidden rounded-sm break-inside ">
     {src ? (
-      <div className="aspect-video">
-        <ReactPlayer
-          url={src}
-          controls
-          className="aspect-video"
-          width="100%"
-          height="100%"
-        />
-      </div>
+      <ReactPlayer url={src} controls width="100%" height="100%" />
     ) : (
-      <div className="">
+      <div>
         <Image
           height={300}
           width={400}
