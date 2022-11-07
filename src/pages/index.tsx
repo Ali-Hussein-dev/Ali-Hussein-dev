@@ -85,13 +85,13 @@ const Index: React.FC = () => (
       className="max-w-[1024px] mx-auto px-2 md:px-6 py-8 lg:pt-16"
     >
       <div className="w-full bg-white container-white">
-        <div className="xs:pb-4">
-          <div className="pb-4 border-b ">
+        <div className="mb-2 xs:pb-4">
+          <div className="pb-4 border-b">
             <h1 className="font-sans font-extrabold h1 text-slate-700">
               UX-Driven Frontend Engineer
             </h1>
             <div>
-              <p className="mb-6 leading-6 text-slate-700 ">
+              <p className="mb-6 leading-6 text-slate-700">
                 I help companies and individuals build web applications with
                 clean UI, intuitive UX, and high performance. I can work for you
                 on-site if you are in Hamburg or remotely if you are in EU time

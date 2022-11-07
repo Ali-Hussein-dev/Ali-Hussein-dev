@@ -7,7 +7,7 @@ import NextNProgress from 'nextjs-progressbar'
 import Image from 'next/image'
 import BGImage from '../../public/bg-3.jpg'
 import { Nunito } from '@next/font/google'
-const font = Nunito()
+const font = Nunito({ subsets: ['latin'] })
 
 const MyApp: React.FC<{ Component: React.FC; pageProps: any }> = ({
   Component,
