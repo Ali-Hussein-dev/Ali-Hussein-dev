@@ -2,6 +2,7 @@
 import Head from 'next/head'
 import { Text } from '@mantine/core'
 import blogs from '../../db/blogs.json'
+import { BiCalendar } from 'react-icons/bi'
 
 //=======================
 const Blog: React.FC = () => (
@@ -9,43 +10,36 @@ const Blog: React.FC = () => (
     <Head>
       <title>Blog</title>
     </Head>
-    <div className="container-white bg-white">
+    <div className="max-w-xl bg-white container-white">
       <div className="w-full">
         <h1 className="pb-1 mb-2 border-b h1 text-primary-500 border-primary-400">
           Last Articles
         </h1>
-        <div className="space-y-4">
+        <div className="space-y-5 max-auto">
           {blogs.map((o, i) => (
             <a
               href={o.url}
               target="_blank"
               rel="noreferrer"
               key={i}
-              className="flex flex-col pb-2 overflow-hidden lg:pb-0 rounded-xl hover:bg-slate-50 lg:row-between lg:flex-row group"
+              className="flex flex-col pb-2 rounded-sm lg:pb-0 hover:bg-slate-100 lg:row-between lg:flex-row group"
             >
-              <div className="order-2 w-full lg:self-start lg:pr-4 lg:w-8/12 lg:pt-4">
-                <div className="pl-2">
-                  <h2 className="text-lg font-semibold text-gray-800 uppercase md:text-xl">
+              <div className="order-2 w-full lg:self-start ">
+                <div className="pl-2 ">
+                  <h2 className="w-10/12 text-xl font-bold text-gray-800 uppercase">
                     {o.title}
                   </h2>
                   <Text
-                    lineClamp={3}
-                    className="italic text-slate-800"
+                    lineClamp={1}
+                    className="pr-4 italic text-slate-800"
                     color="dark"
                   >
                     {o.description}
                   </Text>
-                  <span className="text-base italic tracking-tight text-gray-800">
-                    {o.pub}
+                  <span className="flex items-center text-base italic tracking-tight text-gray-500 gap-x-2">
+                    <BiCalendar /> {o.pub}
                   </span>
                 </div>
-              </div>
-              <div className="order-1 mb-2 lg:w-4/12 lg:order-2 lg:mb-0 ">
-                <img
-                  src={o.imgSrc}
-                  className="lg:aspect-[4/3] lg:rounded-xl lg:group-hover:rounded-l-none object-cover"
-                  alt="blog image"
-                />
               </div>
             </a>
           ))}
