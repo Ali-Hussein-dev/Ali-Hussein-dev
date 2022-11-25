@@ -22,7 +22,7 @@ const Blog: React.FC = () => (
               target="_blank"
               rel="noreferrer"
               key={i}
-              className="flex flex-col pb-2 rounded-sm lg:pb-0 hover:bg-slate-100 lg:row-between lg:flex-row group"
+              className="flex flex-col py-2 rounded-sm lg:pb-0 hover:bg-slate-800 lg:row-between lg:flex-row group"
             >
               <div className="order-2 w-full lg:self-start ">
                 <div className="pl-2 ">
