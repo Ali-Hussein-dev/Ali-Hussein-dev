@@ -8,6 +8,7 @@ import { FaReact } from 'react-icons/fa'
 import { VscTools } from 'react-icons/vsc'
 import { BiHappyHeartEyes } from 'react-icons/bi'
 import { IconType } from 'react-icons'
+import Image from 'next/image'
 
 const techSkills = [
   {
@@ -86,25 +87,35 @@ const Index: React.FC = () => (
     >
       <div className="w-full bg-white container-white">
         <div className="mb-2 xs:pb-4">
-          <div className="pb-4 border-b">
-            <h1 className="font-sans font-extrabold h1 text-slate-700">
-              UX-Driven Frontend Engineer
-            </h1>
+          <div className="flex flex-col items-center justify-between pb-4 gap-6 border-b sm:flex-row">
             <div>
-              <p className="mb-6 leading-6 text-slate-700">
-                I help companies and individuals build web applications with
-                clean UI, intuitive UX, and high performance. I can work for you
-                on-site if you are in Hamburg or remotely if you are in EU time
-                zones. Feel free to reach out if you think I could fit into your
-                team.
-              </p>
-              <a
-                href="mailto: ali.hussein.pre@gmail.com"
-                className="w-full h-10 py-1 font-semibold rounded-lg relative overflow-hidden select-none  border-sky-600 border-2 text-sky-600  active:translate-y-1 sm:max-w-[190px] hover:text-slate-50 hover:bg-sky-600  px-2"
-              >
-                Get in touch &#128075;
-              </a>
+              <h1 className="font-sans font-extrabold h1 text-slate-700">
+                UX-Driven Frontend Engineer
+              </h1>
+              <div>
+                <p className="mb-6 leading-6 text-slate-700">
+                  I help companies and individuals build web applications with
+                  clean UI, intuitive UX, and high performance. I can work for
+                  you on-site if you are in Hamburg or remotely if you are in EU
+                  time zones. Feel free to reach out if you think I could fit
+                  into your team.
+                </p>
+                <a
+                  href="mailto: ali.hussein.pre@gmail.com"
+                  className="w-full h-10 py-1 font-semibold rounded-lg relative overflow-hidden select-none  border-sky-600 border-2 text-sky-600  active:translate-y-1 sm:max-w-[190px] hover:text-slate-50 hover:bg-sky-600  px-2"
+                >
+                  Get in touch &#128075;
+                </a>
+              </div>
             </div>
+            <Image
+              src="/me.png"
+              width="320"
+              height="320"
+              loading="eager"
+              alt="me"
+              className=""
+            />
           </div>
         </div>
         <h2 className="mb-1 font-sans text-2xl font-extrabold text-left lg:text-2xl h1 text-slate-700">
