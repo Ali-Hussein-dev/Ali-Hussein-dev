@@ -40,15 +40,11 @@ export const CtaButton = () => (
   <a
     href="mailto:ali.hussein.pre@gmail.com"
     className={clsx(
-      'px-6 py-3 border-2 border-primary-700 rounded-xl font-extrabold uppercase mx-auto',
-      'hover:scale-105 active:scale-95 duration-300 hover:bg-primary-700'
+      'px-6 py-3 border-2 border-primary-700 rounded-xl font-extrabold mx-auto',
+      'hover:scale-105 active:scale-95 duration-300 hover:bg-primary-700 '
     )}
   >
-    Get one{' '}
-    <span className="underline decoration-wavy decoration-slate-200 underline-offset-4">
-      for free
-    </span>{' '}
-    for your business
+    Get first one for FREE
   </a>
 )
 
@@ -59,7 +55,7 @@ const Design = () => {
       <Head>
         <title>Desgin</title>
       </Head>
-      <section id="Design" className="grid place-items-center">
+      <section id="Design" className="grid px-2 place-items-center">
         <div className="w-full border lg:max-w-5xl py-14 container-white blur-dark border-slate-500">
           <div
             className={clsx(
@@ -75,7 +71,7 @@ const Design = () => {
               <h2
                 className={clsx('md:text-4xl text-3xl font-black text-center ')}
               >
-                Posts Design for Social Media
+                Professional-designed Posts For Social Media
               </h2>
             </div>
             <CtaButton />
