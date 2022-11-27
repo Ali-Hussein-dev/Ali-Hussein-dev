@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { useScroll } from 'framer-motion'
 import clsx from 'clsx'
 
-const linksList = ['Home', 'Projects', 'Blog', 'About']
+const linksList = ['Home', 'Projects', 'Blog', 'Design', 'About']
 interface StyledLinkProps extends React.ComponentPropsWithoutRef<'button'> {
   label: string
 }

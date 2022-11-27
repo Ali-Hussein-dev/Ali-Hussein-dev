@@ -30,6 +30,7 @@
     "@mantine/next": "^5.2.5",
     "@next/font": "^13.0.2",
     "clsx": "^1.1.1",
+    "daisyui": "^2.42.1",
     "framer-motion": "^6.5.1",
     "next": "^13.0.2",
     "next-connect": "^0.12.2",
@@ -37,7 +38,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0",
-    "react-player": "^2.11.0"
+    "react-player": "^2.11.0",
+    "tailwindcss-highlights": "^1.0.0"
   },
   "devDependencies": {
     "@types/node": "^18.0.3",
