@@ -7,7 +7,7 @@ import NextNProgress from 'nextjs-progressbar'
 import Image from 'next/image'
 import BGImage from '../../public/bg-3.jpg'
 import { Nunito } from '@next/font/google'
-const font = Nunito({ subsets: ['latin'] })
+const font = Nunito({ subsets: ['latin', 'latin-ext'] })
 
 const MyApp: React.FC<{ Component: React.FC; pageProps: any }> = ({
   Component,
@@ -26,7 +26,7 @@ const MyApp: React.FC<{ Component: React.FC; pageProps: any }> = ({
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <title>Ali Hussein</title>
     </Head>
-    <main className="relative min-h-screen text-gray-100 col-center lg:text-xl selection:bg-orange-900/90 selection:text-slate-300">
+    <main className="relative min-h-screen text-gray-100 col-center lg:text-xl selection:bg-yellow-900/90 selection:text-slate-100">
       <Header />
       <Image
         src={BGImage}

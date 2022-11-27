@@ -85,15 +85,15 @@ const Index: React.FC = () => (
       id="Home"
       className="max-w-[1024px] mx-auto px-2 md:px-6 py-8 lg:pt-16"
     >
-      <div className="w-full bg-white container-white">
+      <div className="w-full bg-white/90 backdrop-blur-lg container-white">
         <div className="mb-2 xs:pb-4">
           <div className="flex flex-col items-center justify-between pb-4 gap-6 border-b sm:flex-row">
             <div>
-              <h1 className="font-sans font-extrabold h1 text-slate-700">
+              <h1 className="mb-2 font-sans text-3xl font-extrabold text-slate-700">
                 UX-Driven Frontend Engineer
               </h1>
               <div>
-                <p className="mb-6 leading-6 text-slate-700">
+                <p className="mb-6 leading-6 text-slate-700 xl:max-w-2xl xl:text-lg">
                   I help companies and individuals build web applications with
                   clean UI, intuitive UX, and high performance. I can work for
                   you on-site if you are in Hamburg or remotely if you are in EU
@@ -118,7 +118,7 @@ const Index: React.FC = () => (
             />
           </div>
         </div>
-        <h2 className="mb-1 font-sans text-2xl font-extrabold text-left lg:text-2xl h1 text-slate-700">
+        <h2 className="mb-1 font-sans text-2xl font-extrabold text-left lg:text-3xl h1 text-slate-700">
           Toolbox
         </h2>
         <div className="mb-4 leading-8 border-b text-slate-900 lg:grid lg:grid-cols-2 lg:gap-x-3">
