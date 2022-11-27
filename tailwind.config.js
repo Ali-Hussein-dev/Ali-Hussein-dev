@@ -26,5 +26,5 @@ module.exports = {
   daisyui: {
     theme: false,
   },
-  plugins: [],
+  plugins: [require('daisyui'), require('tailwindcss-highlights')],
 }

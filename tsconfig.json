@@ -19,7 +19,8 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "removeComments": true,
-    "incremental": true
+    "incremental": true,
+    "downlevelIteration": true
   },
   "exclude": ["node_modules", ".next", "out", ".history"],
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.js", "main.d.ts"]
