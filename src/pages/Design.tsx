@@ -53,7 +53,7 @@ const Design = () => {
   return (
     <>
       <Head>
-        <title>Desgin</title>
+        <title>Design</title>
       </Head>
       <section id="Design" className="grid px-2 place-items-center">
         <div className="w-full border lg:max-w-5xl py-14 container-white blur-dark border-slate-500">
@@ -71,7 +71,7 @@ const Design = () => {
               <h2
                 className={clsx('md:text-4xl text-3xl font-black text-center ')}
               >
-                Professional-designed Posts For Social Media
+                Professional Social Media Posts
               </h2>
             </div>
             <CtaButton />
