@@ -6,10 +6,6 @@
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
     "next"
-    // Uncomment the following lines to enable eslint-config-prettier
-    // Is not enabled right now to avoid issues with the Next.js repo
-    // "prettier",
-    // "prettier/@typescript-eslint"
   ],
   "env": {
     "es6": true,
@@ -22,6 +18,7 @@
     "react/display-name": 0,
     "react/prop-types": 0,
     "@typescript-eslint/explicit-function-return-type": 0,
+    "@typescript-eslint/explicit-module-boundary-types": 0,
     "@typescript-eslint/explicit-member-accessibility": 0,
     "@typescript-eslint/indent": 0,
     "@typescript-eslint/member-delimiter-style": 0,
