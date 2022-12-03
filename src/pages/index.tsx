@@ -108,14 +108,16 @@ const Index: React.FC = () => (
                 </a>
               </div>
             </div>
-            <Image
-              src="/me.png"
-              width="320"
-              height="320"
-              loading="eager"
-              alt="me"
-              className=""
-            />
+            <div className="mask mask-squircle">
+              <Image
+                src="/me.png"
+                width="320"
+                height="320"
+                loading="eager"
+                alt="me"
+                className=""
+              />
+            </div>
           </div>
         </div>
         <h2 className="mb-1 font-sans text-2xl font-extrabold text-left lg:text-3xl h1 text-slate-700">
