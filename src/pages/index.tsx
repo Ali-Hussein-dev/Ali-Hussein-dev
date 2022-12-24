@@ -14,7 +14,7 @@ const techSkills = [
   {
     title: 'React Ecosystem',
     parag:
-      'Typescript, React, Nextjs, Tailwindcss, Chakra-UI, Swiper, ReactQuery, Recharts, React hook form, ...etc.',
+      'Typescript, React, Tailwindcss, Chakra-UI, Swiper, ReactQuery, Recharts, React hook form, ...etc.',
     Icon: FaReact,
   },
   {
@@ -35,15 +35,14 @@ const techSkills = [
   },
   {
     title: 'Backend',
-    parag: 'Nodejs, Redis, FaunaDB',
+    parag: 'Nodejs, Strapi CMS, Nextjs, Redis, FaunaDB',
     Icon: CgDatabase,
     subtitle: ' (familiar)',
   },
 
   {
     title: 'Interested in',
-    parag:
-      'Headless CMS, Cypress, Storybook, xState, AWS, GitHub Actions, Astro, SolidJS',
+    parag: 'Astro, Cypress, Storybook, xState, AWS, GitHub Actions, SolidJS',
     Icon: BiHappyHeartEyes,
   },
 ]
@@ -61,15 +60,15 @@ const Tech = ({
   return (
     <div className="pb-2">
       <div className="row-start gap-x-2">
-        <Icon className="text-slate-700" />
-        <h3 className="font-sans font-bold tracking-tighter uppercase text-slate-700 md:text-xl">
+        <Icon className="text-slate-300" />
+        <h3 className="font-sans font-bold tracking-tighter uppercase text-slate-300 md:text-xl">
           {title}
           <span className="ml-1 text-base italic font-normal normal-case">
             {subtitle}
           </span>
         </h3>
       </div>
-      <p className="leading-5 tracking-tighter md:text-xl pl-7 text-slate-700">
+      <p className="leading-5 tracking-tighter md:text-xl pl-7 text-slate-300">
         {parag}
       </p>
     </div>
@@ -85,15 +84,15 @@ const Index: React.FC = () => (
       id="Home"
       className="max-w-[1024px] mx-auto px-2 md:px-6 py-8 lg:pt-16"
     >
-      <div className="w-full bg-white/90 backdrop-blur-lg container-white">
-        <div className="mb-2 xs:pb-4">
+      <div className="w-full backdrop-blur-lg container-white">
+        <div className="mb-6 xs:pb-4">
           <div className="flex flex-col items-center justify-between pb-4 gap-6 border-b sm:flex-row">
             <div>
-              <h1 className="mb-2 font-sans text-3xl font-extrabold text-slate-700">
+              <h1 className="mb-2 font-sans text-3xl font-extrabold text-slate-300">
                 UX-Driven Frontend Engineer
               </h1>
               <div>
-                <p className="mb-6 leading-6 text-slate-700 xl:max-w-2xl xl:text-lg">
+                <p className="mb-6 leading-6 text-slate-300 xl:max-w-2xl xl:text-lg">
                   I help companies and individuals build web applications with
                   clean UI, intuitive UX, and high performance. I can work for
                   you on-site if you are in Hamburg or remotely if you are in EU
@@ -102,7 +101,7 @@ const Index: React.FC = () => (
                 </p>
                 <a
                   href="mailto: ali.hussein.pre@gmail.com"
-                  className="w-full h-10 py-1 font-semibold rounded-lg relative overflow-hidden select-none  border-sky-600 border-2 text-sky-600  active:translate-y-1 sm:max-w-[190px] hover:text-slate-50 hover:bg-sky-600  px-2"
+                  className="w-full h-12 py-2 font-semibold rounded relative overflow-hidden select-none text-gray-200 sm:max-w-[190px]  bg-gray-100/10 px-4 duration-200 hover:bg-gray-100/20"
                 >
                   Get in touch &#128075;
                 </a>
@@ -120,7 +119,7 @@ const Index: React.FC = () => (
             </div>
           </div>
         </div>
-        <h2 className="mb-1 font-sans text-2xl font-extrabold text-left lg:text-3xl h1 text-slate-700">
+        <h2 className="mb-2 font-sans text-2xl font-extrabold text-left lg:text-3xl h1 text-slate-300">
           Toolbox
         </h2>
         <div className="mb-4 leading-8 border-b text-slate-900 lg:grid lg:grid-cols-2 lg:gap-x-3">
@@ -136,7 +135,7 @@ const Index: React.FC = () => (
         </div>
         <button
           type="button"
-          className="w-full h-10 rounded-lg select-none  hover:bg-slate-900 bg-slate-900/90 active:translate-y-1 sm:max-w-[230px] sm:justify-start"
+          className="w-full h-12 py-2 font-semibold rounded relative overflow-hidden select-none text-gray-200 active:translate-y-1 sm:max-w-[190px]  bg-gray-100/10 px-4 duration-200 hover:bg-gray-100/20"
         >
           <Link href="/cv.pdf" passHref>
             <span className="flex items-center justify-center gap-x-2">

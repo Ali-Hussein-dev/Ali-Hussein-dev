@@ -55,7 +55,7 @@ const Design = () => {
       <Head>
         <title>Design</title>
       </Head>
-      <section id="Design" className="grid px-2 place-items-center">
+      <section id="Design" className="grid px-2 py-8 place-items-center">
         <div className="w-full border lg:max-w-5xl py-14 container-white blur-dark border-slate-500">
           <div
             className={clsx(
