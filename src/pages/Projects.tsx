@@ -46,7 +46,7 @@ const ProjectCard: React.FC<{
         {code && (
           <a
             href={code}
-            className="grid w-10 h-8 ml-1 rounded hover:bg-slate-900 place-items-center"
+            className="grid w-10 h-8 ml-1 rounded hover:bg-gray-100/20 place-items-center"
             target="black"
           >
             <FaGithub size="25" />
@@ -65,7 +65,7 @@ const Link: React.FC<{ href: string; children: string | React.ReactNode }> = ({
     href={href}
     target="_blank"
     rel="noreferrer"
-    className="flex items-center h-8 px-3 gap-2 text-lg underline rounded text-slate-100 underline-offset-1 hover:bg-slate-900 group"
+    className="flex items-center h-8 px-3 gap-2 text-lg underline rounded text-slate-100 underline-offset-1 hover:bg-gray-100/10 group"
   >
     <span className="">{children}</span>
     <BiLinkExternal size="17" className="opacity-0 group-hover:opacity-100" />
