@@ -9,7 +9,7 @@ import { VscTools } from 'react-icons/vsc'
 import { BiHappyHeartEyes } from 'react-icons/bi'
 import { IconType } from 'react-icons'
 import Image from 'next/image'
-
+import { Testimonials } from '../components'
 const techSkills = [
   {
     title: 'React Ecosystem',
@@ -60,15 +60,15 @@ const Tech = ({
   return (
     <div className="pb-2">
       <div className="row-start gap-x-2">
-        <Icon className="text-slate-300" />
-        <h3 className="font-sans font-bold tracking-tighter uppercase text-slate-300 md:text-xl">
+        <Icon className="text-gray-300" size="20" />
+        <h3 className="font-sans font-bold tracking-tighter uppercase text-slate-200 md:text-xl">
           {title}
           <span className="ml-1 text-base italic font-normal normal-case">
             {subtitle}
           </span>
         </h3>
       </div>
-      <p className="leading-5 tracking-tighter md:text-xl pl-7 text-slate-300">
+      <p className="leading-5 tracking-tighter md:text-xl pl-7 text-slate-200">
         {parag}
       </p>
     </div>
@@ -80,31 +80,44 @@ const Index: React.FC = () => (
     <Head>
       <title>Home</title>
     </Head>
-    <section
+    <div
       id="Home"
       className="max-w-[1024px] mx-auto px-2 md:px-6 py-8 lg:pt-16"
     >
-      <div className="w-full backdrop-blur-lg container-white">
-        <div className="mb-6 xs:pb-4">
+      <div className="w-full pb-8 space-y-8">
+        <section className="xs:pb-4">
           <div className="flex flex-col items-center justify-between pb-4 gap-6 border-b sm:flex-row">
             <div>
-              <h1 className="mb-2 font-sans text-3xl font-extrabold text-slate-300">
+              <h1 className="mb-2 font-sans text-2xl font-extrabold md:text-3xl text-slate-200">
                 UX-Driven Frontend Engineer
               </h1>
               <div>
-                <p className="mb-6 leading-6 text-slate-300 xl:max-w-2xl xl:text-lg">
+                <p className="mb-2 leading-6 text-slate-200 sm:max-w-prose xl:text-lg">
                   I help companies and individuals build web applications with
                   clean UI, intuitive UX, and high performance. I can work for
                   you on-site if you are in Hamburg or remotely if you are in EU
                   time zones. Feel free to reach out if you think I could fit
                   into your team.
                 </p>
-                <a
-                  href="mailto: ali.hussein.pre@gmail.com"
-                  className="w-full h-12 py-2 font-semibold rounded relative overflow-hidden select-none text-gray-200 sm:max-w-[190px]  bg-gray-100/10 px-4 duration-200 hover:bg-gray-100/20"
-                >
-                  Get in touch &#128075;
-                </a>
+                <div className="flex flex-col gap-4 sm:flex-row">
+                  <button
+                    type="button"
+                    className="w-full h-12 py-2 font-semibold rounded select-none text-gray-200 active:translate-y-1 sm:max-w-[190px] bg-gray-100/10 px-4 duration-200 hover:bg-gray-100/20 "
+                  >
+                    <Link href="/cv.pdf" passHref>
+                      <span className="flex items-center justify-center gap-x-2">
+                        <FiDownloadCloud />
+                        <span>Download CV</span>
+                      </span>
+                    </Link>
+                  </button>
+                  <a
+                    href="mailto: ali.hussein.pre@gmail.com"
+                    className="row-center h-12 px-4 py-2 font-semibold text-gray-200 duration-200 rounded select-none bg-gray-100/10 hover:bg-gray-100/20 sm:max-w-[190px]"
+                  >
+                    Get in touch
+                  </a>
+                </div>
               </div>
             </div>
             <div className="mask mask-squircle">
@@ -118,34 +131,31 @@ const Index: React.FC = () => (
               />
             </div>
           </div>
-        </div>
-        <h2 className="mb-2 font-sans text-2xl font-extrabold text-left lg:text-3xl h1 text-slate-300">
-          Toolbox
-        </h2>
-        <div className="mb-4 leading-8 border-b text-slate-900 lg:grid lg:grid-cols-2 lg:gap-x-3">
-          {techSkills.map((o) => (
-            <Tech
-              key={o.title}
-              title={o.title}
-              Icon={o.Icon}
-              parag={o.parag}
-              subtitle={o?.subtitle}
-            />
-          ))}
-        </div>
-        <button
-          type="button"
-          className="w-full h-12 py-2 font-semibold rounded relative overflow-hidden select-none text-gray-200 active:translate-y-1 sm:max-w-[190px]  bg-gray-100/10 px-4 duration-200 hover:bg-gray-100/20"
-        >
-          <Link href="/cv.pdf" passHref>
-            <span className="flex items-center justify-center gap-x-2">
-              <FiDownloadCloud />
-              <span>Download CV</span>
-            </span>
-          </Link>
-        </button>
+        </section>
+        <section>
+          <h2 className="mb-2 font-sans text-2xl font-extrabold text-left lg:text-3xl text-slate-200">
+            Toolbox
+          </h2>
+          <div className="mb-4 leading-8 border-b text-slate-900 lg:grid lg:grid-cols-2 lg:gap-x-3">
+            {techSkills.map((o) => (
+              <Tech
+                key={o.title}
+                title={o.title}
+                Icon={o.Icon}
+                parag={o.parag}
+                subtitle={o?.subtitle}
+              />
+            ))}
+          </div>
+        </section>
+        <section className="">
+          <h2 className="mb-4 font-sans text-2xl font-extrabold text-left lg:text-3xl text-slate-200">
+            Testimonials
+          </h2>
+          <Testimonials />
+        </section>
       </div>
-    </section>
+    </div>
   </>
 )
 export default Index
