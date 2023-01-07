@@ -12,7 +12,7 @@ const StyledLink: React.FC<StyledLinkProps> = ({ label, ...rest }) => (
   <Link href={`/${label === 'Home' ? '' : label}`}>
     <button
       type="button"
-      className="px-3 py-1 mb-6 font-semibold rounded hover:bg-gray-100 hover:text-slate-800 hover:cursor-pointer sm:mb-0 active:translate-y-1"
+      className="px-3 py-1 mb-6 font-semibold rounded hover:bg-gray-100 hover:text-gray-800 hover:cursor-pointer sm:mb-0 active:translate-y-1"
       {...rest}
     >
       {label}
@@ -35,9 +35,9 @@ export const Header: React.FC = () => {
         className={clsx(
           'w-full flex justify-end  sm:justify-center items-center sm:items-center fixed top-0  z-10',
           y > height
-            ? 'bg-slate-900/60 shadow-lg backdrop-blur'
+            ? 'bg-gray-900/60 shadow-lg backdrop-blur'
             : 'bg-transparent',
-          isOpen ? 'fixed h-screen z-10 bg-slate-100/40 backdrop-blur' : 'h-14'
+          isOpen ? 'fixed h-screen z-10 bg-gray-100/40 backdrop-blur' : 'h-14'
         )}
       >
         {/* -------------------------------------------------------------menu row for desktop */}
@@ -66,7 +66,7 @@ export const Header: React.FC = () => {
         <button
           type="button"
           aria-label="toggle button"
-          className="self-start px-2 py-2 mt-2 text-gray-100 rounded-sm sm:mt-0 sm:hidden active:scale-75 focus:bg-trueGray-200 hover:bg-trueGray-200 focus:outline-none"
+          className="self-start px-2 py-2 mt-2 text-gray-200 rounded-sm sm:mt-0 sm:hidden active:scale-75 focus:outline-none"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <FaTimes size="30" /> : <FaBars size="30" />}

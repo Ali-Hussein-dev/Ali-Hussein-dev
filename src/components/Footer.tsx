@@ -19,7 +19,7 @@ const links = [
 
 //=======================
 const Footer: React.FC = () => (
-  <footer className="bottom-0 w-full py-1 blur-dark">
+  <footer className="bottom-0 w-full py-1 border-t border-gray-600 max-w-[1024px]">
     <div className="flex flex-col items-center w-full px-2 mx-auto lg:flex-row lg:justify-center lg:w-8/12 ">
       <div className="flex flex-col items-center py-1 sm:justify-between sm:flex-row gap-y-3">
         <div className="flex justify-center w-full gap-x-1 sm:justify-start">
