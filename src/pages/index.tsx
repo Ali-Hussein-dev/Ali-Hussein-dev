@@ -10,6 +10,42 @@ import { BiHappyHeartEyes } from 'react-icons/bi'
 import { IconType } from 'react-icons'
 import Image from 'next/image'
 import { Testimonials } from '../components'
+
+//======================================
+export const Workflow = () => {
+  return (
+    <section>
+      <h2 className="mb-4 font-sans text-2xl font-extrabold text-left lg:text-3xl text-slate-200">
+        My Workflow
+      </h2>
+      <p className="mb-8 leading-6 text-slate-200 xl:text-lg">
+        I am using the Agile methodology for software development, which
+        involves analyzing and planning the requirements and then iteratively
+        building the software, continuously improving the website design and
+        functionality to quickly deliver value to customers. This approach
+        involves smaller, market-ready launches rather than traditional large
+        launches, and each iteration is based on customer feedback to ensure the
+        product is successful when it is deployed.
+      </p>
+
+      <Image
+        src="/workflow.png"
+        alt="workflow"
+        width={1000}
+        height={450}
+        className="hidden mx-auto md:block"
+      />
+      <Image
+        src="/workflow_mobile.png"
+        alt="workflow"
+        width={320}
+        height={800}
+        className="mx-auto md:hidden"
+      />
+    </section>
+  )
+}
+
 const techSkills = [
   {
     title: 'React Ecosystem',
@@ -82,17 +118,17 @@ const Index: React.FC = () => (
     </Head>
     <div
       id="Home"
-      className="max-w-[1024px] mx-auto px-2 md:px-6 py-8 lg:pt-16"
+      className="max-w-[1024px] mx-auto px-4 md:px-6 py-8 lg:pt-16"
     >
       <div className="w-full pb-8 space-y-8">
         <section className="xs:pb-4">
-          <div className="flex flex-col items-center justify-between pb-4 gap-6 border-b sm:flex-row">
+          <div className="flex flex-col items-center justify-between pb-4 gap-6 prose border-b border-gray-600 sm:flex-row">
             <div>
               <h1 className="mb-2 font-sans text-2xl font-extrabold md:text-3xl text-slate-200">
                 UX-Driven Frontend Engineer
               </h1>
               <div>
-                <p className="mb-2 leading-6 text-slate-200 sm:max-w-prose xl:text-lg">
+                <p className="mb-4 leading-6 text-slate-200 sm:max-w-prose xl:text-lg">
                   I help companies and individuals build web applications with
                   clean UI, intuitive UX, and high performance. I can work for
                   you on-site if you are in Hamburg or remotely if you are in EU
@@ -127,7 +163,6 @@ const Index: React.FC = () => (
                 height="320"
                 loading="eager"
                 alt="me"
-                className=""
               />
             </div>
           </div>
@@ -136,7 +171,7 @@ const Index: React.FC = () => (
           <h2 className="mb-2 font-sans text-2xl font-extrabold text-left lg:text-3xl text-slate-200">
             Toolbox
           </h2>
-          <div className="mb-4 leading-8 border-b text-slate-900 lg:grid lg:grid-cols-2 lg:gap-x-3">
+          <div className="mb-4 leading-8 text-slate-900 lg:grid lg:grid-cols-2 lg:gap-x-3">
             {techSkills.map((o) => (
               <Tech
                 key={o.title}
@@ -148,12 +183,13 @@ const Index: React.FC = () => (
             ))}
           </div>
         </section>
-        <section className="">
+        <section>
           <h2 className="mb-4 font-sans text-2xl font-extrabold text-left lg:text-3xl text-slate-200">
             Testimonials
           </h2>
           <Testimonials />
         </section>
+        <Workflow />
       </div>
     </div>
   </>
