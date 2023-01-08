@@ -50,18 +50,17 @@ const techSkills = [
   {
     title: 'React Ecosystem',
     parag:
-      'Typescript, React, Tailwindcss, Chakra-UI, Swiper, ReactQuery, Recharts, React hook form, ...etc.',
+      'Typescript, React, Nextjs, Tailwindcss, Chakra-UI, Swiper, ReactQuery, Recharts, React hook form, ...etc.',
     Icon: FaReact,
   },
   {
     title: 'Workflow Tools',
-    parag:
-      'Git, GitHub, Eslint, Prettier, Nx workspaces, Figma, Notion, Lucidchart, Sizzy browser',
+    parag: 'Git, GitHub, Eslint, Nx workspaces, Figma, Notion, Sizzy browser',
     Icon: VscTools,
   },
   {
     title: 'Frontend',
-    parag: 'Javascript(ES6) Html5, CSS3, Browser API',
+    parag: 'Javascript(ES6) Html5, CSS3, Browser APIs',
     Icon: GoBrowser,
   },
   {
@@ -71,14 +70,14 @@ const techSkills = [
   },
   {
     title: 'Backend',
-    parag: 'Nodejs, Strapi CMS, Nextjs, Redis, FaunaDB',
+    parag: 'Nodejs, Strapi CMS, Redis, FaunaDB',
     Icon: CgDatabase,
     subtitle: ' (familiar)',
   },
 
   {
     title: 'Interested in',
-    parag: 'Astro, Cypress, Storybook, xState, AWS, GitHub Actions, SolidJS',
+    parag: 'AWS, GitHub Actions, Storybook, Astro, SolidJS, Cypress, xState',
     Icon: BiHappyHeartEyes,
   },
 ]
@@ -94,17 +93,19 @@ const Tech = ({
   subtitle?: string
 }) => {
   return (
-    <div className="pb-2">
+    <div className="pb-4">
       <div className="row-start gap-x-2">
         <Icon className="text-gray-300" size="20" />
-        <h3 className="font-sans font-bold tracking-tighter uppercase text-slate-200 md:text-xl">
-          {title}
-          <span className="ml-1 text-base italic font-normal normal-case">
-            {subtitle}
-          </span>
-        </h3>
+        <div className="px-2 pb-1 mb-1 highlight highlight-stone-700 highlight-variant-8 max-w-fit highlight-spread-sm">
+          <h3 className="font-sans font-semibold tracking-tighter text-gray-100 ">
+            {title}
+            <span className="ml-1 text-base italic font-normal normal-case">
+              {subtitle}
+            </span>
+          </h3>
+        </div>
       </div>
-      <p className="leading-5 tracking-tighter md:text-xl pl-7 text-slate-200">
+      <p className="leading-5 tracking-tighter text-gray-400 md:text-xl pl-7">
         {parag}
       </p>
     </div>
@@ -163,6 +164,7 @@ const Index: React.FC = () => (
                 height="320"
                 loading="eager"
                 alt="me"
+                className="brightness-[0.70]"
               />
             </div>
           </div>
@@ -183,13 +185,13 @@ const Index: React.FC = () => (
             ))}
           </div>
         </section>
+        <Workflow />
         <section>
           <h2 className="mb-4 font-sans text-2xl font-extrabold text-left lg:text-3xl text-slate-200">
             Testimonials
           </h2>
           <Testimonials />
         </section>
-        <Workflow />
       </div>
     </div>
   </>
