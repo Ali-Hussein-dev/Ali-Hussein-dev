@@ -136,9 +136,15 @@ const Index: React.FC = () => (
                   into your team.
                 </p>
                 <div className="flex flex-col gap-4 sm:flex-row">
+                  <a
+                    href="mailto: ali.hussein.pre@gmail.com"
+                    className="row-center h-12 px-4 py-2 font-semibold text-gray-100 duration-200 rounded select-none bg-gray-50/20 hover:bg-gray-50/30 sm:max-w-[190px]"
+                  >
+                    Get in touch
+                  </a>
                   <button
                     type="button"
-                    className="w-full h-12 py-2 font-semibold rounded select-none text-gray-200 active:translate-y-1 sm:max-w-[190px] bg-gray-100/10 px-4 duration-200 hover:bg-gray-100/20 "
+                    className="w-full h-12 py-2 font-semibold rounded select-none text-gray-100 active:translate-y-1 sm:max-w-[190px]  px-4 duration-200 hover:bg-gray-100/20 border border-gray-500"
                   >
                     <Link href="/cv.pdf" passHref>
                       <span className="flex items-center justify-center gap-x-2">
@@ -147,12 +153,6 @@ const Index: React.FC = () => (
                       </span>
                     </Link>
                   </button>
-                  <a
-                    href="mailto: ali.hussein.pre@gmail.com"
-                    className="row-center h-12 px-4 py-2 font-semibold text-gray-200 duration-200 rounded select-none bg-gray-100/10 hover:bg-gray-100/20 sm:max-w-[190px]"
-                  >
-                    Get in touch
-                  </a>
                 </div>
               </div>
             </div>
