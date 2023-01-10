@@ -93,13 +93,16 @@ const Tech = ({
   subtitle?: string
 }) => {
   return (
-    <div className="p-2 pb-4 border-[0.5px] rounded bg-zinc-700/20 border-zinc-600">
+    <div className="px-3 py-4 border-[0.5px] rounded bg-zinc-700/20 border-zinc-600">
       <div className="row-start gap-x-2">
         <Icon className="text-gray-300" size="20" />
         <div className="pb-1 mb-1 max-w-fit ">
-          <h3 className="font-sans font-semibold tracking-tighter text-gray-100 ">
+          <h3 className="font-sans font-semibold leading-4 tracking-tighter text-gray-100">
             {title}
-            <span className="ml-1 text-base italic font-normal normal-case">
+            <span
+              hidden={!subtitle}
+              className="ml-1 text-base italic font-normal normal-case"
+            >
               {subtitle}
             </span>
           </h3>
