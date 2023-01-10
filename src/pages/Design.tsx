@@ -64,13 +64,13 @@ const Design = () => {
           >
             <div
               className={clsx(
-                ' py-4 px-12',
-                'highlight highlight-stone-600 highlight-variant-2 highlight-spread-lg '
+                ' py-4 sm:px-12 px-1',
+                'highlight highlight-zinc-600 highlight-variant-2 highlight-spread-lg '
               )}
             >
               <h2
                 className={clsx(
-                  'md:text-4xl text-3xl font-black text-center text-primary-500'
+                  'md:text-4xl text-2xl font-black text-center text-primary-500'
                 )}
               >
                 Professional Social Media Posts
@@ -90,7 +90,7 @@ const Design = () => {
             {[...Array(14).keys()].map((n) => (
               <div
                 key={n}
-                className={'relative w-full  h-72 aspect-square group'}
+                className={'relative w-full h-72 aspect-square group'}
               >
                 <Image
                   fill
@@ -99,7 +99,7 @@ const Design = () => {
                   quality={50}
                   placeholder="blur"
                   blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mM0dgytBwACwgFK5PrQiQAAAABJRU5ErkJggg=="
-                  className="object-contain duration-500 group-hover:scale-110"
+                  className="object-contain duration-200 group-hover:scale-110"
                 />
               </div>
             ))}

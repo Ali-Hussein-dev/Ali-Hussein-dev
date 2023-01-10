@@ -93,10 +93,10 @@ const Tech = ({
   subtitle?: string
 }) => {
   return (
-    <div className="pb-4">
+    <div className="p-2 pb-4 border-[0.5px] rounded bg-zinc-700/20 border-zinc-600">
       <div className="row-start gap-x-2">
         <Icon className="text-gray-300" size="20" />
-        <div className="px-2 pb-1 mb-1 highlight highlight-stone-700 highlight-variant-8 max-w-fit highlight-spread-sm">
+        <div className="pb-1 mb-1 max-w-fit ">
           <h3 className="font-sans font-semibold tracking-tighter text-gray-100 ">
             {title}
             <span className="ml-1 text-base italic font-normal normal-case">
@@ -173,7 +173,7 @@ const Index: React.FC = () => (
           <h2 className="mb-2 font-sans text-2xl font-extrabold text-left lg:text-3xl text-slate-200">
             Toolbox
           </h2>
-          <div className="mb-4 leading-8 text-slate-900 lg:grid lg:grid-cols-2 lg:gap-x-3">
+          <div className="mb-4 space-y-3 leading-8 text-slate-900 sm:grid sm:grid-cols-2 sm:gap-3 sm:space-y-0">
             {techSkills.map((o) => (
               <Tech
                 key={o.title}
