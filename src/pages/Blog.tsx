@@ -29,10 +29,14 @@ const Blog: React.FC = () => (
                   <h2 className="w-10/12 text-xl font-bold text-gray-100 uppercase">
                     {o.title}
                   </h2>
-                  <Text lineClamp={1} className="pr-4 italic text-slate-100">
+                  <Text
+                    lineClamp={1}
+                    color="none"
+                    className="pr-4 italic text-gray-400"
+                  >
                     {o.description}
                   </Text>
-                  <span className="flex items-center text-base italic tracking-tight text-gray-400 gap-x-2">
+                  <span className="flex items-center text-base italic tracking-tight text-gray-500 gap-x-2">
                     <BiCalendar /> {o.pub}
                   </span>
                 </div>
