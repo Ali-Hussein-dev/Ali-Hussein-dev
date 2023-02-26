@@ -5,6 +5,7 @@ import Footer from '@/components/Footer'
 import '../css/global.css'
 import NextNProgress from 'nextjs-progressbar'
 import { Nunito } from '@next/font/google'
+import { GoogleAnalytics } from 'nextjs-google-analytics'
 const font = Nunito({ subsets: ['latin', 'latin-ext'] })
 
 const MyApp: React.FC<{ Component: React.FC; pageProps: any }> = ({
@@ -27,6 +28,7 @@ const MyApp: React.FC<{ Component: React.FC; pageProps: any }> = ({
     <main className="relative min-h-screen text-gray-100 bg-black col-center lg:text-xl selection:bg-yellow-900/90 selection:text-slate-100">
       <Header />
       <div className="grow">
+        <GoogleAnalytics trackPageViews strategy="lazyOnload" />
         <Component {...pageProps} />
       </div>
       <Footer />
