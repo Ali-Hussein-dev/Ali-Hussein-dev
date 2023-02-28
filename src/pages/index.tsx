@@ -1,6 +1,4 @@
 import Head from 'next/head'
-import Link from 'next/link'
-import { FiDownloadCloud } from 'react-icons/fi'
 import { SiSpeedtest } from 'react-icons/si'
 import { CgDatabase } from 'react-icons/cg'
 import { GoBrowser } from 'react-icons/go'
@@ -146,7 +144,7 @@ const Index: React.FC = () => (
                   >
                     Get in touch
                   </a>
-                  <button
+                  {/* <button
                     type="button"
                     className="w-full h-12 py-2 font-semibold rounded select-none text-gray-100 active:translate-y-1 sm:max-w-[190px]  px-4 duration-200 hover:bg-gray-100/20 border border-gray-500"
                   >
@@ -156,7 +154,7 @@ const Index: React.FC = () => (
                         <span>Download CV</span>
                       </span>
                     </Link>
-                  </button>
+                  </button> */}
                 </div>
               </div>
             </div>
