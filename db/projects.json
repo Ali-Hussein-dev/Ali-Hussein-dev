@@ -1,18 +1,17 @@
 [
   {
+    "href": "https://your-chat-gpt.vercel.app/chat",
+    "name": "ChatGPT Clone",
+    "description": "ChatGPT clone with features such as prompt history search, chat deletion",
+    "stack": "TS, Nextjs, React, Tailwindcss, Openai API",
+    "imgSrc": "/projects-videos/your-chat-gpt.png"
+  },
+  {
     "href": "https://restaurants-template.vercel.app/",
     "name": "Restaurant Stater",
     "description": "Restaurant website",
     "imgSrc": "/projects-videos/restaurant-starter-de.png",
     "stack": "Nextjs, React, Tailwindcss, DaisyUI"
-  },
-  {
-    "href": "https://website-starter-next.vercel.app",
-    "name": "Website Starter",
-    "description": "Website starter with a basic layout  and functionality that every typical website need.",
-    "stack": "TS, Nextjs, React, Tailwindcss, DaisyUI",
-    "imgSrc": "/projects-videos/website-starter.png",
-    "code": "https://github.com/Ali-Hussein-dev/website-starter"
   },
   {
     "href": "https://gastro-abr.vercel.app/",

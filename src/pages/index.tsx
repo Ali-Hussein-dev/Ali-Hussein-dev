@@ -48,7 +48,7 @@ const techSkills = [
   {
     title: 'React Ecosystem',
     parag:
-      'Typescript, React, Nextjs, Tailwindcss, Chakra-UI, Swiper, ReactQuery, Recharts, React hook form, ...etc.',
+      'Typescript, React, Tailwindcss, Zustand, Chakra-UI, Swiper, ReactQuery, Recharts, ...etc.',
     Icon: FaReact,
   },
   {
@@ -58,7 +58,7 @@ const techSkills = [
   },
   {
     title: 'Frontend',
-    parag: 'Javascript(ES6) Html5, CSS3, Browser APIs',
+    parag: 'JavaScript(ES6), Html5, CSS3, Browser APIs',
     Icon: GoBrowser,
   },
   {
@@ -68,14 +68,14 @@ const techSkills = [
   },
   {
     title: 'Backend',
-    parag: 'Nodejs, Strapi CMS, Redis, FaunaDB',
+    parag: 'Nextjs, Nodejs, Strapi CMS, Redis, FaunaDB',
     Icon: CgDatabase,
     subtitle: ' (familiar)',
   },
 
   {
     title: 'Interested in',
-    parag: 'AWS, GitHub Actions, Storybook, Astro, SolidJS, Cypress, xState',
+    parag: 'Astro, React Native, AWS, GitHub Actions, Storybook, Cypress',
     Icon: BiHappyHeartEyes,
   },
 ]
