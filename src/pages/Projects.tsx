@@ -2,7 +2,6 @@ import { Text } from '@mantine/core'
 import Head from 'next/head'
 import Image from 'next/image'
 import React from 'react'
-import { BiLinkExternal } from 'react-icons/bi'
 import { FaGithub } from 'react-icons/fa'
 import ReactPlayer from 'react-player'
 import projects from '../../db/projects.json'
@@ -39,14 +38,14 @@ const ProjectCard: React.FC<{
         <Text>{description}</Text>
         <Text className="mt-2">{stack}</Text>
       </div>
-      <div className="flex flex-wrap items-center pt-1">
+      <div className="flex flex-wrap items-center justify-end ">
         <Link href={href}>
           <Text>Visit</Text>
         </Link>
         {code && (
           <a
             href={code}
-            className="grid w-10 h-8 ml-1 rounded hover:bg-gray-100/20 place-items-center"
+            className="grid w-10 rounded h-9 hover:bg-gray-100/10 place-items-center"
             target="black"
           >
             <FaGithub size="25" />
@@ -65,10 +64,9 @@ const Link: React.FC<{ href: string; children: string | React.ReactNode }> = ({
     href={href}
     target="_blank"
     rel="noreferrer"
-    className="flex items-center h-8 px-3 gap-2 text-lg underline rounded text-slate-100 underline-offset-1 hover:bg-gray-100/10 group"
+    className="flex items-center px-2 text-lg rounded hover:underline h-9 text-slate-100 underline-offset-1 hover:bg-gray-100/10"
   >
     <span className="">{children}</span>
-    <BiLinkExternal size="17" className="opacity-0 group-hover:opacity-100" />
   </a>
 )
 //=======================
