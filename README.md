@@ -6,5 +6,3 @@
 </p>
 
 I build web applications with a lot of passion for clean UI, clean code, intuitive UX and great performance. I came from a business background and live in Germany since 2015. Feel free to reach out, if you think I could fit in your team.
-
-![GitHub Activity Graph](https://activity-graph.herokuapp.com/graph?username=Ali-Hussein-dev)
