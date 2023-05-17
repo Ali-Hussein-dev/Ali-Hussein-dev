@@ -7,7 +7,7 @@ import { VscTools } from 'react-icons/vsc'
 import { BiHappyHeartEyes } from 'react-icons/bi'
 import { IconType } from 'react-icons'
 import Image from 'next/image'
-import { Testimonials } from '../components'
+import { BorderGradientContainer, Testimonials } from '../components'
 
 //======================================
 export const Workflow = () => {
@@ -91,7 +91,7 @@ const Tech = ({
   subtitle?: string
 }) => {
   return (
-    <div className="px-3 py-4 border-[0.5px] rounded bg-zinc-700/20 border-zinc-600">
+    <BorderGradientContainer>
       <div className="row-start gap-x-2">
         <Icon className="text-gray-300" size="20" />
         <div className="pb-1 mb-1 max-w-fit ">
@@ -109,7 +109,7 @@ const Tech = ({
       <p className="leading-5 tracking-tighter text-gray-400 md:text-xl pl-7">
         {parag}
       </p>
-    </div>
+    </BorderGradientContainer>
   )
 }
 //=======================
@@ -123,8 +123,9 @@ const Index: React.FC = () => (
       className="max-w-[1024px] mx-auto px-4 md:px-6 py-8 lg:pt-16"
     >
       <div className="w-full pb-8 space-y-8">
+        {/* //------------------------------Hero */}
         <section className="xs:pb-4">
-          <div className="flex flex-col items-center justify-between pb-4 gap-6 prose border-b border-gray-600 sm:flex-row">
+          <div className="flex flex-col items-center justify-between pb-4 gap-6 prose border-b border-zinc-900 border-dotted sm:flex-row">
             <div>
               <h1 className="mb-2 font-sans text-2xl font-extrabold md:text-3xl text-slate-200">
                 UX-Driven Frontend Engineer
@@ -170,6 +171,16 @@ const Index: React.FC = () => (
             </div>
           </div>
         </section>
+        {/* //------------------------------Testimonials */}
+        <section>
+          <h2 className="mb-4 font-sans text-2xl font-extrabold text-left lg:text-3xl text-slate-200">
+            Testimonials
+          </h2>
+          <Testimonials />
+        </section>
+        {/* //------------------------------Workflow */}
+        <Workflow />
+        {/* //------------------------------Tech skills */}
         <section>
           <h2 className="mb-2 font-sans text-2xl font-extrabold text-left lg:text-3xl text-slate-200">
             Toolbox
@@ -185,13 +196,6 @@ const Index: React.FC = () => (
               />
             ))}
           </div>
-        </section>
-        <Workflow />
-        <section>
-          <h2 className="mb-4 font-sans text-2xl font-extrabold text-left lg:text-3xl text-slate-200">
-            Testimonials
-          </h2>
-          <Testimonials />
         </section>
       </div>
     </div>

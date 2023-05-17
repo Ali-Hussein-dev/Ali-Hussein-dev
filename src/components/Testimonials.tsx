@@ -1,3 +1,5 @@
+import { BorderGradientContainer } from './border-gradient-container'
+
 const data = [
   {
     text: 'Ich find es “Sau” interessant und man merk unheimlich viel Zeit und auch Bedanken rein gesetzt…',
@@ -13,13 +15,12 @@ export const Testimonials = () => {
   return (
     <div className="flex flex-col mx-auto gap-6 sm:flex-row">
       {data.map((obj, i) => (
-        <div
-          key={i}
-          className="flex flex-col min-h-full px-4 pt-6 pb-4 border border-b-2 border-l-2 border-gray-600 gap-y-2 rounded-xl"
-        >
-          <p className="">{obj.text}</p>
-          <span className="text-base italic">{obj.who}</span>
-        </div>
+        <BorderGradientContainer key={i}>
+          <div className="flex flex-col gap-y-2 ">
+            <p className="">{obj.text}</p>
+            <span className="text-base italic">{obj.who}</span>
+          </div>
+        </BorderGradientContainer>
       ))}
     </div>
   )
