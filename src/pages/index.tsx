@@ -141,7 +141,7 @@ const Index: React.FC = () => (
                 <div className="flex flex-col gap-4 sm:flex-row">
                   <a
                     href="mailto: ali.hussein.pre@gmail.com"
-                    className="row-center h-12 px-4 py-2 font-semibold text-gray-100 duration-200 rounded select-none bg-gray-50/20 hover:bg-gray-50/30 sm:max-w-[190px]"
+                    className="row-center h-12 px-4 py-2 font-semibold text-gray-100 duration-200 rounded select-none bg-transparent  hover:bg-gray-100 hover:text-gray-800 sm:max-w-[190px] border-[0.5px] border-gray-800"
                   >
                     Get in touch
                   </a>
