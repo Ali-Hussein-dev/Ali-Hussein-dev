@@ -125,7 +125,7 @@ const Index: React.FC = () => (
       <div className="w-full pb-8 space-y-8">
         {/* //------------------------------Hero */}
         <section className="xs:pb-4">
-          <div className="flex flex-col items-center justify-between pb-4 gap-6 prose border-b border-zinc-900 border-dotted sm:flex-row">
+          <div className="flex flex-col items-center justify-between pb-4 gap-6 prose sm:flex-row">
             <div>
               <h1 className="mb-2 font-sans text-2xl font-extrabold md:text-3xl text-slate-200">
                 UX-Driven Frontend Engineer
