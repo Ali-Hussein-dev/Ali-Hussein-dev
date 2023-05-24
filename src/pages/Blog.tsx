@@ -10,9 +10,9 @@ const Blog: React.FC = () => (
     <Head>
       <title>Blog</title>
     </Head>
-    <div className="max-w-xl container-white blur-dark">
+    <div className="max-w-3xl container-white">
       <div className="w-full">
-        <h1 className="pb-1 mb-2 border-b h1 text-primary-500 border-primary-400">
+        <h1 className="pb-1 mb-4 border-b text-primary-200 border-zinc-700">
           Last Articles
         </h1>
         <div className="space-y-5 max-auto">
@@ -32,11 +32,11 @@ const Blog: React.FC = () => (
                   <Text
                     lineClamp={1}
                     color="none"
-                    className="pr-4 italic text-gray-400"
+                    className="pr-4 italic text-zinc-400"
                   >
                     {o.description}
                   </Text>
-                  <span className="flex items-center text-base italic tracking-tight text-gray-500 gap-x-2">
+                  <span className="flex items-center text-base italic tracking-tight text-zinc-500 gap-x-2">
                     <BiCalendar /> {o.pub}
                   </span>
                 </div>

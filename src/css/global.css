@@ -50,12 +50,7 @@
   .col-between {
     @apply items-center justify-between f-col;
   }
-  .blur-light {
-    @apply bg-white/70 backdrop-blur-xl;
-  }
-  .blur-dark {
-    @apply bg-black/60 backdrop-blur-2xl;
-  }
+  
   .container-white {
     @apply w-full px-4 py-8 mx-auto lg:px-5 rounded-2xl;
   }
