@@ -142,6 +142,8 @@ const Tech = ({
     </BorderGradientContainer>
   )
 }
+const description =
+  "I specialize in crafting web applications with clean UI, intuitive UX, and exceptional performance for both companies and individuals. My current focus revolves around developing AI-driven apps using OpenAI and Langchain technologies. If you believe my skills align with your team's needs, don't hesitate to get in touch."
 //=======================
 const Index: React.FC = () => (
   <>
@@ -157,49 +159,22 @@ const Index: React.FC = () => (
         {/* //------------------------------Hero */}
         <section className="xs:pb-4 relative">
           <div className="flex flex-col items-center justify-between pb-4 gap-6 prose sm:flex-row">
-            <div>
-              <h1 className="mb-2 font-sans text-2xl font-extrabold md:text-4xl text-slate-200 gradientText">
+            <div className="mx-auto">
+              <h1 className="mb-4 font-sans text-2xl font-extrabold md:text-4xl gradientText text-center">
                 UX-Driven Frontend Engineer
               </h1>
               <div>
-                <p className="mb-4 leading-6 text-slate-200 sm:max-w-prose xl:text-lg">
-                  I help companies and individuals build web applications with
-                  clean UI, intuitive UX, and high performance. I can work for
-                  you on-site if you are in Hamburg or remotely if you are in EU
-                  time zones. Feel free to reach out if you think I could fit
-                  into your team.
+                <p className="mb-4 leading-6 text-zinc-400 xl:text-lg text-center max-w-3xl">
+                  {description}
                 </p>
-                <div className="flex flex-col gap-4 sm:flex-row">
-                  <a
-                    href="mailto: ali.hussein.pre@gmail.com"
-                    className="row-center h-12 px-4 py-2 font-semibold text-gray-100 duration-200 rounded select-none bg-transparent  hover:bg-gray-100 hover:text-gray-800 sm:max-w-[190px] border-[0.5px] border-gray-800"
-                  >
-                    Get in touch
-                  </a>
-                  {/* <button
-                    type="button"
-                    className="w-full h-12 py-2 font-semibold rounded select-none text-gray-100 active:translate-y-1 sm:max-w-[190px]  px-4 duration-200 hover:bg-gray-100/20 border border-gray-500"
-                  >
-                    <Link href="/cv.pdf" passHref>
-                      <span className="flex items-center justify-center gap-x-2">
-                        <FiDownloadCloud />
-                        <span>Download CV</span>
-                      </span>
-                    </Link>
-                  </button> */}
-                </div>
+                <a
+                  href="mailto: ali.hussein.pre@gmail.com"
+                  className="row-center h-12 px-4 py-2 font-semibold text-zinc-100 duration-200 rounded select-none bg-transparent  hover:bg-zinc-100 hover:text-zinc-800 sm:max-w-[190px] border-[0.5px] border-zinc-800 mx-auto"
+                >
+                  Get in touch
+                </a>
               </div>
             </div>
-            {/* <div className="mask mask-circle">
-              <Image
-                src="/me.png"
-                width="320"
-                height="320"
-                loading="eager"
-                alt="me"
-                className="brightness-[0.70]"
-              />
-            </div> */}
           </div>
         </section>
         {/* //------------------------------Testimonials */}
