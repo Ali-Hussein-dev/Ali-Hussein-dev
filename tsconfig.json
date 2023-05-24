@@ -20,8 +20,20 @@
     "jsx": "preserve",
     "removeComments": true,
     "incremental": true,
-    "downlevelIteration": true
+    "downlevelIteration": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
   "exclude": ["node_modules", ".next", "out", ".history"],
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.js", "main.d.ts"]
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.js",
+    "main.d.ts",
+    ".next/types/**/*.ts"
+  ]
 }
