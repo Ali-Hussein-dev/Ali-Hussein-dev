@@ -32,5 +32,7 @@
     "statusBarItem.remoteForeground": "#15202b",
     "commandCenter.border": "#15202b99"
   },
-  "peacock.color": "#dcbb5d"
+  "peacock.color": "#dcbb5d",
+  "typescript.tsdk": "node_modules\\typescript\\lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true
 }

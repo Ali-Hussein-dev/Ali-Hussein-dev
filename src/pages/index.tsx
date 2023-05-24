@@ -8,7 +8,37 @@ import { BiHappyHeartEyes } from 'react-icons/bi'
 import { IconType } from 'react-icons'
 import Image from 'next/image'
 import { BorderGradientContainer, Testimonials } from '../components'
-
+const GridBG = () => (
+  <svg
+    className="absolute inset-0 h-full w-full stroke-white/10 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
+    aria-hidden="true"
+  >
+    <defs>
+      <pattern
+        id="983e3e4c-de6d-4c3f-8d64-b9761d1534cc"
+        width="120"
+        height="120"
+        x="50%"
+        y="-1"
+        patternUnits="userSpaceOnUse"
+      >
+        <path d="M.5 200V.5H200" fill="none" />
+      </pattern>
+    </defs>
+    <svg x="50%" y="-1" className="overflow-visible fill-gray-800/20">
+      <path
+        d="M-200 0h201v201h-201Z M600 0h201v201h-201Z M-400 600h201v201h-201Z M200 800h201v201h-201Z"
+        strokeWidth="0"
+      />
+    </svg>
+    <rect
+      width="100%"
+      height="100%"
+      strokeWidth="0"
+      fill="url(#983e3e4c-de6d-4c3f-8d64-b9761d1534cc)"
+    />
+  </svg>
+)
 //======================================
 export const Workflow = () => {
   return (
@@ -48,7 +78,7 @@ const techSkills = [
   {
     title: 'React Ecosystem',
     parag:
-      'Typescript, React, Tailwindcss, Zustand, Chakra-UI, Swiper, ReactQuery, Recharts, ...etc.',
+      'Typescript, React, Tailwindcss, Zustand, Mantine, Swiper, ReactQuery, Recharts, ...etc.',
     Icon: FaReact,
   },
   {
@@ -68,14 +98,14 @@ const techSkills = [
   },
   {
     title: 'Backend',
-    parag: 'Nextjs, Nodejs, Strapi CMS, Redis, FaunaDB',
+    parag: 'Nextjs, Nodejs, Supabase, Redis',
     Icon: CgDatabase,
     subtitle: ' (familiar)',
   },
 
   {
     title: 'Interested in',
-    parag: 'Astro, React Native, AWS, GitHub Actions, Storybook, Cypress',
+    parag: 'Astro, React Native, GitHub Actions, Storybook',
     Icon: BiHappyHeartEyes,
   },
 ]
@@ -120,14 +150,15 @@ const Index: React.FC = () => (
     </Head>
     <div
       id="Home"
-      className="max-w-[1024px] mx-auto px-4 md:px-6 py-8 lg:pt-16"
+      className="max-w-[1024px] mx-auto px-4 md:px-6 py-8 lg:pt-16 "
     >
       <div className="w-full pb-8 space-y-8">
+        <GridBG />
         {/* //------------------------------Hero */}
-        <section className="xs:pb-4">
+        <section className="xs:pb-4 relative">
           <div className="flex flex-col items-center justify-between pb-4 gap-6 prose sm:flex-row">
             <div>
-              <h1 className="mb-2 font-sans text-2xl font-extrabold md:text-3xl text-slate-200">
+              <h1 className="mb-2 font-sans text-2xl font-extrabold md:text-4xl text-slate-200 gradientText">
                 UX-Driven Frontend Engineer
               </h1>
               <div>
@@ -159,7 +190,7 @@ const Index: React.FC = () => (
                 </div>
               </div>
             </div>
-            <div className="mask mask-squircle">
+            {/* <div className="mask mask-circle">
               <Image
                 src="/me.png"
                 width="320"
@@ -168,7 +199,7 @@ const Index: React.FC = () => (
                 alt="me"
                 className="brightness-[0.70]"
               />
-            </div>
+            </div> */}
           </div>
         </section>
         {/* //------------------------------Testimonials */}

@@ -65,6 +65,9 @@
   .h1 {
     @apply mb-1 text-xl font-bold tracking-tight md:text-2xl;
   }
+    .gradientText {
+      @apply bg-gradient-to-r from-amber-500 via-orange-500 to-yellow-500 bg-clip-text text-transparent
+    }
 }
 
 ::-webkit-scrollbar {
