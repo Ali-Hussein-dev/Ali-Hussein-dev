@@ -1,4 +1,3 @@
-import { Text } from '@mantine/core'
 import Head from 'next/head'
 import Image from 'next/image'
 import React from 'react'
@@ -35,12 +34,12 @@ const ProjectCard: React.FC<{
         <h3 className="mb-1 font-semibold uppercase text-primary-100">
           {name}
         </h3>
-        <Text>{description}</Text>
-        <Text className="mt-2">{stack}</Text>
+        <p>{description}</p>
+        <p className="mt-2">{stack}</p>
       </div>
       <div className="flex flex-wrap items-center justify-end ">
         <Link href={href}>
-          <Text>Visit</Text>
+          <span>Visit</span>
         </Link>
         {code && (
           <a
@@ -75,8 +74,8 @@ const Projects: React.FC = () => (
     <Head>
       <title>Projects</title>
     </Head>
-    <div className="container-white blur-dark">
-      <h1 className="pb-1 mb-2 border-b h1 text-primary-400 border-primary-300">
+    <div className="container-white max-w-5xl">
+      <h1 className="pb-1 mb-4 border-b h1 text-primary-200 border-zinc-700">
         Last Projects
       </h1>
       <div className="lg:masonry-cols-3 md:masonry-cols-2">

@@ -16,8 +16,8 @@ export const Testimonials = () => {
     <div className="flex flex-col mx-auto gap-6 sm:flex-row">
       {data.map((obj, i) => (
         <BorderGradientContainer key={i}>
-          <div className="flex flex-col gap-y-2 ">
-            <p className="">{obj.text}</p>
+          <div className="flex flex-col gap-y-2">
+            <p>{obj.text}</p>
             <span className="text-base italic">{obj.who}</span>
           </div>
         </BorderGradientContainer>

@@ -1,4 +1,3 @@
-import { Text } from '@mantine/core'
 import Head from 'next/head'
 import * as React from 'react'
 const myStory = [
@@ -40,19 +39,21 @@ const Aboutme: React.FC = () => {
         <title>About</title>
       </Head>
       <div id="About" className="max-w-4xl layout">
-        <section className="container-white text-slate-300 blur-dark">
-          <h1 className="pb-[0.15rem] text-xl border-b border-slate-700 mb-4  uppercase">
+        <section className="container-white text-slate-300">
+          <h1 className="pb-1 text-xl border-b border-zinc-700 mb-4  uppercase text-primary-200">
             My Story
           </h1>
           <article>
             {myStory.map((section) => (
               <div key={section.title}>
-                <h2 className="text-xl font-bold uppercase md:text-2xl text-primary-100 ">
+                <h2 className="text-xl font-bold uppercase md:text-2xl text-zinc-300">
                   {section.title}
                 </h2>
-                <div className="mb-4 space-y-3">
+                <div className="mb-4 space-y-3 text-zinc-300 ">
                   {section.p.map((p, i) => (
-                    <Text key={i}>{p}</Text>
+                    <p key={i} className="leading-8 tracking-wide">
+                      {p}
+                    </p>
                   ))}
                 </div>
               </div>
