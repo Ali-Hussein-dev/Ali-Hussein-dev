@@ -159,21 +159,19 @@ const Index: React.FC = () => (
         {/* //------------------------------Hero */}
         <section className="xs:pb-4 relative">
           <div className="flex flex-col items-center justify-between pb-4 gap-6 prose sm:flex-row">
-            <div className="mx-auto">
+            <div className="mx-auto col-center">
               <h1 className="mb-4 font-sans text-2xl font-extrabold md:text-4xl gradientText text-center">
                 UX-Driven Frontend Engineer
               </h1>
-              <div>
-                <p className="mb-4 leading-6 text-zinc-400 xl:text-lg text-center max-w-3xl">
-                  {description}
-                </p>
-                <a
-                  href="mailto: ali.hussein.pre@gmail.com"
-                  className="row-center h-12 px-4 py-2 font-semibold text-zinc-100 duration-200 rounded select-none bg-transparent  hover:bg-zinc-100 hover:text-zinc-800 sm:max-w-[190px] border-[0.5px] border-zinc-800 mx-auto"
-                >
-                  Get in touch
-                </a>
-              </div>
+              <p className="mb-4 leading-6 text-zinc-400 xl:text-lg text-center max-w-3xl">
+                {description}
+              </p>
+              <a
+                href="mailto: ali.hussein.pre@gmail.com"
+                className="primary-btn border-[0.5px] block mx-auto w-fit"
+              >
+                Get in touch
+              </a>
             </div>
           </div>
         </section>

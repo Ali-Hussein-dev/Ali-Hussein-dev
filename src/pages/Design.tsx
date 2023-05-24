@@ -39,10 +39,7 @@ export const SocialMedia = () => (
 export const CtaButton = () => (
   <a
     href="mailto:ali.hussein.pre@gmail.com"
-    className={clsx(
-      'px-6 py-3 border-2 border-primary-500 rounded-xl font-extrabold mx-auto uppercase',
-      'hover:scale-105 active:scale-95 duration-200 hover:bg-primary-600 '
-    )}
+    className="primary-btn border-[0.5px]"
   >
     Get One For FREE
   </a>

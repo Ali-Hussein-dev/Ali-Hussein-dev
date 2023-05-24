@@ -50,7 +50,7 @@
   .col-between {
     @apply items-center justify-between f-col;
   }
-  
+
   .container-white {
     @apply w-full px-4 py-8 mx-auto lg:px-5 rounded-2xl;
   }
@@ -62,6 +62,9 @@
   }
   .gradientText {
     @apply bg-gradient-to-r from-amber-500 via-orange-500 to-yellow-500 bg-clip-text text-transparent;
+  }
+  .primary-btn {
+    @apply active:scale-95 duration-200 hover:bg-white hover:text-zinc-800 hover:scale-105 px-6 py-3 rounded-xl font-bold mx-auto uppercase border-zinc-800;
   }
 }
 
