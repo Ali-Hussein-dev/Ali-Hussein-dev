@@ -8,9 +8,10 @@ import { BiHappyHeartEyes } from 'react-icons/bi'
 import { IconType } from 'react-icons'
 import Image from 'next/image'
 import { BorderGradientContainer, Testimonials } from '../components'
+
 const GridBG = () => (
   <svg
-    className="absolute inset-0 h-full w-full stroke-white/10 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
+    className="absolute inset-[-20] h-full w-full stroke-white/10 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
     aria-hidden="true"
   >
     <defs>
@@ -43,7 +44,7 @@ const GridBG = () => (
 export const Workflow = () => {
   return (
     <section>
-      <h2 className="mb-4 font-sans text-2xl font-extrabold text-left lg:text-3xl text-slate-200">
+      <h2 className="mb-4 text-2xl font-extrabold text-left lg:text-3xl text-slate-200">
         My Workflow
       </h2>
       <p className="mb-8 leading-6 text-slate-200 xl:text-lg">
@@ -62,6 +63,8 @@ export const Workflow = () => {
         width={1000}
         height={450}
         className="hidden mx-auto md:block"
+        placeholder="blur"
+        blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mM0dgytBwACwgFK5PrQiQAAAABJRU5ErkJggg=="
       />
       <Image
         src="/workflow_mobile.png"
@@ -125,7 +128,7 @@ const Tech = ({
       <div className="row-start gap-x-2">
         <Icon className="text-gray-300" size="20" />
         <div className="pb-1 mb-1 max-w-fit ">
-          <h3 className="font-sans font-semibold leading-4 tracking-tighter text-gray-100">
+          <h3 className="font-semibold leading-4 tracking-tighter text-gray-100">
             {title}
             <span
               hidden={!subtitle}
@@ -150,17 +153,17 @@ const Index: React.FC = () => (
     <Head>
       <title>Home</title>
     </Head>
+    <GridBG />
     <div
       id="Home"
-      className="max-w-[1024px] mx-auto px-4 md:px-6 py-8 lg:pt-16 "
+      className="max-w-[1024px] mx-auto px-4 md:px-6 py-8 lg:pt-16 z-20"
     >
       <div className="w-full pb-8 space-y-8">
-        <GridBG />
         {/* //------------------------------Hero */}
         <section className="xs:pb-4 relative">
           <div className="flex flex-col items-center justify-between pb-4 gap-6 prose sm:flex-row">
             <div className="mx-auto col-center">
-              <h1 className="mb-4 font-sans text-2xl font-extrabold md:text-4xl gradientText text-center">
+              <h1 className="mb-4 text-2xl font-extrabold md:text-4xl gradientText text-center">
                 UX-Driven Frontend Engineer
               </h1>
               <p className="mb-4 leading-6 text-zinc-400 xl:text-lg text-center max-w-3xl">
@@ -176,8 +179,8 @@ const Index: React.FC = () => (
           </div>
         </section>
         {/* //------------------------------Testimonials */}
-        <section>
-          <h2 className="mb-4 font-sans text-2xl font-extrabold text-left lg:text-3xl text-slate-200">
+        <section className="z-10">
+          <h2 className="mb-4 text-2xl font-extrabold text-left lg:text-3xl text-slate-200">
             Testimonials
           </h2>
           <Testimonials />
@@ -186,7 +189,7 @@ const Index: React.FC = () => (
         <Workflow />
         {/* //------------------------------Tech skills */}
         <section>
-          <h2 className="mb-2 font-sans text-2xl font-extrabold text-left lg:text-3xl text-slate-200">
+          <h2 className="mb-2 text-2xl font-extrabold text-left lg:text-3xl text-slate-200">
             Toolbox
           </h2>
           <div className="mb-4 space-y-3 leading-8 text-slate-900 sm:grid sm:grid-cols-2 sm:gap-3 sm:space-y-0">
