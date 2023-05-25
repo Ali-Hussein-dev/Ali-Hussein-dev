@@ -25,7 +25,7 @@ const MyApp: React.FC<{ Component: React.FC; pageProps: any }> = ({
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <title>Ali Hussein</title>
     </Head>
-    <main className="relative min-h-screen text-gray-100 bg-black col-center lg:text-xl selection:bg-yellow-900/90 selection:text-slate-100">
+    <main className="relative min-h-screen col-center lg:text-xl selection:bg-yellow-500/10 selection:text-zinc-100 z-10 text-gray-100 bg-black overflow-hidden">
       <Header />
       <div className="grow">
         <GoogleAnalytics trackPageViews strategy="lazyOnload" />

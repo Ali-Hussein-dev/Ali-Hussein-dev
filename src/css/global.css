@@ -57,14 +57,11 @@
   .layout {
     @apply min-h-screen px-1 py-8 mx-auto md:px-3 lg:px-12 lg:max-w-screen-xl;
   }
-  .h1 {
-    @apply mb-1 text-xl font-bold tracking-tight md:text-2xl;
-  }
   .gradientText {
     @apply bg-gradient-to-r from-amber-500 via-orange-500 to-yellow-500 bg-clip-text text-transparent;
   }
   .primary-btn {
-    @apply active:scale-95 duration-200 hover:bg-white hover:text-zinc-800 hover:scale-105 px-6 py-3 rounded-xl font-bold mx-auto uppercase border-zinc-800;
+    @apply active:scale-95 duration-200 hover:bg-zinc-100 hover:text-zinc-800 hover:scale-105 px-6 py-3 rounded-xl font-bold mx-auto uppercase border-zinc-800;
   }
 }
 

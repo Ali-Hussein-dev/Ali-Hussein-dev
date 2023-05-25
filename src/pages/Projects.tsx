@@ -30,14 +30,12 @@ const ProjectCard: React.FC<{
     )}
 
     <div className="flex flex-col justify-between flex-grow px-2 pb-2 tracking-tight text-slate-300">
-      <div className="pb-1 border-b border-slate-600">
-        <h3 className="mb-1 font-semibold uppercase text-primary-100">
-          {name}
-        </h3>
-        <p>{description}</p>
-        <p className="mt-2">{stack}</p>
+      <div className="py-2 border-b border-zinc-900">
+        <h3 className="mb-1 font-bold uppercase text-gray-200">{name}</h3>
+        <p className="text-gray-400">{description}</p>
+        <p className="mt-2 text-gray-400">{stack}</p>
       </div>
-      <div className="flex flex-wrap items-center justify-end ">
+      <div className="flex flex-wrap items-center justify-end pt-1">
         <Link href={href}>
           <span>Visit</span>
         </Link>
@@ -75,7 +73,7 @@ const Projects: React.FC = () => (
       <title>Projects</title>
     </Head>
     <div className="container-white max-w-5xl">
-      <h1 className="pb-1 mb-4 border-b h1 text-primary-200 border-zinc-700">
+      <h1 className="pb-1 mb-4 border-b text-gray-200 border-gray-900 uppercase">
         Last Projects
       </h1>
       <div className="lg:masonry-cols-3 md:masonry-cols-2">
