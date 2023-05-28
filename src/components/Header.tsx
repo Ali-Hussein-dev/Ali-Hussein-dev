@@ -9,10 +9,10 @@ interface StyledLinkProps extends React.ComponentPropsWithoutRef<'button'> {
   label: string
 }
 const StyledLink: React.FC<StyledLinkProps> = ({ label, ...rest }) => (
-  <Link href={`/${label === 'Home' ? '' : label}`}>
+  <Link href={`/${label === 'Home' ? '' : label}`} className="w-full">
     <button
       type="button"
-      className="px-3 py-1 mb-6 font-semibold rounded hover:bg-gray-100 hover:text-gray-800 hover:cursor-pointer sm:mb-0 active:translate-y-1"
+      className="px-3 py-1 mb-2 font-bold rounded hover:bg-zinc-300 hover:text-zinc-700 hover:cursor-pointer sm:mb-0 active:translate-y-1 w-full border border-zinc-600/30 sm:border-none shadow sm:shadow-none duration-100"
       {...rest}
     >
       {label}
@@ -33,11 +33,13 @@ export const Header: React.FC = () => {
       <header
         ref={() => ref}
         className={clsx(
-          'w-full flex justify-end  sm:justify-center items-center sm:items-center fixed top-0  z-10',
+          'w-full flex justify-end sm:justify-center items-center sm:items-center fixed top-0 z-10',
           y > height
-            ? 'bg-zinc-900/60 shadow-lg backdrop-blur'
-            : 'bg-transparent',
-          isOpen ? 'fixed h-screen z-10 bg-zinc-100/40 backdrop-blur' : 'h-14'
+            ? 'sm:bg-zinc-900/60 sm:shadow-lg sm:backdrop-blur'
+            : 'sm:bg-transparent',
+          isOpen
+            ? 'fixed h-screen z-10 bg-zinc-800/50 backdrop-blur-lg'
+            : 'h-14'
         )}
       >
         {/* -------------------------------------------------------------menu row for desktop */}
@@ -51,8 +53,8 @@ export const Header: React.FC = () => {
         {/* -------------------------------------------------------------menu column for mobile devices */}
         <div
           className={`${
-            isOpen ? 'relative' : 'hidden'
-          } sm:hidden flex flex-col gap-y-4 mx-auto my-auto items-center text-gray-800 text-3xl font-semibold leading-relaxed `}
+            isOpen ? 'relative pl-8' : 'hidden'
+          } sm:hidden flex flex-col gap-y-4 my-auto items-center text-3xl font-bold leading-relaxed w-full`}
         >
           {linksList.map((link) => (
             <StyledLink
