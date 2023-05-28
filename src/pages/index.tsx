@@ -125,7 +125,7 @@ const Tech = ({
 }) => {
   return (
     <BorderGradientContainer>
-      <div className="row-start gap-x-2">
+      <div className="flex-row-start gap-x-2">
         <Icon className="text-zinc-400 mb-1" size="20" />
         <div className="pb-1 mb-1 max-w-fit ">
           <h3 className="font-semibold leading-4 tracking-tighter text-zinc-200">
@@ -178,7 +178,7 @@ const Index: React.FC = () => (
         {/* //------------------------------Hero */}
         <section className="xs:pb-4 relative">
           <div className="flex flex-col items-center justify-between pb-4 gap-6 prose sm:flex-row">
-            <div className="mx-auto col-center">
+            <div className="mx-auto flex-col-center">
               <h1 className="mb-4 text-3xl font-extrabold md:text-4xl gradientText text-center">
                 UX-Driven <br className="sm:hidden" /> Frontend Engineer
               </h1>
