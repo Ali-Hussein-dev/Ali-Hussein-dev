@@ -55,7 +55,7 @@
     @apply w-full px-4 py-8 mx-auto lg:px-5 rounded-2xl;
   }
   .layout {
-    @apply min-h-screen px-1 py-8 mx-auto md:px-3 lg:px-12 lg:max-w-screen-xl;
+    @apply px-1 py-8 mx-auto md:px-3 lg:px-12 lg:max-w-screen-lg;
   }
   .gradientText {
     @apply bg-gradient-to-r from-amber-500 via-orange-500 to-yellow-500 bg-clip-text text-transparent;

@@ -11,7 +11,7 @@ import { BorderGradientContainer, Testimonials } from '../components'
 
 const GridBG = () => (
   <svg
-    className="absolute inset-[-20] h-full w-full stroke-white/10 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
+    className="absolute -inset-[-20] h-full w-full stroke-white/10 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
     aria-hidden="true"
   >
     <defs>
@@ -44,10 +44,10 @@ const GridBG = () => (
 export const Workflow = () => {
   return (
     <section>
-      <h2 className="mb-4 text-2xl font-extrabold text-left lg:text-3xl text-slate-200">
+      <h2 className="mb-2 text-2xl font-extrabold text-left lg:text-3xl text-slate-200">
         My Workflow
       </h2>
-      <p className="mb-8 leading-6 text-slate-200 xl:text-lg">
+      <p className="mb-8 leading-6 text-zinc-400">
         I am using the Agile methodology for software development, which
         involves analyzing and planning the requirements and then iteratively
         building the software, continuously improving the website design and
@@ -126,9 +126,9 @@ const Tech = ({
   return (
     <BorderGradientContainer>
       <div className="row-start gap-x-2">
-        <Icon className="text-gray-300" size="20" />
+        <Icon className="text-zinc-400 mb-1" size="20" />
         <div className="pb-1 mb-1 max-w-fit ">
-          <h3 className="font-semibold leading-4 tracking-tighter text-gray-100">
+          <h3 className="font-semibold leading-4 tracking-tighter text-zinc-200">
             {title}
             <span
               hidden={!subtitle}
@@ -139,14 +139,30 @@ const Tech = ({
           </h3>
         </div>
       </div>
-      <p className="leading-5 tracking-tighter text-gray-400 md:text-xl pl-7">
+      <p className="leading-5 tracking-tighter text-zinc-500 md:text-xl pl-7">
         {parag}
       </p>
     </BorderGradientContainer>
   )
 }
-const description =
-  "I specialize in crafting web applications with clean UI, intuitive UX, and exceptional performance for both companies and individuals. My current focus revolves around developing AI-driven apps using OpenAI and Langchain technologies. If you believe my skills align with your team's needs, don't hesitate to get in touch."
+const Toolbox = () => (
+  <section>
+    <h2 className="mb-2 text-2xl font-extrabold text-left lg:text-3xl text-slate-200">
+      Toolbox
+    </h2>
+    <div className="mb-4 space-y-3 leading-8 sm:grid sm:grid-cols-2 sm:gap-5 sm:space-y-0">
+      {techSkills.map((o) => (
+        <Tech
+          key={o.title}
+          title={o.title}
+          Icon={o.Icon}
+          parag={o.parag}
+          subtitle={o?.subtitle}
+        />
+      ))}
+    </div>
+  </section>
+)
 //=======================
 const Index: React.FC = () => (
   <>
@@ -156,18 +172,24 @@ const Index: React.FC = () => (
     <GridBG />
     <div
       id="Home"
-      className="max-w-[1024px] mx-auto px-4 md:px-6 py-8 lg:pt-16 z-20"
+      className="max-w-[1024px] mx-auto px-4 lg:px-0 py-8 lg:pt-16 z-20"
     >
       <div className="w-full pb-8 space-y-8">
         {/* //------------------------------Hero */}
         <section className="xs:pb-4 relative">
           <div className="flex flex-col items-center justify-between pb-4 gap-6 prose sm:flex-row">
             <div className="mx-auto col-center">
-              <h1 className="mb-4 text-2xl font-extrabold md:text-4xl gradientText text-center">
-                UX-Driven Frontend Engineer
+              <h1 className="mb-4 text-3xl font-extrabold md:text-4xl gradientText text-center">
+                UX-Driven <br className="sm:hidden" /> Frontend Engineer
               </h1>
               <p className="mb-4 leading-6 text-zinc-400 xl:text-lg text-center max-w-3xl">
-                {description}
+                I specialize in crafting web applications with clean UI,
+                intuitive UX, and exceptional performance for both companies and
+                individuals. My current focus revolves around developing{' '}
+                <strong className="text-zinc-300">AI-driven apps</strong> using{' '}
+                <strong className="text-zinc-300">OpenAI and Langchain</strong>{' '}
+                technologies . If you believe my skills align with your team
+                {"'"}s needs, don{"'"}t hesitate to get in touch.
               </p>
               <a
                 href="mailto: ali.hussein.pre@gmail.com"
@@ -178,32 +200,9 @@ const Index: React.FC = () => (
             </div>
           </div>
         </section>
-        {/* //------------------------------Testimonials */}
-        <section className="z-10">
-          <h2 className="mb-4 text-2xl font-extrabold text-left lg:text-3xl text-slate-200">
-            Testimonials
-          </h2>
-          <Testimonials />
-        </section>
-        {/* //------------------------------Workflow */}
+        <Testimonials />
         <Workflow />
-        {/* //------------------------------Tech skills */}
-        <section>
-          <h2 className="mb-2 text-2xl font-extrabold text-left lg:text-3xl text-slate-200">
-            Toolbox
-          </h2>
-          <div className="mb-4 space-y-3 leading-8 text-slate-900 sm:grid sm:grid-cols-2 sm:gap-3 sm:space-y-0">
-            {techSkills.map((o) => (
-              <Tech
-                key={o.title}
-                title={o.title}
-                Icon={o.Icon}
-                parag={o.parag}
-                subtitle={o?.subtitle}
-              />
-            ))}
-          </div>
-        </section>
+        <Toolbox />
       </div>
     </div>
   </>
