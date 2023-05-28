@@ -21,7 +21,7 @@ export const BorderGradientContainer = ({
           `,
         } as React.CSSProperties
       }
-      className=" w-full max-w-md rounded-xl border border-transparent
+      className="w-full rounded-xl border border-transparent
       [background:padding-box_var(--bg-color),border-box_var(--border-color)] overflow-hidden z-10 p-6 pb-4"
     >
       {children}
