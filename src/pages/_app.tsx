@@ -4,7 +4,7 @@ import Head from 'next/head'
 import Footer from '@/components/Footer'
 import '../css/global.css'
 import NextNProgress from 'nextjs-progressbar'
-import { Nunito } from '@next/font/google'
+import { Nunito } from 'next/font/google'
 import { GoogleAnalytics } from 'nextjs-google-analytics'
 const font = Nunito({ subsets: ['latin', 'latin-ext'] })
 
