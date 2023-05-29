@@ -48,13 +48,11 @@ export const Workflow = () => {
         My Workflow
       </h2>
       <p className="mb-8 leading-6 text-zinc-400">
-        I am using the Agile methodology for software development, which
-        involves analyzing and planning the requirements and then iteratively
-        building the software, continuously improving the website design and
-        functionality to quickly deliver value to customers. This approach
-        involves smaller, market-ready launches rather than traditional large
-        launches, and each iteration is based on customer feedback to ensure the
-        product is successful when it is deployed.
+        I adhere to Agile methodology for software development. It includes
+        analyzing and planning requirements, iterative software building, and
+        continuous improvement of design and functionality. The focus is on
+        delivering value to customers quickly through smaller, market-ready
+        launches based on customer feedback.
       </p>
 
       <Image
@@ -163,6 +161,32 @@ const Toolbox = () => (
     </div>
   </section>
 )
+const Hero = () => (
+  <section className="xs:pb-4 relative sm:h-[90vh] md:pt-12">
+    <div className="flex flex-col items-center justify-between pb-4 gap-6 prose sm:flex-row">
+      <div className="mx-auto flex-col-center md:py-14 py-20">
+        <h1 className="mb-4 text-3xl font-extrabold md:text-4xl lg:text-6xl gradientText text-center">
+          UX-Driven <br /> Frontend Engineer
+        </h1>
+        <p className="mb-4 leading-6 text-zinc-400 md:text-xl text-center max-w-xl">
+          I specialize in crafting{' '}
+          <strong className="text-zinc-300"> AI-driven web apps</strong> with{' '}
+          <strong className="text-zinc-300">
+            clean UI design & intuitive UX
+          </strong>
+          . Feel free to reach out.
+        </p>
+        <a
+          href="mailto: ali.hussein.pre@gmail.com"
+          className="primary-btn border-[0.5px] block mx-auto w-fit"
+        >
+          Get in touch
+        </a>
+      </div>
+    </div>
+    <Testimonials />
+  </section>
+)
 //=======================
 const Index: React.FC = () => (
   <>
@@ -170,37 +194,9 @@ const Index: React.FC = () => (
       <title>Home</title>
     </Head>
     <GridBG />
-    <div
-      id="Home"
-      className="max-w-[1024px] mx-auto px-4 lg:px-0 py-8 lg:pt-16 z-20"
-    >
+    <div id="Home" className="max-w-[1024px] mx-auto px-4 lg:px-0 z-20">
       <div className="w-full pb-8 space-y-8">
-        {/* //------------------------------Hero */}
-        <section className="xs:pb-4 relative">
-          <div className="flex flex-col items-center justify-between pb-4 gap-6 prose sm:flex-row">
-            <div className="mx-auto flex-col-center">
-              <h1 className="mb-4 text-3xl font-extrabold md:text-4xl gradientText text-center">
-                UX-Driven <br className="sm:hidden" /> Frontend Engineer
-              </h1>
-              <p className="mb-4 leading-6 text-zinc-400 xl:text-lg text-center max-w-3xl">
-                I specialize in crafting web applications with clean UI,
-                intuitive UX, and exceptional performance for both companies and
-                individuals. My current focus revolves around developing{' '}
-                <strong className="text-zinc-300">AI-driven apps</strong> using{' '}
-                <strong className="text-zinc-300">OpenAI and Langchain</strong>{' '}
-                technologies . If you believe my skills align with your team
-                {"'"}s needs, don{"'"}t hesitate to get in touch.
-              </p>
-              <a
-                href="mailto: ali.hussein.pre@gmail.com"
-                className="primary-btn border-[0.5px] block mx-auto w-fit"
-              >
-                Get in touch
-              </a>
-            </div>
-          </div>
-        </section>
-        <Testimonials />
+        <Hero />
         <Workflow />
         <Toolbox />
       </div>
