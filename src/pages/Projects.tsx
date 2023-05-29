@@ -14,7 +14,7 @@ const ProjectCard: React.FC<{
   imgSrc?: string
   code?: string
 }> = ({ imgSrc = '', name, href, description, stack, src, code }) => (
-  <div className="mb-4 space-y-2 overflow-hidden rounded-sm break-inside ">
+  <div className="mb-4 space-y-2 overflow-hidden rounded-sm break-inside border border-zinc-800 bg-black shadow-zinc-800/60 shadow-lg">
     {src ? (
       <ReactPlayer url={src} controls width="100%" height="100%" />
     ) : (
@@ -29,11 +29,11 @@ const ProjectCard: React.FC<{
       </div>
     )}
 
-    <div className="flex flex-col justify-between flex-grow px-2 pb-2 tracking-tight text-slate-300">
+    <div className="flex flex-col justify-between flex-grow px-2 pb-2 tracking-tight text-zinc-300">
       <div className="py-2 border-b border-zinc-900">
         <h3 className="mb-1 font-bold uppercase text-gray-200">{name}</h3>
         <p className="text-gray-400">{description}</p>
-        <p className="mt-2 text-gray-400">{stack}</p>
+        <p className="mt-2 text-zinc-600">{stack}</p>
       </div>
       <div className="flex flex-wrap items-center justify-end pt-1">
         <Link href={href}>
@@ -73,7 +73,7 @@ const Projects: React.FC = () => (
       <title>Projects</title>
     </Head>
     <div className="container-white max-w-5xl">
-      <h1 className="pb-1 mb-4 border-b text-gray-200 border-gray-900 uppercase">
+      <h1 className="pb-1 mb-4 border-b text-gray-200 border-zinc-900 uppercase">
         Last Projects
       </h1>
       <div className="lg:masonry-cols-3 md:masonry-cols-2">
