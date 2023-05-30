@@ -40,16 +40,16 @@ const Aboutme: React.FC = () => {
       </Head>
       <div id="About" className="max-w-4xl layout">
         <section className="container-white text-slate-300">
-          <h1 className="pb-1 text-xl border-b text-gray-200 border-gray-900 mb-4 uppercase">
+          <h1 className="pb-1 text-xl border-b text-zinc-500 border-zinc-900 mb-4 uppercase">
             My Story
           </h1>
-          <article>
+          <article className="text-zinc-400">
             {myStory.map((section) => (
               <div key={section.title}>
-                <h2 className="text-xl font-bold uppercase md:text-2xl text-zinc-300">
+                <h2 className="text-xl font-bold uppercase md:text-2xl">
                   {section.title}
                 </h2>
-                <div className="mb-4 space-y-3 text-zinc-300 ">
+                <div className="mb-4 space-y-3">
                   {section.p.map((p, i) => (
                     <p key={i} className="leading-8 tracking-wide">
                       {p}

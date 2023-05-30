@@ -35,7 +35,7 @@ export const Header: React.FC = () => {
         className={clsx(
           'w-full flex justify-end sm:justify-center items-center sm:items-center fixed top-0 z-10',
           y > height
-            ? 'sm:bg-zinc-900/60 sm:shadow-lg sm:backdrop-blur'
+            ? 'sm:bg-zinc-950/50 sm:shadow-lg sm:backdrop-blur'
             : 'sm:bg-transparent',
           isOpen
             ? 'fixed h-screen z-10 bg-zinc-800/50 backdrop-blur-lg'

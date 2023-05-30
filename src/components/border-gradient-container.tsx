@@ -8,7 +8,7 @@ export const BorderGradientContainer = ({
     <div
       style={
         {
-          '--dark-primary': '0 0 0',
+          '--dark-primary': '9 9 11',
           '--light-primary': '251 191 36',
 
           '--bg-color':

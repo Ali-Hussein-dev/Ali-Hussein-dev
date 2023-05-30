@@ -12,7 +12,7 @@ const Blog: React.FC = () => (
     </Head>
     <div className="max-w-3xl container-white">
       <div className="w-full">
-        <h1 className="pb-1 mb-4 border-b text-gray-200 border-gray-900 uppercase">
+        <h1 className="pb-1 text-xl border-b text-zinc-500 border-zinc-900 mb-4 uppercase">
           Last Articles
         </h1>
         <div className="space-y-5 max-auto">

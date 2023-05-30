@@ -14,7 +14,7 @@ const ProjectCard: React.FC<{
   imgSrc?: string
   code?: string
 }> = ({ imgSrc = '', name, href, description, stack, src, code }) => (
-  <div className="mb-4 space-y-2 overflow-hidden rounded-sm break-inside border border-zinc-800 bg-black shadow-zinc-800/60 shadow-lg">
+  <div className="mb-4 space-y-2 overflow-hidden rounded-sm break-inside border border-zinc-800 bg-black shadow-zinc-900/60 shadow-lg">
     {src ? (
       <ReactPlayer url={src} controls width="100%" height="100%" />
     ) : (
@@ -73,7 +73,7 @@ const Projects: React.FC = () => (
       <title>Projects</title>
     </Head>
     <div className="container-white max-w-5xl">
-      <h1 className="pb-1 mb-4 border-b text-gray-200 border-zinc-900 uppercase">
+      <h1 className="pb-1 text-xl border-b text-zinc-500 border-zinc-900 mb-4 uppercase">
         Last Projects
       </h1>
       <div className="lg:masonry-cols-3 md:masonry-cols-2">
