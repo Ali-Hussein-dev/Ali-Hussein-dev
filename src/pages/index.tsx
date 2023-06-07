@@ -141,9 +141,7 @@ const Tech = ({
           </h3>
         </div>
       </div>
-      <p className="leading-5 tracking-tighter text-zinc-500 md:text-xl pl-7">
-        {parag}
-      </p>
+      <p className="leading-6 text-zinc-400 md:text-xl pl-7">{parag}</p>
     </BorderGradientContainer>
   )
 }
