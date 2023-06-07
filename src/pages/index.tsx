@@ -56,20 +56,24 @@ export const Workflow = () => {
       </p>
 
       <Image
-        src="/workflow.png"
+        src="/workflow.svg"
         alt="workflow"
         width={1000}
         height={450}
         className="hidden mx-auto md:block"
         placeholder="blur"
         blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mM0dgytBwACwgFK5PrQiQAAAABJRU5ErkJggg=="
+        quality={75}
       />
       <Image
-        src="/workflow_mobile.png"
+        src="/workflow_mobile.svg"
         alt="workflow"
         width={320}
         height={800}
         className="mx-auto md:hidden"
+        placeholder="blur"
+        blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mM0dgytBwACwgFK5PrQiQAAAABJRU5ErkJggg=="
+        quality={75}
       />
     </section>
   )
