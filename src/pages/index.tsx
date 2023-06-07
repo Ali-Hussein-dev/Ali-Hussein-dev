@@ -79,7 +79,7 @@ const techSkills = [
   {
     title: 'React Ecosystem',
     parag:
-      'Typescript, React, Tailwindcss, Zustand, Mantine, Swiper, ReactQuery, Recharts, ...etc.',
+      'Nextjs, React, Tailwindcss, Zustand, Mantine, Swiper, ReactQuery, Recharts, ...etc.',
     Icon: FaReact,
   },
   {
@@ -88,8 +88,8 @@ const techSkills = [
     Icon: VscTools,
   },
   {
-    title: 'Frontend',
-    parag: 'JavaScript(ES6), Html5, CSS3, Browser APIs',
+    title: 'Basics',
+    parag: 'Typescript, JavaScript(ES6), Html5, CSS3, browser APIs',
     Icon: GoBrowser,
   },
   {
@@ -98,15 +98,15 @@ const techSkills = [
     Icon: SiSpeedtest,
   },
   {
-    title: 'Backend',
-    parag: 'Nextjs, Nodejs, Supabase, Redis',
+    title: 'Backend & DevOps',
+    parag: 'Nodejs, Supabase, Redis, Vercel',
     Icon: CgDatabase,
-    subtitle: ' (familiar)',
+    subtitle: ' ( familiar )',
   },
 
   {
     title: 'Interested in',
-    parag: 'Astro, React Native, GitHub Actions, Storybook',
+    parag: 'GitHub Actions, TurboRepo',
     Icon: BiHappyHeartEyes,
   },
 ]
