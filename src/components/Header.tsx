@@ -33,7 +33,7 @@ export const Header: React.FC = () => {
       <header
         ref={() => ref}
         className={clsx(
-          'w-full flex justify-end sm:justify-center items-center sm:items-center fixed top-0 z-10',
+          'w-full flex justify-end sm:justify-center items-center sm:items-center fixed top-0 z-10 pr-2',
           y > height
             ? 'sm:bg-zinc-950/50 sm:shadow-lg sm:backdrop-blur'
             : 'sm:bg-transparent',
@@ -68,10 +68,10 @@ export const Header: React.FC = () => {
         <button
           type="button"
           aria-label="toggle button"
-          className="self-start px-2 py-2 mt-2 text-gray-200 rounded-sm sm:mt-0 sm:hidden active:scale-75 focus:outline-none"
+          className="self-start p-2 mt-2 text-gray-200 rounded-lg sm:mt-0 sm:hidden active:scale-110 focus:outline-none border border-zinc-800 bg-zinc-950"
           onClick={() => setIsOpen(!isOpen)}
         >
-          {isOpen ? <FaTimes size="30" /> : <FaBars size="30" />}
+          {isOpen ? <FaTimes size="24" /> : <FaBars size="24" />}
         </button>
       </header>
     </div>

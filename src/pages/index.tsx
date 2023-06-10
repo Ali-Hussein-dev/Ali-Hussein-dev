@@ -43,7 +43,7 @@ const GridBG = () => (
 //======================================
 export const Workflow = () => {
   return (
-    <section>
+    <section className="px-2">
       <h2 className="mb-2 text-2xl font-extrabold text-left lg:text-3xl text-slate-200">
         My Workflow
       </h2>
