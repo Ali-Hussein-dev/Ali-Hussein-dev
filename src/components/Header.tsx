@@ -12,7 +12,7 @@ const StyledLink: React.FC<StyledLinkProps> = ({ label, ...rest }) => (
   <Link href={`/${label === 'Home' ? '' : label}`} className="w-full">
     <button
       type="button"
-      className="px-3 py-1 mb-2 font-bold rounded hover:bg-zinc-300 hover:text-zinc-700 hover:cursor-pointer sm:mb-0 active:translate-y-1 w-full border border-zinc-600/30 sm:border-none shadow sm:shadow-none duration-100"
+      className="px-3 py-1 mb-2 font-bold rounded-lg hover:bg-zinc-200 hover:text-zinc-800 hover:cursor-pointer sm:mb-0 active:translate-y-1 w-full border border-zinc-600/30 sm:border-none shadow sm:shadow-none duration-200"
       {...rest}
     >
       {label}
@@ -33,7 +33,7 @@ export const Header: React.FC = () => {
       <header
         ref={() => ref}
         className={clsx(
-          'w-full flex justify-end sm:justify-center items-center sm:items-center fixed top-0 z-10',
+          'w-full flex justify-end sm:justify-center items-center sm:items-center fixed top-0 z-10 pr-2',
           y > height
             ? 'sm:bg-zinc-950/50 sm:shadow-lg sm:backdrop-blur'
             : 'sm:bg-transparent',
@@ -43,7 +43,7 @@ export const Header: React.FC = () => {
         )}
       >
         {/* -------------------------------------------------------------menu row for desktop */}
-        <div className="justify-center gap-x-10 hidden w-full text-xl font-semibold sm:flex md:text-2xl max-w-[880px] ">
+        <div className="justify-between hidden w-full text-xl font-semibold sm:flex max-w-xl">
           {linksList.map((link) => (
             <span key={link}>
               <StyledLink label={link} />
@@ -68,10 +68,10 @@ export const Header: React.FC = () => {
         <button
           type="button"
           aria-label="toggle button"
-          className="self-start px-2 py-2 mt-2 text-gray-200 rounded-sm sm:mt-0 sm:hidden active:scale-75 focus:outline-none"
+          className="self-start p-2 mt-2 text-gray-200 rounded-lg sm:mt-0 sm:hidden active:scale-110 focus:outline-none border border-zinc-800 bg-zinc-950"
           onClick={() => setIsOpen(!isOpen)}
         >
-          {isOpen ? <FaTimes size="30" /> : <FaBars size="30" />}
+          {isOpen ? <FaTimes size="24" /> : <FaBars size="24" />}
         </button>
       </header>
     </div>

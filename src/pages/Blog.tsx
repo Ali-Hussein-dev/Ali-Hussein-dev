@@ -10,7 +10,7 @@ const Blog: React.FC = () => (
     <Head>
       <title>Blog</title>
     </Head>
-    <div className="max-w-3xl container-white">
+    <div className="container-white">
       <div className="w-full">
         <h1 className="pb-1 text-xl border-b text-zinc-500 border-zinc-900 mb-4 uppercase">
           Last Articles

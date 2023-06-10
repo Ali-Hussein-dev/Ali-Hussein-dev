@@ -1,0 +1,34 @@
+[
+  {
+    "title": "Post Graduation",
+    "p": [
+      "After graduating from the University of Damascus in 2011, I left Syria and relocated to Lebanon. Although my intention was to pursue a master's degree, the unfavorable economic conditions forced me to seek employment in a different field. For approximately four years, I worked in the gastronomy industry until I left Lebanon in 2015.",
+      "Upon arriving in Germany, I embarked on a journey to establish stability, embrace fresh challenges, and seize new opportunities. My initial hurdle was gain some German skills. Without waiting to enroll in language courses, I eagerly began learning German from the moment I set foot in Hamburg. Whether my progress was rapid or gradual, I engaged with the language's complexities, finding it simultaneously challenging and intriguing."
+    ]
+  },
+  {
+    "title": "LEARNING GERMAN",
+    "p": [
+      "One common challenge faced by language learners is developing their speaking skills. Despite dedicating time and effort to learning, it's not uncommon to feel perplexed when conversing with native speakers, wondering where all the knowledge acquired seems to disappear. As I reached a lower-middle level in my language proficiency, I recognized the need for a solution to assess and enhance my speaking abilities.",
+      "To tackle this issue, I devised a strategy that involved leveraging Speech Recognition Technology for voice recognition. I devised a system where learners would speak pre-defined sentences designed to familiarize them with sentence structures. I invested considerable time and effort in refining this solution and contemplating how to provide an accurate measurement of speaking skills.",
+      "However, when it came time to transform this concept into a reality, I found myself at a loss, unsure of where to begin or what steps to take. My programming background was limited to two basic pieces of knowledge: firstly, that HTML was used for web pages, and secondly, that Java was unrelated to JavaScript. This was the extent of my programming knowledge up until that point."
+    ]
+  },
+  {
+    "title": "My tough Journey To Tech",
+    "p": [
+      "In search of a cost-effective agency to bring my idea to life, I scoured the internet and eventually found one. After explaining my concept and providing wireframes of the core functionalities, we reached an agreement. However, upon receiving the first shipment after a two-month wait, I was disappointed to find an outdated and unappealing UI. Despite providing feedback, it became evident that the team lacked competence, leading me to lose hope in their abilities.",
+      "Left alone with a codebase I couldn't comprehend, I embarked on a quest to find freelancers who could salvage the project. After days of searching, I discovered a reputable agency on Upwork with positive feedback. They advised starting from scratch due to the complexity of the existing code, which was non-functional and poorly designed. Determined not to repeat past mistakes, we established a milestone-based approach, with each iteration of the app being reviewed and approved before progressing.",
+      "As the backend was written in PHP and Laravel, and the agency lacked a PHP developer, I had to source an additional developer to handle backend responsibilities. Although this hurdle was overcome by hiring an Indian PHP developer from Upwork, the time zone difference and varying skill levels caused communication issues and delays. The Indian team struggled with critical bugs while lagging behind their Egyptian counterparts.",
+      "Realizing the need for a solution, I consulted with the Egyptian agency, and they suggested taking over the backend. However, they proposed recoding it in Ruby on Rails since PHP was not within their expertise. Left with no other options, I reluctantly accepted their offer.",
+      "Once the implementation process began, things progressed smoothly, alleviating the need for constant attention. I vividly remember the joy I felt when receiving the first payment from users. However, my elation was short-lived as I encountered obstacles in marketing and finance. Despite reaching out to venture capitalists and angel investors, I failed to secure the necessary financial support to continue.",
+      "With no viable alternatives, I made the tough decision to abandon the project and explore other opportunities. However, I resolved to remain in the tech industry, which required me to learn coding—an endeavor I initially had little interest in due to its intricate nature and perceived intellectual demands. Nonetheless, my newfound knowledge and the confidence it instilled in me propelled me forward."
+    ]
+  },
+  {
+    "title": "Final words",
+    "p": [
+      "Being a non-technical solo founder for a tech-based startup is, in my opinion, a risky proposition and potentially a significant mistake. I strongly advise thorough consideration before embarking on such a venture. That sums up my story in a nutshell, omitting many details and experiences. If you have any questions, feel free to reach out to me on Twitter."
+    ]
+  }
+]

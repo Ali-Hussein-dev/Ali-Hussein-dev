@@ -72,7 +72,7 @@ const Projects: React.FC = () => (
     <Head>
       <title>Projects</title>
     </Head>
-    <div className="container-white max-w-5xl">
+    <div className="container-white">
       <h1 className="pb-1 text-xl border-b text-zinc-500 border-zinc-900 mb-4 uppercase">
         Last Projects
       </h1>
