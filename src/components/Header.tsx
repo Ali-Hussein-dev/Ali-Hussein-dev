@@ -12,7 +12,7 @@ const StyledLink: React.FC<StyledLinkProps> = ({ label, ...rest }) => (
   <Link href={`/${label === 'Home' ? '' : label}`} className="w-full">
     <button
       type="button"
-      className="px-3 py-1 mb-2 font-bold rounded hover:bg-zinc-300 hover:text-zinc-700 hover:cursor-pointer sm:mb-0 active:translate-y-1 w-full border border-zinc-600/30 sm:border-none shadow sm:shadow-none duration-100"
+      className="px-3 py-1 mb-2 font-bold rounded-lg hover:bg-zinc-200 hover:text-zinc-800 hover:cursor-pointer sm:mb-0 active:translate-y-1 w-full border border-zinc-600/30 sm:border-none shadow sm:shadow-none duration-200"
       {...rest}
     >
       {label}
@@ -43,7 +43,7 @@ export const Header: React.FC = () => {
         )}
       >
         {/* -------------------------------------------------------------menu row for desktop */}
-        <div className="justify-center gap-x-10 hidden w-full text-xl font-semibold sm:flex md:text-2xl max-w-[880px] ">
+        <div className="justify-between hidden w-full text-xl font-semibold sm:flex max-w-xl">
           {linksList.map((link) => (
             <span key={link}>
               <StyledLink label={link} />

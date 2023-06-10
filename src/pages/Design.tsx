@@ -5,13 +5,16 @@ import { BsFillPatchCheckFill } from 'react-icons/bs'
 //======================================
 export const SocialMedia = () => (
   <div className="flex flex-col items-center justify-center mb-2 sm:flex-row sm:gap-x-8 w-full">
-    <ul className="space-y-2 text-2xl">
+    <ul className="space-y-2">
       {[
         'Professional looking design',
-        'Professional business image in social media',
+        'Professional social media presence',
         'More traffic more sales',
       ].map((str) => (
-        <li key={str} className="flex gap-x-2">
+        <li
+          key={str}
+          className="flex gap-x-2 items-center text-xl text-zince-300"
+        >
           <BsFillPatchCheckFill className="text-green-300 " />
           {str}
         </li>
@@ -46,7 +49,7 @@ const Design = () => {
       <Head>
         <title>Design</title>
       </Head>
-      <section id="Design" className="grid px-2 py-8 place-items-center">
+      <section id="Design" className="layout">
         <div className="w-full lg:max-w-5xl py-14 container-white">
           <div className="mb-8 flex-col flex px-6 gap-y-8 text-primary-50 max-w-fit mx-auto">
             <div

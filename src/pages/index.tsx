@@ -198,7 +198,7 @@ const Index: React.FC = () => (
       <title>Home</title>
     </Head>
     <GridBG />
-    <div id="Home" className="max-w-[1024px] mx-auto px-4 lg:px-0 z-20">
+    <div id="Home" className="max-w-4xl mx-auto px-4 lg:px-0 z-20">
       <div className="w-full pb-8 space-y-8">
         <Hero />
         <Workflow />

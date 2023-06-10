@@ -7,7 +7,7 @@ const Aboutme: React.FC = () => (
     <Head>
       <title>About</title>
     </Head>
-    <div id="About" className="max-w-4xl layout">
+    <div id="About" className="layout">
       <section className="container-white">
         <h1 className="pb-1 text-xl border-b text-zinc-500 border-zinc-900 mb-4 uppercase">
           My Story
