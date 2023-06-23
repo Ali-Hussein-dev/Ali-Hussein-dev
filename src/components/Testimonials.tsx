@@ -2,7 +2,7 @@ import { BorderGradientContainer } from './border-gradient-container'
 
 const data = [
   {
-    text: 'Ich find es “Sau” interessant und man merk unheimlich viel Zeit und auch Bedanken rein gesetzt…',
+    text: 'Ich finde es “Sau” interessant und man merkt, dass unheimlich viel Zeit und auch Gedanken hineingesteckt wurden...',
     who: 'Karrays und Barrays, Frankfurt am Main',
   },
   {
