@@ -31,7 +31,64 @@ export const SocialMedia = () => (
     </div>
   </div>
 )
-
+const ads = [
+  {
+    id: 1,
+    aspectRatio: '1/1.3',
+  },
+  {
+    id: 2,
+    aspectRatio: '1/1',
+  },
+  {
+    id: 3,
+    aspectRatio: '1/1',
+  },
+  {
+    id: 4,
+    aspectRatio: '1/1',
+  },
+  {
+    id: 5,
+    aspectRatio: '1/1',
+  },
+  {
+    id: 6,
+    aspectRatio: '4/3',
+  },
+  {
+    id: 8,
+    aspectRatio: '1/1',
+  },
+  {
+    id: 9,
+    aspectRatio: '1/1',
+  },
+  {
+    id: 10,
+    aspectRatio: '1/1',
+  },
+  {
+    id: 11,
+    aspectRatio: '1.2/1',
+  },
+  {
+    id: 12,
+    aspectRatio: '1/1',
+  },
+  {
+    id: 7,
+    aspectRatio: '1/1.3',
+  },
+  {
+    id: 13,
+    aspectRatio: '1/1',
+  },
+  {
+    id: 14,
+    aspectRatio: '4/3.4',
+  },
+]
 //======================================
 export const CtaButton = () => (
   <a
@@ -50,55 +107,60 @@ const Design = () => {
         <title>Design</title>
       </Head>
       <section id="Design" className="layout">
-        <div className="w-full lg:max-w-5xl py-14 container-white">
-          <div className="mb-8 flex-col flex px-6 gap-y-8 text-primary-50 max-w-fit mx-auto">
-            <div
+        <div className="mb-8 flex-col flex px-6 pt-6 gap-y-8 text-primary-50 mx-auto">
+          <div
+            className={clsx(
+              'py-4 sm:px-12 px-1',
+              'highlight highlight-zinc-900 highlight-variant-2 highlight-spread-lg '
+            )}
+          >
+            <h2
               className={clsx(
-                'py-4 sm:px-12 px-1',
-                'highlight highlight-zinc-900 highlight-variant-2 highlight-spread-lg '
+                'md:text-4xl text-2xl font-black text-center gradientText'
               )}
             >
-              <h2
-                className={clsx(
-                  'md:text-4xl text-2xl font-black text-center gradientText'
-                )}
-              >
-                Professional Social Media Posts
-              </h2>
+              Professional Social Media Posts
+            </h2>
+          </div>
+          <p className="text-2xl leading-8 mb-4 text-center mx-auto max-w-2xl text-zinc-400">
+            Drive more traffic to your website business and increase your sales
+            with professional-designed posts.
+          </p>
+          <CtaButton />
+        </div>
+        <SocialMedia />
+        <h2 className="md:text-4xl text-3xl font-bold text-center mb-8 pb-2">
+          Sample Posts
+        </h2>
+        
+        <div className="flex justify-center pt-10 max-auto">
+          <CtaButton />
+        </div>
+        <div className="md:masonry-cols-3 sm:masonry-cols-2">
+          {ads.map(({ id, aspectRatio }) => (
+            <div
+              key={id}
+              className={`relative group mb-4 break-inside overflow-hidden`}
+              style={{
+                aspectRatio,
+              }}
+            >
+              {/* don't delete use for debuging */}
+              {/* <span className="absolute bg-slate-700 z-10">{ id}</span> */}
+              <Image
+                fill
+                src={`/ads/ad (${id}).png`}
+                alt=""
+                quality={50}
+                placeholder="blur"
+                blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mM0dgytBwACwgFK5PrQiQAAAABJRU5ErkJggg=="
+                className="object-cover duration-1000 group-hover:scale-110 rounded-sm"
+              />
             </div>
-            <p className="text-2xl leading-8 mb-4 text-center mx-auto max-w-2xl text-zinc-400">
-              Drive more traffic to your website business and increase your
-              sales with professional-designed posts.
-            </p>
-            <CtaButton />
-          </div>
-          <SocialMedia />
-          <h2 className="md:text-4xl text-3xl font-bold text-center mb-8 pb-2">
-            Sample Posts
-          </h2>
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 ">
-            {[...Array(14).keys()].map((n) => (
-              <div
-                key={n}
-                className={'relative w-full h-72 aspect-square group'}
-              >
-                <Image
-                  fill
-                  src={`/ads/ad (${n + 1}).png`}
-                  alt=""
-                  quality={50}
-                  placeholder="blur"
-                  blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mM0dgytBwACwgFK5PrQiQAAAABJRU5ErkJggg=="
-                  className="object-contain duration-200 group-hover:scale-110 rounded-sm"
-                />
-              </div>
-            ))}
-          </div>
-          <div className="flex justify-center py-2 max-auto">
-            <CtaButton />
-          </div>
+          ))}
         </div>
       </section>
+      
     </>
   )
 }
