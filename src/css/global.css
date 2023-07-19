@@ -20,11 +20,8 @@
   }
 }
 @layer components {
-  .container-white {
-    @apply w-full px-4 py-8 mx-auto lg:px-5 rounded-2xl;
-  }
   .layout {
-    @apply py-6 mx-auto max-w-4xl;
+    @apply py-6 mx-auto max-w-4xl px-2 border w-full;
   }
   .gradientText {
     @apply bg-gradient-to-r from-amber-500 via-orange-500 to-yellow-500 bg-clip-text text-transparent;

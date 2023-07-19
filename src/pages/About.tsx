@@ -7,8 +7,7 @@ const Aboutme: React.FC = () => (
     <Head>
       <title>About</title>
     </Head>
-    <div id="About" className="layout">
-      <section className="container-white">
+    <section id="About" className="layout">      
         <h1 className="pb-1 text-xl border-b text-zinc-500 border-zinc-900 mb-4 uppercase">
           My Story
         </h1>
@@ -28,8 +27,8 @@ const Aboutme: React.FC = () => (
             </div>
           ))}
         </article>
-      </section>
-    </div>
+
+    </section>
   </>
 )
 export default Aboutme

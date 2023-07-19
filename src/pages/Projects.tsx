@@ -68,11 +68,11 @@ const Link: React.FC<{ href: string; children: string | React.ReactNode }> = ({
 )
 //=======================
 const Projects: React.FC = () => (
-  <section id="Projects" className="layout">
+  <>
     <Head>
       <title>Projects</title>
     </Head>
-    <div className="container-white">
+    <section  id="Projects" className="layout">
       <h1 className="pb-1 text-xl border-b text-zinc-500 border-zinc-900 mb-4 uppercase">
         Last Projects
       </h1>
@@ -90,7 +90,7 @@ const Projects: React.FC = () => (
           />
         ))}
       </div>
-    </div>
-  </section>
+    </section>
+  </>
 )
 export default Projects
