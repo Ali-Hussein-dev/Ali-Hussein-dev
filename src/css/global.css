@@ -42,3 +42,17 @@
 ::-webkit-scrollbar-thumb {
   @apply rounded-lg shadow-inner bg-white/10 hover:bg-white/20;
 }
+
+.bottom-gradient::after {
+  content: "";
+  background: linear-gradient(to bottom, transparent, rgb(9 9 11/90%));
+  /* background-color: aqua; */
+  z-index: 1;
+  width: 100%;
+  /* width: calc(100% + var(--container-padding-x) * 2); */
+  /* left: calc(var(--container-padding-x) * -1); */
+  height: 400px;
+  bottom: 0px;
+  pointer-events: none;
+  position: absolute;
+}

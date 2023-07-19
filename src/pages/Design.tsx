@@ -34,7 +34,7 @@ export const SocialMedia = () => (
 const ads = [
   {
     id: 1,
-    aspectRatio: '1/1.3',
+    aspectRatio: '1/1.4',
   },
   {
     id: 2,
@@ -42,6 +42,10 @@ const ads = [
   },
   {
     id: 3,
+    aspectRatio: '1/1',
+  },
+  {
+    id: 13,
     aspectRatio: '1/1',
   },
   {
@@ -53,19 +57,19 @@ const ads = [
     aspectRatio: '1/1',
   },
   {
-    id: 6,
-    aspectRatio: '4/3',
-  },
-  {
     id: 8,
     aspectRatio: '1/1',
   },
   {
-    id: 9,
+    id: 10,
     aspectRatio: '1/1',
   },
   {
-    id: 10,
+    id: 6,
+    aspectRatio: '4/3',
+  },
+  {
+    id: 9,
     aspectRatio: '1/1',
   },
   {
@@ -79,10 +83,6 @@ const ads = [
   {
     id: 7,
     aspectRatio: '1/1.3',
-  },
-  {
-    id: 13,
-    aspectRatio: '1/1',
   },
   {
     id: 14,
@@ -132,31 +132,34 @@ const Design = () => {
         <h2 className="md:text-4xl text-3xl font-bold text-center mb-8 pb-2">
           Sample Posts
         </h2>
-
-        <div className="md:masonry-cols-3 sm:masonry-cols-2">
-          {ads.map(({ id, aspectRatio }) => (
-            <div
-              key={id}
-              className={`relative group mb-4 break-inside overflow-hidden`}
-              style={{
-                aspectRatio,
-              }}
-            >
-              {/* don't delete use for debuging */}
-              {/* <span className="absolute bg-slate-700 z-10">{ id}</span> */}
-              <Image
-                fill
-                src={`/ads/ad (${id}).png`}
-                alt=""
-                quality={50}
-                placeholder="blur"
-                blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mM0dgytBwACwgFK5PrQiQAAAABJRU5ErkJggg=="
-                className="object-cover duration-1000 group-hover:scale-110 rounded-sm"
-              />
-            </div>
-          ))}
+        <div
+          className="relative bottom-gradient"
+        >
+          <div className="md:masonry-cols-3 sm:masonry-cols-2">
+            {ads.map(({ id, aspectRatio }) => (
+              <div
+                key={id}
+                className={`relative group mb-4 break-inside overflow-hidden`}
+                style={{
+                  aspectRatio,
+                }}
+              >
+                {/* don't delete use for debuging */}
+                {/* <span className="absolute bg-slate-700 z-10">{id}</span> */}
+                <Image
+                  fill
+                  src={`/ads/ad (${id}).png`}
+                  alt=""
+                  quality={50}
+                  placeholder="blur"
+                  blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mM0dgytBwACwgFK5PrQiQAAAABJRU5ErkJggg=="
+                  className="object-cover duration-1000 group-hover:scale-110 rounded-sm"
+                />
+              </div>
+            ))}
+          </div>
+          {/* <div className="h-44 w-full bg-gradient-to-t from-zinc-950 to-zinc-100/[0.03] -via-neutral-200/[0.02] absolute bottom-0"></div> */}
         </div>
-
         <div className="flex justify-center pt-10 max-auto">
           <CtaButton />
         </div>
