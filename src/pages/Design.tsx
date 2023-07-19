@@ -132,10 +132,7 @@ const Design = () => {
         <h2 className="md:text-4xl text-3xl font-bold text-center mb-8 pb-2">
           Sample Posts
         </h2>
-        
-        <div className="flex justify-center pt-10 max-auto">
-          <CtaButton />
-        </div>
+
         <div className="md:masonry-cols-3 sm:masonry-cols-2">
           {ads.map(({ id, aspectRatio }) => (
             <div
@@ -159,8 +156,11 @@ const Design = () => {
             </div>
           ))}
         </div>
+
+        <div className="flex justify-center pt-10 max-auto">
+          <CtaButton />
+        </div>
       </section>
-      
     </>
   )
 }
