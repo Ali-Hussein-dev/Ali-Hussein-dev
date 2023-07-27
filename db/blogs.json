@@ -1,5 +1,11 @@
 [
   {
+    "title": "Chatbot Starter Demo",
+    "url": "https://ali-blog.hashnode.dev/chatbot-starter-demo",
+    "pub": "Jul 27, 2023",
+    "description": "Create a chatbot with Nextjs, Mantine, Tailwindcss, and Openai API."
+  },
+  {
     "title": "Mixing and Matching OpenAI Models for Cost Savings",
     "url": "https://ali-blog.hashnode.dev/mixing-and-matching-openai-models-for-cost-savings",
     "pub": "Feb 02, 2023",
