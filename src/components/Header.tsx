@@ -2,7 +2,7 @@ import * as React from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
 import Link from 'next/link'
 import { useScroll } from 'framer-motion'
-import clsx from 'clsx'
+import { clsx } from '@mantine/core'
 
 const linksList = ['Home', 'Projects', 'Blog', 'Design', 'About']
 interface StyledLinkProps extends React.ComponentPropsWithoutRef<'button'> {
