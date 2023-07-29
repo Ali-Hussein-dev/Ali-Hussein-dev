@@ -9,22 +9,35 @@ const data = [
     text: 'Ich find es cool und viel einfacher als den normalen Taschenrechner. Man spart Zeit und admit macht man auch kein Rechenfehler mehr wenn man die Zahlen richtig eingibt',
     who: 'TRUDE, Hamburg',
   },
+  // {
+  //   text: "",
+  //   who: 'Marco Technologies, US',
+  // },
+  // {
+  //   text: 'Working with this web developer was a game-changer for our online presence. We are incredibly satisfied with their work and would highly recommend them to anyone in need of a talented web developer',
+  //   who: 'Yield, US',
+  // },
 ]
 //======================================
 export const Testimonials = () => {
   return (
-    <section>
-      <h2 className="mb-2 text-2xl font-extrabold text-left lg:text-3xl text-slate-200">
-        Testimonials
+    <section className="pb-4 mx-auto">
+      <h2 className="mb-4 text-2xl font-extrabold text-slate-200">
+        What clients says
       </h2>
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+      <div className="flex gap-3">
+      {/* <div className="grid grid-cols-1 gap-3 md:grid-cols-3 "> */}
         {data.map((obj, i) => (
-          <BorderGradientContainer key={i}>
-            <div className="flex flex-col gap-y-2 text-zinc-400">
-              <p>{obj.text}</p>
-              <span className="text-base italic">{obj.who}</span>
-            </div>
-          </BorderGradientContainer>
+          <div key={i} className="z-[2]">
+            <BorderGradientContainer>
+              <div className={'flex flex-col gap-y-4 text-zinc-400'}>
+                <p>{obj.text}</p>
+                <span className="text-base italic border-t pt-1 border-yellow-900/20">
+                  {obj.who}
+                </span>
+              </div>
+            </BorderGradientContainer>
+          </div>
         ))}
       </div>
     </section>
