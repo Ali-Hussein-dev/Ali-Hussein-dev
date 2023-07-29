@@ -44,7 +44,7 @@
 }
 
 .bottom-gradient::after {
-  content: "";
+  content: '';
   background: linear-gradient(to bottom, transparent, rgb(9 9 11/90%));
   /* background-color: aqua; */
   z-index: 1;
