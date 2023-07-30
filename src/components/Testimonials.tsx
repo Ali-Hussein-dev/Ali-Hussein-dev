@@ -19,10 +19,7 @@ const data = [
 export const Testimonials = () => {
   return (
     <section>
-      {/* <h2 className="mb-2 text-2xl font-extrabold text-left text-slate-200">
-        Client feedback
-      </h2> */}
-      <div className="masonry-cols-3">
+      <div className="sm:masonry-cols-3 pb-6 space-y-3 sm:space-y-0">
         {data.map((obj, i) => (
           <BorderGradientContainer key={i}>
             <div

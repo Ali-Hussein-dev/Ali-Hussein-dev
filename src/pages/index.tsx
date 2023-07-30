@@ -169,7 +169,7 @@ const Toolbox = () => (
 const Hero = () => (
   <section className="xs:pb-4 relative sm:h-[95vh] pt-10 grid place-items-center">
     <div>
-      <div className="flex-col-center pb-4 gap-6 prose sm:flex-row ">
+      <div className="flex-col-center sm:pb-12 gap-6 prose sm:flex-row pb-4">
         <div className="mx-auto flex-col-center">
           <h1 className="mb-4 text-3xl font-extrabold md:text-4xl lg:text-6xl gradientText text-center">
             UX-Driven <br /> Frontend Engineer
@@ -190,8 +190,8 @@ const Hero = () => (
           </a>
         </div>
       </div>
+      <Testimonials />
     </div>
-    <Testimonials />
   </section>
 )
 //=======================
