@@ -3,10 +3,10 @@ import Image from 'next/image'
 import * as React from 'react'
 
 const list = [
-  { name: 'OpenAI', src: '/ai/logo_openai.svg' },
-  { name: 'HuggineFace', src: '/ai/logo_huggingface.svg' },
-  { name: 'Replicate', src: '/ai/logo_replicate.svg' },
   { name: 'Anthropic', src: '/ai/logo_anthropic.svg' },
+  { name: 'OpenAI', src: '/ai/logo_openai.svg' },
+  { name: 'Replicate', src: '/ai/logo_replicate.svg' },
+  { name: 'HuggineFace', src: '/ai/logo_huggingface.svg' },
   { name: 'Cohere', src: '/ai/logo_cohere.svg' },
 ]
 
@@ -24,6 +24,7 @@ export const AiProviders = () => {
             <div
               key={i}
               className={clsx(
+                // `h-40 ${i ===2 ? 'col-span-6' : 'col-span-3'}`,
                 `h-40 ${i < 2 ? 'col-span-3' : 'col-span-2'}`,
                 'bg-zinc-950 border-[0.5px] border-b shadow shadow-yellow-800/10 border-zinc-700 rounded-3xl overflow-hidden p-4 grid place-items-center z-[2]'
               )}

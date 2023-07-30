@@ -1,6 +1,11 @@
+import { clsx } from '@mantine/core'
 import { BorderGradientContainer } from './border-gradient-container'
 
 const data = [
+  {
+    text: 'Ali has much understanding of generative AI and its applications. His insights on the development process were invaluable, and he shared his perspective on leveraging AI to create innovative solutions.',
+    who: 'Upwork client, Switzerland',
+  },
   {
     text: 'Ich finde es “Sau” interessant und man merkt, dass unheimlich viel Zeit und auch Gedanken hineingesteckt wurden...',
     who: 'Karrays und Barrays, Frankfurt am Main',
@@ -14,13 +19,18 @@ const data = [
 export const Testimonials = () => {
   return (
     <section>
-      <h2 className="mb-2 text-2xl font-extrabold text-left lg:text-3xl text-slate-200">
-        Testimonials
-      </h2>
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+      {/* <h2 className="mb-2 text-2xl font-extrabold text-left text-slate-200">
+        Client feedback
+      </h2> */}
+      <div className="masonry-cols-3">
         {data.map((obj, i) => (
           <BorderGradientContainer key={i}>
-            <div className="flex flex-col gap-y-2 text-zinc-400">
+            <div
+              className={clsx(
+                'flex flex-col gap-y-2 text-zinc-400 break-inside',
+                'bottom-gradient relative after:h-10'
+              )}
+            >
               <p>{obj.text}</p>
               <span className="text-base italic">{obj.who}</span>
             </div>
