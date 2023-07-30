@@ -132,9 +132,7 @@ const Design = () => {
         <h2 className="md:text-4xl text-3xl font-bold text-center mb-8 pb-2">
           Sample Posts
         </h2>
-        <div
-          className="relative bottom-gradient"
-        >
+        <div className="relative bottom-gradient">
           <div className="md:masonry-cols-3 sm:masonry-cols-2">
             {ads.map(({ id, aspectRatio }) => (
               <div

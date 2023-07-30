@@ -7,7 +7,11 @@ import { VscTools } from 'react-icons/vsc'
 import { BiHappyHeartEyes } from 'react-icons/bi'
 import { IconType } from 'react-icons'
 import Image from 'next/image'
-import { BorderGradientContainer, Testimonials } from '../components'
+import {
+  BorderGradientContainer,
+  Testimonials,
+  // AiProviders,
+} from '../components'
 
 const GridBG = () => (
   <svg
@@ -43,18 +47,17 @@ const GridBG = () => (
 //======================================
 export const Workflow = () => {
   return (
-    <section className="px-2">
+    <section className="px-2 pb-14">
       <h2 className="mb-2 text-2xl font-extrabold text-left lg:text-3xl text-slate-200">
-        My Workflow
+        Workflow
       </h2>
       <p className="mb-8 leading-6 text-zinc-400">
-        I adhere to Agile methodology for software development. It includes
+        I adhere to the Agile methodology for software development. It includes
         analyzing and planning requirements, iterative software building, and
         continuous improvement of design and functionality. The focus is on
         delivering value to customers quickly through smaller, market-ready
         launches based on customer feedback.
       </p>
-
       <Image
         src="/workflow.svg"
         alt="workflow"
@@ -110,7 +113,7 @@ const techSkills = [
 
   {
     title: 'Interested in',
-    parag: 'GitHub Actions, TurboRepo',
+    parag: 'GitHub Actions, TurboRepo, AWS',
     Icon: BiHappyHeartEyes,
   },
 ]
@@ -187,8 +190,8 @@ const Hero = () => (
           </a>
         </div>
       </div>
-      <Testimonials />
     </div>
+    <Testimonials />
   </section>
 )
 //=======================
@@ -198,11 +201,14 @@ const Index: React.FC = () => (
       <title>Home</title>
     </Head>
     <GridBG />
-    <div id="Home" className="max-w-4xl mx-auto px-4 lg:px-0 z-20">
-      <div className="w-full pb-8 space-y-8">
+    <div id="Home" className=" px-4 lg:px-0 z-20">
+      <div className="max-w-4xl mx-auto w-full pb-8 space-y-8">
         <Hero />
-        <Workflow />
-        <Toolbox />
+        <div className="max-w-4xl mx-auto pb-10">
+          {/* <AiProviders /> */}
+          <Workflow />
+          <Toolbox />
+        </div>
       </div>
     </div>
   </>

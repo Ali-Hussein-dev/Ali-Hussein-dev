@@ -1,0 +1,30 @@
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-170px * 7));
+  }
+}
+
+.slide-track {
+  /* width: calc(150px * 14); */
+  animation: scroll 5s linear infinite;
+}
+
+/* background: linear-gradient(to right, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 100%); */
+/* .slider::before, .slider::after {
+	 content: "";
+	 position: absolute;
+	 z-index: 10;
+}
+ .slider::after {
+	 right: 0;
+	 top: 0;
+	 transform: rotateZ(180deg);
+}
+ .slider::before {
+	 left: 0;
+	 top: 0;
+} */
