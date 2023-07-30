@@ -10,7 +10,7 @@ import Image from 'next/image'
 import {
   BorderGradientContainer,
   Testimonials,
-  AiProviders,
+  // AiProviders,
 } from '../components'
 
 const GridBG = () => (
@@ -205,7 +205,7 @@ const Index: React.FC = () => (
       <div className="max-w-4xl mx-auto w-full pb-8 space-y-8">
         <Hero />
         <div className="max-w-4xl mx-auto pb-10">
-          <AiProviders />
+          {/* <AiProviders /> */}
           <Workflow />
           <Toolbox />
         </div>
