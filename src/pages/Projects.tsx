@@ -31,16 +31,15 @@ const ProjectCard: React.FC<{
 
     <div className="flex flex-col justify-between flex-grow px-2 pb-2 tracking-tight text-zinc-300">
       <div className="py-2">
-        <h3 className="mb-1 font-bold uppercase text-gray-200">{name}</h3>
-        <p className="text-gray-400">{description}</p>
-        <h4 className="mt-5 text-sm font-bold uppercase text-gray-200">
-          Tech Stack
-        </h4>
-        <div className="flex-row-start flex-wrap gap-1">
+        <h3 className="mb-1 font-bold text-base uppercase text-gray-200">
+          {name}
+        </h3>
+        <p className="text-gray-400 text-base">{description}</p>
+        <div className="flex-row-start flex-wrap gap-1 pt-6">
           {stack.split(' ').map((s) => (
             <span
               key={s}
-              className="text-sm text-zinc-300 bg-zinc-100/10 rounded-sm px-1 py-[2px]"
+              className="text-sm text-zinc-200 bg-yellow-600/30 rounded-sm px-2 py-[2px]"
             >
               {s}
             </span>
