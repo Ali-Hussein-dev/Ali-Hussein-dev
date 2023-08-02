@@ -1,9 +1,7 @@
-import { clsx } from '@mantine/core'
-import Head from 'next/head'
 import Image from 'next/image'
 import { BsFillPatchCheckFill } from 'react-icons/bs'
 //======================================
-export const SocialMedia = () => (
+const SocialMedia = () => (
   <div className="flex flex-col items-center justify-center mb-2 sm:flex-row sm:gap-x-8 w-full">
     <ul className="space-y-2">
       {[
@@ -90,7 +88,7 @@ const ads = [
   },
 ]
 //======================================
-export const CtaButton = () => (
+const CtaButton = () => (
   <a
     href="mailto:ali.hussein.pre@gmail.com"
     className="primary-btn border-[0.5px]"
@@ -103,22 +101,10 @@ export const CtaButton = () => (
 const Design = () => {
   return (
     <>
-      <Head>
-        <title>Design</title>
-      </Head>
       <section id="Design" className="layout">
         <div className="mb-8 flex-col flex px-6 pt-6 gap-y-8 text-primary-50 mx-auto">
-          <div
-            className={clsx(
-              'py-4 sm:px-12 px-1',
-              'highlight highlight-zinc-900 highlight-variant-2 highlight-spread-lg '
-            )}
-          >
-            <h2
-              className={clsx(
-                'md:text-4xl text-2xl font-black text-center gradientText'
-              )}
-            >
+          <div className="py-4 sm:px-12 px-1 highlight highlight-zinc-900 highlight-variant-2 highlight-spread-lg">
+            <h2 className="md:text-4xl text-2xl font-black text-center gradientText">
               Professional Social Media Posts
             </h2>
           </div>
