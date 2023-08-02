@@ -23,11 +23,7 @@ module.exports = {
       fontFamily: { sans: ['Nuntino', ...defaultTheme.fontFamily.sans] },
     },
   },
-  daisyui: {
-    theme: false,
-  },
   plugins: [
-    require('daisyui'),
     require('tailwindcss-highlights'),
     require('tailwind-custom-utilities'),
   ],
