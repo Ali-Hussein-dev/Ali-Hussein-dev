@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Head from 'next/head'
-import { Text } from '@mantine/core'
+import { Text } from '@/components/client-components'
 import blogs from '../../db/blogs.json'
 import { BiCalendar } from 'react-icons/bi'
 

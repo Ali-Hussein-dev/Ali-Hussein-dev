@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import React from 'react'
-import ReactPlayer from 'react-player'
+import * as React from 'react'
 import projects from '../../db/projects.json'
+import { ReactPlayer } from '@/components/client-components'
 import { CiCalendarDate } from 'react-icons/ci'
 //=======================
 const ProjectCard: React.FC<{
