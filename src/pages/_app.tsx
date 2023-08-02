@@ -6,6 +6,7 @@ import '../css/global.css'
 import NextNProgress from 'nextjs-progressbar'
 import { Nunito } from 'next/font/google'
 import { GoogleAnalytics } from 'nextjs-google-analytics'
+import { Analytics } from '@vercel/analytics/react'
 const font = Nunito({ subsets: ['latin', 'latin-ext'] })
 
 const MyApp: React.FC<{ Component: React.FC; pageProps: any }> = ({
@@ -28,6 +29,7 @@ const MyApp: React.FC<{ Component: React.FC; pageProps: any }> = ({
     <main className="relative min-h-screen flex-col-center lg:text-xl selection:bg-yellow-500/10 selection:text-zinc-100 z-10 text-gray-100 bg-zinc-950 overflow-hidden">
       <Header />
       <div className="grow">
+        <Analytics />
         <GoogleAnalytics trackPageViews strategy="lazyOnload" />
         <Component {...pageProps} />
       </div>
