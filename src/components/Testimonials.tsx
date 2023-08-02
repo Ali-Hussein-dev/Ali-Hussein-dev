@@ -1,4 +1,3 @@
-import { clsx } from '@mantine/core'
 import { BorderGradientContainer } from './border-gradient-container'
 
 const data = [
@@ -18,22 +17,15 @@ const data = [
 //======================================
 export const Testimonials = () => {
   return (
-    <section>
-      <div className="sm:masonry-cols-3 pb-6 space-y-3 sm:space-y-0">
-        {data.map((obj, i) => (
-          <BorderGradientContainer key={i}>
-            <div
-              className={clsx(
-                'flex flex-col gap-y-2 text-zinc-400 break-inside',
-                'bottom-gradient relative after:h-10'
-              )}
-            >
-              <p>{obj.text}</p>
-              <span className="text-base italic">{obj.who}</span>
-            </div>
-          </BorderGradientContainer>
-        ))}
-      </div>
+    <section className="sm:masonry-cols-3 pb-6 space-y-3 sm:space-y-0">
+      {data.map((obj, i) => (
+        <BorderGradientContainer key={i}>
+          <div className="flex flex-col gap-y-2 text-zinc-400 break-inside bottom-gradient relative after:h-10">
+            <p>{obj.text}</p>
+            <span className="text-base italic">{obj.who}</span>
+          </div>
+        </BorderGradientContainer>
+      ))}
     </section>
   )
 }

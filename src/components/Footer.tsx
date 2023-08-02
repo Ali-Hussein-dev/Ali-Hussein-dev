@@ -18,7 +18,7 @@ const links = [
 ]
 
 //=======================
-const Footer: React.FC = () => (
+export const Footer: React.FC = () => (
   <footer className="bottom-0 w-full py-2 max-w-4xl">
     <div className="h-[0.5px] bg-gradient-to-r from-transparent via-zinc-500 to-transparent" />
     <div className="flex flex-col items-center w-full px-2 mx-auto lg:flex-row lg:justify-center lg:w-8/12 ">
@@ -41,4 +41,3 @@ const Footer: React.FC = () => (
     </div>
   </footer>
 )
-export default Footer
