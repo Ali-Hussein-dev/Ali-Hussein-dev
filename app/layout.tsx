@@ -1,10 +1,10 @@
 import '../src/css/global.css'
 import * as React from 'react'
-// import NextNProgress from 'nextjs-progressbar'
 import { Metadata } from 'next'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 import { Analytics } from '@vercel/analytics/react'
+import NextTopLoader from 'nextjs-toploader'
 // import { GoogleAnalytics } from 'nextjs-google-analytics'
 
 export const metadata: Metadata = {
@@ -33,13 +33,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      {/* <NextNProgress
-      color="#fde68a"
-      startPosition={0.3}
-      stopDelayMs={200}
-      height={3}
-      showOnShallow={true}
-    /> */}
+      <NextTopLoader color="#fde68a" showSpinner={false} speed={300} />
       <body>
         <main className="relative min-h-screen flex-col-center lg:text-xl selection:bg-yellow-500/10 selection:text-zinc-100 z-10 text-gray-100 bg-zinc-950 overflow-hidden">
           <Header />
