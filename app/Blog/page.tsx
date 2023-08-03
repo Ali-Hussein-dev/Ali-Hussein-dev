@@ -1,15 +1,17 @@
 /* eslint-disable @next/next/no-img-element */
-import Head from 'next/head'
 import { Text } from '@/components/client-components'
 import blogs from '../../db/blogs.json'
 import { BiCalendar } from 'react-icons/bi'
+import { Metadata } from 'next'
 
+export const metadata: Metadata = {
+  title: 'Blog Page',
+  description:
+    'Blog about Nextjs, Reactjs, Tailwindcss, Typescript, AI and more',
+}
 //=======================
 const Blog: React.FC = () => (
   <div id="Blog" className="layout">
-    <Head>
-      <title>Blog</title>
-    </Head>
     <div className="container-white">
       <div className="w-full">
         <h1 className="pb-1 text-xl border-b text-zinc-500 border-zinc-900 mb-4 uppercase">

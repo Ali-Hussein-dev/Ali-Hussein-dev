@@ -34,27 +34,29 @@ export const GridBG = () => (
 
 export const Hero = () => (
   <section className="xs:pb-4 relative sm:h-[95vh] pt-10 lg:pt-32 grid place-items-center">
-    <div className="flex-col-center sm:pb-12 gap-6 prose sm:flex-row pb-4">
-      <div className="mx-auto flex-col-center">
-        <h1 className="mb-4 text-3xl font-extrabold md:text-4xl lg:text-6xl gradientText text-center">
-          UX-Driven <br /> Frontend Engineer
-        </h1>
-        <p className="mb-4 leading-6 text-zinc-400 md:text-xl text-center max-w-xl">
-          I specialize in crafting{' '}
-          <strong className="text-zinc-300"> AI-driven web apps</strong> with{' '}
-          <strong className="text-zinc-300">
-            clean UI design & intuitive UX
-          </strong>
-          . Feel free to reach out.
-        </p>
-        <a
-          href="mailto: ali.hussein.pre@gmail.com"
-          className="primary-btn border-[0.5px] block mx-auto w-fit"
-        >
-          Get in touch
-        </a>
+    <div>
+      <div className="flex-col-center sm:pb-12 gap-6 prose sm:flex-row pb-4">
+        <div className="mx-auto flex-col-center">
+          <h1 className="mb-4 text-3xl font-extrabold md:text-4xl lg:text-6xl gradientText text-center">
+            UX-Driven <br /> Frontend Engineer
+          </h1>
+          <p className="mb-4 leading-6 text-zinc-400 md:text-xl text-center max-w-xl">
+            I specialize in crafting{' '}
+            <strong className="text-zinc-300"> AI-driven web apps</strong> with{' '}
+            <strong className="text-zinc-300">
+              clean UI design & intuitive UX
+            </strong>
+            . Feel free to reach out.
+          </p>
+          <a
+            href="mailto: ali.hussein.pre@gmail.com"
+            className="primary-btn border-[0.5px] block mx-auto w-fit"
+          >
+            Get in touch
+          </a>
+        </div>
       </div>
+      <Testimonials />
     </div>
-    <Testimonials />
   </section>
 )
