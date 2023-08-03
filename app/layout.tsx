@@ -7,7 +7,10 @@ import { Analytics } from '@vercel/analytics/react'
 import NextTopLoader from 'nextjs-toploader'
 import { GoogleAnalytics } from '@/components/client-components'
 
+const baseUrl = 'https://ali-hussein.com'
+
 export const metadata: Metadata = {
+  metadataBase: new URL(baseUrl),
   title: 'Ali Hussein',
   description: 'Frontend Developer, Nextjs, Reactjs, Tailwindcss, Typescript',
   robots: {
@@ -24,6 +27,18 @@ export const metadata: Metadata = {
   verification: {
     google: 'eZSdmzAXlLkKhNJzfgwDqWORghxnJ8qR9_CHdAh5-xw',
     // yandex: '14d2e73487fa6c71',
+  },
+  openGraph: {
+    title: 'Ali Hussein',
+    description: 'Frontend Developer, Nextjs, Reactjs, Tailwindcss, Typescript',
+    url: baseUrl,
+    siteName: 'Ali Hussein',
+    locale: 'en-US',
+    type: 'website',
+  },
+  twitter: {
+    title: 'Ali Hussein',
+    card: 'summary_large_image',
   },
 }
 export default function RootLayout({
