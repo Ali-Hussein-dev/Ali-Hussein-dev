@@ -1,12 +1,14 @@
-import Head from 'next/head'
 import * as React from 'react'
 import myStory from '../../db/aboutme.json'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'About Page',
+  description: 'About Page',
+}
 
 const Aboutme: React.FC = () => (
   <>
-    <Head>
-      <title>About</title>
-    </Head>
     <section id="About" className="layout">
       <h1 className="pb-1 text-xl border-b text-zinc-500 border-zinc-900 mb-4 uppercase">
         My Story

@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import { Metadata } from 'next'
 import Image from 'next/image'
 import * as React from 'react'
 import projects from '../../db/projects.json'
@@ -72,12 +72,14 @@ const Link: React.FC<{ href: string; children: string | React.ReactNode }> = ({
     {children}
   </a>
 )
+
+export const metadata: Metadata = {
+  title: 'Projects Page',
+  description: 'Sample of my work',
+}
 //=======================
 const Projects: React.FC = () => (
   <>
-    <Head>
-      <title>Projects</title>
-    </Head>
     <section id="Projects" className="layout">
       <h1 className="pb-1 text-xl border-b text-zinc-500 border-zinc-900 mb-4 uppercase">
         Last Projects
