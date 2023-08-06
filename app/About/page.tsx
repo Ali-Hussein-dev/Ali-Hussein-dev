@@ -1,6 +1,7 @@
 import * as React from 'react'
 import myStory from '../../db/aboutme.json'
 import { Metadata } from 'next'
+import { Title } from '@/components/Title'
 
 export const metadata: Metadata = {
   title: 'About Page',
@@ -10,9 +11,7 @@ export const metadata: Metadata = {
 const Aboutme: React.FC = () => (
   <>
     <section id="About" className="layout">
-      <h1 className="pb-1 text-xl border-b text-zinc-500 border-zinc-900 mb-4 uppercase">
-        My Story
-      </h1>
+      <Title title="My story" />
       <article className="text-zinc-400">
         {myStory.map((section) => (
           <div key={section.title}>

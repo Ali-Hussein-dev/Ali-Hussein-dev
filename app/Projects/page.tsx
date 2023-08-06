@@ -4,6 +4,7 @@ import * as React from 'react'
 import projects from '../../db/projects.json'
 import { ReactPlayer } from '@/components/client-components'
 import { CiCalendarDate } from 'react-icons/ci'
+import { Title } from '@/components/Title'
 //=======================
 const ProjectCard: React.FC<{
   name: string
@@ -81,9 +82,7 @@ export const metadata: Metadata = {
 const Projects: React.FC = () => (
   <>
     <section id="Projects" className="layout">
-      <h1 className="pb-1 text-xl border-b text-zinc-500 border-zinc-900 mb-4 uppercase">
-        Last Projects
-      </h1>
+      <Title title="Last Projects" />
       <div className="lg:masonry-cols-3 md:masonry-cols-2">
         {projects.map((o, i) => (
           <ProjectCard

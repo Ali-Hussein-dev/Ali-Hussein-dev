@@ -3,6 +3,7 @@ import { Text } from '@/components/client-components'
 import blogs from '../../db/blogs.json'
 import { BiCalendar } from 'react-icons/bi'
 import { Metadata } from 'next'
+import { Title } from '@/components/Title'
 
 export const metadata: Metadata = {
   title: 'Blog Page',
@@ -14,9 +15,7 @@ const Blog: React.FC = () => (
   <div id="Blog" className="layout">
     <div className="container-white">
       <div className="w-full">
-        <h1 className="pb-1 text-xl border-b text-zinc-500 border-zinc-900 mb-4 uppercase">
-          Last Articles
-        </h1>
+        <Title title="Last Articles" />
         <div className="space-y-5 max-auto">
           {blogs.map((o, i) => (
             <a
