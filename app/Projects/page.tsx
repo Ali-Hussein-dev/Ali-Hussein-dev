@@ -1,10 +1,9 @@
-import { Metadata } from 'next'
+import Head from 'next/head'
 import Image from 'next/image'
 import * as React from 'react'
 import projects from '../../db/projects.json'
 import { ReactPlayer } from '@/components/client-components'
 import { CiCalendarDate } from 'react-icons/ci'
-import { Title } from '@/components/Title'
 //=======================
 const ProjectCard: React.FC<{
   name: string
@@ -15,7 +14,7 @@ const ProjectCard: React.FC<{
   imgSrc?: string
   date: string
 }> = ({ imgSrc = '', name, href, description, stack, src, date }) => (
-  <div className="mb-4 space-y-2 overflow-hidden rounded-sm break-inside bg-black shadow-orange-800/10 shadow-lg">
+  <div className="mb-6 sm:mb-8 space-y-2 overflow-hidden rounded-sm break-inside bg-black shadow-orange-800/20 shadow-lg">
     {src ? (
       <ReactPlayer url={src} controls width="100%" height="100%" />
     ) : (
@@ -73,17 +72,17 @@ const Link: React.FC<{ href: string; children: string | React.ReactNode }> = ({
     {children}
   </a>
 )
-
-export const metadata: Metadata = {
-  title: 'Projects Page',
-  description: 'Sample of my work',
-}
 //=======================
 const Projects: React.FC = () => (
   <>
+    <Head>
+      <title>Projects</title>
+    </Head>
     <section id="Projects" className="layout">
-      <Title title="Last Projects" />
-      <div className="lg:masonry-cols-3 md:masonry-cols-2">
+      <h1 className="pb-1 text-xl border-b text-zinc-500 border-zinc-900 mb-4 uppercase">
+        Last Projects
+      </h1>
+      <div className="sm:masonry-cols-2">
         {projects.map((o, i) => (
           <ProjectCard
             key={i}

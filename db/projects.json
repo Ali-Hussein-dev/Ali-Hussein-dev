@@ -8,7 +8,6 @@
     "code": "https://github.com/Ali-Hussein-dev/NoorAI",
     "imgSrc": "/projects-videos/your-chat-gpt.png"
   },
-
   {
     "href": "https://restaurants-template.vercel.app/",
     "name": "Restaurant Stater",
@@ -27,17 +26,6 @@
     "vidType": "video/mp4",
     "code": "https://github.com/Ali-Hussein-dev/kellener-abr"
   },
-
-  {
-    "href": "https://green-menus.vercel.app/",
-    "name": "Dishes/Drinks Menu",
-    "description": "Saas App: digital menus platform that enables restaurants owners to host and update their menus",
-    "stack": "TS Nextjs Jest Testing-Library Tailwind",
-    "src": "/projects-videos/dashboard-menu.mp4",
-    "vidType": "video/mp4",
-    "date": "2023"
-  },
-
   {
     "href": "https://find-meaning.vercel.app/",
     "name": "Dictionary",
@@ -47,6 +35,15 @@
     "src": "/projects-videos/find-meaning.mp4",
     "vidType": "video/mp4",
     "code": "https://github.com/Ali-Hussein-dev/find-meaning"
+  },
+  {
+    "href": "https://green-menus.vercel.app/",
+    "name": "Dishes/Drinks Menu",
+    "description": "Saas App: digital menus platform that enables restaurants owners to host and update their menus",
+    "stack": "TS Nextjs Jest Testing-Library Tailwind",
+    "src": "/projects-videos/dashboard-menu.mp4",
+    "vidType": "video/mp4",
+    "date": "2023"
   },
   {
     "href": "https://kamous.noorai.io",
