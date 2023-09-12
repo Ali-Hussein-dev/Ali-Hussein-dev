@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "description": "portfolio",
+  "description": "Ali Hussein's Portfolio built with Next.js, React, TypeScript, TailwindCSS!",
   "author": "Ali Hussein",
   "license": "MIT",
   "version": "1.0.0",
@@ -26,8 +26,10 @@
     ]
   },
   "dependencies": {
-    "@mantine/core": "^5.2.5",
-    "@mantine/next": "^5.2.5",
+    "@emotion/react": "^11.11.1",
+    "@mantine/core": "^6.0.20",
+    "@mantine/hooks": "6.0.20",
+    "@mantine/next": "^6.0.20",
     "@vercel/analytics": "^1.0.1",
     "framer-motion": "^10.15.0",
     "next": "^13.4.12",
@@ -61,5 +63,13 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/Ali-Hussein-dev/Ali-Hussein-dev"
-  }
+  },
+  "keywords": [
+    "nextjs",
+    "react",
+    "typescript",
+    "tailwindcss",
+    "mantine",
+    "portfolio"
+  ]
 }
