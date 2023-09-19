@@ -4,7 +4,7 @@ export const Workflow = () => {
   const blurDataURL =
     'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mM0dgytBwACwgFK5PrQiQAAAABJRU5ErkJggg=='
   return (
-    <section className="px-2 pb-14 pt-4 lg:pt-12">
+    <section className="px-2 pb-14 pt-8 lg:pt-16">
       <h2 className="mb-2 text-2xl font-extrabold text-left lg:text-3xl text-slate-200">
         Workflow
       </h2>
