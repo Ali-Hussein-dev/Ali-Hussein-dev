@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { useScroll } from 'framer-motion'
 import clsx from 'clsx'
 
-const linksList = ['Home', 'Projects', 'Blog', 'Design', 'About']
+const linksList = ['Home', 'Blog', 'Design', 'About']
 interface StyledLinkProps extends React.ComponentPropsWithoutRef<'button'> {
   label: string
 }
@@ -44,7 +44,7 @@ export const Header: React.FC = () => {
         )}
       >
         {/* -------------------------------------------------------------menu row for desktop */}
-        <div className="justify-between hidden w-full text-xl font-semibold sm:flex max-w-xl">
+        <div className="justify-between hidden w-full text-xl font-semibold sm:flex max-w-md">
           {linksList.map((link) => (
             <span key={link}>
               <StyledLink label={link} />
