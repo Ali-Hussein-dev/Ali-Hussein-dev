@@ -34,22 +34,30 @@ export const Header: React.FC = () => {
       <header
         ref={() => ref}
         className={clsx(
-          'w-full flex justify-end sm:justify-center items-center sm:items-center fixed top-0 z-10 pr-2',
-          y > height
-            ? 'sm:bg-zinc-950/50 sm:shadow-lg sm:backdrop-blur'
-            : 'sm:bg-transparent',
+          'w-full flex justify-end sm:justify-center items-center sm:items-center fixed top-0 z-10 pr-2 sm:px-2 pt-3',
+          // y > height
+          //   ? 'sm:bg-zinc-950/50 sm:shadow-lg sm:backdrop-blur'
+          //   : 'sm:bg-transparent',
           isOpen
             ? 'fixed h-screen z-10 bg-zinc-800/50 backdrop-blur-lg'
             : 'h-14'
         )}
       >
         {/* -------------------------------------------------------------menu row for desktop */}
-        <div className="justify-between hidden w-full text-xl font-semibold sm:flex max-w-md">
-          {linksList.map((link) => (
-            <span key={link}>
-              <StyledLink label={link} />
-            </span>
-          ))}
+        {/* bg-gradient-to-br from-primary-500 via-primary-600 to-primary-800 */}
+        <div
+          className={clsx(
+            'hidden sm:block w-full text-xl font-semibold max-w-4xl py-2 rounded-3xl',
+            'bg-zinc-800/70 text-zinc-100 shadow-lg sm:backdrop-blur-lg'
+          )}
+        >
+          <div className="max-w-md justify-between flex sm:flex mx-auto">
+            {linksList.map((link) => (
+              <span key={link}>
+                <StyledLink label={link} />
+              </span>
+            ))}
+          </div>
         </div>
         {/* -------------------------------------------------------------menu column for mobile devices */}
         <div
