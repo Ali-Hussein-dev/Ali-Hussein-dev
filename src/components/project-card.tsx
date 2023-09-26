@@ -12,7 +12,7 @@ export const ProjectCard: React.FC<{
   imgSrc?: string
   date: string
 }> = ({ imgSrc = '', name, href, description, stack, src, date }) => (
-  <div className="mb-6 sm:mb-8 space-y-2 overflow-hidden rounded-sm break-inside bg-black z-20 shadow-orange-800/20 shadow-lg">
+  <div className="mb-6 sm:mb-8 space-y-2 overflow-hidden rounded-sm break-inside bg-black z-20 shadow">
     {src ? (
       <ReactPlayer url={src} controls width="100%" height="100%" />
     ) : (
@@ -54,7 +54,7 @@ export const ProjectCard: React.FC<{
         </Link>
       </div>
     </div>
-    <div className="h-[0.5px] bg-gradient-to-r from-transparent via-yellow-500 to-transparent" />
+    <div className="h-[1px] bg-gradient-to-r from-transparent via-yellow-500/80 to-transparent" />
   </div>
 )
 const Link: React.FC<{ href: string; children: string | React.ReactNode }> = ({
@@ -65,7 +65,7 @@ const Link: React.FC<{ href: string; children: string | React.ReactNode }> = ({
     href={href}
     target="_blank"
     rel="noreferrer"
-    className="flex-row-center px-4 text-lg rounded hover:underline h-9 text-slate-100 underline-offset-1 hover:bg-zinc-100/10 bg-zinc-900"
+    className="flex-row-center px-4 text-lg rounded hover:underline h-9 text-slate-100 underline-offset-1 hover:bg-zinc-100/10 bg-zinc-900 z-10"
   >
     {children}
   </a>
