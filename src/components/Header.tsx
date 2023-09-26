@@ -27,7 +27,10 @@ export const Header: React.FC = () => {
   const { height = 0 } = ref.current?.getBoundingClientRect() ?? {}
 
   const { scrollY } = useScroll()
-  React.useEffect(() => scrollY.onChange(() => setY(scrollY.get())), [scrollY])
+  React.useEffect(
+    () => scrollY.on('change', () => setY(scrollY.get())),
+    [scrollY]
+  )
 
   return (
     <div className="relative w-full h-14">
@@ -48,7 +51,9 @@ export const Header: React.FC = () => {
         <div
           className={clsx(
             'hidden sm:block w-full text-xl font-semibold max-w-4xl py-2 rounded-3xl',
-            'bg-zinc-800/70 text-zinc-100 shadow-lg sm:backdrop-blur-lg'
+            y > height
+              ? 'bg-zinc-800/70 duration-200 shadow-lg sm:backdrop-blur-lg'
+              : 'bg-transparent'
           )}
         >
           <div className="max-w-md justify-between flex sm:flex mx-auto">
