@@ -5,7 +5,6 @@ import { FaReact } from 'react-icons/fa'
 import { VscTools } from 'react-icons/vsc'
 import { BiHappyHeartEyes } from 'react-icons/bi'
 import { IconType } from 'react-icons'
-import { BorderGradientContainer } from './border-gradient-container'
 
 const techSkills = [
   {
