@@ -1,4 +1,6 @@
+import React from 'react'
 import { Testimonials } from './Testimonials'
+import { AnchorButton } from './button'
 
 export const GridBG = () => (
   <svg
@@ -48,12 +50,9 @@ export const Hero = () => (
             </strong>
             . Feel free to reach out.
           </p>
-          <a
-            href="mailto: ali.hussein.pre@gmail.com"
-            className="primary-btn border-[0.5px] block mx-auto w-fit"
-          >
+          <AnchorButton href="mailto: ali.hussein.pre@gmail.com">
             Get in touch
-          </a>
+          </AnchorButton>
         </div>
       </div>
       <Testimonials />
