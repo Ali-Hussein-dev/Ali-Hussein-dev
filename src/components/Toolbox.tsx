@@ -54,7 +54,7 @@ const Tech = ({
   subtitle?: string
 }) => {
   return (
-    <BorderGradientContainer>
+    <div className="p-4 pt-8 rounded-lg bg-gradient-to-b from-zinc-900 via-zinc-900/20 to-transparent">
       <div className="flex-row-start gap-x-2">
         <Icon className="text-zinc-400 mb-1" size="20" />
         <div className="pb-1 mb-1 max-w-fit ">
@@ -70,12 +70,12 @@ const Tech = ({
         </div>
       </div>
       <p className="leading-6 text-zinc-400 md:text-xl pl-7">{parag}</p>
-    </BorderGradientContainer>
+    </div>
   )
 }
 export const Toolbox = () => (
   <section>
-    <h2 className="mb-2 text-2xl font-extrabold text-left lg:text-3xl text-slate-200">
+    <h2 className="mb-3 text-2xl font-extrabold text-left lg:text-3xl text-slate-200">
       Toolbox
     </h2>
     <div className="mb-4 space-y-3 leading-8 sm:grid sm:grid-cols-2 sm:gap-5 sm:space-y-0">
