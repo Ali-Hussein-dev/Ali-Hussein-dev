@@ -16,7 +16,7 @@ export const ProjectCard: React.FC<{
     {src ? (
       <ReactPlayer url={src} controls width="100%" height="100%" />
     ) : (
-      <div className="relative aspect-video">
+      <div className="relative aspect-video hover:scale-110 duration-500">
         <Image
           fill
           src={imgSrc as string}
