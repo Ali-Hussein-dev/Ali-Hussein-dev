@@ -11,9 +11,7 @@ export const Workflow = () => {
       <p className="mb-8 leading-6 text-zinc-400">
         I adhere to the Agile methodology for software development. It includes
         analyzing and planning requirements, iterative software building, and
-        continuous improvement of design and functionality. The focus is on
-        delivering value to customers quickly through smaller, market-ready
-        launches based on customer feedback.
+        continuous improvement of design and functionality.
       </p>
       <Image
         src="/workflow.svg"

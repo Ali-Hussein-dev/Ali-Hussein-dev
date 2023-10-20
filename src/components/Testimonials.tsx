@@ -18,7 +18,7 @@ const data = [
 //======================================
 export const Testimonials = () => {
   return (
-    <section className="sm:masonry-cols-3 pb-6 space-y-3 sm:space-y-0">
+    <section className="sm:masonry-cols-3 space-y-3 sm:space-y-0">
       {data.map((obj, i) => (
         <BorderGradientContainer key={i}>
           <div className="flex flex-col gap-y-2 text-zinc-300 break-inside bottom-gradient relative after:h-10 pb-1">

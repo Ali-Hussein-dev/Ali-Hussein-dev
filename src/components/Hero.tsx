@@ -35,7 +35,7 @@ export const GridBG = () => (
 )
 
 export const Hero = () => (
-  <section className="xs:pb-4 relative sm:h-[95vh] pt-10 lg:pt-32 grid place-items-center">
+  <section className="xs:pb-4 relative pt-10 lg:pt-28 grid place-items-center">
     <div>
       <div className="flex-col-center sm:pb-12 gap-6 prose sm:flex-row pb-4">
         <div className="mx-auto flex-col-center">
