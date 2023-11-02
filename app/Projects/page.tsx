@@ -11,7 +11,7 @@ const Projects: React.FC = () => (
     </Head>
     <section id="Projects" className="layout">
       <Title title="Last Projects" />
-      <div className="sm:masonry-cols-2">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {projects.map((o, i) => (
           <ProjectCard
             key={i}
@@ -19,7 +19,6 @@ const Projects: React.FC = () => (
             href={o.href}
             description={o.description}
             stack={o.stack}
-            src={o.src}
             imgSrc={o.imgSrc}
             date={o.date}
           />

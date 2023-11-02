@@ -6,12 +6,12 @@
     "stack": "TS Nextjs React Tailwind OpenAI",
     "date": "2023",
     "code": "https://github.com/Ali-Hussein-dev/NoorAI",
-    "imgSrc": "/projects-videos/your-chat-gpt.png"
+    "imgSrc": "/projects-videos/noorai-chatpage.png"
   },
   {
     "href": "https://restaurants-template.vercel.app/",
     "name": "Restaurant Stater",
-    "description": "Restaurant website",
+    "description": "Restaurant website with common sections such as gallery, contact... etc",
     "imgSrc": "/projects-videos/restaurant-starter-de.png",
     "stack": "Nextjs, React, Tailwind",
     "date": "2022"
@@ -19,11 +19,11 @@
   {
     "href": "https://gastro-abr.vercel.app/",
     "name": "Calculator",
-    "description": "special calculator made for waiters. It reduces calculation time for finl statement by 60% approximately and it reduces miscalculations",
+    "description": "Special calculator made for waiters. It reduces calculation time for finl statement by 60% approximately and it reduces miscalculations",
     "stack": "TS, Next.js, React, Tailwind, PWA",
     "date": "2021",
-    "src": "/projects-videos/kellner-abr.mp4",
-    "vidType": "video/mp4",
+    "imgSrc": "/projects-videos/kellner-abr.png",
+    "vidType": "image/png",
     "code": "https://github.com/Ali-Hussein-dev/kellener-abr"
   },
   {
@@ -32,8 +32,8 @@
     "description": "English dictionary with basic defintions section, community usage and related gifs to the search keyword",
     "stack": "TS Nextjs Jest Chakra-UI MongoDB PWA",
     "date": "2021",
-    "src": "/projects-videos/find-meaning.mp4",
-    "vidType": "video/mp4",
+    "imgSrc": "/projects-videos/find-meaning.png",
+    "vidType": "image/png",
     "code": "https://github.com/Ali-Hussein-dev/find-meaning"
   },
   {
@@ -41,8 +41,8 @@
     "name": "Dishes/Drinks Menu",
     "description": "Saas App: digital menus platform that enables restaurants owners to host and update their menus",
     "stack": "TS Nextjs Jest Testing-Library Tailwind",
-    "src": "/projects-videos/dashboard-menu.mp4",
-    "vidType": "video/mp4",
+    "imgSrc": "/projects-videos/dashboard-menu.png",
+    "vidType": "image/png",
     "date": "2023"
   },
   {
@@ -52,7 +52,7 @@
     "stack": "TS Nextjs React Tailwind",
     "date": "2023",
     "code": "https://github.com/Ali-Hussein-dev/KamousAI",
-    "imgSrc": "/projects-videos/KamousAI.png"
+    "imgSrc": "/projects-videos/Kamousai-home.png"
   },
   {
     "href": "https://table-example.vercel.app/",
@@ -67,7 +67,7 @@
     "href": "https://spreskill-app.web.app/",
     "name": "Spreskill",
     "description": "A landing page for a mobile app with Bootstrap",
-    "src": "/projects-videos/spreskill2.mp4",
+    "imgSrc": "/projects-videos/spreskill.png",
     "stack": "Html Bootstrap",
     "date": "2020"
   }
