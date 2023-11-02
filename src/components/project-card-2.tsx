@@ -1,4 +1,3 @@
-import { ReactPlayer } from '@/components/client-components'
 import Image from 'next/image'
 import { CiCalendarDate } from 'react-icons/ci'
 
