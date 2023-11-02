@@ -19,7 +19,6 @@ const Projects: React.FC = () => (
             href={o.href}
             description={o.description}
             stack={o.stack}
-            src={o.src}
             imgSrc={o.imgSrc}
             date={o.date}
           />
