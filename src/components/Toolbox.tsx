@@ -30,7 +30,7 @@ const techSkills = [
   },
   {
     title: 'Backend & DevOps',
-    parag: 'Nodejs, Supabase, Redis, Vercel',
+    parag: 'Nodejs, Supabase, Vercel, Sanity',
     Icon: CgDatabase,
     subtitle: ' ( familiar )',
   },
