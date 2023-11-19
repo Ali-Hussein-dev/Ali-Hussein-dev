@@ -38,8 +38,8 @@ export const Hero = () => {
   return (
     <section className="xs:pb-4 relative grid place-items-center">
       <div>
-        <div className="flex-col-center gap-6 prose sm:flex-row h-[90svh]">
-          <div className="mx-auto flex-col-center">
+        <div className="flex-col-center prose h-[95svh]">
+          <div className="mx-auto flex-col-center bg-zinc-950/60">
             <h1 className="mb-4 text-4xl font-extrabold md:text-5xl lg:text-6xl gradientText text-center">
               UX-Driven <br /> Product Engineer
             </h1>
