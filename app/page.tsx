@@ -8,9 +8,7 @@ import projects from '../db/projects.json'
 //=======================
 const Projects: React.FC = () => (
   <section className="py-10">
-    <h2 className="mb-4 text-2xl font-extrabold text-left lg:text-3xl text-slate-200">
-      Last Projects
-    </h2>
+    <h2 className="title">Last Projects</h2>
     <div className="grid grid-cols-1 md:grid-cols-2 gap-5 px-1">
       {projects
         .sort((a, b) => +b.date - +a.date)

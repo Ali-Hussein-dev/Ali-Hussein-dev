@@ -32,6 +32,9 @@
   .primary-btn {
     @apply duration-300 px-6 py-2 rounded-xl font-bold mx-auto uppercase bg-zinc-950;
   }
+  .title {
+    @apply mb-3 text-2xl font-extrabold tracking-wide text-left text-zinc-500;
+  }
 }
 
 ::-webkit-scrollbar {

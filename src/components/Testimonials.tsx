@@ -31,24 +31,25 @@ const data = [
 //======================================
 export const Testimonials = () => {
   return (
-    // <section className="grid grid-cols-1 sm:grid-cols-3 gap-5 pt-8 bg-zinc-950">
-    // <section className="sm:masonry-cols-2 space-y-4 sm:space-y-5 pt-8 bg-zinc-950">
-    <section className="grid grid-cols-1 sm:grid-cols-2 gap-5 pt-8 bg-zinc-950">
-      {data.map((obj, i) => (
-        <BorderGradientContainer key={i}>
-          <div
-            className={clsx(
-              'flex flex-col gap-y-2 text-zinc-300 bottom-gradient relative after:h-10 pb-1 break-inside'
-            )}
-          >
-            <p>
-              <BiSolidQuoteLeft className="inline-block mr-1 pb-1 text-lime-300" />{' '}
-              {obj.text}
-            </p>
-            <span className="text-base italic">{obj.who}</span>
-          </div>
-        </BorderGradientContainer>
-      ))}
-    </section>
+    <>
+      <h2 className="title">Testimonials</h2>
+      <section className="grid grid-cols-1 sm:grid-cols-2 gap-5 bg-zinc-950">
+        {data.map((obj, i) => (
+          <BorderGradientContainer key={i}>
+            <div
+              className={clsx(
+                'flex flex-col gap-y-2 text-zinc-300 bottom-gradient relative after:h-10 pb-1 break-inside'
+              )}
+            >
+              <p>
+                <BiSolidQuoteLeft className="inline-block mr-1 pb-1 text-lime-300" />{' '}
+                {obj.text}
+              </p>
+              <span className="text-base italic">{obj.who}</span>
+            </div>
+          </BorderGradientContainer>
+        ))}
+      </section>
+    </>
   )
 }

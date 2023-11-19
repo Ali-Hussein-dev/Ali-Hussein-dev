@@ -74,9 +74,7 @@ const Tech = ({
 }
 export const Toolbox = () => (
   <section>
-    <h2 className="mb-3 text-2xl font-extrabold text-left lg:text-3xl text-slate-200">
-      Toolbox
-    </h2>
+    <h2 className="title">Toolbox</h2>
     <div className="mb-4 space-y-3 leading-8 sm:grid sm:grid-cols-2 sm:gap-5 sm:space-y-0">
       {techSkills.map((o) => (
         <Tech

@@ -5,9 +5,7 @@ export const Workflow = () => {
     'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mM0dgytBwACwgFK5PrQiQAAAABJRU5ErkJggg=='
   return (
     <section className="px-2 pb-14 pt-8 lg:pt-16">
-      <h2 className="mb-2 text-2xl font-extrabold text-left lg:text-3xl text-slate-200">
-        Workflow
-      </h2>
+      <h2 className="title">Workflow</h2>
       <p className="mb-8 leading-6 text-zinc-400">
         I adhere to the Agile methodology for software development. It includes
         analyzing and planning requirements, iterative software building, and
