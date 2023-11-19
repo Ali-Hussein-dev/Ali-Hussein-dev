@@ -60,7 +60,7 @@ const Link: React.FC<{ href: string; children: string | React.ReactNode }> = ({
     href={href}
     target="_blank"
     rel="noreferrer"
-    className="flex-row-center px-4 text-lg rounded hover:underline h-9 text-slate-100 underline-offset-1 hover:bg-zinc-100/10 bg-zinc-900 z-[5]"
+    className="flex-row-center px-4 text-lg rounded hover:underline h-9 text-lime-300 font-medium underline-offset-1 hover:bg-zinc-100/10 bg-zinc-900 z-[5]"
   >
     {children}
   </a>
