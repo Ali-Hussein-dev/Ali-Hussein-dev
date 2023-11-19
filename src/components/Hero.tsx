@@ -36,9 +36,9 @@ export const GridBG = () => (
 
 export const Hero = () => {
   return (
-    <section className="xs:pb-4 relative pt-20 lg:pt-28 grid place-items-center">
+    <section className="xs:pb-4 relative grid place-items-center">
       <div>
-        <div className="flex-col-center sm:pb-12 gap-6 prose sm:flex-row pb-4 h-[75svh]">
+        <div className="flex-col-center gap-6 prose sm:flex-row h-[90svh]">
           <div className="mx-auto flex-col-center">
             <h1 className="mb-4 text-4xl font-extrabold md:text-5xl lg:text-6xl gradientText text-center">
               UX-Driven <br /> Product Engineer
