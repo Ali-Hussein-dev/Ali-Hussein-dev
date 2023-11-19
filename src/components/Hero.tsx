@@ -34,28 +34,30 @@ export const GridBG = () => (
   </svg>
 )
 
-export const Hero = () => (
-  <section className="xs:pb-4 relative pt-10 lg:pt-28 grid place-items-center">
-    <div>
-      <div className="flex-col-center sm:pb-12 gap-6 prose sm:flex-row pb-4">
-        <div className="mx-auto flex-col-center">
-          <h1 className="mb-4 text-3xl font-extrabold md:text-4xl lg:text-6xl gradientText text-center">
-            UX-Driven <br /> Frontend Engineer
-          </h1>
-          <p className="mb-4 leading-6 text-zinc-400 md:text-xl text-center max-w-xl">
-            I specialize in crafting{' '}
-            <strong className="text-zinc-300"> AI-driven web apps</strong> with{' '}
-            <strong className="text-zinc-300">
-              clean UI design & intuitive UX
-            </strong>
-            . Feel free to reach out.
-          </p>
-          <AnchorButton href="mailto: ali.hussein.pre@gmail.com">
-            Get in touch
-          </AnchorButton>
+export const Hero = () => {
+  return (
+    <section className="xs:pb-4 relative grid place-items-center">
+      <div>
+        <div className="flex-col-center prose h-[95svh]">
+          <div className="mx-auto flex-col-center bg-zinc-950/60">
+            <h1 className="mb-4 text-4xl font-extrabold md:text-5xl lg:text-6xl gradientText text-center">
+              UX-Driven <br /> Product Engineer
+            </h1>
+            <p className="mb-6 leading-6 text-zinc-400 md:text-xl text-center max-w-2xl">
+              I specialize in crafting{' '}
+              <strong className="text-zinc-300"> AI-driven web apps</strong>{' '}
+              with{' '}
+              <strong className="text-zinc-300 block">
+                clean UI design & intuitive UX
+              </strong>
+            </p>
+            <AnchorButton href="mailto: ali.hussein.pre@gmail.com">
+              Get in touch
+            </AnchorButton>
+          </div>
         </div>
+        <Testimonials />
       </div>
-      <Testimonials />
-    </div>
-  </section>
-)
+    </section>
+  )
+}

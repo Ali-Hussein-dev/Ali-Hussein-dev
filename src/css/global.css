@@ -21,13 +21,13 @@
 }
 @layer components {
   .hover-effect-1 {
-      @apply hover:-translate-x-1 hover:-translate-y-1 hover:border hover:border-zinc-300;
-    }
+    @apply hover:-translate-x-1 hover:-translate-y-1 hover:border hover:border-zinc-300;
+  }
   .layout {
     @apply py-6 mx-auto max-w-4xl px-2 w-full;
   }
   .gradientText {
-    @apply bg-gradient-to-r from-amber-500 via-orange-500 to-yellow-500 bg-clip-text text-transparent;
+    @apply bg-gradient-to-tr from-primary-600 via-primary-400 to-lime-300 bg-clip-text text-transparent;
   }
   .primary-btn {
     @apply duration-300 px-6 py-2 rounded-xl font-bold mx-auto uppercase bg-zinc-950;
