@@ -5,6 +5,14 @@ import { ProjectCard } from '@/components/project-card-2'
 import * as React from 'react'
 import projects from '../db/projects.json'
 
+// {
+//   "href": "https://spreskill-app.web.app/",
+//   "name": "Spreskill",
+//   "description": "A landing page for a mobile app with Bootstrap",
+//   "imgSrc": "/projects-videos/spreskill.png",
+//   "stack": "Html Bootstrap",
+//   "date": "2020"
+// }
 //=======================
 const Projects: React.FC = () => (
   <section className="py-10">
