@@ -13,7 +13,11 @@ export const ProjectCard: React.FC<{
   <div className="overflow-hidden rounded z-[2] w-full flex-col-start border-zinc-800 border">
     <div className="relative aspect-[15/12] w-full">
       <Image
-        fill
+        width={300}
+        height={400}
+        // fill
+        // sizes={'(max-width: 468px) 100vw'}
+        quality={70}
         src={imgSrc as string}
         alt="project image"
         placeholder="blur"
