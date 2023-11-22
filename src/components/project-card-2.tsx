@@ -13,15 +13,15 @@ export const ProjectCard: React.FC<{
   <div className="overflow-hidden rounded z-[2] w-full flex-col-start border-zinc-800 border">
     <div className="relative aspect-[15/12] w-full">
       <Image
-        width={300}
-        height={400}
+        width={400}
+        height={300}
         // fill
         // sizes={'(max-width: 468px) 100vw'}
         quality={70}
         src={imgSrc as string}
         alt="project image"
         placeholder="blur"
-        blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mM0dgytBwACwgFK5PrQiQAAAABJRU5ErkJggg=="
+        blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
         className="object-bottom md:cover w-full h-full md:scale-95 md:scale-y-90 hover:scale-100 duration-500 rounded-t md:rounded brightness-90 hover:brightness-100 hover:rounded-b-none"
       />
     </div>
