@@ -6,8 +6,15 @@ import { Header } from '@/components/Header'
 import { Analytics } from '@vercel/analytics/react'
 import NextTopLoader from 'nextjs-toploader'
 import { GoogleAnalytics } from '@/components/client-components'
+import { Sora } from 'next/font/google'
 
 const baseUrl = 'https://ali-hussein.com'
+
+const kanit = Sora({
+  subsets: ['latin'],
+  weight: ['200', '300', '400', '500', '600', '700', '800'],
+  variable: '--font-custom',
+})
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
@@ -52,7 +59,7 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
       <NextTopLoader color="#fde68a" showSpinner={false} speed={300} />
-      <body>
+      <body className={`${kanit.variable}`}>
         <GoogleAnalytics trackPageViews strategy="lazyOnload" />
         <main className="relative min-h-screen flex-col-center lg:text-xl selection:bg-yellow-500/10 selection:text-zinc-100 z-10 text-gray-100 bg-zinc-950 overflow-hidden">
           <Header />

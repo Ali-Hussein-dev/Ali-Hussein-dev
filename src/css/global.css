@@ -19,6 +19,9 @@
     break-inside: avoid;
   }
 }
+.font-custom {
+  font-family: var(--font-custom);
+}
 @layer components {
   .hover-effect-1 {
     @apply hover:-translate-x-1 hover:-translate-y-1 hover:border hover:border-zinc-300;
@@ -33,7 +36,7 @@
     @apply duration-300 px-6 py-2 rounded-xl font-bold mx-auto uppercase bg-zinc-950;
   }
   .title {
-    @apply mb-3 text-2xl font-extrabold tracking-wide text-left text-zinc-500;
+    @apply mb-3 text-2xl font-bold tracking-wide text-left text-zinc-500 font-custom;
   }
 }
 

@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export const Workflow = () => {
   const blurDataURL =
-    'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mM0dgytBwACwgFK5PrQiQAAAABJRU5ErkJggg=='
+    'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII='
   return (
     <section className="px-2 pb-14 pt-8 lg:pt-16">
       <h2 className="title">Workflow</h2>

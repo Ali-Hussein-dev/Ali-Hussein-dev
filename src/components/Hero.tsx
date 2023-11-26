@@ -40,7 +40,7 @@ export const Hero = () => {
       <div>
         <div className="flex-col-center prose h-[95svh]">
           <div className="mx-auto flex-col-center bg-zinc-950/60">
-            <h1 className="mb-4 text-4xl font-extrabold md:text-5xl lg:text-6xl gradientText text-center">
+            <h1 className="mb-4 text-4xl font-custom md:text-5xl lg:text-6xl gradientText text-center font-black">
               UX-Driven <br /> Product Engineer
             </h1>
             <p className="mb-6 leading-6 text-zinc-400 md:text-xl text-center max-w-2xl">
