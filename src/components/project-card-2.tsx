@@ -20,7 +20,7 @@ export const ProjectCard: React.FC<{
         }}
       >
         <div className="h-full group-hover:opacity-0 duration-500">
-          <p className="uppercase h-full center font-bold font-custom  text-zinc-300">
+          <p className="uppercase h-full center font-bold text-zinc-300  text-center max-w-[80%] mx-auto">
             {name}
           </p>
         </div>
