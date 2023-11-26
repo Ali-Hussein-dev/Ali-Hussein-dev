@@ -10,28 +10,40 @@ export const ProjectCard: React.FC<{
   imgSrc?: string
   date: string
 }> = ({ imgSrc = '', name, href, description, stack, date }) => (
-  <div className="overflow-hidden rounded z-[2] w-full flex-col-start border-zinc-800 border">
-    <div className="relative aspect-[15/12] w-full">
-      <Image
-        width={400}
-        height={300}
-        // fill
-        // sizes={'(max-width: 468px) 100vw'}
-        quality={70}
-        src={imgSrc as string}
-        alt="project image"
-        placeholder="blur"
-        blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
-        className="object-bottom md:cover w-full h-full md:scale-95 md:scale-y-90 hover:scale-100 duration-500 rounded-t md:rounded brightness-90 hover:brightness-100 hover:rounded-b-none"
-      />
+  <div className="overflow-hidden rounded z-[2] w-full flex-col-start border-zinc-800/70 border">
+    <div className="w-full group p-3 pt-4">
+      <div
+        className="border-[1px] h-full border-zinc-800 relative overflow-hidden aspect-[15/11] rounded-lg"
+        style={{
+          backgroundImage:
+            'radial-gradient(300px 170px at center, hsl(0,0%,100%,0.12) 0%, hsl(0,0%,0%) 100%)',
+        }}
+      >
+        <div className="h-full group-hover:opacity-0 duration-500">
+          <p className="uppercase h-full center font-bold font-custom  text-zinc-300">
+            {name}
+          </p>
+        </div>
+        <Image
+          width={400}
+          height={300}
+          // sizes={'(max-width: 468px) 100vw'}
+          quality={70}
+          src={imgSrc as string}
+          alt="project image"
+          placeholder="blur"
+          blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+          className="object-cover w-full duration-700 brightness-110 transition-transform translate-y-[230px] group-hover:translate-y-0 absolute inset-0 h-full opacity-0 group-hover:opacity-100"
+        />
+      </div>
     </div>
-    <div className="flex flex-col justify-between px-3 py-3 bg-gradient-to-t from-zinc-800/70 to-black w-full h-[70%]">
+    <div className="flex flex-col justify-between px-3 pb-1 bg-gradient-to-t from-zinc-800/70 to-black w-full h-[70%]">
       <div className="pb-1 sm:pb-0">
-        <h3 className="mb-1 font-bold text-base uppercase text-zinc-200">
+        {/* <h3 className="mb-1 font-bold text-base uppercase text-zinc-200">
           {name}
-        </h3>
+        </h3> */}
         <p className="text-zinc-400 text-base">{description}</p>
-        <div className="flex-row-start flex-wrap gap-1 pt-5">
+        <div className="flex-row-start flex-wrap gap-1 pt-5 pb-3">
           {stack.split(' ').map((s) => (
             <span
               key={s}

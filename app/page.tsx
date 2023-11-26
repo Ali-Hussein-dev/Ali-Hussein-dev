@@ -17,7 +17,7 @@ import projects from '../db/projects.json'
 const Projects: React.FC = () => (
   <section className="py-10">
     <h2 className="title">Last Projects</h2>
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-5 px-1">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 px-1">
       {projects
         .sort((a, b) => +b.date - +a.date)
         .map((o, i) => (
