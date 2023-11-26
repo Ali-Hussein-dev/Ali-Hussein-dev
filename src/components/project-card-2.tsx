@@ -11,15 +11,15 @@ export const ProjectCard: React.FC<{
   date: string
 }> = ({ imgSrc = '', name, href, description, stack, date }) => (
   <div className="overflow-hidden rounded z-[2] w-full flex-col-start border-zinc-800/70 border">
-    <div className="w-full group p-3 pt-4">
+    <div className="w-full group p-3 pt-4 bg-black">
       <div
         className="border-[1px] h-full border-zinc-800 relative overflow-hidden aspect-[15/11] rounded-lg"
         style={{
           backgroundImage:
-            'radial-gradient(300px 170px at center, hsl(0,0%,100%,0.12) 0%, hsl(0,0%,0%) 100%)',
+            'radial-gradient(300px 170px at center, hsl(0,0%,100%,0.08) 0%, hsl(0,0%,0%) 90%)',
         }}
       >
-        <div className="h-full group-hover:opacity-0 duration-500">
+        <div className="h-full group-hover:opacity-0 duration-300">
           <p className="uppercase h-full center font-bold text-zinc-300  text-center max-w-[80%] mx-auto">
             {name}
           </p>
@@ -33,7 +33,7 @@ export const ProjectCard: React.FC<{
           alt="project image"
           placeholder="blur"
           blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
-          className="object-cover w-full duration-700 brightness-110 transition-transform translate-y-[230px] group-hover:translate-y-0 absolute inset-0 h-full opacity-0 group-hover:opacity-100"
+          className="object-cover w-full duration-500 brightness-110 transition-transform translate-y-[220px] group-hover:translate-y-0 absolute inset-0 h-full opacity-0 group-hover:opacity-100"
         />
       </div>
     </div>
