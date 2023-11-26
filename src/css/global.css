@@ -40,6 +40,10 @@
   }
 }
 
+.center {
+  display: grid;
+  place-items: center;
+}
 ::-webkit-scrollbar {
   width: 10px;
 }
