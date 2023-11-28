@@ -1,5 +1,4 @@
 import React from 'react'
-import { Testimonials } from './Testimonials'
 import { AnchorButton } from './button'
 
 export const GridBG = () => (
@@ -56,7 +55,6 @@ export const Hero = () => {
             </AnchorButton>
           </div>
         </div>
-        <Testimonials />
       </div>
     </section>
   )

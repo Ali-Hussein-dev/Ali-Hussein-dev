@@ -4,6 +4,7 @@ import { GridBG, Hero } from '@/components/Hero'
 import { ProjectCard } from '@/components/project-card-2'
 import * as React from 'react'
 import projects from '../db/projects.json'
+import { Testimonials } from '@/components/Testimonials'
 
 // {
 //   "href": "https://spreskill-app.web.app/",
@@ -15,9 +16,9 @@ import projects from '../db/projects.json'
 // }
 //=======================
 const Projects: React.FC = () => (
-  <section className="py-10">
+  <section className="py-10 max-w-5xl mx-auto">
     <h2 className="title">Last Projects</h2>
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 px-1">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 px-1">
       {projects
         .sort((a, b) => +b.date - +a.date)
         .map((o, i) => (
@@ -41,12 +42,19 @@ export default function Page() {
     <>
       <GridBG />
       <div id="Home" className=" px-4 lg:px-0 z-20">
-        <div className="max-w-4xl mx-auto w-full pb-8 space-y-8">
+        <div className="max-w-4xl mx-auto w-full">
           <Hero />
-          <div className="max-w-4xl mx-auto pb-10">
-            {/* <AiProviders /> */}
+        </div>
+        <div className="mx-auto pb-10 space-y-8">
+          {/* <AiProviders /> */}
+          <div className="max-w-5xl mx-auto">
+            <Testimonials />
+          </div>
+          <div className="max-w-4xl mx-auto">
             <Workflow />
-            <Projects />
+          </div>
+          <Projects />
+          <div className="max-w-4xl mx-auto">
             <Toolbox />
           </div>
         </div>

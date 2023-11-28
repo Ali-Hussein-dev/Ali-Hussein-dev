@@ -4,7 +4,4 @@ module.exports = {
   compiler: {
     reactRemoveProperties: true,
   },
-  experimental: {
-    legacyBrowsers: false,
-  },
 }

@@ -16,7 +16,7 @@ export const Workflow = () => {
         alt="workflow"
         width={1000}
         height={450}
-        className="hidden mx-auto md:block"
+        className="hidden mx-auto sm:block"
         placeholder="blur"
         blurDataURL={blurDataURL}
         quality={75}
@@ -26,7 +26,7 @@ export const Workflow = () => {
         alt="workflow"
         width={320}
         height={800}
-        className="mx-auto md:hidden"
+        className="mx-auto sm:hidden"
         placeholder="blur"
         blurDataURL={blurDataURL}
         quality={75}
