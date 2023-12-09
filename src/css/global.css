@@ -36,7 +36,7 @@
     @apply duration-300 px-6 py-2 rounded-xl font-bold mx-auto uppercase bg-zinc-950;
   }
   .title {
-    @apply mb-3 text-2xl font-bold tracking-wide text-left text-zinc-500 font-custom;
+    @apply mb-3 text-2xl font-bold tracking-wide text-left font-custom bg-gradient-to-b from-gray-200 to-gray-200/70 bg-clip-text text-transparent;
   }
 }
 
@@ -53,7 +53,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply rounded-lg shadow-inner bg-white/10 hover:bg-white/20;
+  @apply rounded-lg shadow-inner bg-white/20 hover:bg-white/30;
 }
 
 .bottom-gradient::after {
@@ -68,4 +68,20 @@
   bottom: 0px;
   pointer-events: none;
   position: absolute;
+}
+
+.animate-in {
+  animation: animateIn 0.3s ease 0.2s both;
+}
+
+@keyframes animateIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
