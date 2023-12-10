@@ -2,6 +2,7 @@ import * as React from 'react'
 import myStory from '../../db/aboutme.json'
 import { Metadata } from 'next'
 import { Title } from '@/components/Title'
+import { BlueTopGradient } from '@/components/blue-top-gradient/blue-top-gradient'
 
 export const metadata: Metadata = {
   title: 'About Page',
@@ -9,7 +10,8 @@ export const metadata: Metadata = {
 }
 
 const Aboutme: React.FC = () => (
-  <>
+  <div className="w-full relative">
+    <BlueTopGradient />
     <section id="About" className="layout">
       <Title title="My story" />
       <article className="text-zinc-400">
@@ -29,6 +31,6 @@ const Aboutme: React.FC = () => (
         ))}
       </article>
     </section>
-  </>
+  </div>
 )
 export default Aboutme

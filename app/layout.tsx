@@ -64,7 +64,7 @@ export default function RootLayout({
         <GoogleAnalytics trackPageViews strategy="lazyOnload" />
         <main className="relative min-h-screen flex-col-center lg:text-xl selection:bg-yellow-500/10 selection:text-zinc-100 z-10 text-gray-100 bg-zinc-950 overflow-hidden">
           <Header />
-          <div className="grow">{children}</div>
+          <div className="grow w-full">{children}</div>
           <Footer />
         </main>
         <SpeedInsights />
