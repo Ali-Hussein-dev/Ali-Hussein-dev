@@ -14,10 +14,10 @@ export const metadata: Metadata = {
 const Blog: React.FC = () => (
   <div className="w-full relative">
     <BlueTopGradient />
-    <div id="Blog" className="layout">
+    <div id="Blog" className="layout pt-8">
       <div className="w-full">
         <Title title="Last Articles" />
-        <div className="space-y-5 max-auto">
+        <div className="max-auto">
           {blogs.map((o, i) => (
             <a
               href={o.url}
@@ -26,19 +26,19 @@ const Blog: React.FC = () => (
               key={i}
               className="flex flex-col pb-2 pt-4 rounded-sm hover:bg-zinc-400/10 lg:flex-row group"
             >
-              <div className="order-2 w-full lg:self-start ">
-                <div className="pl-2 ">
-                  <h2 className="w-10/12 text-xl font-bold text-gray-100 uppercase">
+              <div className="order-2 w-full lg:self-start">
+                <div>
+                  <h2 className="w-10/12 text-xl font-bold text-gray-200 uppercase mb-2">
                     {o.title}
                   </h2>
                   <Text
                     lineClamp={1}
                     color="none"
-                    className="pr-4 italic text-zinc-400"
+                    className="pr-4 italic text-zinc-400 md:w-11/12"
                   >
                     {o.description}
                   </Text>
-                  <span className="flex items-center text-base italic tracking-tight text-zinc-500 gap-x-2">
+                  <span className="flex items-center text-base tracking-tight text-primary-200/40 gap-x-2">
                     <BiCalendar /> {o.pub}
                   </span>
                 </div>
