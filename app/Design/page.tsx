@@ -107,8 +107,8 @@ const Design = () => {
             </h2>
           </div>
           <p className="text-2xl leading-8 mb-4 text-center mx-auto max-w-2xl text-zinc-400">
-            Drive more traffic to your website business and increase your sales
-            with professional-designed posts.
+            Drive more traffic to your website and increase your sales with
+            professional-designed posts.
           </p>
           <CtaButton />
         </div>
