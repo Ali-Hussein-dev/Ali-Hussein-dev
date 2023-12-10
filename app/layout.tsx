@@ -7,6 +7,7 @@ import { Analytics } from '@vercel/analytics/react'
 import NextTopLoader from 'nextjs-toploader'
 import { GoogleAnalytics } from '@/components/client-components'
 import { Sora } from 'next/font/google'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 
 const baseUrl = 'https://ali-hussein.com'
 
@@ -66,6 +67,7 @@ export default function RootLayout({
           <div className="grow">{children}</div>
           <Footer />
         </main>
+        <SpeedInsights />
       </body>
       <Analytics />
     </html>
