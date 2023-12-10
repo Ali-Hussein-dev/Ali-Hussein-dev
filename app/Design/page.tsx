@@ -99,7 +99,7 @@ const CtaButton = () => (
 const Design = () => {
   return (
     <>
-      <section id="Design" className="layout">
+      <section id="Design" className="layout animate-in">
         <div className="mb-8 flex-col flex px-6 pt-6 gap-y-8 text-primary-50 mx-auto">
           <div className="py-4 sm:px-12 px-1 highlight highlight-zinc-900 highlight-variant-5 highlight-spread-lg">
             <h2 className="md:text-4xl text-2xl font-black text-center gradientText">

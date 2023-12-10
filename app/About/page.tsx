@@ -12,9 +12,9 @@ export const metadata: Metadata = {
 const Aboutme: React.FC = () => (
   <div className="w-full relative">
     <BlueTopGradient />
-    <section id="About" className="layout pt-8">
+    <section id="About" className="layout pt-8 animate-in">
       <Title title="My story" />
-      <article className="text-zinc-400">
+      <article className="text-zinc-400 animate-in">
         {myStory.map((section) => (
           <div key={section.title}>
             <h2 className="text-xl font-bold uppercase md:text-2xl mt-8">

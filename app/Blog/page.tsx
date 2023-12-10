@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 const Blog: React.FC = () => (
   <div className="w-full relative">
     <BlueTopGradient />
-    <div id="Blog" className="layout pt-8">
+    <div id="Blog" className="layout pt-8 animate-in">
       <div className="w-full">
         <Title title="Last Articles" />
         <div className="max-auto">
