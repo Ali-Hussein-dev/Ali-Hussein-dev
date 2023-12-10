@@ -4,7 +4,7 @@ import blogs from '../../db/blogs.json'
 import { BiCalendar } from 'react-icons/bi'
 import { Metadata } from 'next'
 import { Title } from '@/components/Title'
-
+import { BlueTopGradient } from '@/components/blue-top-gradient/blue-top-gradient'
 export const metadata: Metadata = {
   title: 'Blog Page',
   description:
@@ -12,37 +12,40 @@ export const metadata: Metadata = {
 }
 //=======================
 const Blog: React.FC = () => (
-  <div id="Blog" className="layout">
-    <div className="w-full">
-      <Title title="Last Articles" />
-      <div className="space-y-5 max-auto">
-        {blogs.map((o, i) => (
-          <a
-            href={o.url}
-            target="_blank"
-            rel="noreferrer"
-            key={i}
-            className="flex flex-col pb-2 pt-4 rounded-sm hover:bg-zinc-400/10 lg:flex-row group"
-          >
-            <div className="order-2 w-full lg:self-start ">
-              <div className="pl-2 ">
-                <h2 className="w-10/12 text-xl font-bold text-gray-100 uppercase">
-                  {o.title}
-                </h2>
-                <Text
-                  lineClamp={1}
-                  color="none"
-                  className="pr-4 italic text-zinc-400"
-                >
-                  {o.description}
-                </Text>
-                <span className="flex items-center text-base italic tracking-tight text-zinc-500 gap-x-2">
-                  <BiCalendar /> {o.pub}
-                </span>
+  <div className="w-full relative">
+    <BlueTopGradient />
+    <div id="Blog" className="layout pt-8">
+      <div className="w-full">
+        <Title title="Last Articles" />
+        <div className="max-auto">
+          {blogs.map((o, i) => (
+            <a
+              href={o.url}
+              target="_blank"
+              rel="noreferrer"
+              key={i}
+              className="flex flex-col pb-2 pt-4 rounded-sm hover:bg-zinc-400/10 lg:flex-row group"
+            >
+              <div className="order-2 w-full lg:self-start">
+                <div>
+                  <h2 className="w-10/12 text-xl font-bold text-gray-200 uppercase mb-2">
+                    {o.title}
+                  </h2>
+                  <Text
+                    lineClamp={1}
+                    color="none"
+                    className="pr-4 italic text-zinc-400 md:w-11/12"
+                  >
+                    {o.description}
+                  </Text>
+                  <span className="flex items-center text-base tracking-tight text-primary-200/40 gap-x-2">
+                    <BiCalendar /> {o.pub}
+                  </span>
+                </div>
               </div>
-            </div>
-          </a>
-        ))}
+            </a>
+          ))}
+        </div>
       </div>
     </div>
   </div>
