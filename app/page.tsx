@@ -16,7 +16,7 @@ import { Testimonials } from '@/components/Testimonials'
 // }
 //=======================
 const Projects: React.FC = () => (
-  <section className="py-10 max-w-5xl mx-auto">
+  <section className="py-10">
     <h2 className="title">Last Projects</h2>
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 px-1">
       {projects
@@ -45,18 +45,12 @@ export default function Page() {
         <div className="max-w-4xl mx-auto w-full">
           <Hero />
         </div>
-        <div className="mx-auto pb-10 space-y-8">
+        <div className="mx-auto max-w-4xl pb-10 space-y-8">
           {/* <AiProviders /> */}
-          <div className="max-w-5xl mx-auto">
-            <Testimonials />
-          </div>
-          <div className="max-w-4xl mx-auto">
-            <Workflow />
-          </div>
+          <Testimonials />
+          <Workflow />
           <Projects />
-          <div className="max-w-4xl mx-auto">
-            <Toolbox />
-          </div>
+          <Toolbox />
         </div>
       </div>
     </>
