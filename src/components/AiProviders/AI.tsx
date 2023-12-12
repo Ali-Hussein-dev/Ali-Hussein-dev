@@ -1,4 +1,3 @@
-import { clsx } from '@mantine/core'
 import Image from 'next/image'
 import * as React from 'react'
 
@@ -23,11 +22,9 @@ export const AiProviders = () => {
           {list.map((o, i) => (
             <div
               key={i}
-              className={clsx(
-                // `h-40 ${i ===2 ? 'col-span-6' : 'col-span-3'}`,
-                `h-40 ${i < 2 ? 'col-span-3' : 'col-span-2'}`,
-                'bg-zinc-950 border-[0.5px] border-b shadow shadow-yellow-800/10 border-zinc-700 rounded-3xl overflow-hidden p-4 grid place-items-center z-[2]'
-              )}
+              className={`bg-zinc-950 border-[0.5px] border-b shadow shadow-yellow-800/10 border-zinc-700 rounded-3xl overflow-hidden p-4 grid place-items-center z-[2] h-40 ${
+                i < 2 ? 'col-span-3' : 'col-span-2'
+              }`}
             >
               <div className="flex-col-center gap-2">
                 <Image src={o.src} width={40} height={40} alt={o.name} />
