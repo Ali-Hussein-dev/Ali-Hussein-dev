@@ -63,7 +63,9 @@ export default function RootLayout({
       <body className={`${kanit.variable}`}>
         <GoogleAnalytics trackPageViews strategy="lazyOnload" />
         <main className="relative min-h-screen flex-col-center lg:text-xl selection:bg-yellow-500/10 selection:text-zinc-100 z-10 text-gray-100 bg-zinc-950 overflow-hidden">
-          <Header />
+          <React.Suspense fallback={<div></div>}>
+            <Header />
+          </React.Suspense>
           <div className="grow w-full">{children}</div>
           <Footer />
         </main>
