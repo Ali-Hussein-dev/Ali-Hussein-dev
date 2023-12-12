@@ -50,13 +50,13 @@ export const Header: React.FC = () => {
         {/* bg-gradient-to-br from-primary-500 via-primary-600 to-primary-800 */}
         <div
           className={clsx(
-            'hidden sm:block w-full text-xl font-semibold max-w-4xl py-2 rounded-3xl',
+            'hidden sm:block w-full text-xl font-semibold max-w-5xl py-2 rounded-3xl',
             y > height
               ? 'bg-zinc-800/70 duration-200 shadow-lg sm:backdrop-blur-lg'
               : 'bg-transparent'
           )}
         >
-          <div className="max-w-md justify-between flex sm:flex mx-auto">
+          <div className="max-w-lg justify-between flex sm:flex mx-auto">
             {linksList.map((link) => (
               <span key={link}>
                 <StyledLink label={link} />
