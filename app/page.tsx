@@ -1,6 +1,7 @@
 import { Toolbox } from '@/components/Toolbox'
 import { Workflow } from '@/components/Workflow'
-import { GridBG, Hero } from '@/components/Hero'
+import { Hero } from '@/components/Hero'
+import { GridBG } from '@/components/gird-bg'
 import { ProjectCard } from '@/components/project-card-2'
 import * as React from 'react'
 import projects from '../db/projects.json'
@@ -42,10 +43,8 @@ export default function Page() {
     <>
       <GridBG />
       <div id="Home" className=" px-4 lg:px-0 z-20">
-        <div className="max-w-4xl mx-auto w-full">
-          <Hero />
-        </div>
-        <div className="mx-auto max-w-4xl pb-10 space-y-8">
+        <Hero />
+        <div className="mx-auto max-w-5xl pb-10 space-y-8">
           {/* <AiProviders /> */}
           <Testimonials />
           <Workflow />

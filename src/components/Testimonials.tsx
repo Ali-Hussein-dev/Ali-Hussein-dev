@@ -1,7 +1,6 @@
 'use client'
 import { BiSolidQuoteLeft } from 'react-icons/bi'
 import { BorderGradientContainer } from './border-gradient-container'
-import { clsx } from '@mantine/core'
 const data = [
   {
     text: 'Hey man , really cool project with the GPT clone. What are your plans with the source code would you ever plan on sharing it?...',
@@ -37,9 +36,9 @@ export const Testimonials = () => {
         {data.map((obj, i) => (
           <BorderGradientContainer key={i}>
             <div
-              className={clsx(
+              className={
                 'flex flex-col gap-y-2 text-zinc-300 bottom-gradient relative after:h-10 pb-1 break-inside'
-              )}
+              }
             >
               <p>
                 <BiSolidQuoteLeft className="inline-block mr-1 pb-1 text-lime-300" />{' '}

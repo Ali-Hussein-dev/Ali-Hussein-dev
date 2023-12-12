@@ -1,3 +1,4 @@
+import '@mantine/core/styles.css'
 import '../src/css/global.css'
 import * as React from 'react'
 import { Metadata } from 'next'
@@ -8,6 +9,7 @@ import NextTopLoader from 'nextjs-toploader'
 import { GoogleAnalytics } from '@/components/client-components'
 import { Sora } from 'next/font/google'
 import { SpeedInsights } from '@vercel/speed-insights/next'
+import { MantineProvider } from '@mantine/core'
 
 const baseUrl = 'https://ali-hussein.com'
 
@@ -63,8 +65,12 @@ export default function RootLayout({
       <body className={`${kanit.variable}`}>
         <GoogleAnalytics trackPageViews strategy="lazyOnload" />
         <main className="relative min-h-screen flex-col-center lg:text-xl selection:bg-yellow-500/10 selection:text-zinc-100 z-10 text-gray-100 bg-zinc-950 overflow-hidden">
-          <Header />
-          <div className="grow w-full">{children}</div>
+          <React.Suspense fallback={<div></div>}>
+            <Header />
+          </React.Suspense>
+          <MantineProvider>
+            <div className="grow w-full">{children}</div>
+          </MantineProvider>
           <Footer />
         </main>
         <SpeedInsights />
