@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import { Text } from '@/components/client-components'
+import { Text } from '@mantine/core'
 import blogs from '../../db/blogs.json'
 import { BiCalendar } from 'react-icons/bi'
 import { Metadata } from 'next'
@@ -32,9 +32,8 @@ const Blog: React.FC = () => (
                     {o.title}
                   </h2>
                   <Text
-                    lineClamp={1}
-                    color="none"
-                    className="pr-4 italic text-zinc-400 md:w-11/12"
+                    lineClamp={2}
+                    className="pr-4 italic !text-zinc-400 md:w-11/12"
                   >
                     {o.description}
                   </Text>

@@ -1,3 +1,4 @@
+import '@mantine/core/styles.css'
 import '../src/css/global.css'
 import * as React from 'react'
 import { Metadata } from 'next'
@@ -8,6 +9,7 @@ import NextTopLoader from 'nextjs-toploader'
 import { GoogleAnalytics } from '@/components/client-components'
 import { Sora } from 'next/font/google'
 import { SpeedInsights } from '@vercel/speed-insights/next'
+import { MantineProvider } from '@mantine/core'
 
 const baseUrl = 'https://ali-hussein.com'
 
@@ -66,7 +68,9 @@ export default function RootLayout({
           <React.Suspense fallback={<div></div>}>
             <Header />
           </React.Suspense>
-          <div className="grow w-full">{children}</div>
+          <MantineProvider>
+            <div className="grow w-full">{children}</div>
+          </MantineProvider>
           <Footer />
         </main>
         <SpeedInsights />
