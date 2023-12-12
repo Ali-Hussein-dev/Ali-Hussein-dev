@@ -1,4 +1,3 @@
-import { ReactPlayer } from '@/components/client-components'
 import Image from 'next/image'
 import { CiCalendarDate } from 'react-icons/ci'
 
@@ -8,25 +7,21 @@ export const ProjectCard: React.FC<{
   href: string
   stack: string
   description: string
+  // @deperated
   src?: string
   imgSrc?: string
   date: string
-}> = ({ imgSrc = '', name, href, description, stack, src, date }) => (
+}> = ({ imgSrc = '', name, href, description, stack, date }) => (
   <div className="mb-6 sm:mb-8 space-y-2 overflow-hidden rounded-sm break-inside bg-black z-20 shadow">
-    {src ? (
-      <ReactPlayer url={src} controls width="100%" height="100%" />
-    ) : (
-      <div className="relative aspect-video hover:scale-110 duration-500">
-        <Image
-          fill
-          src={imgSrc as string}
-          alt="project image"
-          placeholder="blur"
-          blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mM0dgytBwACwgFK5PrQiQAAAABJRU5ErkJggg=="
-        />
-      </div>
-    )}
-
+    <div className="relative aspect-video hover:scale-110 duration-500">
+      <Image
+        fill
+        src={imgSrc as string}
+        alt="project image"
+        placeholder="blur"
+        blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mM0dgytBwACwgFK5PrQiQAAAABJRU5ErkJggg=="
+      />
+    </div>
     <div className="flex flex-col justify-between flex-grow px-2 pb-2 tracking-tight text-zinc-300">
       <div className="py-2">
         <h3 className="mb-1 font-bold text-base uppercase text-gray-200">
