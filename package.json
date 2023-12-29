@@ -61,5 +61,13 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/Ali-Hussein-dev/Ali-Hussein-dev"
-  }
+  },
+  "keywords": [
+    "nextjs",
+    "typescript",
+    "tailwindcss",
+    "react",
+    "portfolio",
+    "framer-motion"
+  ]
 }
