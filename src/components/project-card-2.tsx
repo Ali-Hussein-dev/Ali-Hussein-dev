@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import { CiCalendarDate } from 'react-icons/ci'
-
+import { FaGooglePlay } from 'react-icons/fa'
 //=======================
 export const ProjectCard: React.FC<{
   name: string
@@ -9,7 +9,16 @@ export const ProjectCard: React.FC<{
   description: string
   imgSrc?: string
   date: string
-}> = ({ imgSrc = '', name, href, description, stack, date }) => (
+  playstore?: string
+}> = ({
+  imgSrc = '',
+  name,
+  href,
+  description,
+  stack,
+  date,
+  playstore = null,
+}) => (
   <div className="overflow-hidden rounded z-[2] w-full flex-col-start border-zinc-800/70 border">
     <div className="w-full group p-3 pt-4 bg-black">
       <div
@@ -60,9 +69,16 @@ export const ProjectCard: React.FC<{
           <CiCalendarDate />
           <span className="text-xs">{date}</span>
         </div>
-        <Link href={href}>
-          <span>Visit</span>
-        </Link>
+        <div className="flex-row-end gap-1">
+          {!!playstore && (
+            <Link href={playstore}>
+              <FaGooglePlay size="17" className="text-white" />
+            </Link>
+          )}
+          <Link href={href}>
+            <span>Visit</span>
+          </Link>
+        </div>
       </div>
       {/* <div className="h-[1px] bg-gradient-to-r from-transparent via-yellow-500/80 to-transparent" /> */}
     </div>

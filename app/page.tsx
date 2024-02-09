@@ -31,6 +31,7 @@ const Projects: React.FC = () => (
             stack={o.stack}
             imgSrc={o.imgSrc}
             date={o.date}
+            playstore={o.playstore}
           />
         ))}
     </div>
@@ -44,7 +45,7 @@ export default function Page() {
       <GridBG />
       <div id="Home" className=" px-4 lg:px-0 z-20">
         <Hero />
-        <div className="mx-auto max-w-5xl pb-10 space-y-8">
+        <div className="mx-auto max-w-5xl pb-10 space-y-8 md:px-4">
           {/* <AiProviders /> */}
           <Testimonials />
           <Workflow />
