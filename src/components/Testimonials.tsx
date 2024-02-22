@@ -32,12 +32,12 @@ export const Testimonials = () => {
   return (
     <>
       <h2 className="title">Testimonials</h2>
-      <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 bg-zinc-950">
+      <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 bg-zinc-950 ">
         {data.map((obj, i) => (
           <BorderGradientContainer key={i}>
             <div
               className={
-                'flex flex-col gap-y-2 text-zinc-300 bottom-gradient relative after:h-10 pb-1 break-inside'
+                'flex flex-col gap-y-2 text-zinc-300 relative after:h-10 pb-1 break-inside'
               }
             >
               <p>
