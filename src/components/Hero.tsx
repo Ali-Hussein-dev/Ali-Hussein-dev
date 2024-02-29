@@ -3,8 +3,12 @@ import { AnchorButton } from './button'
 
 export const Hero = () => {
   return (
-    <section className="xs:pb-4 relative grid place-items-center">
-      <div>
+    <div
+      className={
+        "[background-image:url('/hero-bg.svg')] bg-no-repeat mx-auto bg-top"
+      }
+    >
+      <section className="xs:pb-4 relative grid place-items-center">
         <div className="flex-col-center prose h-[95svh]">
           <div className="mx-auto flex-col-center">
             <h1 className="mb-4 text-4xl font-custom md:text-5xl lg:text-6xl  text-center font-black">
@@ -25,7 +29,7 @@ export const Hero = () => {
             </AnchorButton>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   )
 }
