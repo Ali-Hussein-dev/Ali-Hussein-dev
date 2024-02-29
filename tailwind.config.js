@@ -23,6 +23,13 @@ module.exports = {
           800: '#92400e',
           900: '#78350f',
         },
+        theme: {
+          primary: '#FCD269',
+          secondary: '#e5dcb4',
+          accent: '',
+          neutral: '',
+          success: '#4d7c0f',
+        },
       },
       fontFamily: { sans: ['Nuntino', ...defaultTheme.fontFamily.sans] },
     },
