@@ -4,11 +4,10 @@ import * as React from 'react'
 import { Metadata } from 'next'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
-import { Analytics } from '@vercel/analytics/react'
+// import { Analytics } from '@vercel/analytics/react'
 import NextTopLoader from 'nextjs-toploader'
 import { GoogleAnalytics } from '@/components/client-components'
 import { Sora } from 'next/font/google'
-import { SpeedInsights } from '@vercel/speed-insights/next'
 import { MantineProvider } from '@mantine/core'
 
 const baseUrl = 'https://ali-hussein.com'
@@ -60,6 +59,12 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
+        <script
+          defer
+          src="https://eu.umami.is/script.js"
+          data-website-id="2c1c1ce8-92ec-4683-8b2d-024a4fff94b1"
+          // data-host-url="https://ali-hussein.com"
+        ></script>
       </head>
       <NextTopLoader color="#fde68a" showSpinner={false} speed={300} />
       <body className={`${kanit.variable}`}>
@@ -73,9 +78,8 @@ export default function RootLayout({
           </MantineProvider>
           <Footer />
         </main>
-        <SpeedInsights />
       </body>
-      <Analytics />
+      {/* <Analytics /> */}
     </html>
   )
 }
