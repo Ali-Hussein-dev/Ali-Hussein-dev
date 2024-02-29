@@ -1,6 +1,6 @@
 export const GridBG = () => (
   <svg
-    className="absolute -inset-[-20] h-full w-full stroke-white/20 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
+    className="absolute -z-10 -inset-[-20] h-full w-full stroke-white/20 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
     aria-hidden="true"
   >
     <defs>
