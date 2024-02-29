@@ -5,7 +5,7 @@ export const Hero = () => {
   return (
     <div
       className={
-        "[background-image:url('/hero-bg.svg')] bg-no-repeat mx-auto bg-top"
+        "[background-image:url('/hero-bg.svg')] bg-no-repeat mx-auto bg-center"
       }
     >
       <section className="xs:pb-4 relative grid place-items-center">
