@@ -1,4 +1,3 @@
-import { Toolbox } from '@/components/Toolbox'
 import { Workflow } from '@/components/Workflow'
 import { Hero } from '@/components/Hero'
 import { GridBG } from '@/components/gird-bg'
@@ -6,6 +5,7 @@ import { ProjectCard } from '@/components/project-card-2'
 import * as React from 'react'
 import projects from '../db/projects.json'
 import { Testimonials } from '@/components/Testimonials'
+import { Techs } from '@/components/tech/Techs'
 
 // {
 //   "href": "https://spreskill-app.web.app/",
@@ -50,8 +50,8 @@ export default function Page() {
           <Testimonials />
           <Workflow />
           <Projects />
-          <Toolbox />
         </div>
+        <Techs />
       </div>
     </>
   )

@@ -39,7 +39,7 @@
     @apply duration-300 px-6 py-2 rounded-xl font-bold mx-auto uppercase bg-zinc-950;
   }
   .title {
-    @apply mb-3 text-2xl font-bold tracking-wide text-left font-custom bg-gradient-to-b from-gray-200 to-gray-200/70 bg-clip-text text-transparent;
+    @apply mb-3 text-2xl font-bold tracking-wide text-left font-custom text-theme-primary;
   }
 }
 
