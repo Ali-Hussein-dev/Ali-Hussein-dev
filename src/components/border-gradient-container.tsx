@@ -8,8 +8,8 @@ export const BorderGradientContainer = ({
     <div
       style={
         {
-          '--dark-primary': '9 9 11',
-          '--light-primary': '251 191 36',
+          '--dark-primary': '9 9 11', // zinc color
+          '--light-primary': '252 210 105',
 
           '--bg-color':
             'linear-gradient(rgb(var(--dark-primary)), rgb(var(--dark-primary)))',

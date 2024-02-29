@@ -52,11 +52,11 @@ export const ProjectCard: React.FC<{
           {name}
         </h3> */}
         <p className="text-zinc-400 text-base">{description}</p>
-        <div className="flex-row-start flex-wrap gap-1 pt-5 pb-3">
+        <div className="flex-row-start flex-wrap gap-2 pt-5 pb-3">
           {stack.split(' ').map((s) => (
             <span
               key={s}
-              className="text-sm text-zinc-100 bg-yellow-600 rounded-sm px-2 py-[2px]"
+              className="text-sm text-theme-secondary border-theme-secondary/30 border rounded px-2 py-[2px]"
             >
               {s}
             </span>

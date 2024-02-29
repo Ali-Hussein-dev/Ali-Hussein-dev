@@ -37,7 +37,7 @@ const Blog: React.FC = () => (
                   >
                     {o.description}
                   </Text>
-                  <span className="flex items-center text-base tracking-tight text-primary-200/40 gap-x-2">
+                  <span className="flex items-center text-base tracking-tight text-theme-secondary gap-x-2">
                     <BiCalendar /> {o.pub}
                   </span>
                 </div>
