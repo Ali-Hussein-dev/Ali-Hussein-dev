@@ -12,7 +12,7 @@ import { MantineProvider } from '@mantine/core'
 
 const baseUrl = 'https://ali-hussein.com'
 
-const kanit = Sora({
+const font = Sora({
   subsets: ['latin'],
   weight: ['200', '300', '400', '500', '600', '700', '800'],
   variable: '--font-custom',
@@ -67,9 +67,9 @@ export default function RootLayout({
         ></script>
       </head>
       <NextTopLoader color="#fde68a" showSpinner={false} speed={300} />
-      <body className={`${kanit.variable}`}>
+      <body className={`${font.variable}`}>
         <GoogleAnalytics trackPageViews strategy="lazyOnload" />
-        <main className="relative min-h-screen flex-col-center lg:text-xl selection:bg-yellow-500/10 selection:text-zinc-100 z-10 text-gray-100 bg-zinc-950 overflow-hidden">
+        <main className="relative min-h-screen flex-col-center lg:text-xl selection:bg-yellow-500/10 selection:text-zinc-200 z-10 text-gray-100 bg-zinc-950 overflow-hidden">
           <React.Suspense fallback={<div></div>}>
             <Header />
           </React.Suspense>
