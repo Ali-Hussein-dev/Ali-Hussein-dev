@@ -107,7 +107,7 @@ const techSkills = [
 //======================================
 export const Techs = () => {
   return (
-    <div className="mb-4 bg-zinc-950 py-8">
+    <div className="mb-4 bg-gradient-to-b from-zinc-950/30 to-zinc-950/30 via-zinc-950 pb-8 pt-16">
       <div className="pb-6 font-custom mx-auto max-w-[58rem]">
         <div className="mb-6 mx-auto ">
           <h2 className="text-3xl text-center text-theme-secondary font-bold ">
