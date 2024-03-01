@@ -108,7 +108,7 @@ const techSkills = [
 export const Techs = () => {
   return (
     <div className="mb-4 bg-zinc-950 py-8">
-      <div className="pb-6 font-custom mx-auto max-w-5xl">
+      <div className="pb-6 font-custom mx-auto max-w-[58rem]">
         <div className="mb-6 mx-auto ">
           <h2 className="text-3xl text-center text-theme-secondary font-bold ">
             <span className="text-theme-primary">Experties</span>
