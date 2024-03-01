@@ -1,12 +1,18 @@
 .grad-top {
   background: linear-gradient(
     to bottom,
-    hsla(240, 43%, 55%, 0.15) 10%,
+    hsla(49,
+        49%,
+        80%, 0.035) 10%,
     hsla(0, 0%, 0%, 0.01)
   );
   position: absolute;
   top: 0px;
   z-index: 0;
   width: 100%;
-  border-top: 0.5px hsla(240, 43%, 55%, 0.7) solid;
+  border-top: 0.5px hsla(49,
+        49%,
+        80%,
+          0.6) solid;
 }
+

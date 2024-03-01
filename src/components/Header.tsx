@@ -47,7 +47,6 @@ export const Header: React.FC = () => {
         )}
       >
         {/* -------------------------------------------------------------menu row for desktop */}
-        {/* bg-gradient-to-br from-primary-500 via-primary-600 to-primary-800 */}
         <div
           className={clsx(
             'hidden sm:block w-full text-xl font-semibold max-w-5xl py-2 rounded-3xl',

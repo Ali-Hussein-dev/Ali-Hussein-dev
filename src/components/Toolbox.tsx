@@ -55,7 +55,7 @@ const Tech = ({
   return (
     <div className="p-4 pt-8 rounded-lg bg-gradient-to-b from-zinc-900 via-zinc-900/20 to-transparent">
       <div className="flex-row-start gap-x-2">
-        <Icon className="text-primary-600 mb-1" size="20" />
+        <Icon className="text-theme-primary mb-1" size="20" />
         <div className="pb-1 mb-1 max-w-fit ">
           <h3 className="font-semibold leading-4 tracking-tighter text-zinc-200">
             {title}
