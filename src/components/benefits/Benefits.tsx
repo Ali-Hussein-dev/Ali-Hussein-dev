@@ -47,7 +47,7 @@ const Card_03 = ({ i, title, description }: CardProps) => {
       <div className="flex flex-col sm:flex-row sm:justify-between items-center justify-center">
         <div className="max-w-sm order-last sm:-order-1">
           <h3 className="font-bold text-2xl tracking-tight mb-1 text-center sm:text-left">
-            {title} {i}
+            {title}
           </h3>
           <p className="font-light text-center sm:text-left">{description}</p>
         </div>
