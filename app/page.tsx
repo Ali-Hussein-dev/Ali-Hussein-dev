@@ -1,6 +1,5 @@
 import { Workflow } from '@/components/Workflow'
 import { Hero } from '@/components/Hero'
-import { GridBG } from '@/components/gird-bg'
 import { ProjectCard } from '@/components/project-card-2'
 import * as React from 'react'
 import projects from '../db/projects.json'
@@ -42,19 +41,20 @@ const Projects: React.FC = () => (
 //=======================
 export default function Page() {
   return (
-    <>
-      <GridBG />
-      <div id="Home" className=" px-4 lg:px-0 z-20">
-        <Hero />
-        <div className="mx-auto max-w-5xl pb-10 space-y-8 md:px-4">
-          {/* <AiProviders /> */}
-          <Testimonials />
-          <Benefits />
-          <Projects />
-          <Workflow />
+    <div className="circle-grid w-full max-w-7xl mx-auto">
+      <div className="bg-gradient-to-r from-zinc-950 via-transparent to-zinc-950 w-full">
+        <div id="Home" className="px-4 lg:px-0">
+          <Hero />
+          <div className="mx-auto max-w-5xl pb-10 space-y-8 md:px-4">
+            {/* <AiProviders /> */}
+            <Testimonials />
+            <Benefits />
+            <Projects />
+            <Workflow />
+          </div>
+          <Techs />
         </div>
-        <Techs />
       </div>
-    </>
+    </div>
   )
 }
