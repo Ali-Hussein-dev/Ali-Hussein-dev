@@ -1,5 +1,5 @@
 import * as React from 'react'
-import css from './Benefits.module.css'
+import css from './benefits.module.css'
 import { cn } from 'src/utils/cn'
 import Image from 'next/image'
 
