@@ -1,6 +1,16 @@
 import Image from 'next/image'
 import { CiCalendarDate } from 'react-icons/ci'
 import { FaGooglePlay } from 'react-icons/fa'
+const colors = [
+  'text-amber-400',
+  'text-lime-400',
+  'text-violet-400',
+  'text-cyan-400',
+  'text-indigo-400',
+  'text-emerald-400',
+  'text-fuchsia-400',
+  'text-rose-400',
+]
 //=======================
 export const ProjectCard: React.FC<{
   name: string
@@ -10,6 +20,7 @@ export const ProjectCard: React.FC<{
   imgSrc?: string
   date: string
   playstore?: string
+  i: number
 }> = ({
   imgSrc = '',
   name,
@@ -18,6 +29,7 @@ export const ProjectCard: React.FC<{
   stack,
   date,
   playstore = null,
+  i,
 }) => (
   <div className="overflow-hidden rounded z-[2] w-full flex-col-start border-zinc-800/70 border">
     <div className="w-full group p-3 pt-4 bg-black">
@@ -29,9 +41,11 @@ export const ProjectCard: React.FC<{
         }}
       >
         <div className="h-full group-hover:opacity-0 duration-300">
-          <p className="uppercase h-full center font-bold text-zinc-300  text-center max-w-[80%] mx-auto">
+          <span
+            className={`uppercase h-full center font-bold text-center max-w-[80%] mx-auto ${colors[i]}`}
+          >
             {name}
-          </p>
+          </span>
         </div>
         <Image
           width={400}
