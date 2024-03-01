@@ -69,14 +69,12 @@ export default function RootLayout({
       <NextTopLoader color="#fde68a" showSpinner={false} speed={300} />
       <body className={`${font.variable}`}>
         <GoogleAnalytics trackPageViews strategy="lazyOnload" />
-        <main className="relative min-h-screen flex-col-center lg:text-xl selection:bg-yellow-500/10 selection:text-zinc-200 z-10 text-gray-100 bg-zinc-950 overflow-hidden">
-          <React.Suspense fallback={<div></div>}>
-            <Header />
-          </React.Suspense>
+        <main className="relative min-h-screen flex-col-center lg:text-xl selection:bg-theme-primary selection:text-zinc-800 z-10 text-zinc-100 bg-zinc-950 overflow-hidden">
           <MantineProvider>
+            <Header />
             <div className="grow w-full">{children}</div>
+            <Footer />
           </MantineProvider>
-          <Footer />
         </main>
       </body>
       {/* <Analytics /> */}
