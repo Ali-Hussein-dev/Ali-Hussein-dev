@@ -6,6 +6,7 @@ import * as React from 'react'
 import projects from '../db/projects.json'
 import { Testimonials } from '@/components/Testimonials'
 import { Techs } from '@/components/tech/Techs'
+import { Benefits } from '@/components/benefits/Benefits'
 
 // {
 //   "href": "https://spreskill-app.web.app/",
@@ -48,8 +49,9 @@ export default function Page() {
         <div className="mx-auto max-w-5xl pb-10 space-y-8 md:px-4">
           {/* <AiProviders /> */}
           <Testimonials />
-          <Workflow />
+          <Benefits />
           <Projects />
+          <Workflow />
         </div>
         <Techs />
       </div>
