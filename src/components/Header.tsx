@@ -4,6 +4,7 @@ import { FaBars, FaTimes } from 'react-icons/fa'
 import Link from 'next/link'
 import { useScroll } from 'framer-motion'
 import clsx from 'clsx'
+import Image from 'next/image'
 
 const linksList = ['Home', 'Blog', 'Design', 'About']
 interface StyledLinkProps extends React.ComponentPropsWithoutRef<'button'> {
@@ -13,7 +14,7 @@ const StyledLink: React.FC<StyledLinkProps> = ({ label, ...rest }) => (
   <Link href={`/${label === 'Home' ? '' : label}`} className="w-full">
     <button
       type="button"
-      className="px-3 py-1 mb-2 font-bold rounded-lg hover:bg-zinc-200 hover:text-zinc-800 hover:cursor-pointer sm:mb-0 active:translate-y-1 w-full border border-zinc-600/30 sm:border-none shadow sm:shadow-none duration-200"
+      className="px-3 py-1 mb-2 font-bold rounded-lg hover:bg-zinc-200 hover:text-zinc-800 hover:cursor-pointer sm:mb-0 active:translate-y-1 w-full border border-zinc-500 sm:border-none shadow sm:shadow-none duration-200"
       {...rest}
     >
       {label}
@@ -37,30 +38,54 @@ export const Header: React.FC = () => {
       <header
         ref={() => ref}
         className={clsx(
-          'w-full flex justify-end sm:justify-center items-center sm:items-center fixed top-0 z-10 pr-2 sm:px-2',
-          // y > height
-          //   ? 'sm:bg-zinc-950/50 sm:shadow-lg sm:backdrop-blur'
-          //   : 'sm:bg-transparent',
+          'w-full flex justify-between sm:justify-center items-center sm:items-center fixed z-10 px-3',
+          y > height
+            ? 'bg-zinc-900/70 sm:bg-transparent duration-200 shadow-lg backdrop-blur-lg'
+            : 'bg-transparent',
           isOpen
-            ? 'fixed h-screen z-10 bg-zinc-800/50 backdrop-blur-lg'
+            ? 'fixed h-screen z-10 bg-zinc-900/70 backdrop-blur-lg'
             : 'h-14'
         )}
       >
+        {!isOpen && (
+          <Link href="/" className="sm:hidden">
+            <Image
+              src="/logo.svg"
+              alt="logo"
+              width={40}
+              height={40}
+              quality={70}
+              priority
+            />
+          </Link>
+        )}
         {/* -------------------------------------------------------------menu row for desktop */}
         <div
           className={clsx(
             'hidden sm:block w-full text-xl font-semibold max-w-5xl py-2 rounded-3xl',
             y > height
-              ? 'bg-zinc-800/70 duration-200 shadow-lg sm:backdrop-blur-lg'
+              ? 'bg-zinc-900/70 duration-200 shadow-lg sm:backdrop-blur-lg top-2 relative'
               : 'bg-transparent'
           )}
         >
-          <div className="max-w-lg justify-between flex sm:flex mx-auto">
-            {linksList.map((link) => (
-              <span key={link}>
-                <StyledLink label={link} />
-              </span>
-            ))}
+          <div className="md:px-8 px-2 justify-between flex sm:flex mx-auto">
+            <Link href="/">
+              <Image
+                src="/logo.svg"
+                alt="logo"
+                width={40}
+                height={40}
+                quality={70}
+                priority
+              />
+            </Link>
+            <div className="flex-row-start gap-3">
+              {linksList.map((link) => (
+                <span key={link}>
+                  <StyledLink label={link} />
+                </span>
+              ))}
+            </div>
           </div>
         </div>
         {/* -------------------------------------------------------------menu column for mobile devices */}
