@@ -31,7 +31,7 @@ const data = [
 export const Testimonials = () => {
   return (
     <div>
-      <h2 className="title">Testimonials</h2>
+      <h2 className="title">User Feedback</h2>
       <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 bg-zinc-950 ">
         {data.map((obj, i) => (
           <BorderGradientContainer key={i}>

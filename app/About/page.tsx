@@ -17,7 +17,7 @@ const Aboutme: React.FC = () => (
       <article className="text-zinc-400 animate-in">
         {myStory.map((section) => (
           <div key={section.title}>
-            <h2 className="text-xl font-bold uppercase md:text-2xl mt-8">
+            <h2 className="text-xl font-bold uppercase md:text-2xl mt-8 text-theme-secondary">
               {section.title}
             </h2>
             <div className="mb-4 space-y-2">

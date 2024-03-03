@@ -12,7 +12,7 @@ const SocialMedia = () => (
       ].map((str) => (
         <li
           key={str}
-          className="flex gap-x-2 items-center text-xl text-zince-300"
+          className="flex gap-x-2 items-center text-lg md:text-2xl text-zince-400"
         >
           <BsFillPatchCheckFill className="text-green-300 " />
           {str}
@@ -91,7 +91,7 @@ const ads = [
 //======================================
 const CtaButton = () => (
   <AnchorButton href="mailto: ali.hussein.pre@gmail.com">
-    Get one for free
+    Try it out
   </AnchorButton>
 )
 
@@ -102,13 +102,12 @@ const Design = () => {
       <section id="Design" className="layout animate-in">
         <div className="mb-8 flex-col flex px-6 pt-6 gap-y-8 text-theme-primary mx-auto">
           <div className="py-4 sm:px-12 px-1 highlight highlight-zinc-900 highlight-variant-5 highlight-spread-lg">
-            <h2 className="md:text-4xl text-2xl font-black text-center text-theme-primary">
+            <h2 className="md:text-4xl text-2xl font-black text-center text-theme-primary font-indie-flower">
               Professional Social Media Posts
             </h2>
           </div>
-          <p className="text-2xl leading-8 mb-4 text-center mx-auto max-w-2xl text-zinc-400">
-            Drive more traffic to your website and increase your sales with
-            professional-designed posts.
+          <p className="text-xl leading-8 text-center mx-auto max-w-lg text-theme-secondary">
+            Drive more traffic to your website with professional-designed posts.
           </p>
           <CtaButton />
         </div>
@@ -131,7 +130,7 @@ const Design = () => {
                 <Image
                   fill
                   src={`/ads/ad (${id}).png`}
-                  alt=""
+                  alt="post image"
                   quality={50}
                   placeholder="blur"
                   blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mM0dgytBwACwgFK5PrQiQAAAABJRU5ErkJggg=="

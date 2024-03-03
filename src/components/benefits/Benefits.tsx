@@ -32,16 +32,13 @@ type CardProps = {
   description: string
 }
 
-const sharedClasses = 'p-4'
 /* White Card */
 const Card_03 = ({ i, title, description }: CardProps) => {
   return (
     <div
       className={cn(
         css.card1,
-        sharedClasses,
-        ' bg-theme-secondary text-zinc-800',
-        (i == 0 || i == 3) && 'md:col-span-3'
+        ' bg-theme-secondary text-zinc-800 md:col-span-5 p-4'
       )}
     >
       <div className="flex flex-col sm:flex-row sm:justify-between items-center justify-center">
@@ -69,8 +66,7 @@ const Card_12 = ({ i, title, description }: CardProps) => {
     <div
       className={cn(
         css.card2,
-        sharedClasses,
-        ' bg-zinc-950',
+        ' bg-zinc-950 md:col-span-2 p-4',
         i == 2 && 'order-last sm:order-none'
       )}
     >
@@ -83,14 +79,14 @@ const Card_12 = ({ i, title, description }: CardProps) => {
 //======================================
 export const Benefits = () => {
   return (
-    <div className="md:py-16 py-8 max-w-[54rem] mx-auto">
+    <div className="md:py-16 py-8 max-w-4xl mx-auto">
       <div className="mb-4 ">
-        <h2 className="font-bold text-3xl text-theme-secondary text-center">
+        <h2 className="title text-theme-secondary text-center">
           <span className="text-theme-primary">Benefits</span> <br />
           Perks that you will love
         </h2>
       </div>
-      <div className="grid md:grid-cols-4 gap-5 md:gap-6 grid-cols-1">
+      <div className="grid md:grid-cols-7 gap-5 md:gap-6 grid-cols-1">
         <Card_03
           i={0}
           title={content[0].title}
