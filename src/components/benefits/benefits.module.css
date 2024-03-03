@@ -1,7 +1,7 @@
 /* White Card */
 .card1 {
   box-shadow: 4px 4px 0px hsl(0, 70%, 27%);
-    border: 1px solid hsl(0, 70%, 27%);
+  border: 1px solid hsl(0, 70%, 27%);
 
   background-repeat: repeat;
   background-size: 270px;
@@ -11,7 +11,7 @@
 /* Black Card */
 .card2 {
   box-shadow: 4px 4px 0px hsl(0, 0%, 80%);
-    border: 1px solid hsl(0, 0%, 80%);
+  border: 1px solid hsl(0, 0%, 80%);
   background-repeat: repeat;
   background-size: 140px;
   background-image: url('/grain-white.svg');

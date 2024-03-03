@@ -7,15 +7,20 @@ import { Header } from '@/components/Header'
 // import { Analytics } from '@vercel/analytics/react'
 import NextTopLoader from 'nextjs-toploader'
 import { GoogleAnalytics } from '@/components/client-components'
-import { Sora } from 'next/font/google'
+import { Sora, Indie_Flower } from 'next/font/google'
 import { MantineProvider } from '@mantine/core'
 
 const baseUrl = 'https://ali-hussein.com'
 
-const font = Sora({
+const Sora_font = Sora({
   subsets: ['latin'],
   weight: ['200', '300', '400', '500', '600', '700', '800'],
-  variable: '--font-custom',
+  variable: '--font-sora',
+})
+const Indie_Flower_font = Indie_Flower({
+  subsets: ['latin'],
+  weight: ['400'],
+  variable: '--font-indie-flower',
 })
 
 export const metadata: Metadata = {
@@ -35,7 +40,7 @@ export const metadata: Metadata = {
   },
   verification: {
     google: 'eZSdmzAXlLkKhNJzfgwDqWORghxnJ8qR9_CHdAh5-xw',
-    // yandex: '14d2e73487fa6c71',
+    yandex: '14d2e73487fa6c71',
   },
   openGraph: {
     title: 'Ali Hussein',
@@ -67,9 +72,9 @@ export default function RootLayout({
         ></script>
       </head>
       <NextTopLoader color="#fde68a" showSpinner={false} speed={300} />
-      <body className={`${font.variable}`}>
+      <body className={`${Sora_font.variable} ${Indie_Flower_font.variable}`}>
         <GoogleAnalytics trackPageViews strategy="lazyOnload" />
-        <main className="relative min-h-screen flex-col-center lg:text-xl selection:bg-theme-primary selection:text-zinc-800 z-10 text-zinc-100 bg-zinc-950 overflow-hidden">
+        <main className="relative min-h-screen flex-col-center lg:text-xl selection:bg-theme-primary/70 selection:text-zinc-800 z-10 text-zinc-100 bg-zinc-950 overflow-hidden">
           <MantineProvider>
             <Header />
             <div className="grow w-full">{children}</div>

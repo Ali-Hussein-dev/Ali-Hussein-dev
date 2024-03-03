@@ -19,8 +19,12 @@
     break-inside: avoid;
   }
 }
-.font-custom {
-  font-family: var(--font-custom);
+.font-sora {
+  font-family: var(--font-sora);
+}
+
+.font-indie-flower {
+  font-family: var(--font-indie-flower);
 }
 .font-paytone {
   font-family: var(--font-paytone);
@@ -39,7 +43,7 @@
     @apply duration-300 px-6 py-2 rounded-xl font-bold mx-auto uppercase bg-zinc-950;
   }
   .title {
-    @apply mb-3 text-2xl font-bold tracking-wide text-left font-custom text-theme-primary;
+    @apply mb-3 text-2xl font-bold tracking-wide text-left font-sora text-theme-primary;
   }
 }
 
