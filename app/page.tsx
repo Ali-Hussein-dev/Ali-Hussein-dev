@@ -6,6 +6,7 @@ import projects from '../db/projects.json'
 import { Testimonials } from '@/components/Testimonials'
 import { Techs } from '@/components/tech/Techs'
 import { Benefits } from '@/components/benefits/Benefits'
+import { About } from '@/components/About'
 
 // {
 //   "href": "https://spreskill-app.web.app/",
@@ -54,6 +55,7 @@ export default function Page() {
             <Workflow />
           </div>
           <Techs />
+          <About />
         </div>
       </div>
     </div>
