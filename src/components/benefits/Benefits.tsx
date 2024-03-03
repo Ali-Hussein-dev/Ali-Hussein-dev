@@ -83,7 +83,7 @@ const Card_12 = ({ i, title, description }: CardProps) => {
 //======================================
 export const Benefits = () => {
   return (
-    <div className="pb-5 max-w-[54rem] mx-auto">
+    <div className="md:py-16 py-8 max-w-[54rem] mx-auto">
       <div className="mb-4 ">
         <h2 className="font-bold text-3xl text-theme-secondary text-center">
           <span className="text-theme-primary">Benefits</span> <br />

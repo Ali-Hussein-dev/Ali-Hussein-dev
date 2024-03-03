@@ -5,27 +5,23 @@ export const Hero = () => {
   return (
     <div
       className={
-        "[background-image:url('/hero-bg.svg')] bg-no-repeat mx-auto bg-center"
+        "[background-image:url('/hero-bg.svg')] bg-no-repeat mx-auto bg-center md:-translate-y-14"
       }
     >
       <section className="xs:pb-4 relative grid place-items-center">
-        <div className="flex-col-center prose h-[95svh]">
-          <div className="mx-auto flex-col-center">
-            <h1 className="mb-4 text-4xl font-custom md:text-5xl lg:text-6xl  text-center font-black">
-              <span className="text-theme-primary block">UX Driven</span>
+        <div className="flex-col-center prose h-[94svh]">
+          <div className="mx-auto flex-col-center font-sora md:translate-y-14">
+            <h1 className="mb-4 text-4xl md:text-5xl lg:text-6xl text-center font-black">
               <span className="bg-gradient-to-b from-white to-white/70 bg-clip-text text-transparent">
-                Product Engineer
+                Transforming <br /> Ideas into{' '}
+                <span className="text-theme-primary">Impact</span>
               </span>
             </h1>
-            <div className="mb-6 leading-6 text-zinc-300 md:text-xl text-center max-w-2xl">
-              I specialize in crafting web apps with
-              <span className="text-zinc-300 block">
-                <strong>clean UI</strong>, <strong>intuitive UX</strong> and{' '}
-                <strong>modern stack</strong>
-              </span>
-            </div>
+            <p className="mb-8 leading-6 text-theme-secondary md:text-xl text-center ">
+              Your Trusted Web Development Partner
+            </p>
             <AnchorButton href="mailto: ali.hussein.pre@gmail.com">
-              Get in touch
+              {"Don't Wait,  Reacht out"}
             </AnchorButton>
           </div>
         </div>
