@@ -29,7 +29,7 @@ const techSkills = [
   {
     title: 'Frontend',
     parag:
-      'Nextjs, React, Tailwindcss, Mantine, Zustand, Swiper, ReactQuery, Recharts, ReactTable, and more...',
+      'Nextjs, React, Tailwindcss, Shadcn-UI, Mantine, Zustand, Swiper, Tanstack Query, Recharts, ReactTable, and more...',
     // Icon: FaReact,
     classes: {
       root: cn(
