@@ -1,6 +1,6 @@
 import { useId } from 'react'
 import Image, { type ImageProps } from 'next/image'
-import clsx from 'clsx'
+import { cn } from 'src/utils/cn'
 
 const shapes = [
   {
@@ -32,9 +32,10 @@ export function StylizedImage({
 
   return (
     <div
-      className={clsx(
+      className={cn(
         className,
-        'relative flex aspect-[719/680] w-full grayscale'
+        // original asepct-ratio: [719/680]
+        'relative flex aspect-[700/580] w-full grayscale'
       )}
     >
       <svg viewBox={`0 0 ${width} ${height}`} fill="none" className="h-full">
@@ -45,7 +46,7 @@ export function StylizedImage({
                 alt=""
                 width={width}
                 height={height}
-                className="w-full bg-neutral-100 object-cover"
+                className="w-full bg-transparent object-cover"
                 style={{ aspectRatio: `${width} / ${height}` }}
                 {...props}
               />
