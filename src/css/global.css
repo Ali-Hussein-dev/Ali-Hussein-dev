@@ -141,5 +141,5 @@ li {
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply rounded-lg shadow-inner bg-white/20 hover:bg-white/30;
+  @apply rounded-lg shadow-inner bg-white/70 hover:bg-white/90;
 }
