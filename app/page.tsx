@@ -55,8 +55,8 @@ export default function Page() {
             <Workflow />
           </div>
           <Techs />
-          <About />
         </div>
+        <About />
       </div>
     </div>
   )
