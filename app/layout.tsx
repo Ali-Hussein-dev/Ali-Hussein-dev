@@ -6,7 +6,6 @@ import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 // import { Analytics } from '@vercel/analytics/react'
 import NextTopLoader from 'nextjs-toploader'
-import { GoogleAnalytics } from '@/components/client-components'
 import { Sora, Indie_Flower } from 'next/font/google'
 import { MantineProvider } from '@mantine/core'
 
@@ -73,7 +72,6 @@ export default function RootLayout({
       </head>
       <NextTopLoader color="#fde68a" showSpinner={false} speed={300} />
       <body className={`${Sora_font.variable} ${Indie_Flower_font.variable}`}>
-        <GoogleAnalytics trackPageViews strategy="lazyOnload" />
         <main className="relative min-h-screen flex-col-center lg:text-xl selection:bg-theme-primary/70 selection:text-zinc-800 z-10 text-zinc-100 bg-zinc-950 overflow-hidden">
           <MantineProvider>
             <Header />

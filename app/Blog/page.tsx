@@ -5,6 +5,7 @@ import { BiCalendar } from 'react-icons/bi'
 import { Metadata } from 'next'
 import { Title } from '@/components/Title'
 import { BlueTopGradient } from '@/components/blue-top-gradient/blue-top-gradient'
+
 export const metadata: Metadata = {
   title: 'Blog Page',
   description:
@@ -28,12 +29,12 @@ const Blog: React.FC = () => (
             >
               <div className="order-2 w-full lg:self-start">
                 <div>
-                  <h2 className="w-10/12 text-xl font-bold text-gray-200 uppercase mb-2">
+                  <h2 className="w-10/12 text-xl font-bold text-gray-400 uppercase mb-2">
                     {o.title}
                   </h2>
                   <Text
                     lineClamp={2}
-                    className="pr-4 italic !text-zinc-400 md:w-11/12"
+                    className="pr-4 italic !text-zinc-500 md:w-11/12"
                   >
                     {o.description}
                   </Text>
