@@ -65,7 +65,7 @@ export const ProjectCard: React.FC<{
         {/* <h3 className="mb-1 font-bold text-base uppercase text-zinc-200">
           {name}
         </h3> */}
-        <p className="text-zinc-400 text-base">{description}</p>
+        <p className="text-zinc-400 text-sm">{description}</p>
         <div className="flex-row-start flex-wrap gap-2 pt-5 pb-3">
           {stack.split(' ').map((s) => (
             <span
