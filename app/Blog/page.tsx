@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { Text } from '@mantine/core'
 import blogs from '../../db/blogs.json'
-import { BiCalendar } from 'react-icons/bi'
+// import { BiCalendar } from 'react-icons/bi'
 import { Metadata } from 'next'
 import { Title } from '@/components/Title'
 import { BlueTopGradient } from '@/components/blue-top-gradient/blue-top-gradient'
@@ -25,7 +25,7 @@ const Blog: React.FC = () => (
               target="_blank"
               rel="noreferrer"
               key={i}
-              className="flex flex-col pb-2 pt-4 rounded-sm hover:bg-zinc-400/10 lg:flex-row group"
+              className="flex flex-col pb-2 pt-4 rounded-sm hover:bg-zinc-400/10 lg:flex-row group px-1"
             >
               <div className="order-2 w-full lg:self-start">
                 <div>
@@ -38,9 +38,9 @@ const Blog: React.FC = () => (
                   >
                     {o.description}
                   </Text>
-                  <span className="flex items-center text-base tracking-tight text-theme-secondary gap-x-2">
+                  {/* <span className="flex items-center text-base tracking-tight text-theme-secondary gap-x-2">
                     <BiCalendar /> {o.pub}
-                  </span>
+                  </span> */}
                 </div>
               </div>
             </a>
