@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "@mantine/core": "^7.3.1",
+    "@tailwindcss/typography": "^0.5.13",
     "@vercel/analytics": "^1.0.1",
     "@vercel/speed-insights": "^1.0.1",
     "clsx": "^2.0.0",

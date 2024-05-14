@@ -1,7 +1,11 @@
 const links = [
   {
+    label: 'Imprint',
+    href: '/imprint',
+  },
+  {
     href: 'https://twitter.com/AliHussein_20',
-    label: 'Twitter',
+    label: 'X',
   },
   {
     label: 'GitHub',
@@ -29,7 +33,7 @@ export const Footer: React.FC = () => (
               <a
                 href={o.href}
                 className="text-gray-300"
-                target="_blank"
+                target={o.label !== 'Imprint' ? '_blank' : undefined}
                 rel="noreferrer"
               >
                 {o.label}
