@@ -21,7 +21,7 @@ export const Hero = () => {
               Your Trusted Web Development Partner
             </p>
             <AnchorButton href="mailto: ali.hussein.pre@gmail.com">
-              {"Don't Wait,  Reacht out"}
+              {"Let's Talk"}
             </AnchorButton>
           </div>
         </div>
