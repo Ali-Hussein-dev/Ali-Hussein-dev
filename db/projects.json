@@ -28,13 +28,13 @@
     "imgSrc": "/projects-videos/safwat-almaraefa.png"
   },
   {
-    "href": "https://noorai.io",
-    "name": "Noor AI",
-    "description": "ChatGPT-like web app with additional features such as prompt history search, chat deletion",
-    "stack": "TS Nextjs React Tailwind OpenAI",
-    "date": "2023.4",
-    "code": "https://github.com/Ali-Hussein-dev/NoorAI",
-    "imgSrc": "/projects-videos/noorai-chatpage.png"
+    "href": "https://ui.indie-starter.dev",
+    "name": "Indie UI",
+    "description": "A collection of UI components powered by Tailwindcss",
+    "stack": "TS Nextjs React Tailwind",
+    "date": "2024.6",
+    "code": "https://github.com/Ali-Hussein-dev/indie-ui",
+    "imgSrc": "/projects-videos/indie-ui.png"
   },
   {
     "href": "https://restaurants-template.vercel.app/",

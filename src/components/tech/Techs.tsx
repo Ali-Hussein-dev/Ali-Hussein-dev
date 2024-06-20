@@ -111,9 +111,9 @@ export const Techs = () => {
       <div className="pb-6 font-custom mx-auto max-w-[58rem]">
         <div className="mb-6 mx-auto ">
           <h2 className="title text-center text-theme-secondary">
-            <span className="text-theme-primary">Experties</span>
+            <span className="text-theme-primary">Expertise</span>
             <br />
-            In Modren Technologies
+            in Modren Technologies
           </h2>
         </div>
         <div className="grid md:grid-cols-12 gap-4">

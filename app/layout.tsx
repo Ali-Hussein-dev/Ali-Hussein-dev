@@ -63,12 +63,6 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
-        <script
-          defer
-          src="https://eu.umami.is/script.js"
-          data-website-id="2c1c1ce8-92ec-4683-8b2d-024a4fff94b1"
-          // data-host-url="https://ali-hussein.com"
-        ></script>
       </head>
       <NextTopLoader color="#fde68a" showSpinner={false} speed={300} />
       <body className={`${Sora_font.variable} ${Indie_Flower_font.variable}`}>
