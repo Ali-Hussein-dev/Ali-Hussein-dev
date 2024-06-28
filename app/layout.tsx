@@ -63,6 +63,11 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
+        <script
+          defer
+          src="https://aliytics.netlify.app/script.js"
+          data-website-id="d9d61406-8e20-483f-ae8d-fea42f86f2fa"
+        ></script>
       </head>
       <NextTopLoader color="#fde68a" showSpinner={false} speed={300} />
       <body className={`${Sora_font.variable} ${Indie_Flower_font.variable}`}>
