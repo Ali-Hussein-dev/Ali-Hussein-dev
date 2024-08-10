@@ -10,3 +10,4 @@
 - [Indie UI](https://ui.indie-starter.dev) - Collection of UI components
 - [Nextradar](https://nextradar.dev) - Latest curated Next.js tools and resources.
 - [Indie Starter](https://indie-starter.dev) - Skip the long setup, start building what users care about with modern stack
+- [KamousAI](https://kamous.noorai.io) - Collection of AI tools built with OpenAI
