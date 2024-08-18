@@ -18,7 +18,10 @@ import { About } from '@/components/About'
 // }
 //=======================
 const Projects: React.FC = () => (
-  <section className="py-10 bg-gradient-to-b from-zinc-950/40 to-zinc-950/50 via-zinc-950">
+  <section
+    id="projects"
+    className="py-10 bg-gradient-to-b from-zinc-950/40 to-zinc-950/50 via-zinc-950"
+  >
     <h2 className="title">Recent Projects</h2>
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 px-1">
       {projects

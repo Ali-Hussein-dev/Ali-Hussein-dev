@@ -6,12 +6,26 @@ import { useScroll } from 'framer-motion'
 import clsx from 'clsx'
 import Image from 'next/image'
 
-const linksList = ['Home', 'Blog', 'Design', 'About']
+const linksList = [
+  {
+    label: 'About',
+    href: '/About',
+  },
+  {
+    label: 'Projects',
+    href: '#projects',
+  },
+  {
+    label: 'Blog',
+    href: '/Blog',
+  },
+]
 interface StyledLinkProps extends React.ComponentPropsWithoutRef<'button'> {
   label: string
+  href: string
 }
-const StyledLink: React.FC<StyledLinkProps> = ({ label, ...rest }) => (
-  <Link href={`/${label === 'Home' ? '' : label}`} className="w-full">
+const StyledLink: React.FC<StyledLinkProps> = ({ label, href, ...rest }) => (
+  <Link href={href} className="w-full" prefetch={false}>
     <button
       type="button"
       className="px-3 py-1 mb-2 font-bold rounded-lg hover:bg-zinc-200 hover:text-zinc-800 hover:cursor-pointer sm:mb-0 active:translate-y-1 w-full border border-zinc-500 sm:border-none shadow sm:shadow-none duration-200"
@@ -80,9 +94,9 @@ export const Header: React.FC = () => {
               />
             </Link>
             <div className="flex-row-start gap-3">
-              {linksList.map((link) => (
-                <span key={link}>
-                  <StyledLink label={link} />
+              {linksList.map((o, i) => (
+                <span key={i}>
+                  <StyledLink label={o.label} href={o.href} />
                 </span>
               ))}
             </div>
@@ -94,10 +108,11 @@ export const Header: React.FC = () => {
             isOpen ? 'relative pl-8' : 'hidden'
           } sm:hidden flex flex-col gap-y-4 my-auto items-center text-3xl font-bold leading-relaxed w-full`}
         >
-          {linksList.map((link) => (
+          {linksList.map((o, i) => (
             <StyledLink
-              key={link}
-              label={link}
+              key={i}
+              label={o.label}
+              href={o.href}
               onClick={() => setIsOpen(false)}
             />
           ))}
