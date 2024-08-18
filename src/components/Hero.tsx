@@ -18,7 +18,7 @@ export const Hero = () => {
               </span>
             </h1>
             <p className="mb-8 leading-6 text-theme-secondary md:text-xl text-center ">
-              Your Trusted Web Development Partner
+              Your trusted web development partner
             </p>
             <AnchorButton href="mailto: ali.hussein.pre@gmail.com">
               {"Let's Talk"}
