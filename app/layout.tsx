@@ -8,6 +8,7 @@ import { Header } from '@/components/Header'
 import NextTopLoader from 'nextjs-toploader'
 import { Sora, Indie_Flower } from 'next/font/google'
 import { MantineProvider } from '@mantine/core'
+import { AnalyticsProv } from '@/components/analytics-prov'
 
 const baseUrl = 'https://ali-hussein.com'
 
@@ -63,11 +64,7 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth antialiased ">
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
-        <script
-          defer
-          src="https://aliytics.netlify.app/script.js"
-          data-website-id="d9d61406-8e20-483f-ae8d-fea42f86f2fa"
-        ></script>
+        <AnalyticsProv />
       </head>
       <NextTopLoader color="#fde68a" showSpinner={false} speed={300} />
       <body className={`${Sora_font.variable} ${Indie_Flower_font.variable}`}>
